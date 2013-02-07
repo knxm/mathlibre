@@ -1,7 +1,6 @@
 all: build
 config: clean
 	lb config \
-        --apt-secure false \
 	--mirror-bootstrap "http://localhost:3142/ftp.jp.debian.org/debian/" \
 	--mirror-binary "http://localhost:3142/ftp.jp.debian.org/debian/" \
 	--mirror-chroot "http://localhost:3142/ftp.jp.debian.org/debian/" \
@@ -15,11 +14,14 @@ config: clean
 		live-config.locales=ja_JP.UTF-8 \
 		live-config.timezone=Asia/Tokyo \
 		live-config.keyboard-model=jp106 \
-		live-config.keyboard-layouts=jp"
+		live-config.keyboard-layouts=jp" \
+        --apt-options "--yes -oAcquire::Check-Valid-Until=false" \
+        --apt-secure false 
 
 build: config
 	sudo lb build
 	ls -l binary*.iso >> binary.hybrid.iso.ls-l
+
 clean:
 	sudo lb clean
 distclean: clean
