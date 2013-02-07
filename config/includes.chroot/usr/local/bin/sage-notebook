@@ -1,0 +1,4 @@
+#!/bin/sh
+if [ -f /usr/local/bin/sage ]; then
+  sage -notebook
+fi
