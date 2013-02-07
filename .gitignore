@@ -15,5 +15,4 @@ config/bootstrap
 config/chroot
 config/common
 config/source
-config/includes.chroot/usr/local/sage
 config/includes.chroot/usr/local/sage-?.?
