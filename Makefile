@@ -10,7 +10,6 @@ config: clean
 	--archive-areas "main contrib non-free" \
 	--parent-archive-areas "main contrib non-free" \
 	--binary-images iso \
-	--bootappend-live "boot=live config quiet splash persistent quickreboot" \
 	--apt-options "--yes -oAcquire::Check-Valid-Until=false" \
 	--apt-secure false 
 
