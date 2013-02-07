@@ -1,5 +1,6 @@
 build-essential
 chromium
+cvs
 emacs
 evince
 git

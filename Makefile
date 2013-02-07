@@ -1,6 +1,7 @@
 all: build
 config: clean
 	lb config \
+        --apt-secure false \
 	--mirror-bootstrap "http://localhost:3142/ftp.jp.debian.org/debian/" \
 	--mirror-binary "http://localhost:3142/ftp.jp.debian.org/debian/" \
 	--mirror-chroot "http://localhost:3142/ftp.jp.debian.org/debian/" \
