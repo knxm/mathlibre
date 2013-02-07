@@ -9,12 +9,7 @@ config: clean
 	--parent-archive-areas "main contrib non-free" \
 	--binary-images iso \
 	--bootappend-live \
-		"boot=live config quiet splash persistent quickreboot \
-		live-config.utc=no \
-		live-config.locales=ja_JP.UTF-8 \
-		live-config.timezone=Asia/Tokyo \
-		live-config.keyboard-model=jp106 \
-		live-config.keyboard-layouts=jp" \
+		"boot=live config quiet splash persistent quickreboot" \
         --apt-options "--yes -oAcquire::Check-Valid-Until=false" \
         --apt-secure false 
 
