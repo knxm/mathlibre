@@ -12,12 +12,14 @@ config: clean
 	--binary-images iso \
 	--apt-options "--yes -oAcquire::Check-Valid-Until=false" \
 	--apt-secure false 
+	--bootappend-live "boot=live config quiet splash"
 
 config-ja: config
 	echo 'task-japanese task-japanese-desktop fonts-takao' > config/package-lists/ja.list.chroot
 	echo 'texlive-lang-cjk xdvik-ja yatex' > config/package-lists/ja.tex.list.chroot
 	lb config --bootappend-live \
-	"live-config.locales=ja_JP.UTF-8 \
+	"boot=live config quiet splash \
+	 live-config.locales=ja_JP.UTF-8 \
 	 live-config.timezone=Asia/Tokyo \
 	 live-config.keyboard-model=jp106 \
 	 live-config.keyboard-layouts=jp"

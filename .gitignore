@@ -24,3 +24,6 @@ config/chroot
 config/common
 config/source
 config/includes.chroot/usr/local/sage-?.?
+config/package-lists/ja.list.chroot
+config/package-lists/ja.tex.list.chroot
+
