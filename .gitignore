@@ -12,7 +12,7 @@
 .lock
 .stage/
 binary.contents
-binary.hybrid.iso.ls-l
+iso.ls-l
 binary/
 cache/
 chroot.packages.install
@@ -24,6 +24,6 @@ config/chroot
 config/common
 config/source
 config/includes.chroot/usr/local/sage-?.?
-config/package-lists/ja.list.chroot
-config/package-lists/ja.tex.list.chroot
+config/package-lists/lang.*.list.chroot
+config/package-lists/lang.*.tex.list.chroot
 
