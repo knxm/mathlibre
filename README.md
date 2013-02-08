@@ -10,16 +10,16 @@ We need these environments
 * apt-cacher or apt-cacher-ng
 
 ### ex.
-1. sudo apt-get install git apt-cacher-ng
-1. sudo echo "deb-src http://ftp.jp.debian.org/debian/ sid main contrib" >> /etc/apt/sources.list
-1. apt-get -b source live-boot live-build live-config live-tools
-1. sudo dpkg -i live-*.deb
+1. # apt-get install git apt-cacher-ng
+1. # echo "deb-src http://ftp.jp.debian.org/debian/ sid main contrib" >> /etc/apt/sources.list
+1. $ apt-get -b source live-boot live-build live-config live-tools
+1. # dpkg -i live-boot live-boot-initramfs-tools live-build live-config live-config-sysvinit live-tools
 
 ## How to build MathLibre DVD
 
-1. git clone https://github.com/knxm/mathlibre.git
-1. cd mathlibre/
-1. make
+1. $ git clone https://github.com/knxm/mathlibre.git
+1. $ cd mathlibre/
+1. $ make
 
 If you want to make Japanese environment,
 please use "make ja".
