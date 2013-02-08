@@ -11,12 +11,12 @@ config: clean
 	--parent-archive-areas "main contrib non-free" \
 	--binary-images iso \
 	--apt-options "--yes -oAcquire::Check-Valid-Until=false" \
-	--apt-secure false 
+	--apt-secure false \
 	--bootappend-live "boot=live config quiet splash"
 
 config-ja: config
-	echo 'task-japanese task-japanese-desktop fonts-takao' > config/package-lists/ja.list.chroot
-	echo 'texlive-lang-cjk xdvik-ja yatex' > config/package-lists/ja.tex.list.chroot
+	echo 'task-japanese task-japanese-desktop fonts-takao' > config/package-lists/lang.ja.list.chroot
+	echo 'texlive-lang-cjk xdvik-ja yatex' > config/package-lists/lang.ja.tex.list.chroot
 	lb config --bootappend-live \
 	"boot=live config quiet splash \
 	 live-config.locales=ja_JP.UTF-8 \
@@ -25,6 +25,20 @@ config-ja: config
 	 live-config.keyboard-layouts=jp"
 
 ja: config-ja
+	sudo lb build
+	ls -l binary*.iso >> iso.ls-l
+
+config-ko: config
+	echo 'task-korean task-korean-desktop ' > config/package-lists/lang.ko.list.chroot
+	echo 'texlive-lang-cjk auctex' > config/package-lists/lang.ko.tex.list.chroot
+	lb config --bootappend-live \
+	"boot=live config quiet splash \
+	 live-config.locales=ko_KR.UTF-8 \
+	 live-config.timezone=Asia/Seoul \
+	 live-config.keyboard-model=us \
+	 live-config.keyboard-layouts=us"
+
+ko: config-ko
 	sudo lb build
 	ls -l binary*.iso >> iso.ls-l
 
