@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Encoding=UTF-8
+Name=PARI/GP
+GenericName=
+Comment=PARI/GP Number Theory-oriented computer algebra system
+Icon=pari-gp.xpm
+Exec=gnome-terminal -e gp
+#Terminal=true
+Categories=Math;

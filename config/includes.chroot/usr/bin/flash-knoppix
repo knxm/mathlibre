@@ -1,0 +1,176 @@
+#!/bin/bash
+
+PATH="/bin:/sbin:/usr/bin:/usr/sbin:/usr/X11R6/bin:/usr/local/bin"
+export PATH
+
+[ -r /etc/default/locale ] && . /etc/default/locale
+[ -r /etc/sysconfig/i18n ] && . /etc/sysconfig/i18n
+
+case "$LANG" in
+ de*)
+  export LANG="de_DE@euro"
+  export LC_MESSAGES="de_DE@euro"
+  export LANGUAGE="de_DE@euro"
+  MSG_TARGET="Bitte das gewünschte Ziel angeben:"
+  MSG_READY="Fertig.
+Sie können den Datenträger jetzt entfernen."
+  MSG_MOUNTED="ist noch gemountet."
+  MSG_SELECT="Bitte das Verzeichnis angeben, in dem sich die KNOPPIX-Daten befinden."
+  MSG_BOOTREC="Bootrecord einrichten auf" 
+  MSG_NOTFOUND="Keine Bootkonfiguration gefunden (weder boot/isolinux/isolinux.cfg noch boot/syslinux/syslinux.cfg), der Bootlader wird vermutlich nicht funktionieren."
+  MSG_WRITING="Schreibe Daten..."
+  MSG_QUESTION_FORMAT="Soll der Datenträger formatiert werden?
+WARNUNG: Alle Daten werden dabei gelöscht!
+Nein = nur KNOPPIX-Daten hinzufügen."
+  MSG_FORMAT="Formatiere"
+  MSG_ERROR_NODISK="Keine Flashdisk(s) gefunden."
+  MSG_ERROR_INCOMPATIBLE="Das Flash-Medium ist nicht richtig partitioniert.
+Die erste (primäre) Partition muss DOS/FAT32 sein."
+  ;;
+ *)
+  MSG_TARGET="Please select desired target device:"
+  MSG_READY="Finished.
+You can now remove devicefrom drive."
+  MSG_MOUNTED="is already mounted."
+  MSG_SELECT="Please enter directory containing KNOPPIX files."
+  MSG_BOOTREC="Creating boot record on"
+  MSG_NOTFOUND="No boot configuration found (no boot/isolinux/isolinux.cfg), bootloader will probably not work."
+  MSG_WRITING="Writing data..."
+  MSG_QUESTION_FORMAT="Format device?
+WARNING: ALL DATA WILL BE ERASED!
+No = Just copy additional KNOPPIX files."
+  MSG_FORMAT="Formatting"
+  MSG_ERROR_NODISK="No flash disk(s) found."
+  MSG_ERROR_INCOMPATIBLE="Flashdisk is not partitioned properly.
+The first (primary) partition must be DOS/FAT32."
+;;
+esac
+
+TMP="/tmp/flash-knoppix.$$.tmp"
+TMPMOUNT="/tmp/flash-knoppix.$$.tmpmount"
+
+FLASH=""
+
+TITLE="flash-knoppix"
+
+# Requires dialog and (optionally) xdialog
+mydialog(){
+ if [ -n "$DISPLAY" ] && type -p Xdialog >/dev/null 2>&1; then
+  ICON="/usr/share/icons/flash-knoppix.xpm"
+  [ -r "$ICON" ] && ICON="--icon $ICON" || ICON=""
+  export XDIALOG_NO_GMSGS=1
+  Xdialog 1>&2 2>/dev/null --stdout --left --wrap $ICON "$@"
+ else
+  dialog "$@"
+ fi
+ return "$?"
+}
+
+ERROR=""
+
+bailout(){
+ umount -df "$TMPMOUNT" 2>/dev/null && eject "$FLASH" 2>/dev/null
+ rmdir "$TMPMOUNT" 2>/dev/null
+ killgauge
+ case "$1" in
+  0) # Normal end of program
+   mydialog --title "$TITLE" --timeout 5 --msgbox "$MSG_READY" 0 65 ;;
+  1) # Cancel with no message
+   true;;
+  *) # Error
+   mydialog --title "$TITLE" --msgbox "$ERROR" 0 65;;
+ esac
+ rm -f "$TMP" "$TMP.done" "$TMP.err"
+ exit $1
+}
+
+gauge(){
+rm -f "$TMP.done"
+status=0
+while [ ! -e "$TMP.done" ]; do echo "$((status / 100))" ; status="`expr \( 10000 - $status \) / 100 + $status`"; sleep 1; done | mydialog --title "$TITLE" --gauge "$1" 0 75 0 &
+}
+
+# Stop status bar
+killgauge(){
+touch "$TMP.done" ; wait ; rm -f "$TMP.done"
+}
+
+if [ -n "$1" -a -b "$1" ]; then
+ FLASH="$1"
+else
+ DEVICELIST=()
+ count=0
+ for i in $(ls -1dr /sys/block/sd[b-z] 2>/dev/null); do
+  device="${i##/sys/block/}"
+  DEVICELIST[$((count++))]="$device"
+  DEVICELIST[$((count++))]="$(cat $i/device/vendor 2>/dev/null) $(cat $i/device/model 2>/dev/null) ($(awk '{print ($1 / 2048) "MB"}' $i/size 2>/dev/null))"
+ done
+ rm -f "$TMP"
+ if [ -n "${DEVICELIST[*]}" ]; then
+  mydialog --title "$TITLE" --menu "
+$MSG_TARGET
+" 20 75 10 "${DEVICELIST[@]}" 2>"$TMP" || bailout 1
+  read FLASH <"$TMP"; rm -f "$TMP"
+  FLASH="/dev/$FLASH"
+ else
+  ERROR="$MSG_ERROR_NODISK"
+  bailout 1
+ fi
+fi
+
+[ "`id -u`" != "0" ] && exec sudo "$0" "$FLASH"
+unset SUDO_COMMAND
+
+if grep -q "^${FLASH}" /proc/mounts && ! umount -df "$FLASH"; then
+ ERROR="$FLASH $MSG_MOUNTED"
+ bailout 2
+fi
+
+if [ -r /mnt-system/KNOPPIX/KNOPPIX ]; then
+ SRC=/mnt-system
+ cd "$SRC"
+else
+ while [ ! -r KNOPPIX/KNOPPIX ]; do
+  mydialog --backtitle "$MSG_SELECT" --dselect . 0 75 2>"$TMP" || bailout 1
+  SRC="$(<$TMP)"
+  [ -d "$SRC" ] && cd "$SRC"
+ done
+fi
+
+if mydialog --default-no --yesno "$MSG_QUESTION_FORMAT" 0 75; then
+ gauge "$MSG_FORMAT $FLASH partition 1..."
+ rm -f "$TMP.err"
+ sfdisk --change-id "$FLASH" 1 c
+ mkdosfs -F32 "${FLASH}1" 2>"$TMP.err" || { ERROR="$(<$TMP.err)"; bailout 2; }
+ rm -f "$TMP.err"
+ killgauge
+fi
+ 
+gauge "$MSG_BOOTREC $FLASH..."
+rm -f "$TMP.err"
+mkdir -p "$TMPMOUNT"
+mount -t vfat -o shortname=winnt "${FLASH}1" "$TMPMOUNT" 2>"$TMP.err" || { killgauge; ERROR="${FLASH}:\n$MSG_ERROR_INCOMPATIBLE"; bailout 2; }
+[ -f "$TMPMOUNT"/ldlinux.sys ] && rm -f "$TMPMOUNT"/ldlinux.sys
+umount "$TMPMOUNT"
+rm -f "$TMP.err"
+syslinux "${FLASH}1" 2>"$TMP.err" || { ERROR="$(<$TMP.err)"; bailout 2; }
+ms-sys -s "${FLASH}" 2>"$TMP.err" || { ERROR="$(<$TMP.err)"; bailout 2; }
+sfdisk -A1 "${FLASH}" 2>"$TMP.err" || { ERROR="$(<$TMP.err)"; bailout 2; }
+killgauge
+
+if [ -r boot/syslinux/syslinux.cfg -o -r boot/isolinux/isolinux.cfg ]; then
+ gauge "$MSG_WRITING"
+ mount -t vfat -o shortname=winnt "${FLASH}1" "$TMPMOUNT" 2>"$TMP.err" || { ERROR="$(<$TMP.err)"; bailout 2; }
+ cp -Lrf boot KNOPPIX "$TMPMOUNT" 2>"$TMP.err" || { ERROR="$(<$TMP.err)"; bailout 2; }
+ if [ ! -r boot/syslinux/syslinux.cfg -a -r boot/isolinux/isolinux.cfg ]; then
+  [  -d "$TMPMOUNT"/boot/syslinux ] && rm -rf "$TMPMOUNT"/boot/syslinux
+  mv -f "$TMPMOUNT"/boot/isolinux "$TMPMOUNT"/boot/syslinux
+  mv -f "$TMPMOUNT"/boot/syslinux/isolinux.cfg "$TMPMOUNT"/boot/syslinux/syslinux.cfg
+  rm -f "$TMPMOUNT"/boot/syslinux/isolinux.* "$TMPMOUNT"/boot/syslinux/*.cat "$TMPMOUNT"/boot/isolinux.* "$TMPMOUNT"/boot/*.cat
+ fi
+else
+ ERROR="$MSG_NOTFOUND"
+ bailout 3
+fi
+
+bailout 0

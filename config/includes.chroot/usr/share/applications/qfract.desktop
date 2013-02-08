@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=QFract
+GenericName=A Qt-based fractal viewer
+Exec=qfract
+Icon=qfract.png
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=Math

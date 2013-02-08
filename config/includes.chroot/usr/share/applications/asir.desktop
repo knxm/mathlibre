@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Encoding=UTF-8
+Name=Risa/Asir
+GenericName=
+Comment=
+Icon=hopo_std_color.xpm
+Exec=gnome-terminal -e km-asir
+#Terminal=true
+Categories=Math;

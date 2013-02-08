@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Encoding=UTF-8
+Name=Hyplane
+GenericName=
+Comment=
+Icon=hyplane.xpm
+Exec=hyplane
+Terminal=false
+Categories=Math;

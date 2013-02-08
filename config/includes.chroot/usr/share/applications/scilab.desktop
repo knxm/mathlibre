@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Encoding=UTF-8
+Name=Scilab
+GenericName=
+Comment=
+Icon=scilab.xpm
+Exec=scilab
+Terminal=false
+Categories=Math;

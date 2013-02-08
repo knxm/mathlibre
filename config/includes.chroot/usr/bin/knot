@@ -1,0 +1,14 @@
+#!/bin/sh
+# Get install directory.
+#KNOT_DIR=`dirname $0`
+KNOT_DIR=/usr/lib/knot
+# set resources:
+# default or en_NZ
+LOCALE=default
+export SATHER_HOME=${KNOT_DIR}
+export SATHER_RESOURCES=${SATHER_HOME}/resources/${LOCALE}
+export SATHER_ENV=${SATHER_RESOURCES}/bin/LIBCHARS
+# executable binary
+KNOT_EXE=${KNOT_DIR}/knot_opt
+lxterminal -e $KNOT_EXE $@
+# end of the script

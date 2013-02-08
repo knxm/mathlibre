@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=math-polyglot
+Comment=tower of babel for math software systems
+Exec=km-copy-mathpolyglot.sh
+Icon=/usr/share/math-polyglot/icon/greko-bunao-48-36.png
+Terminal=0
+Type=Application
+Encoding=UTF-8
+Categories=Math;

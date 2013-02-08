@@ -1,0 +1,11 @@
+#!/bin/bash
+export SINGULAR_BIN_DIR=/usr/lib/Singular
+export SINGULAR_ROOT_DIR=/usr/share/Singular
+export SINGULAR_INFO_FILE=/usr/share/doc/Singular/info/singular.hlp
+export SINGULAR_IDX_FILE=/usr/share/doc/Singular/doc/singular.idx
+export SINGULAR_HTML_DIR=/usr/share/doc/Singular/html
+export SINGULAR_EXAMPLES_DIR=/usr/share/doc/Singular/examples
+export SINGULAR_EXECUTABLE=/usr/bin/Singular
+export PATH=/usr/lib/Singular:/usr/bin:$PATH
+export ESINGULAR_EMACS_LOAD=/usr/share/Singular/emacs/singular.el
+exec /usr/lib/Singular/ESingular $*

@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Encoding=UTF-8
+Name=SAGE
+GenericName=
+Comment=
+Icon=sage.xpm
+Exec=gnome-terminal -e sage-notebook 
+#Terminal=true
+Categories=Math;

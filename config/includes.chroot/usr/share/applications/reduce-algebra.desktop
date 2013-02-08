@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Encoding=UTF-8
+Name=Reduce
+GenericName=
+Comment=
+Icon=reduce.xpm
+Exec=gnome-terminal -e /usr/bin/reduce
+#Terminal=true
+Categories=Math;

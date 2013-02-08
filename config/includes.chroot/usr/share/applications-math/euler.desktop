@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Exec=euler
+Icon=euler.xpm
+Categories=Education;Science;Math;
+Name=Euler
+GenericName=Computer Algebra System
+GenericName[de]=Computer-Algebra-System
+Comment=An interactive mathematical program
+Comment[de]=Ein interaktives mathematisches Programm

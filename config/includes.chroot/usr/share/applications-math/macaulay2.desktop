@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Macaulay2
+Version=1.3.1
+Comment=Macaulay2 in a terminal
+Exec=emacs -e M2
+#Terminal=true
+Icon=macaulay2
+MimeType=text/x-m2
+Type=Application
+Categories=Math;
+Encoding=UTF-8

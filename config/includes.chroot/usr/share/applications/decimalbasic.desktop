@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Encoding=UTF-8
+Name=DecimalBASIC
+GenericName=
+Comment=
+Icon=decimalbasic.xpm
+Exec=decimalbasic
+Terminal=false
+Categories=Math;

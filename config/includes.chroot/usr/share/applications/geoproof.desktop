@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Encoding=UTF-8
+Name=GeoProof
+GenericName=
+Comment=
+Icon=geoproof.xpm
+Exec=geoproof
+Terminal=false
+Categories=Math;

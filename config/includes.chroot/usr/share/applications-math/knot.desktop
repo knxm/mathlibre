@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Encoding=UTF-8
+Name=KNOT
+GenericName=
+Comment=
+Icon=knot.xpm
+Exec=knot
+Terminal=false
+Categories=Math;

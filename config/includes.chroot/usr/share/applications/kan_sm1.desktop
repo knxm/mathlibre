@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Encoding=UTF-8
+Name=Kan/SM1
+GenericName=
+Comment=
+Icon=logo-openxm2-color.xpm
+Exec=gnome-terminal -e km-sm1
+# Terminal=true
+Categories=Math;

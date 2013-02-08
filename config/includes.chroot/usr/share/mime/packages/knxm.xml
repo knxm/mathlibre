@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mime-info xmlns='http://www.freedesktop.org/standards/shared-mime-info'>
+	<mime-type type="application/x-ggb">
+		<sub-class-of type="application/octet-stream"/>
+		<comment>GeoGebra Worksheet</comment>
+		<glob pattern="*.ggb"/>
+	</mime-type>
+	<mime-type type="application/x-kseg">
+		<sub-class-of type="application/octet-stream"/>
+		<comment>KSEG file</comment>
+		<glob pattern="*.seg"/>
+                <generic-icon name="x-kseg"/>
+	</mime-type>
+	<mime-type type="application/x-kseg-const">
+		<sub-class-of type="application/octet-stream"/>
+		<comment>KSEG Construction file</comment>
+		<glob pattern="*.sec"/>
+                <generic-icon name="x-kseg"/>
+	</mime-type>
+	<mime-type type="text/x-m2">
+		<sub-class-of type="text/plain"/>
+		<comment>Macaulay2 file</comment>
+		<glob pattern="*.m2"/>
+                <generic-icon name="x-m2"/>
+	</mime-type>
+	<mime-type type="text/x-sing">
+		<sub-class-of type="text/plain"/>
+		<comment>Singular file</comment>
+		<glob pattern="*.sing"/>
+                <generic-icon name="x-sing"/>
+	</mime-type>
+	<mime-type type="text/x-sux">
+		<sub-class-of type="text/plain"/>
+		<comment>Surfex file</comment>
+		<glob pattern="*.sux"/>
+                <generic-icon name="x-sux"/>
+	</mime-type>
+	<mime-type type="text/x-pic">
+		<sub-class-of type="text/plain"/>
+		<comment>Surf file</comment>
+		<glob pattern="*.pic"/>
+	</mime-type>
+</mime-info>

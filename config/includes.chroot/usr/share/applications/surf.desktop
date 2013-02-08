@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=Surf
+GenericName=
+Comment=
+Icon=surf
+Exec=surf
+MimeType=text/x-pic;
+Terminal=false
+Categories=Math;

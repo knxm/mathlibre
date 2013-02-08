@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Encoding=UTF-8
+Name=Surface Evolver
+GenericName=
+Comment=
+Icon=evolver.xpm
+Exec=gnome-terminal -e evolver
+Terminal=false
+Categories=Math;

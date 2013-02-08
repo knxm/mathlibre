@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Encoding=UTF-8
+Name=GeoGebra
+GenericName=
+Comment=
+Icon=geogebra.xpm
+Exec=geogebra
+Terminal=false
+MimeType=application/x-ggb
+Categories=Math;

@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Encoding=UTF-8
+Name=KidsCindy
+GenericName=
+Comment=
+Icon=kc.xpm
+Exec=wxKC
+Terminal=false
+Categories=Math;
+

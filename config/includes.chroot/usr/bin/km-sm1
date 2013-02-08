@@ -1,0 +1,4 @@
+#!/bin/sh
+if [ -x /usr/local/bin/sm1 ]; then
+  openxm fep sm1
+fi

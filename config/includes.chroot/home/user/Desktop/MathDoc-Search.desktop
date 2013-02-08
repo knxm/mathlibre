@@ -1,0 +1,19 @@
+[Desktop Entry]
+Comment=
+Comment[ja]=
+Encoding=UTF-8
+Exec=/usr/bin/knxm-search
+GenericName=MathDoc-Search
+GenericName[ja]=MathDoc-Search
+Icon=/usr/share/icons/oxygen/48x48/apps/xmag.png
+MimeType=
+Name=MathDoc-Search
+Name[ja]=MathDoc-Search
+Path=
+StartupNotify=true
+Terminal=false
+TerminalOptions=
+Type=Application
+X-DCOP-ServiceType=
+X-KDE-SubstituteUID=false
+X-KDE-Username=

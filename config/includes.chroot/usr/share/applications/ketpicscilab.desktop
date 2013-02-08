@@ -1,0 +1,11 @@
+[Desktop Entry]
+Comment=KETpic-Scilab is a macro package of generating source codes for clear drawings with Scilab.
+Encoding=UTF-8
+Exec=ketpic-scilab
+GenericName=Scientific Software Package
+Icon=ketpic.xpm
+Name=KETpic-Scilab
+StartupNotify=false
+Terminal=false
+Type=Application
+Categories=Math;

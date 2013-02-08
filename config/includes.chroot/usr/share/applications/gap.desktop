@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Encoding=UTF-8
+Name=GAP
+GenericName=
+Comment=GAP - Groups, Algorithms and Programming
+Icon=gap.xpm
+Exec=gnome-terminal -e gap
+#Terminal=true
+Categories=Math;

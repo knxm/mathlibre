@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Polymake
+GenericName=A tool to study polytopes
+Exec=gnome-terminal -e polymake
+Icon=polymake.png
+#Terminal=true
+Type=Application
+StartupNotify=true
+Categories=Math

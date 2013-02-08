@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=KSeg
+Comment=Sketchpad for planar Euclidean geometry
+Exec=kseg
+Icon=kseg
+Type=Application
+Terminal=false
+Categories=Math;

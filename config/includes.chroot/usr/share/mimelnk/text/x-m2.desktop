@@ -1,0 +1,10 @@
+[Desktop Entry]
+Comment=Macaulay2 File
+Icon=text
+Type=MimeType
+MimeType=text/x-m2
+Patterns=*.m2;
+X-KDE-IsAlso=text/plain
+[Property::X-KDE-text]
+Type=bool
+Value=true

@@ -1,0 +1,241 @@
+#
+# This is a Namazu configuration file for mknmz.
+#
+package conf;  # Don't remove this line!
+
+#===================================================================
+#
+# Administrator's email address
+#
+# $ADDRESS = 'webmaster@mykerinos.onera';
+
+
+#===================================================================
+#
+# Regular Expression Patterns
+#
+
+#
+# This pattern specifies HTML suffixes.
+#
+# $HTML_SUFFIX = "html?|[ps]html|html\\.[a-z]{2}";
+
+#
+# This pattern specifies file names which will be targeted.
+# NOTE: It can be specified by --allow=regex option.
+#       Do NOT use `$' or `^' anchors.
+#       Case-insensitive.
+#
+# $ALLOW_FILE =	".*\\.(?:$HTML_SUFFIX)|.*\\.txt" . # HTML, plain text
+# 		"|.*\\.gz|.*\\.Z|.*\\.bz2" .       # Compressed files
+# 		"|.*\\.pdf|.*\\.ps" . 		   # PDF, PostScript
+# 		"|.*\\.tex|.*\\.dvi" .   	   # TeX, DVI
+# 		"|.*\\.rpm|.*\\.deb" .   	   # RPM, DEB
+# 		"|.*\\.doc|.*\\.xls|.*\\.pp[st]" . # Word, Excel, PowerPoint
+# 		"|.*\\.docx|.*\\.xlsx|.*\\.pp[st]x" . # MS-OfficeOpenXML Word, Excel, PowerPoint
+# 		"|.*\\.vs[dst]|.*\\.v[dst]x" .     # Visio
+# 		"|.*\\.j[sabf]w|.*\\.jtd" .        # Ichitaro 4, 5, 6, 7, 8
+# 		"|.*\\.sx[widc]" .                 # OpenOffice Writer,Calc,Impress,Draw
+# 		"|.*\\.od[tspg]" .                 # OpenOffice2.0
+# 		"|.*\\.rtf" .                      # Rich Text Format
+# 		"|.*\\.hdml|.*\\.mht" .		   # HDML MHTML
+# 		"|.*\\.mp3" .			   # MP3 
+# 		"|.*\\.gnumeric" .                 # Gnumeric
+# 		"|.*\\.kwd|.*\\.ksp" .             # KWord, KSpread
+# 		"|.*\\.kpr|.*\\.flw" .             # KPresenter, Kivio
+# 		"|.*\\.eml|\\d+|[-\\w]+\\.[1-9n]"; # Mail/News, man
+
+#
+# This pattern specifies file names which will NOT be targeted.
+# NOTE: It can be specified by --deny=regex option.
+#       Do NOT use `$' or `^' anchors.
+#       Case-insensitive.
+#
+# $DENY_FILE = ".*\\.(gif|png|jpg|jpeg)|.*\\.tar\\.gz|core|.*\\.bak|.*~|\\..*|\x23.*";
+
+#
+# This pattern specifies DDN(DOS Device Name) which will NOT be targeted.
+# NOTE: Only for Windows.
+#       Do NOT use `$' or `^' anchors.
+#       Case-insensitive.
+#
+# $DENY_DDN = "con|aux|nul|prn|lpt[1-9]|com[1-9][0-9]?|clock\$|xmsxxxx0";
+
+#
+# This pattern specifies PATHNAMEs which will NOT be targeted.
+# NOTE: Usually specified by --exclude=regex option.
+#
+# $EXCLUDE_PATH = undef;
+
+#
+# This pattern specifies file names which can be omitted 
+# in URI.  e.g., 'index.html|index.htm|Default.html'
+#
+# NOTE: This is similar to Apache's "DirectoryIndex" directive.
+#
+# $DIRECTORY_INDEX = "";
+
+#
+# This pattern specifies Mail/News's fields in its header which 
+# should be searchable.  NOTE: case-insensitive
+#
+# $REMAIN_HEADER = "From|Date|Message-ID";
+
+#
+# This pattern specifies fields which used for field-specified 
+# searching.  NOTE: case-insensitive
+# 
+# $SEARCH_FIELD = "message-id|subject|from|date|uri|newsgroups|to|summary|size";
+
+#
+# This pattern specifies meta tags which used for field-specified 
+# searching.  NOTE: case-insensitive
+#
+# $META_TAGS = "keywords|description";
+
+#
+# This pattern specifies aliases for NMZ.field.* files.
+# NOTE: Editing NOT recommended.
+#
+# %FIELD_ALIASES = ('title' => 'subject', 'author' => 'from');
+
+#
+# This pattern specifies HTML elements which should be replaced with 
+# null string when removing them. Normally, the elements are replaced 
+# with a single space character.
+#
+# $NON_SEPARATION_ELEMENTS = 'A|TT|CODE|SAMP|KBD|VAR|B|STRONG|I|EM|CITE|FONT|U|'.
+#                        'STRIKE|BIG|SMALL|DFN|ABBR|ACRONYM|Q|SUB|SUP|SPAN|BDO';
+
+#
+# This pattern specifies attribute of a HTML tag which should be 
+# searchable.
+#
+# $HTML_ATTRIBUTES = 'ALT|SUMMARY|TITLE';
+
+
+#===================================================================
+# 
+# Critical Numbers
+# 
+
+# 
+# The max size of files which can be loaded in memory at once.
+# If you have much memory, you can increase the value.
+# If you have less memory, you can decrease the value.
+#
+# $ON_MEMORY_MAX   = 5000000;
+
+#
+# The max file size for indexing. Files larger than this 
+# will be ignored.
+# NOTE: This value is usually larger than TEXT_SIZE_MAX because 
+#       binary-formated files such as PDF, Word are larger.
+#
+$FILE_SIZE_MAX   = 20000000;
+
+#
+# The max text size for indexing. Files larger than this 
+# will be ignored.
+#
+$TEXT_SIZE_MAX   =  6000000;
+
+#
+# The max length of a word. the word longer than this will be ignored.
+#
+# $WORD_LENG_MAX   = 128;
+
+
+#
+# Weights for HTML elements which are used for term weightning.
+#
+# %Weight = 
+#     (
+#      'html' => {
+#          'title'  => 16,
+#          'h1'     => 8,
+#          'h2'     => 7,
+#          'h3'     => 6,
+#          'h4'     => 5,
+#          'h5'     => 4,
+#          'h6'     => 3,
+#          'a'      => 4,
+#          'strong' => 2,
+#          'em'     => 2,
+#          'kbd'    => 2,
+#          'samp'   => 2,
+#          'var'    => 2,
+#          'code'   => 2,
+#          'cite'   => 2,
+#          'abbr'   => 2,
+#          'acronym'=> 2,
+#          'dfn'    => 2,
+#      },
+#      'metakey' => 32, # for <meta name="keywords" content="foo bar">
+#      'headers' => 8,  # for Mail/News' headers
+# );
+
+#
+# The max length of a HTML-tagged string which can be processed for
+# term weighting. 
+# NOTE: There are not a few people has a bad manner using 
+#       <h[1-6]> for changing a font size.
+#
+# $INVALID_LENG = 128; 
+
+#
+# The max length of a field.
+# This MUST be smaller than libnamazu.h's BUFSIZE (usually 1024).
+#
+# $MAX_FIELD_LENGTH = 200;
+
+
+#===================================================================
+#
+# Softwares for handling a Japanese text
+#
+
+#
+# Network Kanji Filter nkf v1.71 or later
+#
+# $NKF = "module_nkf"; 
+
+#
+# KAKASI 2.x or later
+# Text::Kakasi 1.05 or later
+#
+# $KAKASI = "module_kakasi -ieuc -oeuc -w";
+
+#
+# ChaSen 2.02 or later (simple wakatigaki)
+# Text::ChaSen 1.03
+#
+# $CHASEN = "/usr/bin/chasen -i e -j -F \"\%m \"";
+
+#
+# ChaSen 2.02 or later (with noun words extraction)
+#
+# $CHASEN_NOUN = "/usr/bin/chasen -i e -j -F \"\%m %H\\n\"";
+
+#
+# MeCab
+#
+# $MECAB = "no";
+
+#
+# Default Japanese processer: KAKASI or ChaSen.
+#
+# $WAKATI  = $KAKASI;
+
+
+#===================================================================
+#
+# Directories
+#
+# $LIBDIR = "@PERLLIBDIR@";
+# $FILTERDIR = "@FILTERDIR@";
+# $TEMPLATEDIR = "@TEMPLATEDIR@";
+#
+
+# 1;
+

@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Encoding=UTF-8
+Name=Surfex
+GenericName=
+Comment=
+Icon=surfex.xpm
+Exec=surfex
+Terminal=false
+Categories=Math;

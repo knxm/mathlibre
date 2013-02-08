@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Encoding=UTF-8
+Name=NZMATH
+GenericName=
+Comment=
+Icon=nzmath.xpm
+Exec=gnome-terminal -e nzmath
+#Terminal=true
+Categories=Math;

@@ -1,0 +1,114 @@
+# This is a Namazu configuration file for namazu or namazu.cgi.
+#
+#  Originally, this file is named 'namazurc-sample'.  so you should
+#  copy this to 'namazurc' to make the file effective.
+#  
+#  Each item is must be separated by one or more SPACE or TAB characters. 
+#  You can use a double-quoted string for represanting a string which 
+#  contains SPACE or TAB characters like "foo bar baz".
+
+
+##
+## Index: Specify the default directory.
+## 
+#Index         /usr/local/var/namazu/index
+
+
+##
+## Template: Set the template directory containing
+## NMZ.{head,foot,body,tips,result} files.
+##
+#Template      /usr/local/var/namazu/index
+
+
+##
+## Replace: Replace TARGET with REPLACEMENT in URIs in search
+## results.  
+##
+## TARGET is specified by Ruby's perl-like regular expressions.  
+## You can caputure sub-strings in TARGET by surrounding them 
+## with `(' and `)'and use them later as backreferences by
+## \1, \2, \3,... \9.
+##  
+## To use meta characters literally such as `*', `+', `?', `|', 
+## `[', `]', `{', `}', `(', `)', escape them with `\'.
+##  
+## e.g.,
+##  
+##    Replace  /home/foo/public_html/   http://www.foobar.jp/~foo/
+##    Replace  /home/(.*)/public_html/  http://www.foobar.jp/\1/
+##    Replace  /[Cc]\|/foo/             http://www.foobar.jp/
+##  
+## If you do not want to do the processing on command line use, 
+## run namazu with -U option.
+##
+## You can specify more than one Replace rules but the only 
+## first-matched rule are applied. 
+##
+#Replace       /home/foo/public_html/  http://www.foo.bar.jp/~foo/
+Replace /^*/ file:///
+##
+## Logging: Set OFF to turn off keyword logging to NMZ.slog. 
+## Default is ON.
+##
+#Logging       off
+
+
+##
+## Lang: Set the locale code such as `ja_JP.eucJP', `ja_JP.SJIS', 
+## `de', etc.  This directive works only if the environment 
+## variable LANG is not set because the directive is mainly 
+## intended for CGI use.  On the shell, You can set 
+## environemtnt variable LANG instead of using the directive.
+## 
+## If you set `de' to it, namazu.cgi use 
+## NMZ.(head|foot|body|tips|results).de for displaying results 
+## and use a proper message catalog for `de'.
+##
+#Lang          ja
+
+
+##
+## Scoring: Set the scoring method "tfidf" or "simple".
+##
+#Scoring       tfidf
+
+
+##
+## EmphasisTags: Set the pair of html elements which is used in
+## keyword emphasizing for search results.
+##
+#EmphasisTags  "<strong class=\"keyword\">"   "</strong>"
+
+##
+## MaxHit: Set the maximum number of documents which can be
+## handled in query operation.  If documents matching a
+## query exceed the value, they will be ignored.
+##
+#MaxHit	10000
+
+##
+## MaxMatch: Set the maximum number of words which can be
+## handled in regex/prefix/inside/suffix query. If documents
+## matching a query exceed the value, they will be ignored.
+##
+#MaxMatch	1000
+
+##
+## ContentType: Set "Content-Type" header output. If you want to
+## use non-HTML template files, set it suitably.
+##
+#ContentType	"text/x-hdml"
+
+##
+## Suicide_Time: namazu.cgi stops the process in 60 seconds by
+## default.
+## (Only UNIX)
+##
+#Suicide_Time	60
+
+##
+## Regex_Search: Set OFF to turn off regex_search.
+## Default is ON.
+##
+#Regex_Search	off

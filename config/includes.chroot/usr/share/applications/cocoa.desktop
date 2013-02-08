@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Encoding=UTF-8
+Name=CoCoA
+GenericName=
+Comment=
+Icon=cocoa.xpm
+Exec=xcocoa
+Terminal=false
+Categories=Math;

@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=K3DSurf
+Type=Application
+StartupNotify=true
+Comment=tool for mathematical surfaces
+Exec=/usr/bin/k3dsurf
+Icon=/usr/share/pixmaps/k3dsurf.xpm
+Terminal=false
+Categories=Math;

@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Surfex
+GenericName=
+Comment=
+Icon=surfex
+Exec=surfex
+Terminal=false
+Categories=Math;

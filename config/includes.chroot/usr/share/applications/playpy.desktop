@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Name=Python SWF player
+Comment=
+Exec=/usr/share/pyvnc2swf/play.py %U
+Icon=gnome-mime-application-x-shockwave-flash
+Terminal=false
+Type=Application
+Categories=AudioVideo;Player;
+MimeType=application/x-shockwave-flash;

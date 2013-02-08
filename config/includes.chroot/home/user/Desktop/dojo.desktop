@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Groebner dojo
+Name[ja]=グレブナー道場
+Comment=Groebner dojo
+Comment[ja]=グレブナー道場
+Icon=gureko-bunao
+Type=Link
+Categories=Math;
+Encoding=UTF-8
+URL=http://www.math.kobe-u.ac.jp/OpenXM/Math/dojo/

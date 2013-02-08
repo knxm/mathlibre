@@ -1,0 +1,12 @@
+[Desktop Entry]
+Version=1.0
+Name=GNU Emacs 23
+GenericName=Text Editor
+Comment=View and edit files
+MimeType=text/english;text/plain;text/x-makefile;text/x-c++hdr;text/x-c++src;text/x-chdr;text/x-csrc;text/x-java;text/x-moc;text/x-pascal;text/x-tcl;application/x-shellscript;text/x-c;text/x-c++;
+Exec=/usr/bin/emacs23 %F
+TryExec=emacs23
+Icon=/usr/share/icons/hicolor/scalable/apps/emacs23.svg
+Type=Application
+Terminal=false
+Categories=Utility;Development;TextEditor;

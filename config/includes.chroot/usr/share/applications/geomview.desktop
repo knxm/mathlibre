@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=Geomview
+Comment=Interactive geometry viewing program
+Exec=geomview
+Icon=geomview
+Type=Application
+Terminal=false
+Categories=Application;Math;Science;Education

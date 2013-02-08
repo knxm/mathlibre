@@ -24,6 +24,7 @@ jsmath
 jsmath-fonts
 jsmath-fonts-sprite
 kig
+kile
 kmplot
 lie
 lp-solve
@@ -43,7 +44,9 @@ scilab-full-bin
 scilab-include
 scilab-minimal-bin
 snappea
+step
 texlive
+texmacs
 xgraph
 wxmaxima
 yacas

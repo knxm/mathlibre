@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Encoding=UTF-8
+Name=Yacas
+GenericName=
+Comment=
+Icon=yacas.xpm
+Exec=gnome-terminal -e yacas
+Terminal=false
+Categories=Math;

@@ -1,0 +1,14 @@
+[Desktop Entry]
+Name=Singular
+Version=3.1.0
+Comment=run Singular 3.1.0 in a terminal
+Comment[de]=Singular 3.1.0 in einem Terminal starten
+Comment[es]=
+Comment[fr]=démarrer Singular 3.1.0 dans un terminal
+Comment[ru]=
+Exec=ESingular --browser=firefox
+#Terminal=true
+Icon=singular
+Type=Application
+Categories=Math;
+Encoding=UTF-8

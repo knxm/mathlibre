@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Encoding=UTF-8
+Name=GEONExT
+GenericName=
+Comment=
+Icon=geonext.xpm
+Exec=geonext
+Terminal=false
+Categories=Math;

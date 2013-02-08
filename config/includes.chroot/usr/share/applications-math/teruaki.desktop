@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Encoding=UTF-8
+Name=Teruaki
+GenericName=
+Comment=
+Icon=teruaki.xpm
+Exec=teruaki
+Terminal=false
+Categories=Math;
