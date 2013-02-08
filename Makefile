@@ -35,7 +35,7 @@ config-ko: config
 	"boot=live config quiet splash \
 	 live-config.locales=ko_KR.UTF-8 \
 	 live-config.timezone=Asia/Seoul \
-	 live-config.keyboard-model=us \
+	 live-config.keyboard-model=kr106 \
 	 live-config.keyboard-layouts=us"
 
 ko: config-ko
