@@ -36,7 +36,7 @@ config-ko: config
 	 live-config.locales=ko_KR.UTF-8 \
 	 live-config.timezone=Asia/Seoul \
 	 live-config.keyboard-model=kr106 \
-	 live-config.keyboard-layouts=us"
+	 live-config.keyboard-layouts=kr"
 
 ko: config-ko
 	sudo lb build
