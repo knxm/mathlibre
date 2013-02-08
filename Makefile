@@ -13,9 +13,22 @@ config: clean
 	--apt-options "--yes -oAcquire::Check-Valid-Until=false" \
 	--apt-secure false 
 
+config-ja: config
+	echo 'task-japanese task-japanese-desktop fonts-takao' > config/package-lists/ja.list.chroot
+	echo 'texlive-lang-cjk xdvik-ja yatex' > config/package-lists/ja.tex.list.chroot
+	lb config --bootappend-live \
+	"live-config.locales=ja_JP.UTF-8 \
+	 live-config.timezone=Asia/Tokyo \
+	 live-config.keyboard-model=jp106 \
+	 live-config.keyboard-layouts=jp"
+
+ja: config-ja
+	sudo lb build
+	ls -l binary*.iso >> iso.ls-l
+
 build: config
 	sudo lb build
-	ls -l binary*.iso >> binary.hybrid.iso.ls-l
+	ls -l binary*.iso >> iso.ls-l
 
 clean:
 	sudo lb clean
