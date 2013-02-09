@@ -1,3 +1,4 @@
 deb http://fe.math.kobe-u.ac.jp/MathLibre/ /
-deb http://fe.math.kobe-u.ac.jp/MathLibre-amd64/ /
+#deb http://fe.math.kobe-u.ac.jp/MathLibre-amd64/ /
+deb http://fe.math.kobe-u.ac.jp/MathLibre-amd64-2011/ /
 deb http://fe.math.kobe-u.ac.jp/MathLibre-amd64-2012/ /
