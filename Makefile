@@ -54,6 +54,7 @@ build: config
 
 clean:
 	sudo lb clean
+	rm -f config/package-lists/lang.*.list.chroot
 
 distclean: clean
  	#sudo lb clean --purge
