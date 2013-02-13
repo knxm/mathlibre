@@ -1,0 +1,10 @@
+echo 'task-chinese-s task-chinese-s-desktop' > config/package-lists/lang.cn.list.chroot
+echo 'texlive-lang-cjk auctex' > config/package-lists/lang.cn.tex.list.chroot
+lb config \
+   --mirror-binary "http://ftp.cn.debian.org/debian/" \
+   --bootappend-live \
+    "boot=live config quiet splash \
+    live-config.locales=zh_CN.UTF-8 \
+    live-config.timezone=Asia/Shanghai \
+    live-config.keyboard-model=us \
+    live-config.keyboard-layouts=us"
