@@ -1,4 +1,4 @@
-echo 'task-japanese task-japanese-desktop fonts-takao' > config/package-lists/lang.ja.list.chroot
+echo 'task-japanese task-japanese-desktop fonts-takao egg emacs-mozc' > config/package-lists/lang.ja.list.chroot
 echo 'texlive-lang-cjk xdvik-ja yatex' > config/package-lists/lang.ja.tex.list.chroot
 lb config \
    --mirror-binary "http://ftp.jp.debian.org/debian/" \
