@@ -21,5 +21,16 @@ We need these environments:
 1. $ cd mathlibre/
 1. $ make
 
+## Language environments
 If you want to make Japanese environment,
 please use "make ja".
+
+Makefile is supporting "us(default), ko, cn, tw" languages too,
+but these are not checked yet. 2013.2.15
+
+## Sage system
+Sage is a huge computer algebra system, so we extract and make it manually.
+We are using sage-5.6, which is extracted to /usr/local.
+You can download sage-5.6.tar from
+http://www.sagemath.org/download-source.html
+It will take your computer a while to compile Sage from the source code.
