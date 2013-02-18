@@ -1,6 +1,7 @@
 build-essential
 chromium
 cvs
+debian-installer-launcher
 emacs
 evince
 git
