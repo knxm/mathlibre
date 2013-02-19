@@ -7,6 +7,7 @@ drgeo
 eukleides
 euler
 evolver
+fraqtive
 freefem++
 gap
 gap-character-tables
@@ -29,6 +30,7 @@ kile-l10n
 kmplot
 lie
 lp-solve
+mandelbulber
 maxima
 maxima-emacs
 octave
@@ -52,6 +54,7 @@ texmacs
 texmaker
 xaos
 xgraph
+xmaxima
 wxmaxima
 yacas
 yorick-hdf5
