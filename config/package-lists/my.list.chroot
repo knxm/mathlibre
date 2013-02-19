@@ -50,9 +50,9 @@ libice-dev
 libkpathsea5
 liblqr-1-0
 libm17n-0
-libmagick++3
-libmagickcore3
-libmagickwand3
+libmagick++5
+libmagickcore5
+libmagickwand5
 libmail-sendmail-perl
 libmpfr-dev
 libncurses5-dev
@@ -64,7 +64,7 @@ libpthread-stubs0
 libpthread-stubs0-dev
 libpulse0
 libreadline-dev
-libsigsegv0
+libsigsegv2
 libsm-dev
 libsvn-perl
 libsys-hostname-long-perl
