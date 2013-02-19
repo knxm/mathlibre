@@ -11,7 +11,6 @@ cl-asdf
 clisp
 common-lisp-controller
 cvs
-cvs
 debhelper
 debian-installer-launcher
 default-jdk
@@ -22,7 +21,6 @@ fakeroot
 feynmf
 g++
 gcl
-git
 git
 gnome-terminal
 gparted
@@ -38,8 +36,6 @@ libalgorithm-diff-xs-perl
 libalgorithm-merge-perl
 libasyncns0
 libboost-dev
-libboost-dev
-libboost1.42-dev
 libc-dev-bin
 libc6-dev
 liberror-perl
