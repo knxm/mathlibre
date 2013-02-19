@@ -5,6 +5,8 @@ cca
 dropbox
 geogebra
 kseg
+libgtk1.2-common
+libgtk1.2
 macaulay2
 macaulay2-common
 normaliz
@@ -12,5 +14,8 @@ openxm
 reduce-algebra
 singular-help
 singular-icons
+surf
+surfer
+surfex
 skeleton
 topcom
