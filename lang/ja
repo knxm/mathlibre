@@ -5,6 +5,6 @@ lb config \
    --bootappend-live \
     "boot=live config quiet splash \
     live-config.locales=ja_JP.UTF-8 \
-    live-config.timezone=Asia/Tokyo \
+    live-config.timezone=Asia/Tokyo live-config.utc=no \
     live-config.keyboard-model=jp106 \
     live-config.keyboard-layouts=jp"
