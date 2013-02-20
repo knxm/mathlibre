@@ -11,7 +11,8 @@ config: clean
 	--apt-options "--yes -oAcquire::Check-Valid-Until=false" \
 	--apt-secure false \
 	--bootappend-live "boot=live config quiet splash" \
-        --linux-packages "linux-image linux-headers"
+        --linux-packages "linux-image linux-headers" \
+	--debian-installer live
 #	--binary-images iso 
 
 config-ja: config
