@@ -13,7 +13,7 @@ macaulay2
 macaulay2-common
 normaliz
 openxm
-polymake
+#polymake
 processing
 qfract
 reduce-algebra
