@@ -21,6 +21,7 @@ gap-small-groups-extra
 gap-table-of-marks
 gap-trans-groups
 geomview
+gprolog
 jsmath
 jsmath-fonts
 jsmath-fonts-sprite
@@ -50,6 +51,7 @@ scratch
 sketch
 snappea
 step
+swi-prolog
 texlive
 texmacs
 texmaker
