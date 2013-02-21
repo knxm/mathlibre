@@ -149,6 +149,15 @@ Plugin {
 }
 
 Plugin {
+    type = xkb
+    Config {
+        DisplayType=1
+        PerAppLayout=1
+        DefaultGroup=0
+    }
+}
+
+Plugin {
     type = batt
     Config {
         HideIfNoBattery=0
@@ -157,4 +166,3 @@ Plugin {
         Size=0
     }
 }
-
