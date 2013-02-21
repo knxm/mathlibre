@@ -12,7 +12,8 @@ config: clean
 	--apt-secure false \
 	--bootappend-live "boot=live config quiet splash" \
         --linux-packages "linux-image linux-headers" \
-	--architectures amd64 --linux-flavours amd64 --debian-installer live
+	--architectures amd64 --linux-flavours amd64 --debian-installer live \
+	--win32-loader false
 #	--binary-images iso 
 
 config-ja: config
