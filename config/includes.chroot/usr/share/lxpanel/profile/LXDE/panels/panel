@@ -16,7 +16,9 @@ Global {
     setdocktype=1
     setpartialstrut=1
     usefontcolor=0
-    fontcolor=#ffffff
+    fontsize=10
+    fontcolor=#000000
+    usefontsize=0
     background=0
     backgroundfile=/usr/share/lxpanel/images/background.png
     iconsize=24
@@ -53,23 +55,27 @@ Plugin {
     type = launchbar
     Config {
         Button {
-            id=knxmlauncher.desktop
-        }
-        Button {
             id=pcmanfm.desktop
         }
         Button {
-            id=gnome-terminal.desktop
+            id=/usr/share/applications/gnome-terminal.desktop
         }
         Button {
-            id=lxde-x-www-browser.desktop
+            id=/usr/share/applications/chromium.desktop
         }
         Button {
             id=/usr/share/applications/libreoffice-startcenter.desktop
         }
         Button {
-            id=lxrandr.desktop
+            id=/usr/share/applications/lxrandr.desktop
         }
+    }
+}
+
+Plugin {
+    type = space
+    Config {
+        Size=4
     }
 }
 
@@ -104,13 +110,6 @@ Plugin {
 }
 
 Plugin {
-    type = space
-    Config {
-        Size=2
-    }
-}
-
-Plugin {
     type = pager
 }
 
@@ -133,5 +132,29 @@ Plugin {
         TooltipFmt=%A %x
         BoldFont=1
         IconOnly=0
+        CenterText=0
     }
 }
+
+Plugin {
+    type = launchbar
+    Config {
+        Button {
+            id=lxde-screenlock.desktop
+        }
+        Button {
+            id=lxde-logout.desktop
+        }
+    }
+}
+
+Plugin {
+    type = batt
+    Config {
+        HideIfNoBattery=0
+        AlarmTime=0
+        BorderWidth=0
+        Size=0
+    }
+}
+
