@@ -1,5 +1,5 @@
 # KSeg configuration file--automatically generated in random order :)
-QuickPlayDirectory = /UNIONFS/usr/share/doc/kseg/examples/
+QuickPlayDirectory = /usr/share/doc/kseg/example
 ViewToolbarVisible = true
 Language = kseg_en.qm
 TransformToolbarVisible = true

@@ -24,6 +24,7 @@ build: config
 clean:
 	sudo lb clean
 	rm -f config/package-lists/lang.*.list.chroot
+	rm -f config/etc/emacs/site-start.d/99lang.*.el
 
 distclean: clean
 	#sudo lb clean --purge
