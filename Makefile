@@ -16,6 +16,21 @@ config: clean
 	--win32-loader false
 #	--binary-images iso 
 
+build: config
+	sudo lb build
+	ls -l binary*.iso >> iso.ls-l
+
+
+clean:
+	sudo lb clean
+	rm -f config/package-lists/lang.*.list.chroot
+
+distclean: clean
+	#sudo lb clean --purge
+	sudo rm -f *.iso *.img *.list *.packages *.buildlog *.md5sum
+
+us: build
+
 config-ja: config
 	sh lang/ja
 ja: config-ja
@@ -40,14 +55,3 @@ tw: config-tw
 	sudo lb build
 	ls -l binary*.iso >> iso.ls-l
 
-build: config
-	sudo lb build
-	ls -l binary*.iso >> iso.ls-l
-
-clean:
-	sudo lb clean
-	rm -f config/package-lists/lang.*.list.chroot
-
-distclean: clean
- 	#sudo lb clean --purge
-	sudo rm -f *.iso *.img *.list *.packages *.buildlog *.md5sum
