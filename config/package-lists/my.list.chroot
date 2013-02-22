@@ -39,6 +39,7 @@ libalgorithm-merge-perl
 libasyncns0
 libboost-dev
 libc-dev-bin
+libcgal-dev
 libc6-dev
 liberror-perl
 libffcall1
