@@ -29,6 +29,7 @@ html2text
 icedtea-7-plugin
 imagemagick
 java-common
+ksnapshot
 lacheck
 libaccess-bridge-java
 libaccess-bridge-java-jni
@@ -104,6 +105,7 @@ python-setuptools
 realpath
 rsync
 sharutils
+shutter
 subversion
 tgif
 tzdata-java
