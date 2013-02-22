@@ -3,7 +3,7 @@ LANGUAGE=japanese
 LOCALES=ja_JP.UTF-8
 TIMEZONE=Asia/Tokyo
 KEYBOARD_MODEL=jp106
-KEYBOARD_LAYAOUTS=jp
+KEYBOARD_LAYOUTS=jp
 
 # package-lists
 echo "task-$LANGUAGE task-$LANGUAGE-desktop fonts-takao emacs-mozc" > config/package-lists/lang.$LANG.list.chroot
