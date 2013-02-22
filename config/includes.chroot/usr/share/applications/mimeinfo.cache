@@ -1,5 +1,5 @@
 [MIME Cache]
-text/plain=emacs23.desktop;kde4-kate.desktop;kde4-kwrite.desktop;gvim.desktop;leafpad.desktop;texmacs.desktop;gedit.desktop;
+text/plain=leafpad.desktop;gedit.desktop;emacs23.desktop;
 application/vnd.ms-excel.template.macroenabled.12=libreoffice-calc.desktop
 video/vivo=totem.desktop
 application/vnd.ms-word=libreoffice-writer.desktop
