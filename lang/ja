@@ -22,4 +22,4 @@ lb config \
     live-config.keyboard-layouts=$KEYBOARD_LAYOUTS"
 
 # kseg
-echo "sed -i -e 's/kseg_en/kseg_$LANG/g' /etc/skel/.kseg" >> config/hooks/lang.sh
+echo "sed -i -e 's/kseg_en/kseg_$LANG/g' /etc/skel/.kseg" > config/hooks/lang.kseg.sh

@@ -1,5 +1,5 @@
 # KSeg configuration file--automatically generated in random order :)
-QuickPlayDirectory = /usr/share/doc/kseg/example
+QuickPlayDirectory = /usr/share/doc/kseg/examples
 ViewToolbarVisible = true
 Language = kseg_en.qm
 TransformToolbarVisible = true
@@ -9,4 +9,4 @@ BackgroundColor = #ffffff
 RecentListSize = 4
 MeasureToolbarVisible = true
 SelectType = BorderSelect
-LanguageDir = /UNIONFS/usr/share/kseg
+LanguageDir = /usr/share/kseg
