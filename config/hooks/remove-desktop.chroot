@@ -1,0 +1,8 @@
+#!/bin/sh
+set -e
+
+# for LXDE menu
+for DESKTOPFILE in scilab-adv-cli scilab-cli
+do
+  rm -f /usr/share/applications/$DESKTOPFILE.desktop
+done

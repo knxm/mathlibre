@@ -37,3 +37,9 @@ Pin-Priority: -1
 Package: gnome-user-guide
 Pin: version *
 Pin-Priority: -1
+
+Package: singular-icons
+Pin: version *
+Pin-Priority: -1
+
+
