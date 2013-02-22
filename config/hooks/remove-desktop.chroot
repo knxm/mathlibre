@@ -2,7 +2,7 @@
 set -e
 
 # for LXDE menu
-for DESKTOPFILE in scilab-adv-cli scilab-cli
+for DESKTOP in scilab-adv-cli scilab-cli *Singular*
 do
-  rm -f /usr/share/applications/$DESKTOPFILE.desktop
+  rm -f /usr/share/applications/$DESKTOP.desktop
 done
