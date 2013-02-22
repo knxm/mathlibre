@@ -22,8 +22,7 @@ config/binary
 config/bootstrap
 config/chroot
 config/common
-config/source
 config/includes.chroot/usr/local/sage-?.?
+config/includes.chroot/etc/emacs/site-start.d/99lang.*.el
 config/package-lists/lang.*.list.chroot
-config/package-lists/lang.*.tex.list.chroot
-
+config/source
