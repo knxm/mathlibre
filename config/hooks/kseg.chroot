@@ -1,0 +1,8 @@
+#!/bin/sh
+
+case $LANG in
+	ja_JP.UTF-8)
+		if [ -e /etc/skel/.kseg ]; then
+			sed -i -e 's/kseg_en/kseg_ja/g' /etc/skel/.kseg
+		fi
+esac	

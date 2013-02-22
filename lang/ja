@@ -19,30 +19,3 @@ echo "task-$LANGUAGE task-$LANGUAGE-desktop fonts-takao emacs-mozc" > config/pac
 
 echo "texlive-lang-cjk xdvik-ja yatex" > config/package-lists/lang.$LANG.tex.list.chroot
 
-# kseg
-echo "sed -i -e 's/kseg_en/kseg_$LANG/g' /etc/skel/.kseg" > config/hooks/lang.kseg.chroot
-
-# for emacs
-cat > config/hooks/lang.emacs.chroot <<EOF
-#!/bin/sh
-cat > /etc/emacs/site-start.d/99lang.ja.el << EOD
-;; for emacs-mozc
-(require 'mozc)
-(set-language-environment "Japanese")
-(setq default-input-method "japanese-mozc")
-
-(setq its-hira-comma "，")
-(setq its-hira-period "．")
-(eval-after-load "its"
-  '(define-its-state-machine-append its-hira-map
-     (its-defrule "dhi" "でぃ")
-     (its-defrule "dhu" "でゅ")
-     (its-defrule "thi" "てぃ")
-     (its-defrule "thu" "てゅ")
-     (its-defrule "whi" "うぃ")
-     (its-defrule "whe" "うぇ")
-     (its-defrule "who" "うぉ")))
-(toggle-input-method nil)
-(setq its-enable-fullwidth-alphabet nil)
-EOD
-EOF
