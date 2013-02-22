@@ -5,6 +5,7 @@ automake
 autopoint
 autotools-dev
 build-essential
+bluefish
 ca-certificates-java
 chromium
 cl-asdf
@@ -14,8 +15,8 @@ cvs
 debhelper
 debian-installer-launcher
 default-jdk
+eclipse
 ed
-emacs
 evince
 fakeroot
 feynmf
@@ -104,10 +105,9 @@ realpath
 rsync
 sharutils
 subversion
-task-laptop
-task-lxde-desktop
 tgif
 tzdata-java
+unison
 virtualbox
 virtualbox-dkms
 virtualbox-guest-dkms
@@ -120,3 +120,7 @@ x11proto-kb-dev
 x11proto-xext-dev
 xsltproc
 xtrans-dev
+emacs
+gedit
+task-laptop
+task-lxde-desktop
