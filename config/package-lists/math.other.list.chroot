@@ -2,7 +2,7 @@
 4ti2
 car
 cca
-dnd-tools
+#dnd-tools
 dropbox
 geogebra
 geogebra5
@@ -13,9 +13,9 @@ libgtk1.2-common
 macaulay2
 macaulay2-common
 math-polyglot
-msjproc
+#msjproc
 normaliz
-numenu
+#numenu
 openxm
 polymake
 processing
