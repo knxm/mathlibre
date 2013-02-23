@@ -14,4 +14,4 @@ lb config \
     live-config.keyboard-layouts=$KEYBOARD_LAYOUTS"
 
 # package-lists
-echo "task-$LANGUAGE task-$LANGUAGE-desktop ibus-googlepinyin" > config/package-lists/lang.$LANGUAGE.list.chroot
+echo "task-$LANGUAGE task-$LANGUAGE-desktop ibus-pinyin ibus-sunpinyin ibus-googlepinyin" > config/package-lists/lang.$LANGUAGE.list.chroot
