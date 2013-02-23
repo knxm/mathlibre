@@ -1,0 +1,10 @@
+#!/bin/sh
+if [ -f /usr/share/applications/setxkbmap-gadget.desktop ]; then
+	sed -i -e 's/キーボード/キーボード /g' /usr/share/applications/setxkbmap-gadget.desktop
+	sed -i -e 's/Name=keyboard layout/Name=Keyboard Layout/g' /usr/share/applications/setxkbmap-gadget.desktop
+fi
+
+if [ -f /usr/share/applications/debian-installer-launcher.desktop ]; then
+	sed -i -e 's/Install Debian sid/Install MathLibre/g' /usr/share/applications/debian-installer-launcher.desktop
+
+fi

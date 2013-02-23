@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<gconf>
+	<entry name="trigger" mtime="1361539266" type="list" ltype="string">
+		<li type="string">
+			<stringvalue>Shift+space</stringvalue>
+		</li>
+		<li type="string">
+			<stringvalue>Zenkaku_Hankaku</stringvalue>
+		</li>
+		<li type="string">
+			<stringvalue>Alt+Kanji</stringvalue>
+		</li>
+		<li type="string">
+			<stringvalue>Alt+grave</stringvalue>
+		</li>
+		<li type="string">
+			<stringvalue>Hangul</stringvalue>
+		</li>
+		<li type="string">
+			<stringvalue>Alt+Release+Alt_R</stringvalue>
+		</li>
+	</entry>
+</gconf>
