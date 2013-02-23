@@ -1,0 +1,61 @@
+#!/bin/sh
+# configuration files for input method ibus
+#
+if [ -e /var/lib/dpkg/info/ibus.list ]; then
+	case $LANG in
+		ja_JP.UTF-8)
+			mkdir -p /etc/skel/.gconf/desktop/ibus/panel
+			mkdir -p /etc/skel/.gconf/desktop/ibus/general/hotkey
+			touch /etc/skel/.gconf/desktop/%gconf.xml
+			touch /etc/skel/.gconf/desktop/ibus/%gconf.xml
+			cat > /etc/skel/.gconf/desktop/ibus/general/hotkey/%gconf.xml << EOF
+<?xml version="1.0"?>
+<gconf>
+	<entry name="trigger" mtime="1361539266" type="list" ltype="string">
+		<li type="string">
+			<stringvalue>Shift+space</stringvalue>
+		</li>
+		<li type="string">
+			<stringvalue>Zenkaku_Hankaku</stringvalue>
+		</li>
+		<li type="string">
+			<stringvalue>Alt+Kanji</stringvalue>
+		</li>
+		<li type="string">
+			<stringvalue>Alt+grave</stringvalue>
+		</li>
+		<li type="string">
+			<stringvalue>Hangul</stringvalue>
+		</li>
+		<li type="string">
+			<stringvalue>Alt+Release+Alt_R</stringvalue>
+		</li>
+	</entry>
+</gconf>
+EOF
+			cat > /etc/skel/.gconf/desktop/ibus/panel/%gconf.xml << EOF
+<?xml version="1.0"?>
+<gconf>
+	<entry name="custom_font" mtime="1361538812" type="string">
+		<stringvalue>Sans 10</stringvalue>
+	</entry>
+</gconf>
+EOF
+			if [ -e /var/lib/dpkg/info/ibus-mozc.list ]; then
+				cat > /etc/skel/.gconf/desktop/ibus/general/%gconf.xml << EOF
+<?xml version="1.0"?>
+<gconf>
+	<entry name="preload_engines" mtime="1361538924" type="list" ltype="stri
+ng">
+		<li type="string">
+			<stringvalue>mozc-jp</stringvalue>
+		</li>
+	</entry>
+</gconf>
+EOF
+			fi
+			;;
+		ko_KR.UTF-8)
+			;;
+	esac
+fi
