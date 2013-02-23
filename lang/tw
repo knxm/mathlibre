@@ -1,10 +1,18 @@
-echo 'task-chinese-t task-chinese-t-desktop' > config/package-lists/lang.tw.list.chroot
-echo 'texlive-lang-cjk auctex' > config/package-lists/lang.tw.tex.list.chroot
+LANGUAGE=chinese-t
+LOCALES=zh_TW.UTF-8
+TIMEZONE=Asia/Taipei
+KEYBOARD_MODEL=us
+KEYBOARD_LAYOUTS=us
+
 lb config \
    --mirror-binary "http://ftp.tw.debian.org/debian/" \
    --bootappend-live \
     "boot=live config quiet splash \
-    live-config.locales=zh_TW.UTF-8 \
-    live-config.timezone=Asia/Taipei \
-    live-config.keyboard-model=us \
-    live-config.keyboard-layouts=us"
+    live-config.locales=$LOCALES \
+    live-config.timezone=$TIMEZONE live-config.utc=no \
+    live-config.keyboard-model=$KEYBOARD_MODEL \
+    live-config.keyboard-layouts=$KEYBOARD_LAYOUTS"
+
+# package-lists
+echo "task-$LANGUAGE task-$LANGUAGE-desktop ibus-chewing" > config/package-lists/lang.$LANGUAGE.list.chroot
+

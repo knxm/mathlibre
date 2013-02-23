@@ -1,10 +1,17 @@
-echo 'task-korean task-korean-desktop' > config/package-lists/lang.ko.list.chroot
-echo 'texlive-lang-cjk auctex' > config/package-lists/lang.ko.tex.list.chroot
+LANGUAGE=korean
+LOCALES=ko_KR.UTF-8
+TIMEZONE=Asia/Seoul
+KEYBOARD_MODEL=kr106
+KEYBOARD_LAYOUTS=kr
+
 lb config \
    --mirror-binary "http://ftp.kr.debian.org/debian/" \
    --bootappend-live \
     "boot=live config quiet splash \
-    live-config.locales=ko_KR.UTF-8 \
-    live-config.timezone=Asia/Seoul \
-    live-config.keyboard-model=kr106 \
-    live-config.keyboard-layouts=kr"
+    live-config.locales=$LOCALES \
+    live-config.timezone=$TIMEZONE live-config.utc=no \
+    live-config.keyboard-model=$KEYBOARD_MODEL \
+    live-config.keyboard-layouts=$KEYBOARD_LAYOUTS"
+
+# package-lists
+echo "task-$LANGUAGE task-$LANGUAGE-desktop ibus-hangul" > config/package-lists/lang.$LANG.list.chroot
