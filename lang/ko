@@ -22,7 +22,7 @@ echo "task-$LANGUAGE task-$LANGUAGE-desktop ibus-hangul" > config/package-lists/
 #
 # for tex
 #
-echo "auctex" > config/package-lists/lang.$LANGUAGE.tex.list.chroot
+echo "texlive-lang-cjk auctex" > config/package-lists/lang.$LANGUAGE.tex.list.chroot
 
 #
 # for ibus
