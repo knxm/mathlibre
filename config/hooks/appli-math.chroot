@@ -1,0 +1,13 @@
+#!/bin/sh
+cat > /etc/skel/Desktop/applications-math.desktop << EOF
+[Desktop Entry]
+Name=Math Software
+Comment=Math Software
+Comment[ja]=数学ソフトウェア
+Icon=knxm-start-penguin
+Type=Link
+Categories=Math;
+Encoding=UTF-8
+URL=file://usr/share/applications-math/
+Exec=pcmanfm /usr/share/applications-math/
+EOF

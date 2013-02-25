@@ -24,5 +24,6 @@ config/chroot
 config/common
 config/includes.chroot/usr/local/sage-?.?
 config/includes.chroot/etc/emacs/site-start.d/99lang.*.el
+config/includes.chroot/etc/skel/.kseg
 config/package-lists/lang.*.list.chroot
 config/source
