@@ -7,7 +7,7 @@ autotools-dev
 build-essential
 bluefish
 ca-certificates-java
-chromium
+chromium-l10n
 cl-asdf
 clisp
 common-lisp-controller
