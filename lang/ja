@@ -14,7 +14,7 @@ lb config \
     live-config.keyboard-layouts=$KEYBOARD_LAYOUTS"
 
 # package-lists
-echo "task-$LANGUAGE task-$LANGUAGE-desktop fonts-takao emacs-mozc" > config/package-lists/lang.$LANGUAGE.list.chroot
+echo "task-$LANGUAGE task-$LANGUAGE-desktop fonts-takao ibus-mozc ibus-anthy emacs-mozc" > config/package-lists/lang.$LANGUAGE.list.chroot
 
 echo "texlive-lang-cjk xdvik-ja yatex" > config/package-lists/lang.$LANGUAGE.tex.list.chroot
 
