@@ -25,12 +25,15 @@ clean:
 	sudo lb clean
 	rm -f config/package-lists/lang.*.list.chroot
 	rm -f config/includes.chroot/etc/emacs/site-start.d/99lang.*.el
+	rm -f config/includes.chroot/etc/skel/.kseg
+
 
 distclean: clean
 	#sudo lb clean --purge
 	sudo rm -f *.iso *.img *.list *.packages *.buildlog *.md5sum
 
-us: build
+us: config-us
+	sh lang/us
 
 config-ja: config
 	sh lang/ja

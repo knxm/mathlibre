@@ -1,0 +1,38 @@
+LANGUAGE=english
+LANG=C
+LOCALES=en_US.ISO-8859-1
+TIMEZONE=America/New_York
+KEYBOARD_MODEL=us
+KEYBOARD_LAYOUTS=us
+
+lb config \
+   --mirror-binary "http://ftp.jp.debian.org/debian/" \
+   --bootappend-live \
+    "boot=live config quiet splash persistent quickreboot\
+    live-config.locales=$LOCALES \
+    live-config.timezone=$TIMEZONE live-config.utc=no \
+    live-config.keyboard-model=$KEYBOARD_MODEL \
+    live-config.keyboard-layouts=$KEYBOARD_LAYOUTS"
+
+#
+# for tex
+#
+echo "auctex" > config/package-lists/lang.$LANGUAGE.tex.list.chroot
+
+#
+# for kseg
+#
+cat > config/includes.chroot/etc/skel/.kseg << EOF
+# KSeg configuration file--automatically generated in random order :)
+QuickPlayDirectory = /usr/share/doc/kseg/examples
+ViewToolbarVisible = true
+Language = kseg_en.qm
+TransformToolbarVisible = true
+NewToolbarVisible = true
+ForegroundColor = #000000
+BackgroundColor = #ffffff
+RecentListSize = 4
+MeasureToolbarVisible = true
+SelectType = BorderSelect
+LanguageDir = /usr/share/kseg
+EOF
