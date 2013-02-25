@@ -1,4 +1,5 @@
 LANGUAGE=korean
+LANG=ko_KR.UTF-8
 LOCALES=ko_KR.UTF-8
 TIMEZONE=Asia/Seoul
 KEYBOARD_MODEL=kr106
@@ -13,5 +14,43 @@ lb config \
     live-config.keyboard-model=$KEYBOARD_MODEL \
     live-config.keyboard-layouts=$KEYBOARD_LAYOUTS"
 
-# package-lists
-echo "task-$LANGUAGE task-$LANGUAGE-desktop ibus-hangul" > config/package-lists/lang.$LANG.list.chroot
+#
+# for input method
+#
+echo "task-$LANGUAGE task-$LANGUAGE-desktop ibus-hangul" > config/package-lists/lang.$LANGUAGE.list.chroot
+
+#
+# for tex
+#
+echo "auctex" > config/package-lists/lang.$LANGUAGE.tex.list.chroot
+
+#
+# for ibus
+#
+cat > config/hooks/lang.ibus.chroot << EOF
+#!/bin/sh
+gconftool --direct --config-source xml:readwrite:/etc/gconf/gconf.xml.defaults \
+--type list --list-type=string \
+--set /desktop/ibus/general/preload_engines [hangul]
+gconftool --direct --config-source xml:readwrite:/etc/gconf/gconf.xml.defaults \
+--type list --list-type=string \
+--set /desktop/ibus/general/hotkey/trigger [Control+space,Hangul,Alt+grave,Alt+Release+Alt_R,Zenkaku_Hankaku,Alt+Kanji]
+EOF
+
+#
+# for kseg
+#
+cat > config/includes.chroot/etc/skel/.kseg << EOF
+# KSeg configuration file--automatically generated in random order :)
+QuickPlayDirectory = /usr/share/doc/kseg/examples
+ViewToolbarVisible = true
+Language = kseg_en.qm
+TransformToolbarVisible = true
+NewToolbarVisible = true
+ForegroundColor = #000000
+BackgroundColor = #ffffff
+RecentListSize = 4
+MeasureToolbarVisible = true
+SelectType = BorderSelect
+LanguageDir = /usr/share/kseg
+EOF
