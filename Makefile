@@ -10,7 +10,7 @@ config: clean
 	--parent-archive-areas "main contrib non-free" \
 	--apt-options "--yes -oAcquire::Check-Valid-Until=false" \
 	--apt-secure false \
-	--bootappend-live "boot=live config quiet splash persistent" \
+	--bootappend-live "boot=live config quiet splash persistence noeject" \
         --linux-packages "linux-image linux-headers" \
 	--architectures amd64 --linux-flavours amd64 --debian-installer live \
 	--win32-loader false
