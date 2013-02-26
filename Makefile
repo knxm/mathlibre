@@ -32,6 +32,7 @@ distclean: clean
 	#sudo lb clean --purge
 	sudo rm -f *.iso *.img *.list *.packages *.buildlog *.md5sum
 
+config-us: config
 us: config-us
 	sh lang/us
 
