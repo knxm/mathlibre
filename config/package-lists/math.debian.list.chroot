@@ -20,8 +20,12 @@ gap-small-groups
 gap-small-groups-extra
 gap-table-of-marks
 gap-trans-groups
+gauche
+genus2reduction
 geomview
+gfan
 ghc
+ginac-tools
 gprolog
 gv
 jsmath
@@ -31,6 +35,7 @@ kig
 kile
 kile-l10n
 kmplot
+lcalc
 libjs-mathjax
 lie
 lp-solve
@@ -38,11 +43,14 @@ mandelbulber
 maxima
 maxima-emacs
 octave
+octave-geometry
+palp
 pari-extra
 pari-gp
 pari-gp2c
 pspp
 python-visual
+qhull-bin
 rkward
 rocs
 scilab
@@ -55,6 +63,7 @@ scratch
 sketch
 snappea
 step
+sympow
 swi-prolog
 texlive
 texmacs

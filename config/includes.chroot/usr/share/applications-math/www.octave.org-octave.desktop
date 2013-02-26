@@ -1,0 +1,12 @@
+
+[Desktop Entry]
+Name=GNU Octave
+Comment=Scientific Computing using GNU Octave
+TryExec=/usr/bin/octave
+Exec=/usr/bin/gnome-terminal -e /usr/bin/octave
+Icon=/usr/share/octave/3.6.2/imagelib/octave-logo.svg
+Terminal=true
+Type=Application
+Categories=Development;Math;Science;
+StartupNotify=false
+X-Desktop-File-Install-Version=0.20

@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Name=SnapPy
+Exec=snappy
+Icon=snappy
+Terminal=false
+Type=Application
+Categories=Math
+GenericName=SnapPy is a program for studying the topology and geometry of 3-manifolds, with a focus on hyperbolic structures.

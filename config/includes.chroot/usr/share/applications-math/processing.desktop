@@ -1,10 +1,9 @@
 [Desktop Entry]
-Type=Application
-Encoding=UTF-8
 Name=Processing
 GenericName=
-Comment=
-Icon=processing.xpm
 Exec=processing
+Icon=processing
 Terminal=false
-Categories=Math;Development;
+Type=Application
+StartupNotify=true
+Categories=Math;Development
