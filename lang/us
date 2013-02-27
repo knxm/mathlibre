@@ -8,7 +8,7 @@ KEYBOARD_LAYOUTS=us
 lb config \
    --mirror-binary "http://ftp.jp.debian.org/debian/" \
    --bootappend-live \
-    "boot=live config quiet splash persistent quickreboot\
+    "boot=live config quiet splash persistence noeject\
     live-config.locales=$LOCALES \
     live-config.timezone=$TIMEZONE live-config.utc=no \
     live-config.keyboard-model=$KEYBOARD_MODEL \
