@@ -2,7 +2,6 @@
 #
 # for making mathlibre-start html
 #
-export LANG=ja_JP.UTF-8
 if [ -d /usr/share/mathlibre-start ]; then
-  (cd /usr/share/mathlibre-start; ./csv2html.rb --ja > index-ja.html; ./csv2html.rb > index.html)
+  (cd /usr/share/mathlibre-start; /usr/bin/ruby -Ku csv2html.rb --ja > index-ja.html; /usr/bin/ruby -Ku csv2html.rb > index.html)
 fi
