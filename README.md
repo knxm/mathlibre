@@ -12,8 +12,8 @@ We need these environments:
 ### ex.
 1. # apt-get install git apt-cacher-ng
 1. # echo "deb-src http://ftp.jp.debian.org/debian/ sid main contrib" >> /etc/apt/sources.list
-1. $ apt-get -b source live-boot live-build live-config
-1. # dpkg -i live-boot*.deb live-build_*.deb live-config_*.deb live-config-sysvinit*.deb
+1. $ apt-get -b source live-build
+1. # dpkg -i live-build_*.deb 
 
 ## How to build MathLibre DVD
 
