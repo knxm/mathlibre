@@ -14,6 +14,7 @@ libgtk1.2
 libgtk1.2-common
 macaulay2
 macaulay2-common
+mathlibre-start
 math-polyglot
 msjproc
 normaliz
@@ -24,6 +25,7 @@ processing
 qfract
 r-cran-rcmdr-knxm
 reduce-algebra
+sage-desktop
 #setxkbmap-gadget
 singular-help
 singular-icons

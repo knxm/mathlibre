@@ -1,0 +1,7 @@
+#!/bin/sh
+#
+# for making mathlibre-start html
+#
+if [ -d /usr/share/mathlibre-start ]; then
+  (cd /usr/share/mathlibre-start; ./csv2html.rb --ja > index-ja.html; ./csv2html.rb > index.html)
+fi
