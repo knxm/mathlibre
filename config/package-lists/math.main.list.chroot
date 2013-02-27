@@ -10,6 +10,7 @@ evolver
 evolver-doc
 fraqtive
 freefem++
+freefem++-doc
 gap
 gap-character-tables
 gap-core
@@ -89,6 +90,7 @@ xgraph
 xmaxima
 wxmaxima
 yacas
+yorick-doc
 yorick-hdf5
 yorick-soy
 yorick-z
