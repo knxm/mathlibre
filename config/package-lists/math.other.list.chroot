@@ -20,6 +20,7 @@ math-polyglot
 msjproc
 normaliz
 nzmath
+nzmath-doc
 openxm
 polymake
 processing
@@ -33,6 +34,7 @@ singular-icons
 skeleton
 snappea-snappy
 surf
+surf-examples
 surfer
 surfex
 topcom

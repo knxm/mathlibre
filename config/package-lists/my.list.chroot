@@ -13,7 +13,6 @@ clisp
 common-lisp-controller
 cvs
 debhelper
-debian-installer-launcher
 default-jdk
 eclipse
 ed
