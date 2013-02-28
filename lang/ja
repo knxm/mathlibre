@@ -42,7 +42,7 @@ EOF
 #
 # for dvipdfmx pdf
 #
-cat > config/hooks/lang.updmap-setup-kanji-sys.chroot
+cat > config/hooks/lang.updmap-setup-kanji-sys.chroot <<EOF
 #!/bin/sh
 if [ -e /usr/bin/updmap-setup-kanji-sys ]; then
   /usr/bin/updmap-setup-kanji-sys ipa
