@@ -1,10 +1,10 @@
 [Desktop Entry]
 Type=Application
 Encoding=UTF-8
-Name=pXDvi
+Name=xdvik
 GenericName=
 Comment=
 Icon=
-Exec=/opt/ptexlive/bin/i686-pc-linux-gnu/pxdvi
+Exec=xdvi
 Terminal=false
 Categories=Graphics;Viewer;
