@@ -1,0 +1,4 @@
+#!/bin/sh
+/usr/bin/gconftool --direct --config-source xml:readwrite:/etc/gconf/gconf.xml.defaults --type string --set /apps/gnome-terminal/profiles/Default/background_color "#000000000000"
+/usr/bin/gconftool --direct --config-source xml:readwrite:/etc/gconf/gconf.xml.defaults --type string --set /apps/gnome-terminal/profiles/Default/foreground_color "#FFFFFFFFFFFF"
+/usr/bin/gconftool --direct --config-source xml:readwrite:/etc/gconf/gconf.xml.defaults --type bool --set /apps/gnome-terminal/profiles/Default/use_theme_colors "true"
