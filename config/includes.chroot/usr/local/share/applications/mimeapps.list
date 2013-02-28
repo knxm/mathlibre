@@ -1,0 +1,21 @@
+[Added Associations]
+text/plain=leafpad.desktop;gedit.desktop;emacs23.desktop
+image/png=gpicview.desktop;gimp.desktop
+application/vnd.geogebra.file=geogebra.desktop;geogebra5.desktop
+text/x-tex=leafpad.desktop;emacs23.desktop;texworks.desktop;texmaker.desktop;kde4-kile.desktop
+application/pdf=evince.desktop;xpdf.desktop
+application/x-dvi=xdvik.desktop;
+application/x-kseg=kseg.desktop
+image/x-eps=gv.desktop
+
+
+[Default Applications]
+text/plain=leafpad.desktop;gedit.desktop;emacs23.desktop
+image/png=gpicview.desktop;gimp.desktop
+application/vnd.geogebra.file=geogebra.desktop;geogebra5.desktop
+text/x-tex=leafpad.desktop;emacs23.desktop;texworks.desktop;texmaker.desktop;kde4-kile.desktop
+application/pdf=evince.desktop;xpdf.desktop
+application/x-dvi=xdvik.desktop;
+application/x-kseg=kseg.desktop
+image/x-eps=gv.desktop
+
