@@ -29,12 +29,24 @@ echo "texlive-lang-cjk xdvik-ja yatex" > config/package-lists/lang.$LANGUAGE.tex
 #
 cat > config/hooks/lang.ibus.chroot << EOF
 #!/bin/sh
+if [ -x /usr/bin/gconftool ]; then
 gconftool --direct --config-source xml:readwrite:/etc/gconf/gconf.xml.defaults \
 --type list --list-type=string \
 --set /desktop/ibus/general/preload_engines [mozc-jp,anthy]
 gconftool --direct --config-source xml:readwrite:/etc/gconf/gconf.xml.defaults \
 --type list --list-type=string \
 --set /desktop/ibus/general/hotkey/trigger [Shift+space,Zenkaku_Hankaku,Alt+Kanji]
+fi
+EOF
+
+#
+# for dvipdfmx pdf
+#
+cat > config/hooks/lang.updmap-setup-kanji-sys.chroot
+#!/bin/sh
+if [ -e /usr/bin/updmap-setup-kanji-sys ]; then
+  /usr/bin/updmap-setup-kanji-sys ipa
+fi
 EOF
 
 #
@@ -78,3 +90,4 @@ MeasureToolbarVisible = true
 SelectType = BorderSelect
 LanguageDir = /usr/share/kseg
 EOF
+
