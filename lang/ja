@@ -44,7 +44,7 @@ EOF
 #
 cat > config/hooks/lang.updmap-setup-kanji-sys.chroot <<EOF
 #!/bin/sh
-if [ -e /usr/bin/updmap-setup-kanji-sys ]; then
+if [ -x /usr/bin/updmap-setup-kanji-sys ]; then
   /usr/bin/updmap-setup-kanji-sys ipa
 fi
 EOF
