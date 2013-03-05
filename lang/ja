@@ -6,7 +6,7 @@ KEYBOARD_MODEL=jp106
 KEYBOARD_LAYOUTS=jp
 
 lb config \
-   --mirror-binary "http://ftp.jp.debian.org/debian/" \
+   --mirror-binary "http://ftp2.jp.debian.org/debian/" \
    --bootappend-live \
     "boot=live config quiet splash persistence noeject\
     live-config.locales=$LOCALES \

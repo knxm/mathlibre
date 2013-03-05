@@ -1,7 +1,7 @@
 *.buildlog
 *.img
 *.iso
-*.list
+#*.list
 *.log
 *.md5sum
 *.packages

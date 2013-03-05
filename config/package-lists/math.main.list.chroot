@@ -68,6 +68,7 @@ rkward
 rocs
 ruby-fftw3
 ruby-gsl
+ruby-sqlite3
 scilab
 scilab-cli
 scilab-data

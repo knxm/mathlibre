@@ -1,11 +1,12 @@
+MIRROR="http://dennou-q.gfd-dennou.org/debian/"
 all: build
 
 config: clean
 	lb config \
 	--apt-http-proxy "http://localhost:3142" \
-	--mirror-bootstrap "http://ftp.jp.debian.org/debian/" \
-	--mirror-chroot "http://ftp.jp.debian.org/debian/" \
-	--parent-mirror-binary "http://ftp.jp.debian.org/debian/" \
+	--mirror-bootstrap "$(MIRROR)" \
+	--mirror-chroot "$(MIRROR)" \
+	--parent-mirror-binary "$(MIRROR)" \
 	--archive-areas "main contrib non-free" \
 	--parent-archive-areas "main contrib non-free" \
 	--apt-options "--yes -oAcquire::Check-Valid-Until=false" \
