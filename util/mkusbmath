@@ -2,7 +2,7 @@
 #
 # mkusbmath: shell script for making USB bootable MathLibre
 # 
-# We need the packages: parted and bar
+# We need packages: parted and bar
 #
 # from DVD-ROM
 #
