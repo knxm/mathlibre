@@ -14,12 +14,12 @@ config: clean
 	--bootappend-live "boot=live config quiet splash persistence noeject" \
         --linux-packages "linux-image linux-headers" \
 	--architectures amd64 --linux-flavours amd64 --debian-installer live \
-	--win32-loader false
-#	--binary-images iso 
+	--win32-loader false \
+	--binary-images hdd
 
 build: config
 	sudo lb build
-	ls -l binary*.iso >> iso.ls-l
+#	ls -l binary*.iso >> iso.ls-l
 
 
 clean:

@@ -1,0 +1,69 @@
+#!/bin/sh
+#
+# mkusbmath: shell script for making USB bootable MathLibre
+# 
+# We need the packages: parted and bar
+#
+# from DVD-ROM
+#
+SOURCE="/dev/sr0"
+IMGSIZE=$(df -h $SOURCE | awk 'NR==2 {print $2}' | tr A-Z a-z)
+#
+# from IMG file
+#
+#SOURCE="mathlibre-debian-amd64-20130307-ja.img"
+#IMGSIZE=$(du -h $SOURCE | awk '{print $1}' | tr A-Z a-z)
+#
+# for MathLibre 2013 initial version
+#
+if [ ! \( -f /var/lib/dpkg/info/parted.list -a -f /var/lib/dpkg/info/bar.list \) ]; then
+  apt-get update; apt-get install bar parted
+fi
+#
+#
+cat << EOF
+-----------------------------------------------------------
+ mkusbmath: shell script for making USB bootable MathLibre
+-----------------------------------------------------------
+
+Please select the target device from the following list:
+
+EOF
+ls -l /dev/disk/by-id | grep usb | awk '{print $11, $9}' | sed -e 's/..\/..\//\/dev\//g' | sort
+echo ""
+echo "Target device is (ex. /dev/sdc) :"
+read TARGET
+NP=$(df | grep -c $TARGET)
+for n in `seq $NP`
+do
+  umount $TARGET$n
+done
+cat <<EOF
+
+You've selected the device: $TARGET
+
+By the following operation,
+all files in $TARGET will be !!!REMOVED!!!. 
+
+It takes over 20 minutes for making,
+would you start this operation? (y/n)
+EOF
+read ANSWER
+if [ $ANSWER = y -o $ANSWER = 'yes' ]; then 
+  echo "We're copying OS image to $TARGET"
+else
+  echo "Canceled this operation"
+  exit 1
+fi
+dd if=$SOURCE | bar -s $IMGSIZE > $TARGET
+echo "We've finished copying OS image"
+echo "We're making persistent volume."
+END=`parted $TARGET unit s print | grep boot | cut -d 's' -f 2`
+MIN=`expr $END + 1`
+parted --align=min $TARGET unit s mkpart primary ext4 $MIN 100%
+mkfs.ext4 -q $TARGET\2 -L persistence
+mount $TARGET\2 /media
+echo "/ union" > /media/live-persistence.conf
+umount /media
+echo "We've finished making persistent volume."
+echo "You've got the USB bootable MathLibre."
