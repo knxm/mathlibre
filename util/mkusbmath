@@ -42,7 +42,7 @@ case $TARGET in
 	exit 1
 	;;
 /dev/sd[b-z])
-	echo "Unmounting the mounted partitions."
+	echo "Unmounting the auto mounted partitions."
 	;;
 *)
 	echo "$TARGET is not a USB drive name."
