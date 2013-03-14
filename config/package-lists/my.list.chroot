@@ -4,6 +4,7 @@ autoconf
 automake
 autopoint
 autotools-dev
+bar
 build-essential
 bluefish
 ca-certificates-java
@@ -101,9 +102,9 @@ memtest86+
 namazu
 nuvola-icon-theme
 openjdk-7-jdk
+parted
 pgf
 purifyeps
-python-setuptools
 realpath
 rsync
 sharutils
