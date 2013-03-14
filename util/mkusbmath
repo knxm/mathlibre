@@ -74,7 +74,7 @@ else
   exit 1
 fi
 dd if=$SOURCE | bar -s $IMGSIZE > $TARGET
-echo "We've finished copying OS image"
+echo "We've finished copying OS image."
 echo "We're making persistent volume."
 END=`parted $TARGET unit s print | grep boot | cut -d 's' -f 2`
 MIN=`expr $END + 1`
