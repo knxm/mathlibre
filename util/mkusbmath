@@ -84,4 +84,4 @@ mount $TARGET\2 /media
 echo "/ union" > /media/live-persistence.conf
 umount /media
 echo "We've finished making persistent volume."
-echo "You've got the USB bootable MathLibre."
+echo "You've got an USB bootable MathLibre."
