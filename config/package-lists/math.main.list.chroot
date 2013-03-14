@@ -71,6 +71,7 @@ python-qtconsole
 python-scipy
 python-setuptools
 python-sympy
+python-tornado
 python-visual
 qhull-bin
 rkward
