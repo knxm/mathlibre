@@ -1,8 +1,10 @@
 #!/bin/sh
 #
 # mkusbmath: shell script for making USB bootable MathLibre
+#
+# v0.2013031415
 # 
-# We need packages: parted and bar
+# We need the packages: parted and bar
 #
 # from DVD-ROM
 #
@@ -31,8 +33,24 @@ Please select the target device from the following list:
 EOF
 ls -l /dev/disk/by-id | grep usb | awk '{print $11, $9}' | sed -e 's/..\/..\//\/dev\//g' | sort
 echo ""
-echo "Target device is (ex. /dev/sdc) :"
+echo "Please input your target device (ex. /dev/sdc) :"
 read TARGET
+case $TARGET in
+/dev/sda)
+	echo "This drive $TARGET may be a primary drive for your system."
+	echo "We'll cancel this operation."
+	exit 1
+	;;
+/dev/sd[b-z])
+	echo "Unmounting the mounted partitions."
+	;;
+*)
+	echo "$TARGET is not a USB drive name."
+	echo "For example, $TARGET should be /dev/sdc not /dev/sdc1"
+	echo "We'll cancel this operation."
+	exit 1
+	;;
+esac	
 NP=$(df | grep -c $TARGET)
 for n in `seq $NP`
 do
