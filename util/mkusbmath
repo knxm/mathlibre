@@ -27,7 +27,7 @@ MESSAGE_UMOUNT="マウント済みの領域をアンマウントします。"
 MESSAGE_TARGETDEF="これは USB ドライブのデバイス名ではありません。\n例えば、/dev/sdc という形で入力してください。\n/dev/sdc1 のように数字は付けないでください。\n作成を中止します。"
 MESSAGE_ASKING="\n\n続く操作を実行すると、\nUSBメモリー内のすべてのファイルは!!!削除!!!されます。 \n\nだいたい、10分から20分かかります。\n作成を継続しますか？ (y/n)"
 MESSAGE_COPYING="OSイメージを複製しています。\n"
-MESSAGE_CANCELD="作成を中止します。"
+MESSAGE_CANCELED="作成を中止します。"
 MESSAGE_FINISHCOPYING="OSイメージの複製が完了しました。\n引き続き、継続的保存領域を作成します。"
 MESSAGE_FINISHING="継続的保存領域の作成が完了しました。\nUSB起動MathLibreが完成しました。"
 	;;
@@ -39,7 +39,7 @@ MESSAGE_UMOUNT="Unmounting the mounted partitions."
 MESSAGE_TARGETDEF="It is not a USB drive name.\nFor example, $TARGET should be /dev/sdc not /dev/sdc1\nWe'll cancel this operation."
 MESSAGE_ASKING="\n\nBy the following operation,\nall files in $TARGET will be !!!REMOVED!!!. \n\nIt takes over 20 minutes for making,\nwould you start this operation? (y/n)"
 MESSAGE_COPYING="We're copying OS image to $TARGET\n"
-MESSAGE_CANCELD="Canceled this operation"
+MESSAGE_CANCELED="Canceled this operation"
 MESSAGE_FINISHCOPYING="We've finished copying OS image\nWe're making persistent volume."
 MESSAGE_FINISHING="We've finished making persistent volume.\nYou've got the USB bootable MathLibre."
 	;;
@@ -88,7 +88,7 @@ read ANSWER
 if [ $ANSWER = y -o $ANSWER = 'yes' ]; then 
     echo $MESSAGE_COPYING
 else
-    echo $MESSAGE_CANCELD
+    echo $MESSAGE_CANCELED
   exit 1
 fi
 dd if=$SOURCE | bar -s $IMGSIZE > $TARGET
