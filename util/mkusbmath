@@ -2,7 +2,7 @@
 #
 # mkusbmath: shell script for making USB bootable MathLibre
 #
-# v0.2013032016
+# v0.2013032200
 # 
 # We need packages: parted and bar
 #
@@ -20,16 +20,16 @@ IMGSIZE=$(df -h $SOURCE | awk 'NR==2 {print $2}' | tr A-Z a-z)
 PATH=$PATH:/bin:/usr/bin:/sbin
 case $LANG in
     ja*)
-MESSAGE_START="-----------------------------------------------------------\n mkusbmath: USB起動 MathLibre 作成スクリプト\n-----------------------------------------------------------\n\n接続されているUSBデバイスは以下の通りです。\n\n"
+MESSAGE_START="-----------------------------------------------------------\n mkusbmath: USB 起動 MathLibre 作成スクリプト\n-----------------------------------------------------------\n\n接続されている USB デバイスは以下の通りです。\n\n"
 MESSAGE_TARGET="\nターゲットデバイス名を選んでください (例. /dev/sdc) :"
 MESSAGE_SDA="このデバイスはあなたのシステムのプライマリドライブと思われます。\n作成を中止します。"
 MESSAGE_UMOUNT="マウント済みの領域をアンマウントします。"
 MESSAGE_TARGETDEF="これは USB ドライブのデバイス名ではありません。\n例えば、/dev/sdc という形で入力してください。\n/dev/sdc1 のように数字は付けないでください。\n作成を中止します。"
-MESSAGE_ASKING="\n\n続く操作を実行すると、\nUSBメモリー内のすべてのファイルは!!!削除!!!されます。 \n\nだいたい、10分から20分かかります。\n作成を継続しますか？ (y/n)"
-MESSAGE_COPYING="OSイメージを複製しています。\n"
+MESSAGE_ASKING="\n\n続く操作を実行すると、\n USB メモリー内のすべてのファイルは!!!削除!!!されます。 \n\nだいたい、10分から20分かかります。\n作成を継続しますか？ (y/n)"
+MESSAGE_COPYING="OS イメージを複製しています。\n"
 MESSAGE_CANCELED="作成を中止します。"
-MESSAGE_FINISHCOPYING="OSイメージの複製が完了しました。\n引き続き、継続的保存領域を作成します。"
-MESSAGE_FINISHING="継続的保存領域の作成が完了しました。\nUSB起動MathLibreが完成しました。"
+MESSAGE_FINISHCOPYING="OS イメージの複製が完了しました。\n引き続き、継続的保存領域を作成します。"
+MESSAGE_FINISHING="継続的保存領域の作成が完了しました。\nUSB 起動 MathLibre が完成しました。"
 	;;
     *)
 MESSAGE_START="-----------------------------------------------------------\n mkusbmath: shell script for making USB bootable MathLibre\n-----------------------------------------------------------\n\nPlease select the target device from the following list:\n\n"
