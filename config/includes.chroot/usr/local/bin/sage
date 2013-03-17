@@ -21,6 +21,7 @@
 # containing this shell script.  If unset, we will try to figure it out
 # automatically.
 SAGE_ROOT=/usr/local/sage
+SAGER_BROWSER=x-www-browser
 
 
 
