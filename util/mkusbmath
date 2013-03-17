@@ -9,14 +9,14 @@
 # ------------
 # from DVD-ROM
 #
-#SOURCE="/dev/sr0"
-#IMGSIZE=$(df -h $SOURCE | awk 'NR==2 {print $2}' | tr A-Z a-z)
+SOURCE="/dev/sr0"
+IMGSIZE=$(df -h $SOURCE | awk 'NR==2 {print $2}' | tr A-Z a-z)
 #
 # -------------
 # from IMG file
 #
-SOURCE="mathlibre-debian-amd64-20130307-ja.img"
-IMGSIZE=$(du -h $SOURCE | awk '{print $1}' | tr A-Z a-z)
+#SOURCE="mathlibre-debian-amd64-20130307-ja.img"
+#IMGSIZE=$(du -h $SOURCE | awk '{print $1}' | tr A-Z a-z)
 PATH=$PATH:/bin:/usr/bin:/sbin
 case $LANG in
     ja*)
