@@ -33,6 +33,7 @@ gprolog
 gsl-ref-html
 gv
 ipython
+ipython-qtconsole
 jsmath
 jsmath-fonts
 jsmath-fonts-sprite
@@ -63,11 +64,10 @@ pari-extra
 pari-gp
 pari-gp2c
 pspp
-python-2.7-dev
+python-dev
 python-gnuplot
 python-matplotlib
 python-pygments
-python-qtconsole
 python-scipy
 python-setuptools
 python-sympy
