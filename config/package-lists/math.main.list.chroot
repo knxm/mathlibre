@@ -42,12 +42,15 @@ kig
 kile
 kile-l10n
 kmplot
+latexmk
 lcalc
 libfile-mmagic-perl
 libgsl0-dev
 libjs-mathjax
 libkakasi2
 libnkf-perl
+libssreflect-coq
+libssreflect-ocaml-dev
 libtext-kakasi-perl
 lie
 lp-solve
@@ -63,6 +66,7 @@ palp
 pari-extra
 pari-gp
 pari-gp2c
+proofgeneral
 pspp
 python-dev
 python-gnuplot
