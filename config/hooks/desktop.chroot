@@ -1,4 +1,0 @@
-#!/bin/sh
-if [ -f /usr/share/applications/setxkbmap-gadget.desktop ]; then
-  cp /usr/share/applications/setxkbmap-gadget.desktop /etc/skel/Desktop/
-fi
