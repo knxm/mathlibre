@@ -1,0 +1,5 @@
+@lxpanel --profile LXDE
+@pcmanfm --desktop --profile LXDE
+@xscreensaver -no-splash
+xdg-desktop-icon install --novendor /usr/local/share/applications/applications-math.desktop
+xdg-desktop-icon install --novendor /usr/share/applications/setxkbmap-gadget.desktop
