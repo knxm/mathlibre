@@ -1,14 +1,11 @@
-#!/bin/sh
-mkdir -p /etc/skel/Desktop
-cat > /etc/skel/Desktop/applications-math.desktop << EOF
 [Desktop Entry]
 Name=Math Software
 Comment=Math Software
 Comment[ja]=数学ソフトウェア
+Comment[en]=Math Software
 Icon=knxm-start-penguin
 Type=Link
 Categories=Math;
 Encoding=UTF-8
 URL=file:///usr/share/applications-math/
 Exec=pcmanfm /usr/share/applications-math/
-EOF
