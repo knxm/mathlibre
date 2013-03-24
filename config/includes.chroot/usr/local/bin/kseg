@@ -1,0 +1,53 @@
+#!/bin/sh
+##
+## /usr/local/bin/kseg - a wrapper for kseg with language settings
+##
+##  starts kseg after setting the 'Language' entry in ~/.kseg.
+##  supported languages: cy,de,en,es,fr,hu,it,ja,nb,nl,pt,ru,tr,zh
+##
+
+# kseg binary
+KSEG_PROGRAM="/usr/bin/kseg"
+
+# kseg configuration files
+DOTKSEG_SYSTEM="/etc/skel/.kseg"
+DOTKSEG_USER="${HOME}/.kseg"
+
+# Checking if kseg package is installed
+if [ ! -e "${KSEG_PROGRAM}" ]
+then
+	echo "${0}: cannot find ${KSEG_PROGRAM}"
+	exit 1
+fi
+
+Configure_kseg ()
+{
+	# create ~/.kseg if it doesn't exist
+	if [ ! -e "${DOTKSEG_USER}" ]
+	then
+		if [ -r "${DOTKSEG_SYSTEM}" ]
+		then
+			cp "${DOTKSEG_SYSTEM}" "${DOTKSEG_USER}"
+		else
+			echo 'Language = kseg_en.qm' > "${DOTKSEG_USER}"
+		fi
+	fi
+
+	# add Language entry if missing
+	if [ -z "$(grep '^Language\ *=' ${DOTKSEG_USER})" ]
+	then
+		echo 'Language = kseg_en.qm' >> "${DOTKSEG_USER}"
+	fi
+
+	# overwrite Language setting
+	KSEG_LANG="${LANG%%_*}"
+	if [ -e "/usr/share/kseg/kseg_${KSEG_LANG}.qm" ]
+	then
+		KSEG_LANGFILE="kseg_${KSEG_LANG}.qm"
+	else
+		KSEG_LANGFILE="kseg_en.qm"
+	fi
+	sed -i -e "s|^\(Language\ *=\).*$|\1\ ${KSEG_LANGFILE}|" "${DOTKSEG_USER}"
+}
+
+Configure_kseg && exec ${KSEG_PROGRAM} "${@}"
