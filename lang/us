@@ -19,20 +19,20 @@ lb config \
 #
 echo "auctex" > config/package-lists/lang.$LANGUAGE.tex.list.chroot
 
-#
-# for kseg
-#
-cat > config/includes.chroot/etc/skel/.kseg << EOF
-# KSeg configuration file--automatically generated in random order :)
-QuickPlayDirectory = /usr/share/doc/kseg/examples
-ViewToolbarVisible = true
-Language = kseg_en.qm
-TransformToolbarVisible = true
-NewToolbarVisible = true
-ForegroundColor = #000000
-BackgroundColor = #ffffff
-RecentListSize = 4
-MeasureToolbarVisible = true
-SelectType = BorderSelect
-LanguageDir = /usr/share/kseg
-EOF
+# #
+# # for kseg
+# #
+# cat > config/includes.chroot/etc/skel/.kseg << EOF
+# # KSeg configuration file--automatically generated in random order :)
+# QuickPlayDirectory = /usr/share/doc/kseg/examples
+# ViewToolbarVisible = true
+# Language = kseg_en.qm
+# TransformToolbarVisible = true
+# NewToolbarVisible = true
+# ForegroundColor = #000000
+# BackgroundColor = #ffffff
+# RecentListSize = 4
+# MeasureToolbarVisible = true
+# SelectType = BorderSelect
+# LanguageDir = /usr/share/kseg
+# EOF
