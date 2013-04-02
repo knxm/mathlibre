@@ -27,7 +27,7 @@ clean:
 	rm -f config/hooks/lang.*.chroot
 	rm -f config/package-lists/lang.*.list.chroot
 	rm -f config/includes.chroot/etc/emacs/site-start.d/99lang.*.el
-	rm -f config/includes.chroot/etc/skel/.kseg
+#	rm -f config/includes.chroot/etc/skel/.kseg
 
 
 distclean: clean

@@ -36,20 +36,20 @@ gconftool --direct --config-source xml:readwrite:/etc/gconf/gconf.xml.defaults \
 --set /desktop/ibus/general/hotkey/trigger [Control+space,Hangul,Alt+grave,Alt+Release+Alt_R,Zenkaku_Hankaku,Alt+Kanji]
 EOF
 
-#
-# for kseg
-#
-cat > config/includes.chroot/etc/skel/.kseg << EOF
-# KSeg configuration file--automatically generated in random order :)
-QuickPlayDirectory = /usr/share/doc/kseg/examples
-ViewToolbarVisible = true
-Language = kseg_tc.qm
-TransformToolbarVisible = true
-NewToolbarVisible = true
-ForegroundColor = #000000
-BackgroundColor = #ffffff
-RecentListSize = 4
-MeasureToolbarVisible = true
-SelectType = BorderSelect
-LanguageDir = /usr/share/kseg
-EOF
+# #
+# # for kseg
+# #
+# cat > config/includes.chroot/etc/skel/.kseg << EOF
+# # KSeg configuration file--automatically generated in random order :)
+# QuickPlayDirectory = /usr/share/doc/kseg/examples
+# ViewToolbarVisible = true
+# Language = kseg_tc.qm
+# TransformToolbarVisible = true
+# NewToolbarVisible = true
+# ForegroundColor = #000000
+# BackgroundColor = #ffffff
+# RecentListSize = 4
+# MeasureToolbarVisible = true
+# SelectType = BorderSelect
+# LanguageDir = /usr/share/kseg
+# EOF
