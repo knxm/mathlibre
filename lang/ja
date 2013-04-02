@@ -42,35 +42,35 @@ EOF
 #
 # for emacs-mozc
 #
-cat > config/includes.chroot/etc/emacs/site-start.d/99lang.ja.el << EOF
-;; for emacs-mozc
-(require 'mozc)
-(set-language-environment 'utf-8)
-(prefer-coding-system 'utf-8)
-
-(setq default-input-method "japanese-mozc")
-
-(setq its-hira-comma "，")
-(setq its-hira-period "．")
-(eval-after-load "its"
-  '(define-its-state-machine-append its-hira-map
-     (its-defrule "dhi" "でぃ")
-     (its-defrule "dhu" "でゅ")
-     (its-defrule "thi" "てぃ")
-     (its-defrule "thu" "てゅ")
-     (its-defrule "whi" "うぃ")
-     (its-defrule "whe" "うぇ")
-     (its-defrule "who" "うぉ")))
-(toggle-input-method nil)
-(setq its-enable-fullwidth-alphabet nil)
-;;
-;; for YaTeX
-;;
-(setq auto-mode-alist
-      (cons (cons "\\.tex$" 'yatex-mode) auto-mode-alist))
-(autoload 'yatex-mode "yatex" "Yet Another LaTeX mode" t)
-EOF
-
+#cat > config/includes.chroot/etc/emacs/site-start.d/99lang.ja.el << EOF
+#;; for emacs-mozc
+#(require 'mozc)
+#(set-language-environment 'utf-8)
+#(prefer-coding-system 'utf-8)
+#
+#(setq default-input-method "japanese-mozc")
+#
+#(setq its-hira-comma "，")
+#(setq its-hira-period "．")
+#(eval-after-load "its"
+#  '(define-its-state-machine-append its-hira-map
+#     (its-defrule "dhi" "でぃ")
+#     (its-defrule "dhu" "でゅ")
+#     (its-defrule "thi" "てぃ")
+#     (its-defrule "thu" "てゅ")
+#     (its-defrule "whi" "うぃ")
+#     (its-defrule "whe" "うぇ")
+#     (its-defrule "who" "うぉ")))
+#(toggle-input-method nil)
+#(setq its-enable-fullwidth-alphabet nil)
+#;;
+#;; for YaTeX
+#;;
+#(setq auto-mode-alist
+#      (cons (cons "\\.tex$" 'yatex-mode) auto-mode-alist))
+#(autoload 'yatex-mode "yatex" "Yet Another LaTeX mode" t)
+#EOF
+#
 # #
 # # for kseg
 # #
