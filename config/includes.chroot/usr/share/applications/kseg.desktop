@@ -2,7 +2,7 @@
 Version=1.0
 Name=KSeg
 Comment=Sketchpad for planar Euclidean geometry
-Exec=kseg
+Exec=/usr/local/bin/kseg
 Icon=kseg
 Type=Application
 Terminal=false
