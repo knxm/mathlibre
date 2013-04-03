@@ -91,7 +91,8 @@ else
     echo $MESSAGE_CANCELED
   exit 1
 fi
-dd if=$SOURCE | bar -s $IMGSIZE > $TARGET
+dd bs=4M if=$SOURCE | bar -s $IMGSIZE > $TARGET
+sync;sync;sync
     echo $MESSAGE_FINISHCOPYING
 END=`parted $TARGET unit s print | grep boot | cut -d 's' -f 2`
 MIN=`expr $END + 1`
@@ -99,5 +100,7 @@ parted --align=min $TARGET unit s mkpart primary ext4 $MIN 100%
 mkfs.ext4 -q $TARGET\2 -L persistence
 mount $TARGET\2 /media
 echo "/ union" > /media/live-persistence.conf
+sync;sync;sync
 umount /media
+sync;sync;sync
 echo $MESSAGE_FINISHING
