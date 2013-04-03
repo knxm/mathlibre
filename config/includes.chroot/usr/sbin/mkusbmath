@@ -1,0 +1,103 @@
+#!/bin/sh
+#
+# mkusbmath: shell script for making USB bootable MathLibre
+#
+# v0.2013032200
+# 
+# We need packages: parted and bar
+#
+# ------------
+# from DVD-ROM
+#
+SOURCE="/dev/sr0"
+IMGSIZE=$(df -h $SOURCE | awk 'NR==2 {print $2}' | tr A-Z a-z)
+#
+# -------------
+# from IMG file
+#
+#SOURCE="mathlibre-debian-amd64-20130307-ja.img"
+#IMGSIZE=$(du -h $SOURCE | awk '{print $1}' | tr A-Z a-z)
+PATH=$PATH:/bin:/usr/bin:/sbin
+case $LANG in
+    ja*)
+MESSAGE_START="-----------------------------------------------------------\n mkusbmath: USB 起動 MathLibre 作成スクリプト\n-----------------------------------------------------------\n\n接続されている USB デバイスは以下の通りです。\n\n"
+MESSAGE_TARGET="\nターゲットデバイス名を選んでください (例. /dev/sdc) :"
+MESSAGE_SDA="このデバイスはあなたのシステムのプライマリドライブと思われます。\n作成を中止します。"
+MESSAGE_UMOUNT="マウント済みの領域をアンマウントします。"
+MESSAGE_TARGETDEF="これは USB ドライブのデバイス名ではありません。\n例えば、/dev/sdc という形で入力してください。\n/dev/sdc1 のように数字は付けないでください。\n作成を中止します。"
+MESSAGE_ASKING="\n\n続く操作を実行すると、\n USB メモリー内のすべてのファイルは!!!削除!!!されます。 \n\nだいたい、10分から20分かかります。\n作成を継続しますか？ (y/n)"
+MESSAGE_COPYING="OS イメージを複製しています。\n"
+MESSAGE_CANCELED="作成を中止します。"
+MESSAGE_FINISHCOPYING="OS イメージの複製が完了しました。\n引き続き、継続的保存領域を作成します。"
+MESSAGE_FINISHING="継続的保存領域の作成が完了しました。\nUSB 起動 MathLibre が完成しました。"
+	;;
+    *)
+MESSAGE_START="-----------------------------------------------------------\n mkusbmath: shell script for making USB bootable MathLibre\n-----------------------------------------------------------\n\nPlease select the target device from the following list:\n\n"
+MESSAGE_TARGET="\nPlease input your target device (ex. /dev/sdc) :"
+MESSAGE_SDA="This drive $TARGET may be a primary drive for your system.\nWe'll cancel this operation."
+MESSAGE_UMOUNT="Unmounting the mounted partitions."
+MESSAGE_TARGETDEF="It is not a USB drive name.\nFor example, $TARGET should be /dev/sdc not /dev/sdc1\nWe'll cancel this operation."
+MESSAGE_ASKING="\n\nBy the following operation,\nall files in $TARGET will be !!!REMOVED!!!. \n\nIt takes over 20 minutes for making,\nwould you start this operation? (y/n)"
+MESSAGE_COPYING="We're copying OS image to $TARGET\n"
+MESSAGE_CANCELED="Canceled this operation"
+MESSAGE_FINISHCOPYING="We've finished copying OS image\nWe're making persistent volume."
+MESSAGE_FINISHING="We've finished making persistent volume.\nYou've got the USB bootable MathLibre."
+	;;
+esac
+#
+# for MathLibre 2013 initial version
+#
+if [ ! \( -f /var/lib/dpkg/info/parted.list -a -f /var/lib/dpkg/info/bar.list \) ]; then
+  apt-get update; apt-get install bar parted
+fi
+#
+#
+echo $MESSAGE_START
+ls -l /dev/disk/by-id | grep usb | awk '{print $11, $9}' | sed -e 's/..\/..\//\/dev\//g' | sort
+echo $MESSAGE_TARGET
+read TARGET
+case $LANG in
+    ja*)
+	MESSAGE_SELECTED="\nあなたは $TARGET を選択しました。\n"
+	;;
+    *)
+	MESSAGE_SELECTED="\nYou've selected the device: $TARGET\n"
+	;;
+esac
+echo $MESSAGE_SELECTED
+case $TARGET in
+/dev/sda)
+	echo $MESSAGE_SDA
+	exit 1
+	;;
+/dev/sd[b-z])
+	echo $MESSAGE_UMOUNT
+	;;
+*)
+	echo $MESSAGE_TARGETDEF
+	exit 1
+	;;
+esac	
+NP=$(df | grep -c $TARGET)
+for n in `seq $NP`
+do
+  umount $TARGET$n
+done
+echo $MESSAGE_ASKING
+read ANSWER
+if [ $ANSWER = y -o $ANSWER = 'yes' ]; then 
+    echo $MESSAGE_COPYING
+else
+    echo $MESSAGE_CANCELED
+  exit 1
+fi
+dd if=$SOURCE | bar -s $IMGSIZE > $TARGET
+    echo $MESSAGE_FINISHCOPYING
+END=`parted $TARGET unit s print | grep boot | cut -d 's' -f 2`
+MIN=`expr $END + 1`
+parted --align=min $TARGET unit s mkpart primary ext4 $MIN 100%
+mkfs.ext4 -q $TARGET\2 -L persistence
+mount $TARGET\2 /media
+echo "/ union" > /media/live-persistence.conf
+umount /media
+echo $MESSAGE_FINISHING
