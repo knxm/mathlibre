@@ -2,7 +2,7 @@
 #
 # mkusbmath: shell script for making USB bootable MathLibre
 #
-# v0.2013040318
+# v0.2013040817
 # 
 # We need packages: parted and bar
 #
@@ -15,8 +15,8 @@ IMGSIZE=$(df -h $SOURCE | awk 'NR==2 {print $2}' | tr A-Z a-z)
 # -------------
 # from IMG file
 #
-#SOURCE="mathlibre-debian-amd64-20130307-ja.img"
-#IMGSIZE=$(du -h $SOURCE | awk '{print $1}' | tr A-Z a-z)
+#SOURCE="mathlibre-debian-amd64-20130403-ja.iso"
+#IMGSIZE=$(df -h $SOURCE | awk 'NR==2 {print $2}' | tr A-Z a-z)
 PATH=$PATH:/bin:/usr/bin:/sbin
 case $LANG in
     ja*)
@@ -78,8 +78,8 @@ case $TARGET in
 	exit 1
 	;;
 esac	
-NP=$(df | grep -c $TARGET)
-for n in `seq $NP`
+NM=$(df | grep -c $TARGET)
+for n in `seq $NM`
 do
   umount $TARGET$n
 done
@@ -91,6 +91,10 @@ else
     echo $MESSAGE_CANCELED
   exit 1
 fi
+for NP in `seq 4`
+do
+  parted $TARGET rm $NP 1> /dev/null 2>&1
+done
 dd bs=4M if=$SOURCE | bar -s $IMGSIZE > $TARGET
 sync;sync;sync
     echo $MESSAGE_FINISHCOPYING
