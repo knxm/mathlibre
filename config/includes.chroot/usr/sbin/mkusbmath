@@ -25,7 +25,7 @@ MESSAGE_TARGET="\nターゲットデバイス名を選んでください (例. /
 MESSAGE_SDA="このデバイスはあなたのシステムのプライマリドライブと思われます。\n作成を中止します。"
 MESSAGE_UMOUNT="マウント済みの領域をアンマウントします。"
 MESSAGE_TARGETDEF="これは USB ドライブのデバイス名ではありません。\n例えば、/dev/sdc という形で入力してください。\n/dev/sdc1 のように数字は付けないでください。\n作成を中止します。"
-MESSAGE_ASKING="\n\n続く操作を実行すると、\n USB メモリー内のファイルは全て!!!削除!!!されます。 \n\nだいたい、10分から20分かかります。\n作成を継続しますか？ (y/n)"
+MESSAGE_ASKING="\n\n続く操作を実行すると、\nUSB メモリー内のファイルは全て!!!削除!!!されます。 \n\nだいたい、10分から20分かかります。\n作成を継続しますか？ (y/n)"
 MESSAGE_COPYING="OS イメージを複製しています。\n"
 MESSAGE_CANCELED="作成を中止します。"
 MESSAGE_FINISHCOPYING="OS イメージの複製が完了しました。\n引き続き、継続的保存領域を作成します。"
@@ -79,7 +79,7 @@ case $TARGET in
 	;;
 esac	
 NM=$(df | grep -c $TARGET)
-for n in `seq $NM`
+for n in $(seq $NM)
 do
   umount $TARGET$n
 done
@@ -91,15 +91,15 @@ else
     echo $MESSAGE_CANCELED
   exit 1
 fi
-for NP in `seq 4`
+for NP in $(seq 4)
 do
   parted $TARGET rm $NP 1> /dev/null 2>&1
 done
 dd bs=4M if=$SOURCE | bar -s $IMGSIZE > $TARGET
 sync;sync;sync
-    echo $MESSAGE_FINISHCOPYING
-END=`parted $TARGET unit s print | grep boot | cut -d 's' -f 2`
-MIN=`expr $END + 1`
+echo $MESSAGE_FINISHCOPYING
+END=$(parted $TARGET unit s print | grep boot | cut -d 's' -f 2)
+MIN=$(expr $END + 1)
 parted --align=min $TARGET unit s mkpart primary ext4 $MIN 100%
 mkfs.ext4 -q $TARGET\2 -L persistence
 mount $TARGET\2 /media
