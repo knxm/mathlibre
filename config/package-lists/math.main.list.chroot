@@ -54,6 +54,7 @@ libssreflect-ocaml-dev
 libtext-kakasi-perl
 lie
 lp-solve
+lyx
 mandelbulber
 maxima
 maxima-emacs
@@ -66,6 +67,7 @@ palp
 pari-extra
 pari-gp
 pari-gp2c
+pdftk
 proofgeneral
 pspp
 python-dev
