@@ -1,0 +1,39 @@
+LANGUAGE=thai
+LANG=th_TH.UTF-8
+LOCALES=th_TH.UTF-8
+TIMEZONE=Asia/Bangkok
+KEYBOARD_MODEL=th
+KEYBOARD_LAYOUTS=th
+
+lb config \
+   --mirror-binary "http://ftp.th.debian.org/debian/" \
+   --bootappend-live \
+    "boot=live config quiet splash persistence noeject\
+    live-config.locales=$LOCALES \
+    live-config.timezone=$TIMEZONE live-config.utc=no \
+    live-config.keyboard-model=$KEYBOARD_MODEL \
+    live-config.keyboard-layouts=$KEYBOARD_LAYOUTS"
+
+#
+# for input method
+#
+echo "task-$LANGUAGE task-$LANGUAGE-desktop ibus-table-thai" > config/package-lists/lang.$LANGUAGE.list.chroot
+
+#
+# for tex
+#
+echo "texlive-cjk-thai latex-fonts-sipa-arundina latex-fonts-thai-tlwg thailatex auctex" > config/package-lists/lang.$LANGUAGE.tex.list.chroot
+
+#
+# for ibus
+#
+cat > config/hooks/lang.ibus.chroot << EOF
+#!/bin/sh
+gconftool --direct --config-source xml:readwrite:/etc/gconf/gconf.xml.defaults \
+--type list --list-type=string \
+--set /desktop/ibus/general/preload_engines [ibus-table-thai]
+gconftool --direct --config-source xml:readwrite:/etc/gconf/gconf.xml.defaults \
+--type list --list-type=string \
+--set /desktop/ibus/general/hotkey/trigger [Control+space,Hangul,Alt+grave,Alt+Release+Alt_R,Zenkaku_Hankaku,Alt+Kanji]
+EOF
+
