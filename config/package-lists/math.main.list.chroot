@@ -1,5 +1,6 @@
 bc
 cadabra
+calibre
 coq
 coqide
 coq-theories
@@ -97,6 +98,7 @@ snappea
 step
 sympow
 swi-prolog
+tex4ht
 texlive
 texmacs
 texmaker
