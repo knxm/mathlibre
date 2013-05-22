@@ -1,9 +1,9 @@
-LANGUAGE=english
+LANGUAGE=italian
 LANG=C
-LOCALES=en_US.UTF-8
-TIMEZONE=America/New_York
-KEYBOARD_MODEL=us
-KEYBOARD_LAYOUTS=us
+LOCALES=it_IT.UTF-8 
+TIMEZONE=Italy/Rome
+KEYBOARD_MODEL=it
+KEYBOARD_LAYOUTS=it
 
 lb config \
    --mirror-binary "http://ftp.jp.debian.org/debian/" \
