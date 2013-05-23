@@ -1,12 +1,12 @@
 LANGUAGE=vietnamese
-LANG=vi_VI.UTF-8
+LANG=vi_VN
 LOCALES=vi_VN.UTF-8
 TIMEZONE=Asia/Saigon
-KEYBOARD_MODEL=us
-KEYBOARD_LAYOUTS=us
+KEYBOARD_MODEL=pc105
+KEYBOARD_LAYOUTS=vn
 
 lb config \
-   --mirror-binary "http://ftp.debian.org/debian/" \
+   --mirror-binary "http://mirror.debian.vn/debian/" \
    --bootappend-live \
     "boot=live config quiet splash persistence noeject\
     live-config.locales=$LOCALES \
@@ -31,7 +31,7 @@ cat > config/hooks/lang.ibus.chroot << EOF
 #!/bin/sh
 gconftool --direct --config-source xml:readwrite:/etc/gconf/gconf.xml.defaults \
 --type list --list-type=string \
---set /desktop/ibus/general/preload_engines [unikey]
+--set /desktop/ibus/general/preload_engines [Unikey,viqr]
 gconftool --direct --config-source xml:readwrite:/etc/gconf/gconf.xml.defaults \
 --type list --list-type=string \
 --set /desktop/ibus/general/hotkey/trigger [Control+space,Hangul,Alt+grave,Alt+Release+Alt_R,Zenkaku_Hankaku,Alt+Kanji]
