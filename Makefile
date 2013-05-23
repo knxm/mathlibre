@@ -62,3 +62,8 @@ tw: config-tw
 	sudo lb build
 	ls -l binary*.iso >> iso.ls-l
 
+config-vi: config
+	sh lang/vi
+vi: config-vi
+	sudo lb build
+	ls -l binary*.iso >> iso.ls-l
