@@ -5,15 +5,12 @@ http://www.mathlibre.org/
  
 ## Environment for building
 We need these environments:
-* Debian Sid/Wheezy(7.0)
-* live-build (Sid)
+* Debian Wheezy(7.0)
+* live-build (Wheezy)
 * apt-cacher or apt-cacher-ng
 
 ### ex.
-1. # apt-get install git apt-cacher-ng
-1. # echo "deb-src http://ftp.jp.debian.org/debian/ sid main contrib" >> /etc/apt/sources.list
-1. $ apt-get -b source live-build
-1. # dpkg -i live-build_*.deb 
+1. # apt-get install git live-build apt-cacher-ng
 
 ## How to build MathLibre DVD
 
