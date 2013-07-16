@@ -20,7 +20,7 @@ We need these environments:
 
 ## Language environments
 If you want to make Japanese environment,
-please use "make ja".
+please use "make lang=ja".
 
 Makefile is supporting "us(default), ko, cn, tw" languages too.
 
