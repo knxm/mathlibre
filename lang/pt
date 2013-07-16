@@ -1,0 +1,25 @@
+COUNTRY=pt
+LANGUAGE=portuguese
+LANG=C
+LOCALES=pt_PT.UTF-8 
+TIMEZONE=Europe/Lisbon
+KEYBOARD_MODEL=$COUNTRY
+KEYBOARD_LAYOUTS=$COUNTRY
+
+lb config \
+   --mirror-binary "http://ftp.$COUNTRY.debian.org/debian/" \
+   --bootappend-live \
+    "boot=live config quiet splash persistence noeject\
+    live-config.locales=$LOCALES \
+    live-config.timezone=$TIMEZONE live-config.utc=no \
+    live-config.keyboard-model=$KEYBOARD_MODEL \
+    live-config.keyboard-layouts=$KEYBOARD_LAYOUTS"
+
+#
+# for language environment
+#
+echo "task-$LANGUAGE task-$LANGUAGE-desktop" > config/package-lists/lang.$LANGUAGE.list.chroot
+#
+# for tex
+#
+echo "texlive-lang-$LANGUAGE auctex" > config/package-lists/lang.$LANGUAGE.tex.list.chroot
