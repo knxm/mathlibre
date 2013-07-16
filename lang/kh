@@ -1,7 +1,7 @@
 #
-# This script is not tested. 2013.03.07
+# This script is not tested. 2013.07.16
 #
-
+COUNTRY=kh
 LANGUAGE=khmer
 LANG=km_KH.UTF-8
 LOCALES=km_KH.UTF-8
@@ -22,22 +22,3 @@ lb config \
 # for language environment
 #
 echo "task-$LANGUAGE task-$LANGUAGE-desktop fonts-khmeros khmerconverter libreoffice-help-km" > config/package-lists/lang.$LANGUAGE.list.chroot
-
-# #
-# # for kseg
-# #
-# cat > config/includes.chroot/etc/skel/.kseg << EOF
-# # KSeg configuration file--automatically generated in random order :)
-# QuickPlayDirectory = /usr/share/doc/kseg/examples
-# ViewToolbarVisible = true
-# Language = kseg_en.qm
-# TransformToolbarVisible = true
-# NewToolbarVisible = true
-# ForegroundColor = #000000
-# BackgroundColor = #ffffff
-# RecentListSize = 4
-# MeasureToolbarVisible = true
-# SelectType = BorderSelect
-# LanguageDir = /usr/share/kseg
-# EOF
-

@@ -1,12 +1,13 @@
+COUNTRY=kr
 LANGUAGE=korean
 LANG=ko_KR.UTF-8
 LOCALES=ko_KR.UTF-8
 TIMEZONE=Asia/Seoul
 KEYBOARD_MODEL=kr106
-KEYBOARD_LAYOUTS=kr
+KEYBOARD_LAYOUTS=$COUNTRY
 
 lb config \
-   --mirror-binary "http://ftp.kr.debian.org/debian/" \
+   --mirror-binary "http://ftp.$COUNTRY.debian.org/debian/" \
    --bootappend-live \
     "boot=live config quiet splash persistence noeject\
     live-config.locales=$LOCALES \
@@ -36,21 +37,3 @@ gconftool --direct --config-source xml:readwrite:/etc/gconf/gconf.xml.defaults \
 --type list --list-type=string \
 --set /desktop/ibus/general/hotkey/trigger [Control+space,Hangul,Alt+grave,Alt+Release+Alt_R,Zenkaku_Hankaku,Alt+Kanji]
 EOF
-
-# #
-# # for kseg
-# #
-# cat > config/includes.chroot/etc/skel/.kseg << EOF
-# # KSeg configuration file--automatically generated in random order :)
-# QuickPlayDirectory = /usr/share/doc/kseg/examples
-# ViewToolbarVisible = true
-# Language = kseg_en.qm
-# TransformToolbarVisible = true
-# NewToolbarVisible = true
-# ForegroundColor = #000000
-# BackgroundColor = #ffffff
-# RecentListSize = 4
-# MeasureToolbarVisible = true
-# SelectType = BorderSelect
-# LanguageDir = /usr/share/kseg
-# EOF
