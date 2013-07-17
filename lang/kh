@@ -1,5 +1,6 @@
 #
 # This script is not tested. 2013.07.16
+# Khmer language is the official language of Cambodia.
 #
 COUNTRY=kh
 LANGUAGE=khmer
