@@ -1,9 +1,10 @@
+COUNTRY=vn
 LANGUAGE=vietnamese
 LANG=vi_VN
 LOCALES=vi_VN.UTF-8
 TIMEZONE=Asia/Saigon
 KEYBOARD_MODEL=pc105
-KEYBOARD_LAYOUTS=vn
+KEYBOARD_LAYOUTS=$COUNTRY
 
 lb config \
    --mirror-binary "http://mirror.debian.vn/debian/" \

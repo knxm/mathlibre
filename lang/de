@@ -1,8 +1,11 @@
-COUNTRY=it
-LANGUAGE=italian
+#
+# This script is not tested. 2013.07.16
+#
+COUNTRY=de
+LANGUAGE=german
 LANG=C
-LOCALES=it_IT.UTF-8 
-TIMEZONE=Europe/Rome
+LOCALES=de_DE.UTF-8 
+TIMEZONE=Europe/Berlin
 KEYBOARD_MODEL=$COUNTRY
 KEYBOARD_LAYOUTS=$COUNTRY
 

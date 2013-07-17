@@ -1,8 +1,11 @@
-COUNTRY=it
-LANGUAGE=italian
+#
+# This script is not tested. 2013.07.16
+#
+COUNTRY=uk
+LANGUAGE=ENGLISH
 LANG=C
-LOCALES=it_IT.UTF-8 
-TIMEZONE=Europe/Rome
+LOCALES=en.GB.UTF-8 
+TIMEZONE=Europe/London
 KEYBOARD_MODEL=$COUNTRY
 KEYBOARD_LAYOUTS=$COUNTRY
 
@@ -18,8 +21,8 @@ lb config \
 #
 # for language environment
 #
-echo "task-$LANGUAGE task-$LANGUAGE-desktop" > config/package-lists/lang.$LANGUAGE.list.chroot
+echo "task-$LANGUAGE task-british-desktop" > config/package-lists/lang.$LANGUAGE.list.chroot
 #
 # for tex
 #
-echo "texlive-lang-$LANGUAGE auctex" > config/package-lists/lang.$LANGUAGE.tex.list.chroot
+echo "auctex" > config/package-lists/lang.$LANGUAGE.tex.list.chroot

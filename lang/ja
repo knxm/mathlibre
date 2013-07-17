@@ -1,12 +1,13 @@
+COUNTRY=jp
 LANGUAGE=japanese
 LANG=ja_JP.UTF-8
 LOCALES=ja_JP.UTF-8
 TIMEZONE=Asia/Tokyo
 KEYBOARD_MODEL=jp106
-KEYBOARD_LAYOUTS=jp
+KEYBOARD_LAYOUTS=$COUNTRY
 
 lb config \
-   --mirror-binary "http://ftp2.jp.debian.org/debian/" \
+   --mirror-binary "http://ftp.$COUNTRY.debian.org/debian/" \
    --bootappend-live \
     "boot=live config quiet splash persistence noeject\
     live-config.locales=$LOCALES \
@@ -38,54 +39,3 @@ gconftool --direct --config-source xml:readwrite:/etc/gconf/gconf.xml.defaults \
 --set /desktop/ibus/general/hotkey/trigger [Shift+space,Zenkaku_Hankaku,Alt+Kanji]
 fi
 EOF
-
-#
-# for emacs-mozc
-#
-#cat > config/includes.chroot/etc/emacs/site-start.d/99lang.ja.el << EOF
-#;; for emacs-mozc
-#(require 'mozc)
-#(set-language-environment 'utf-8)
-#(prefer-coding-system 'utf-8)
-#
-#(setq default-input-method "japanese-mozc")
-#
-#(setq its-hira-comma "，")
-#(setq its-hira-period "．")
-#(eval-after-load "its"
-#  '(define-its-state-machine-append its-hira-map
-#     (its-defrule "dhi" "でぃ")
-#     (its-defrule "dhu" "でゅ")
-#     (its-defrule "thi" "てぃ")
-#     (its-defrule "thu" "てゅ")
-#     (its-defrule "whi" "うぃ")
-#     (its-defrule "whe" "うぇ")
-#     (its-defrule "who" "うぉ")))
-#(toggle-input-method nil)
-#(setq its-enable-fullwidth-alphabet nil)
-#;;
-#;; for YaTeX
-#;;
-#(setq auto-mode-alist
-#      (cons (cons "\\.tex$" 'yatex-mode) auto-mode-alist))
-#(autoload 'yatex-mode "yatex" "Yet Another LaTeX mode" t)
-#EOF
-#
-# #
-# # for kseg
-# #
-# cat > config/includes.chroot/etc/skel/.kseg << EOF
-# # KSeg configuration file--automatically generated in random order :)
-# QuickPlayDirectory = /usr/share/doc/kseg/examples
-# ViewToolbarVisible = true
-# Language = kseg_ja.qm
-# TransformToolbarVisible = true
-# NewToolbarVisible = true
-# ForegroundColor = #000000
-# BackgroundColor = #ffffff
-# RecentListSize = 4
-# MeasureToolbarVisible = true
-# SelectType = BorderSelect
-# LanguageDir = /usr/share/kseg
-# EOF
-

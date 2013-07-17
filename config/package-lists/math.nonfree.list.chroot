@@ -2,6 +2,7 @@ amd64-microcode
 atmel-firmware
 bluez-firmware
 broadcom-sta-common
+broadcom-sta-dkms
 broadcom-sta-source
 coq-doc
 coq-doc-html

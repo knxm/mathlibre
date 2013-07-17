@@ -1,12 +1,13 @@
+COUNTRY=th
 LANGUAGE=thai
 LANG=th_TH.UTF-8
 LOCALES=th_TH.UTF-8
 TIMEZONE=Asia/Bangkok
-KEYBOARD_MODEL=th
-KEYBOARD_LAYOUTS=th
+KEYBOARD_MODEL=$COUNTRY
+KEYBOARD_LAYOUTS=$COUNTRY
 
 lb config \
-   --mirror-binary "http://ftp.th.debian.org/debian/" \
+   --mirror-binary "http://ftp.$COUNTRY.debian.org/debian/" \
    --bootappend-live \
     "boot=live config quiet splash persistence noeject\
     live-config.locales=$LOCALES \
