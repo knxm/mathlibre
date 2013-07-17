@@ -1,0 +1,28 @@
+#
+# This script is not tested. 2013.07.17
+#
+COUNTRY=ru
+LANGUAGE=russian
+LANG=ru_RU.UTF-8
+LOCALES=ru_RU.UTF-8 
+TIMEZONE=Europe/Moscow
+KEYBOARD_MODEL=pc105
+KEYBOARD_LAYOUTS="us,$COUNTRY"
+
+lb config \
+   --mirror-binary "http://mirror.mephi.ru/debian/" \
+   --bootappend-live \
+    "boot=live config quiet splash persistence noeject\
+    live-config.locales=$LOCALES \
+    live-config.timezone=$TIMEZONE live-config.utc=no \
+    live-config.keyboard-model=$KEYBOARD_MODEL \
+    live-config.keyboard-layouts=$KEYBOARD_LAYOUTS"
+
+#
+# for language environment
+#
+echo "task-$LANGUAGE task-$LANGUAGE-desktop task-cyrillic task-cyrillic-desktop " > config/package-lists/lang.$LANGUAGE.list.chroot
+#
+# for tex
+#
+echo "texlive-lang-cyrillic auctex" > config/package-lists/lang.$LANGUAGE.tex.list.chroot
