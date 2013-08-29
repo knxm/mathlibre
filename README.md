@@ -22,7 +22,7 @@ We need these environments:
 If you want to make Japanese environment,
 please use "make lang=ja".
 
-Makefile is supporting "us(default), ko, cn, tw" languages too.
+Makefile is supporting "us(default), ko, cn, tw, etc." languages too.
 
 ## Sage system
 Sage is a huge computer algebra system, so we extract and make it manually.
