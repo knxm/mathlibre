@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Prover9-Mace4
+GenericName=
+Comment=
+Icon=prover9
+Exec=prover9-mace4
+Terminal=false
+Categories=Math;
