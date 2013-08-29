@@ -1,0 +1,10 @@
+[Desktop Entry]
+Comment=A free environment for rapid engineering and scientific prototyping and data processing
+Exec=freemat
+GenericName=Scientific Software Package
+Icon=/usr/share/pixmaps/freemat/freemat.xpm
+Name=FreeMat
+StartupNotify=false
+Terminal=false
+Type=Application
+Categories=Math;
