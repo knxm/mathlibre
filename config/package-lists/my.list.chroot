@@ -40,6 +40,8 @@ libalgorithm-diff-xs-perl
 libalgorithm-merge-perl
 libasyncns0
 libboost-dev
+libboost-filesystem1.49.0
+libboost-system1.49.0
 libc-dev-bin
 libcgal-dev
 libc6-dev
