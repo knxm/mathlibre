@@ -1,0 +1,63 @@
+MathLibre
+
+ - MathLibre is a Live Linux for mathematical software.
+ - MathLibre is construted with Debian Live System.
+ 
+ "To start the DVD, set up the BIOS of your computer to boot off the DVD,
+ put the DVD in the drive, and power up the computer."
+
+ - Most of the programs included with the "MathLibre" system are
+   freely redistributable; the exact distribution terms for each program are
+   described in the individual files in /usr/share/doc/*/copyright.
+
+ - MathLibre comes with ABSOLUTELY NO WARRANTY,
+   to the extent permitted by applicable law.
+ - MathLibre is the direct descendant of KNOPPIX/Math.
+
+ - MathLibre/2013 was distributed in AMC2013, 1-4 July 2013, at BEXCO Pusan, KOREA. 
+ - MathLibre/2013 was distributed in MSJ meeting, 19-23 March 2013,
+   at Kyoto University.
+ - We changed the name of our project and started MathLibre project
+   at March 2012. MathLibre/2012dojo was distributed in MSJ meeting,
+   25-29 March 2012, at Tokyo University of Science.  
+ - KNOPPIX/Math/2011 would be distributed in MSJ meeting, 20-23 March 2011,
+   at Waseda University, 
+   but it was canceled by the great east japan earthquake. 
+   The first distribution of KNOPPIX/Math/2011 was in Risa/Asir conference,
+   Kobe University, 21-23 March 2011.
+ - KNOPPIX/Math/ICMS2010 was distributed in ICM2010 Hyderabad,
+   19-27 August 2010, and in ICMS2010 Kobe, 13-17 September 2010.
+ - KNOPPIX/Math/2010 was distributed in MSJ meeting, 23-27 March 2010,
+   at Keio University.
+ - KNOPPIX/Math/2009 was distributed in MSJ meeting, 23-27 March 2009,
+   at Tokyo University.
+ - KNOPPIX/Math/2008 was distributed in MSJ meeting, 22-26 March 2008,
+   at Kindai University.
+ - KNOPPIX/Math/2007 was distributed in MSJ meeting, 27-30 March 2007,
+   at Saitama University.
+ - Topology & Computers 2006 CD was distributed in Workshop
+   Topology & COmputers 2006, 27-29 November 2006 at Osaka Sangyo University.
+ - IMA2006 DVD was distributed in IMA workshop,
+   Software for Algebraic Geometry, at University of Minnesota, 23-27
+   October, 2006.
+ - ICMS2006 DVD1 and DVD2 were distributed in ICM2006 Madrid,
+   22-30 August 2006, and in ICMS2006 Castro Urdiales, Spain
+   1-3 September 2006.
+ - Japanese and English edition, KNOPPIX/Math/2006 was distributed in
+   MSJ meeting, 26-29 March 2006, at Chuo University.
+ - Japanese edition, KNOPPIX/Math/2005 was distiributed in MSJ meeting,
+   27-30 March 2005, at Nihon University.
+ - KNOPPIX/Math/2004 was distiributed in MSJ meeting, 28-31 March 2004,
+   at University of Tsukuba.
+ - The first KNOPPIX/Math was distributed in MSJ meeting, 23-26 March 2003,
+   at University of Tokyo.
+
+Links
+
+ - http://www.mathlibre.org/
+ - http://live.debian.net/
+
+This DVD is partially supported by Grant-in-Aid for Scientific Research
+No. 24540104, Japan Society for the Promotion of Science 2009--2013 and 
+Japan Science and Technology Agency, The JST Mathematics Program
+CREST Hibi team "Harmony of Groebner bases and the modern industrial society".
