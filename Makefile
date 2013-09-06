@@ -13,7 +13,6 @@ config: clean
 	--apt-options "--yes -oAcquire::Check-Valid-Until=false" \
 	--apt-secure false \
 	--bootappend-live "boot=live config quiet splash persistence noeject" \
-	--live-config.user-default-groups=audio,cdrom,dip,floppy,video,plugdev,netdev,powerdev,scanner,bluetooth,fuse,vboxsf
         --linux-packages "linux-image linux-headers" \
 	--architectures amd64 --linux-flavours amd64 --debian-installer live \
 	--win32-loader false \
