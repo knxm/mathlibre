@@ -1,4 +1,0 @@
-#!/bin/sh
-if [ -x /usr/sbin/usermod ]; then
-	usermod -G vboxsf user
-fi
