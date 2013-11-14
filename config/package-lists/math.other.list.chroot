@@ -26,7 +26,7 @@ qepcad-b
 qfract
 r-cran-rcmdr-knxm
 reduce-algebra
-saclib
+#saclib
 sage-desktop
 setxkbmap-gadget
 simplify
