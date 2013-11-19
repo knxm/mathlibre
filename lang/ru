@@ -12,7 +12,7 @@ KEYBOARD_LAYOUTS="us,$COUNTRY"
 lb config \
    --mirror-binary "http://mirror.mephi.ru/debian/" \
    --bootappend-live \
-    "boot=live config quiet splash persistence noeject\
+    "boot=live config quiet splash persistence\
     live-config.locales=$LOCALES \
     live-config.timezone=$TIMEZONE live-config.utc=no \
     live-config.keyboard-model=$KEYBOARD_MODEL \
