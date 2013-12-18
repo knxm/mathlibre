@@ -1,0 +1,28 @@
+#
+# This script is not tested. 2013.12.18
+#
+COUNTRY=br
+LANGUAGE=brazilian-portuguese
+LANG=C
+LOCALES=pt_GR.UTF-8 
+TIMEZONE=America/Sao_Paulo
+KEYBOARD_MODEL=$COUNTRY
+KEYBOARD_LAYOUTS=$COUNTRY
+
+lb config \
+   --mirror-binary "http://ftp.$COUNTRY.debian.org/debian/" \
+   --bootappend-live \
+    "boot=live config quiet splash persistence\
+    live-config.locales=$LOCALES \
+    live-config.timezone=$TIMEZONE live-config.utc=no \
+    live-config.keyboard-model=$KEYBOARD_MODEL \
+    live-config.keyboard-layouts=$KEYBOARD_LAYOUTS"
+
+#
+# for language environment
+#
+echo "task-$LANGUAGE task-$LANGUAGE-desktop" > config/package-lists/lang.$LANGUAGE.list.chroot
+#
+# for tex
+#
+echo "auctex" > config/package-lists/lang.$LANGUAGE.tex.list.chroot
