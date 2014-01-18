@@ -7,8 +7,8 @@ config: clean
 	--apt-http-proxy "http://localhost:3142" \
 	--mirror-bootstrap $(MIRROR) \
 	--mirror-chroot $(MIRROR) \
-	--parent-mirror-binary "$(MIRROR)" \
 	--archive-areas "main contrib non-free" \
+	--parent-mirror-binary "http://cdn.debian.net/debian/" \
 	--parent-archive-areas "main contrib non-free" \
 	--apt-options "--yes -oAcquire::Check-Valid-Until=false" \
 	--apt-secure false \
