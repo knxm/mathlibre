@@ -12,13 +12,14 @@ all: build
 build: 	
 ifdef version
 	wget -nc $(mirror)/sage-$(version).tar.gz
-	tar xvzf sage-$(version).tar.gz
+	tar xvzf sage-$(version).tar.gz 
 	# with SSL
-	(cd sage-$(version); make ssl) 
-	install
+	(cd sage-$(version); sudo make ssl)
+	install-sage
 endif
 
-install:
+install-sage:
+	rm -rf config/include.chroot/usr/local/sage
 	mv sage-$(version) config/include.chroot/usr/local/sage
 
 clean:

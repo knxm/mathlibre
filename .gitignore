@@ -1,6 +1,9 @@
 *.buildlog
+*.dmg
+*.exe
 *.img
 *.iso
+ir*_portable_x64.zip
 #*.list
 *.log
 *.md5sum
