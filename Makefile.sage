@@ -15,13 +15,13 @@ ifdef version
 	tar xvzf sage-$(version).tar.gz 
 	# with SSL
 	(cd sage-$(version); sudo make ssl)
-	install-sage
 endif
 
-install-sage:
-	rm -rf config/include.chroot/usr/local/sage
+install:
+	mv config/include.chroot/usr/local/sage sage.old
 	mv sage-$(version) config/include.chroot/usr/local/sage
 
 clean:
+	rm -rf sage.old
 	rm -rf sage-$(version)
 
