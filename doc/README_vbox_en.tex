@@ -1,0 +1,119 @@
+\documentclass[a4]{article}
+\usepackage{url,listings}
+\newcommand{\ir}{ir053\_portable\_x64}
+\newcommand{\vboxwin}{VirtualBox-4.3.6-91406-Win.exe}
+\newcommand{\vboxmac}{VirtualBox-4.3.6-91406-OSX.dmg}
+\newcommand{\vm}{mathlibre2014ja-vm}
+\lstset{
+  basicstyle=\small\ttfamily,
+  keywordstyle=\color{black}\bfseries\underbar,
+  stringstyle=\ttfamily,
+  showstringspaces=false,
+  frameround=tttt,
+  frame=trbl
+}
+\title{An introduction of the virtual environment}
+\author{Tatsuyoshi HAMADA}
+\begin{document}
+\maketitle
+MathLibreはDVDから起動できるLinuxです．しかし，DVDはアクセス速度が遅く
+普段使いには不便かもしれません．DVDをISOイメージとしてハードディスクに置
+き，仮想化ソフトウェアと呼ばれるアプリケーションを用いると，
+WindowsやMacを使いながら同時に利用することができます．
+仮想環境では継続的なホームディレクトリやパッケージの追加インストールも可能です．
+
+仮想環境として，オープンソースソフトウェアの VirtualBox\footnote{\url{http://www.virtualbox.org/}} を利用します．
+VirtualBoxは既存のオペレーティングシステム上のアプリケーションの一つとし
+てインストールされ，この中で追加のオペレーティングシステムを動かすことが
+できます．現在はOracleによって開発されています．
+
+仮想環境作成に必要なファイルは\underline{DVD内のフォルダvboxにまとめてあります．}
+
+\section{Windowsの場合}
+\subsection{VirtualBoxのインストール}
+ここではWindows上でMathLibreを動かす方法を解説します．
+\begin{enumerate}
+ \item MathLibre DVD内の \vboxwin もしくはネット上から最新版を取得し，管理者権限で実行してインストールします．
+ \item MathLibre DVD内のファイル \vm.zip をドキュメント等の適当な場所に展開します．展開されたフォルダを \vm とします．
+\end{enumerate}
+
+\subsection{DVDのISOイメージを取得}
+ISOイメージの取得方法として「ダウンロード」と「DVDから作成」の2通りの方法があります．
+\subsubsection{ダウンロードして取得}
+ネットワーク環境が整っている場合には，
+\url{ftp://ftp.mathlibre.org/pub/mathlibre/}より
+最新版のISOイメージファイルをダウンロードしてください．
+約4GBありますので約30分程度かかると思います．
+ダウンロードしたら，先ほどのフォルダ \vm 内に移動させて，ファイル名をmathlibre2014.isoに変更してください．
+
+\subsubsection{DVDから作成}
+ネットワーク環境がない場合でもMathLibre DVDがあれば，ISOイメージを作成できます．
+DVDにWindowsアプリケーションInfraRecorder\footnote{\url{http://infrarecorder.org/}}を同梱しています．
+InfraRecorderを用いてハードディスク上にMathLibre DVDのISOイメージを作成
+します．
+\begin{enumerate}
+ \item MathLibre DVD内の\ir.zipを適当な場所に展開します．
+ \item \ir 内にあるinfrarecorder.exeを実行します．
+ \item Read Discを選択します．
+ \item Source:としてDVDドライブが選択されているはずです．
+ \item Image file:として，先ほどのフォルダ \vm 内にmathlibre2014.isoを指定します．
+ \item OKボタンを押すと，DVDの複製が始まります．
+ \item 約4GBのファイルを作成するのに約15分ほどかかります．
+\end{enumerate}
+
+\subsection{仮想環境の起動}
+すべての作業を終えたら，\vm 内の \vm.vbox をダブルクリックして
+VirtualBox を起動してください．起動ボタンを押すと仮想環境が起動します．
+
+\section{MacOS Xの場合}
+\subsection{VirtualBoxのインストール}
+次にMacOS X上でMathLibreを動かす方法を解説します．
+\begin{enumerate}
+ \item \url{http://www.virtualbox.org/}から最新版を取得し，実行してインストールします．
+ \item \url{ftp://ftp.mathlibre.org/pub/mathlibre/}から \vm.zip をダウンロードし，ホームディレクトリ等の適当な場所に展開します．展開されたディレクトリを \vm とします．
+\end{enumerate}
+
+\subsection{DVDのISOイメージを取得}
+\url{ftp://ftp.mathlibre.org/pub/mathlibre}より
+最新版のISOイメージファイルをダウンロードしてください．
+約4GBありますので約30分程度かかると思います．
+ダウンロードしたら，先ほどのディレクトリ \vm 内に移動させて，ファイル名をmathlibre2014.isoに変更してください．
+
+%\subsubsection{DVDから作成}
+%ネットワーク環境がない場合でもMathLibre DVDがあれば，ISOイメージを作成で
+%きます．MacOS Xのユーティリティの一つ，ディスクユーティリティを用います． 
+%\begin{enumerate}
+% \item 「Launchpad」の「ユーティリティ」フォルダにある「ディスクユーティリティ」を開きます．
+% \item DVD ディスクを光学ドライブにセットし，左側のリストでそのディスクを選択します.
+% \item 「ファイル」＞「新規」＞「＜ディスク名＞からのディスクイメージ」と選択します．
+% \item ディレクトリ \vm 内に mathlibre2014.isoというファイル名で作成します．
+% \item 「イメージフォーマット」ポップアップメニューからオプションを選択します． 
+% \item 「保存」をクリックします．
+% \item 約4GBのファイルを作成するのに約15分ほどかかります．
+%\end{enumerate}
+
+\subsection{仮想環境の起動}
+\begin{enumerate}
+ \item すべての作業を終えたら VirtualBox を起動してください．
+ \item メニューから「仮想マシン」＞「追加」で\vm 内の \vm.vbox を選択してください．
+ \item 起動ボタンを押すと仮想環境が起動します．
+\end{enumerate}
+
+\section{共有フォルダの作成}
+\begin{enumerate}
+ \item VirtualBoxの設定アイコンから「共有フォルダー」の\verb|<+>|アイコンをクリックし，「フォルダーのパス」で共有したいフォルダーを指定，表示される「フォルダー名」（この名前は変更可能です．仮に\verb|X|とします．）を控え，「自動マウント」（および，もしあれば「永続化する」）にチェックを入れ，「OK」をクリックしてください．
+ \item 仮想マシン上では，\verb|/media/sf_X| にマウントされます（\verb|X|は先に控えたフォルダー名）．この共有フォルダーを仮に\verb|Y|という名前でシンボリックリンク（ショートカットのようなもの）を作成します．端末で以下の命令を入力してください．
+\begin{lstlisting}
+ln -s /media/sf_X Y
+\end{lstlisting}
+\item ログアウト後，再ログイン（ユーザ名:user, パスワード live）すれば
+\begin{lstlisting}
+ ls Y
+\end{lstlisting}
+のようにアクセスできます．もちろんファイルマネージャPCManFMでも利用可能です．
+\end{enumerate}
+
+%\begin{thebibliography}{9}
+% \bibitem{diskutil} Disk Utility 12.x: ディスク、CD、または DVD を複製する, \url{http://support.apple.com/kb/PH5846?viewlocale=ja_JP}
+%\end{thebibliography}
+\end{document}
