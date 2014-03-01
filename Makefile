@@ -1,3 +1,8 @@
+# Makefile for building MathLibre 
+# Make sure you have the dependencies and 30 GB of free disk space.
+#
+# Eg:  make lang=ja
+#
 MIRROR="http://dennou-q.gfd-dennou.org/debian/"
 
 all: build
@@ -34,5 +39,3 @@ clean:
 distclean: clean
 	#sudo lb clean --purge
 	sudo rm -f *.iso *.img *.list *.packages *.buildlog *.md5sum
-
-
