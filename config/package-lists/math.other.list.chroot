@@ -16,6 +16,7 @@ libgtk1.2
 libgtk1.2-common
 macaulay2
 macaulay2-common
+libmathcomp-coq
 mathlibre-start
 math-polyglot
 msjproc

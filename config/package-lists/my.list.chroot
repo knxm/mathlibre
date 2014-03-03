@@ -112,6 +112,7 @@ realpath
 rsync
 sharutils
 shutter
+simple-scan
 subversion
 tgif
 tzdata-java
