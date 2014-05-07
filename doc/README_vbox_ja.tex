@@ -1,9 +1,10 @@
 \documentclass[a4j]{jsarticle}
-\usepackage{url,listings}
+\usepackage{url,listings,fancyhdr}
 \newcommand{\ir}{ir053\_portable\_x64}
 \newcommand{\vboxwin}{VirtualBox-4.3.6-91406-Win.exe}
 \newcommand{\vboxmac}{VirtualBox-4.3.6-91406-OSX.dmg}
 \newcommand{\vm}{mathlibre2014ja-vm}
+\pagestyle{fancy}
 \lstset{
   basicstyle=\small\ttfamily,
   keywordstyle=\color{black}\bfseries\underbar,
@@ -12,43 +13,45 @@
   frameround=tttt,
   frame=trbl
 }
-\title{仮想環境での利用法}
-\author{濱田龍義}
+\lhead{\Large MathLibre: 仮想環境での利用方法}
+\chead{}
+\rhead{MathLibre Project}
 \begin{document}
-\maketitle
+%\maketitle
 MathLibreはDVDから起動できるLinuxです．しかし，DVDはアクセス速度が遅く
-普段使いには不便かもしれません．DVDをISOイメージとしてハードディスクに置
-き，仮想化ソフトウェアと呼ばれるアプリケーションを用いると，
+普段使いには不便かもしれません．DVDをISOイメージファイルとしてハードディスクに置
+き，仮想化ソフトウェアを用いて仮想環境を作ると，
 WindowsやMacを使いながら同時に利用することができます．
-仮想環境では継続的なホームディレクトリやパッケージの追加インストールも可能です．
+以下に紹介する仮想環境 \vm.zip は既に設定済みですので，
+継続的なホームディレクトリやパッケージの追加インストールも可能です．
+ISOイメージファイルとホームディレクトリのため，約12GBの空き容量が必要です．
 
-仮想環境として，オープンソースソフトウェアの VirtualBox\footnote{\url{http://www.virtualbox.org/}} を利用します．
+仮想化ソフトウェアとして，オープンソースソフトウェアの VirtualBox を利用します．
 VirtualBoxは既存のオペレーティングシステム上のアプリケーションの一つとし
 てインストールされ，この中で追加のオペレーティングシステムを動かすことが
-できます．現在はOracleによって開発されています．
-
-仮想環境作成に必要なファイルは\underline{DVD内のフォルダvboxにまとめてあります．}
+できます．
 
 \section{Windowsの場合}
-\subsection{VirtualBoxのインストール}
+仮想環境作成に必要なファイルは\underline{DVD内のフォルダvboxにまとめてあります．}\paragraph{VirtualBoxのインストール}
 ここではWindows上でMathLibreを動かす方法を解説します．
 \begin{enumerate}
  \item MathLibre DVD内の \vboxwin もしくはネット上から最新版を取得し，管理者権限で実行してインストールします．
  \item MathLibre DVD内のファイル \vm.zip をドキュメント等の適当な場所に展開します．展開されたフォルダを \vm とします．
 \end{enumerate}
 
-\subsection{DVDのISOイメージを取得}
+\paragraph{DVDのISOイメージを取得}
+
 ISOイメージの取得方法として「ダウンロード」と「DVDから作成」の2通りの方法があります．
-\subsubsection{ダウンロードして取得}
+\subparagraph{「ダウンロードして取得」}
+
 ネットワーク環境が整っている場合には，
 \url{ftp://ftp.mathlibre.org/pub/mathlibre/}より
-最新版のISOイメージファイルをダウンロードしてください．
-約4GBありますので約30分程度かかると思います．
+最新版のISOイメージファイル（約4GB）をダウンロードしてください．
 ダウンロードしたら，先ほどのフォルダ \vm 内に移動させて，ファイル名をmathlibre2014.isoに変更してください．
 
-\subsubsection{DVDから作成}
+\subparagraph{「DVDから作成」}
 ネットワーク環境がない場合でもMathLibre DVDがあれば，ISOイメージを作成できます．
-DVDにWindowsアプリケーションInfraRecorder\footnote{\url{http://infrarecorder.org/}}を同梱しています．
+DVDにWindowsアプリケーションInfraRecorderを同梱しています．
 InfraRecorderを用いてハードディスク上にMathLibre DVDのISOイメージを作成
 します．
 \begin{enumerate}
@@ -61,25 +64,25 @@ InfraRecorderを用いてハードディスク上にMathLibre DVDのISOイメー
  \item 約4GBのファイルを作成するのに約15分ほどかかります．
 \end{enumerate}
 
-\subsection{仮想環境の起動}
+\paragraph{仮想環境の起動}
 すべての作業を終えたら，\vm 内の \vm.vbox をダブルクリックして
 VirtualBox を起動してください．起動ボタンを押すと仮想環境が起動します．
 
 \section{MacOS Xの場合}
-\subsection{VirtualBoxのインストール}
 次にMacOS X上でMathLibreを動かす方法を解説します．
+最近のMacは標準では光学ドライブを搭載していませんのでネットワークを用いる方法を紹介します．
+\paragraph{VirtualBoxのインストール}
 \begin{enumerate}
- \item \url{http://www.virtualbox.org/}から最新版を取得し，実行してインストールします．
+ \item \url{http://www.virtualbox.org/}からMacOS X用最の新版を取得し，実行してインストールします．
  \item \url{ftp://ftp.mathlibre.org/pub/mathlibre/}から \vm.zip をダウンロードし，ホームディレクトリ等の適当な場所に展開します．展開されたディレクトリを \vm とします．
 \end{enumerate}
 
-\subsection{DVDのISOイメージを取得}
+\paragraph{DVDのISOイメージを取得}
 \url{ftp://ftp.mathlibre.org/pub/mathlibre}より
-最新版のISOイメージファイルをダウンロードしてください．
-約4GBありますので約30分程度かかると思います．
+最新版のISOイメージファイル（約4GB）をダウンロードしてください．
 ダウンロードしたら，先ほどのディレクトリ \vm 内に移動させて，ファイル名をmathlibre2014.isoに変更してください．
 
-%\subsubsection{DVDから作成}
+%\subparagraph{DVDから作成}
 %ネットワーク環境がない場合でもMathLibre DVDがあれば，ISOイメージを作成で
 %きます．MacOS Xのユーティリティの一つ，ディスクユーティリティを用います． 
 %\begin{enumerate}
@@ -92,7 +95,7 @@ VirtualBox を起動してください．起動ボタンを押すと仮想環境
 % \item 約4GBのファイルを作成するのに約15分ほどかかります．
 %\end{enumerate}
 
-\subsection{仮想環境の起動}
+\paragraph{仮想環境の起動}
 \begin{enumerate}
  \item すべての作業を終えたら VirtualBox を起動してください．
  \item メニューから「仮想マシン」＞「追加」で\vm 内の \vm.vbox を選択してください．
