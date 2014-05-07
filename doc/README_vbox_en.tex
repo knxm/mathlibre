@@ -3,7 +3,7 @@
 \newcommand{\ir}{ir053\_portable\_x64}
 \newcommand{\vboxwin}{VirtualBox-4.3.6-91406-Win.exe}
 \newcommand{\vboxmac}{VirtualBox-4.3.6-91406-OSX.dmg}
-\newcommand{\vm}{{\em mathlibre2014-vm}}
+\newcommand{\vm}{{\em mathlibre2014en-vm}}
 \lstset{
   basicstyle=\small\ttfamily,
   keywordstyle=\color{black}\bfseries\underbar,
@@ -16,20 +16,20 @@
 \author{Tatsuyoshi HAMADA}
 \begin{document}
 \maketitle
-MathLibre is a live linux, it's bootable from DVD.
+MathLibre is a live Linux, it's bootable from DVD.
 But, you may think it's inconvenient for the slow speed of DVD.
-When you use virtual machine on your operating system(Windows or Mac OS) and
-putting the ISO image file on your harddisk,
+When you use virtual machine on your host operating system(Windows or Mac OS) and
+putting the ISO image file on your hard disk,
 you can boot MathLibre computer environment with your operating system
 at the same time.
-You can use parsistent home directory and install your favorite Debian
+You can use persistent home directory and install your favorite Debian
 packages with this environment.
 
 We use an open source virtual machine,
 VirtualBox\footnote{\url{http://www.virtualbox.org/}}.
 VirtualBox is an application on your operating system,
 you can use your favorite operating systems on it.
-Now, it's developed by Oracle company.
+Now, it's developed by Oracle Corporation.
 We prepare setting files for making virtual environment 
 in {\em vbox} folder of MathLibre DVD.
 
@@ -40,15 +40,14 @@ We introduce how to boot MathLibre on Windows.
  \item Please check the file \vboxwin{} in MathLibre DVD, or download the
        current version of VirtualBox and install with administration mode.
  \item Please unzip the file \vm.zip{} to your favorite place, for example
-       in your {\em Documents}. We set the name of extracted folder {\em
-       mathlibre2014-vm}. 
+       in your {\em Documents} folder. We set the name of extracted folder \vm{}.
 \end{enumerate}
 
 \subsection{Getting MathLibre ISO image file}
 You have two choices for getting MathLibre ISO image,
 ``Download'' and ``Making from DVD''.
 
-\subsubsection{Download}
+\subsubsection{Download ISO image file}
 If you can use the Internet connection,
 please download the current ISO image from ftp site\footnote{\url{ftp://ftp.mathlibre.org/pub/mathlibre/}}.
 It has around 4GB, it takes some minutes or hours.
@@ -56,7 +55,7 @@ When you finish downloading the ISO file,
 move it in the folder \vm{} and rename this ISO file to
 {\em mathlibre2014.iso}. 
 
-\subsubsection{Making from DVD}
+\subsubsection{Making ISO image file from DVD}
 When you have MathLibre DVD, 
 you do not need the Internet connection for getting ISO image.
 MathLibre DVD is including the Windows application, InfraRecorder\footnote{\url{http://infrarecorder.org/}}.
@@ -66,23 +65,22 @@ We can make ISO image file with MathLibre DVD.
  \item Execute infrarecorder.exe in the folder \ir.
  \item Select Read Disc.
  \item You can find DVD drive as Source:.
- \item Select ISO image file in \vm{} for Image file:.
- \item Push OK button, starting to copy DVD in your harddisk.
+ \item Select ISO image file {\em mathlibre2014.iso} in the folder \vm{} for Image file:.
+ \item Clicking OK button, it will start to copy DVD in your hard disk.
  \item It takes about 15 minutes for making 4GB ISO image.
 \end{enumerate}
 
-\subsection{Booting virtual machiine}
+\subsection{Booting virtual machine}
 When you finish every procedures,
-execute VirtualBox with double clicking \vm.{\em box} in \vm{} folder.
-Push the boot button, you can enjoy mathematical software.
+execute VirtualBox with double clicking \vm.{\em vbox} in \vm{} folder.
+Click the Start icon and push Enter key, you can enjoy mathematical software.
 
-\section{MacOS X case}
+\section{Mac OS X case}
 \subsection{How to install VirtualBox}
 We introduce how to boot MathLibre on Mac OS.
 You need to use the Internet connection.
 \begin{enumerate}
- \item Download the current Mac OS version from
-       \url{http://www.virtualbox.org/} and install it.
+ \item Download the current VirtualBox for Mac OS from the web site of VirtualBox and install it.
  \item Download \vm.zip{} from
        \url{ftp://ftp.mathlibre.org/pub/mathlibre/} and extract it to
        your favorite place, for example home directory, we set this
@@ -94,41 +92,38 @@ Download the current ISO image from
 \url{ftp://ftp.mathlibre.org/pub/mathlibre/}
 and move it to the folder \vm{}. You need to rename ISO file to {\em mathlibre2014.iso}.
 
-%\subsubsection{DVDから作成}
-%ネットワーク環境がない場合でもMathLibre DVDがあれば，ISOイメージを作成で
-%きます．MacOS Xのユーティリティの一つ，ディスクユーティリティを用います． 
-%\begin{enumerate}
-% \item 「Launchpad」の「ユーティリティ」フォルダにある「ディスクユーティリティ」を開きます．
-% \item DVD ディスクを光学ドライブにセットし，左側のリストでそのディスクを選択します.
-% \item 「ファイル」＞「新規」＞「＜ディスク名＞からのディスクイメージ」と選択します．
-% \item ディレクトリ \vm 内に mathlibre2014.isoというファイル名で作成します．
-% \item 「イメージフォーマット」ポップアップメニューからオプションを選択します． 
-% \item 「保存」をクリックします．
-% \item 約4GBのファイルを作成するのに約15分ほどかかります．
-%\end{enumerate}
-
 \subsection{Booting virtual machine}
 \begin{enumerate}
  \item When you finish your every procedures, execute VirtualBox.
  \item Select \vm{} in \vm.{\em vbox} with the menu of ``Virtual Machine'' $>$ ``Add''.
- \item Pushing Boot button, you can enjoy mahtematical software.
+ \item Click the Start icon and push Enter key, you can enjoy mathematical software.
 \end{enumerate}
 
-\section{Making 共有フォルダの作成}
+\section{How to make Shared Folders}
 \begin{enumerate}
- \item VirtualBoxの設定アイコンから「共有フォルダー」の\verb|<+>|アイコンをクリックし，「フォルダーのパス」で共有したいフォルダーを指定，表示される「フォルダー名」（この名前は変更可能です．仮に\verb|X|とします．）を控え，「自動マウント」（および，もしあれば「永続化する」）にチェックを入れ，「OK」をクリックしてください．
- \item 仮想マシン上では，\verb|/media/sf_X| にマウントされます（\verb|X|は先に控えたフォルダー名）．この共有フォルダーを仮に\verb|Y|という名前でシンボリックリンク（ショートカットのようなもの）を作成します．端末で以下の命令を入力してください．
+ \item Click the Settings icon of VirtualBox,
+       and select Shared Folders, you can find
+       ``\verb|+| folder'' icon, click this icon and set Folder Path and
+       Folder Name, for example, the folder name is \verb|X|,
+       you should keep in mind, check Auto-mount box and push OK button.
+ \item  In virtual machine, this shared folder is mounted with
+	\verb|/media/sf_X|. We will create a symbolic link to this folder with
+	the name \verb|Y|. It is similar to shortcut in Windows. You can make
+	it with the following command:
 \begin{lstlisting}
 ln -s /media/sf_X Y
 \end{lstlisting}
-\item ログアウト後，再ログイン（ユーザ名:user, パスワード live）すれば
+\item Logout and login with username:\underline{user} and password:\underline{live}. You can access to the shared folder with this command in a terminal. 
 \begin{lstlisting}
  ls Y
 \end{lstlisting}
-のようにアクセスできます．もちろんファイルマネージャPCManFMでも利用可能です．
+Of course, you are able to use a file manager PCManFM, so you can share
+files with this shared folder between host operating system and
+      MathLibre virtual machine.
 \end{enumerate}
 
-%\begin{thebibliography}{9}
-% \bibitem{diskutil} Disk Utility 12.x: ディスク、CD、または DVD を複製する, \url{http://support.apple.com/kb/PH5846?viewlocale=ja_JP}
-%\end{thebibliography}
+\section{Some tips}
+If you have some troubles for booting MathLibre with VirtualBox,
+please check the BIOS menu of ``Intel Virtualization Technology'' is
+valid or not.
 \end{document}
