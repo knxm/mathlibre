@@ -24,6 +24,22 @@ echo "task-$LANGUAGE task-$LANGUAGE-desktop fonts-takao ibus-mozc ibus-anthy ema
 # for tex
 #
 echo "texlive-lang-cjk xdvik-ja yatex" > config/package-lists/lang.$LANGUAGE.tex.list.chroot
+#
+# for LatexMk
+# Thanks to Prof. Y. Mizoguchi and Mr. H. Ishii,
+# http://konn-san.com/prog/why-not-latexmk.html
+#
+cat > config/includes.chroot/etc/LatexMk << EOF
+$latex		= 'platex -synctex=1';
+$latex_silent	= 'platex -synctex=1 -interaction=batchmode';
+$bibtex		= 'pbibtex';
+$dvipdf		= 'dvipdfmx %O -o %D %S';
+$makeindex	= 'mendex %O -o %D %S';
+$max_repeat	= 5;
+$pdf_mode	= 3;
+$pdf_previewer	='start evince';
+$pdf_update_method = 1;
+EOF
 
 #
 # for ibus
