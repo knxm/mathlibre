@@ -1,3 +1,9 @@
-$pdf_mode=1;
-$pdflatex='pdflatex -interaction=nonstopmode -file-line-error -synctex=1';
-$pdf_previewer='start evince';
+		= 'platex -synctex=1';
+	= 'platex -synctex=1 -interaction=batchmode';
+		= 'pbibtex';
+		= 'dvipdfmx %O -o %D %S';
+	= 'mendex %O -o %D %S';
+	= 5;
+	= 3;
+	='start evince';
+ = 1;
