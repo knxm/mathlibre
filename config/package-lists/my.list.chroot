@@ -1,3 +1,6 @@
+#if ARCHITECTURE amd64
+ simple-scan
+#endif
 alien
 ant
 apt-cacher-ng
@@ -112,7 +115,6 @@ realpath
 rsync
 sharutils
 shutter
-simple-scan
 subversion
 testdisk
 tgif

@@ -1,3 +1,7 @@
+#if ARCHITECTURE amd64
+povray
+povray-includes
+#endif
 amd64-microcode
 atmel-firmware
 bluez-firmware
@@ -32,7 +36,5 @@ libparmetis3.1
 libtet1.4
 libtet1.4-dev
 pgplot5
-povray
-povray-includes
 tetgen
 zd1211-firmware

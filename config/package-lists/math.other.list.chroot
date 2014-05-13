@@ -1,46 +1,50 @@
+#if ARCHITECTURE amd64
+ cocoa5
+ eggx-example
+ libgtk1.2
+ libgtk1.2-common
+ msjproc
+ normaliz
+ qepcad-b
+ r-openxm-hgm
+ simplify
+ skeleton
+ surf
+ surf-examples
+ surfex
+ surfer
+#endif
 3d-xplormath-j
 4ti2
 car
 cca
+cocoa
 dndtools
 dropbox
 eggx
-eggx-example
 geogebra44
 geogebra5
 geonext
 gfan-doc
 #giac
 kseg
-libgtk1.2
-libgtk1.2-common
+libmathcomp-coq
 macaulay2
 macaulay2-common
-libmathcomp-coq
 mathlibre-start
 math-polyglot
-msjproc
-normaliz
 nzmath
 nzmath-doc
 polymake
 #python-giacpy 
 #qcas
-qepcad-b
 qfract
 r-cran-rcmdr-knxm
-r-openxm-hgm
 reduce-algebra
 #saclib
 sage-desktop
 setxkbmap-gadget
-simplify
+snappea-snappy
 singular-help
 singular-icons
-skeleton
-snappea-snappy
-surf
-surf-examples
-surfer
-surfex
 topcom
