@@ -1,10 +1,10 @@
 [Desktop Entry]
 Type=Application
+Encoding=UTF-8
 Name=Surf
 GenericName=
 Comment=
-Icon=surf
+Icon=surf.xpm
 Exec=surf
-MimeType=text/x-pic;
 Terminal=false
 Categories=Math;

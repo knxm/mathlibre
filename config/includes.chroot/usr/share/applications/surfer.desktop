@@ -1,9 +1,10 @@
 [Desktop Entry]
 Type=Application
+Encoding=UTF-8
 Name=Surfer
 GenericName=
 Comment=
-Icon=surfer
+Icon=surfer.xpm
 Exec=surfer
 Terminal=false
 Categories=Math;
