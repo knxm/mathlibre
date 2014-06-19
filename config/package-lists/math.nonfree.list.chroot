@@ -1,4 +1,4 @@
-#if ARCHITECTURE amd64
+#if ARCHITECTURES amd64
 povray
 povray-includes
 #endif

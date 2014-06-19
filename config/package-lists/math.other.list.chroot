@@ -1,18 +1,18 @@
-#if ARCHITECTURE amd64
- cocoa5
- eggx-example
- libgtk1.2
- libgtk1.2-common
- msjproc
- normaliz
- qepcad-b
- r-openxm-hgm
- simplify
- skeleton
- surf
- surf-examples
- surfex
- surfer
+#if ARCHITECTURES amd64
+cocoa5
+eggx-example
+libgtk1.2
+libgtk1.2-common
+msjproc
+normaliz
+qepcad-b
+r-openxm-hgm
+simplify
+skeleton
+surf
+surf-examples
+surfex
+surfer
 #endif
 3d-xplormath-j
 4ti2
@@ -48,4 +48,4 @@ snappea-snappy
 sollya
 singular-help
 singular-icons
-topcom
+# topcom

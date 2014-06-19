@@ -1,3 +1,11 @@
+Package: apache2-bin
+Pin: version *
+Pin-Priority: -1
+
+Package: apache2-utils
+Pin: version *
+Pin-Priority: -1
+
 Package: texlive-latex-extra-doc
 Pin: version *
 Pin-Priority: -1

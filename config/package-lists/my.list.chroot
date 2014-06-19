@@ -1,5 +1,5 @@
-#if ARCHITECTURE amd64
- simple-scan
+#if ARCHITECTURES amd64
+simple-scan
 #endif
 alien
 ant
@@ -120,6 +120,7 @@ testdisk
 tgif
 tzdata-java
 unison
+# vim
 virtualbox
 virtualbox-dkms
 virtualbox-guest-dkms
