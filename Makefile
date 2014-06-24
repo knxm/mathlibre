@@ -21,6 +21,7 @@ config: clean
         --linux-packages "linux-image linux-headers" \
 	--architectures amd64 --linux-flavours amd64 --debian-installer live \
 	--win32-loader false \
+#	--distribution testing \
 #	--binary-images hdd
 
 build: 	config

@@ -1,9 +1,8 @@
-$latex		= 'platex -synctex=1';
-$latex_silent	= 'platex -synctex=1 -interaction=batchmode';
-$bibtex		= 'pbibtex';
-$dvipdf		= 'dvipdfmx %O -o %D %S';
+$pdflatex		= 'pdflatex -synctex=1';
+$pdflatex_silent	= 'pdflatex -synctex=1 -interaction=batchmode';
+$bibtex		= 'bibtex';
 $makeindex	= 'mendex %O -o %D %S';
 $max_repeat	= 5;
-$pdf_mode	= 3;
+$pdf_mode	= 1;
 $pdf_previewer	='start evince';
 $pdf_update_method = 1;
