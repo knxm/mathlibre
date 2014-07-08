@@ -1,10 +1,12 @@
 #if ARCHITECTURES amd64
 cocoa5
 eggx-example
+gudhi
 libgtk1.2
 libgtk1.2-common
 msjproc
 normaliz
+perseus
 phat
 qepcad-b
 r-openxm-hgm
