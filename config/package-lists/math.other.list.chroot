@@ -1,6 +1,7 @@
 #if ARCHITECTURES amd64
 cocoa5
 eggx-example
+gappa
 gudhi
 knxm-mkusbmath-debian
 libgtk1.2

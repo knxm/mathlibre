@@ -1,0 +1,82 @@
+COUNTRY=us
+LANGUAGE=english
+LANG=C
+LOCALES=en_US.UTF-8
+#TIMEZONE=America/New_York
+TIMEZONE=Asia/Seoul
+KEYBOARD_MODEL=$COUNTRY
+KEYBOARD_LAYOUTS=$COUNTRY
+
+lb config \
+   --mirror-binary "http://ftp.debian.org/debian/" \
+   --bootappend-live \
+    "boot=live config quiet splash persistence\
+    live-config.locales=$LOCALES \
+    live-config.timezone=$TIMEZONE live-config.utc=yes \
+    live-config.keyboard-model=$KEYBOARD_MODEL \
+    live-config.keyboard-layouts=$KEYBOARD_LAYOUTS"
+
+#
+# for ko
+#
+echo "task-korean task-korean-desktop ibus-hangul" > config/package-lists/lang.$LANGUAGE.list.chroot
+
+#
+# for tex
+#
+#echo "auctex" > config/package-lists/lang.$LANGUAGE.tex.list.chroot
+echo "texlive-lang-cjk auctex" > config/package-lists/lang.$LANGUAGE.tex.list.chroot
+
+#
+# for LatexMk
+#
+cat > config/includes.chroot/etc/LatexMk << EOF
+\$pdflatex		= 'pdflatex -synctex=1';
+\$pdflatex_silent	= 'pdflatex -synctex=1 -interaction=batchmode';
+\$bibtex		= 'bibtex';
+\$makeindex	= 'mendex %O -o %D %S';
+\$max_repeat	= 5;
+\$pdf_mode	= 1;
+\$pdf_previewer	='start evince';
+\$pdf_update_method = 1;
+EOF
+
+#
+# for ibus
+#
+cat > config/hooks/lang.ibus.chroot << EOF
+#!/bin/sh
+gconftool --direct --config-source xml:readwrite:/etc/gconf/gconf.xml.defaults \
+--type list --list-type=string \
+--set /desktop/ibus/general/preload_engines [hangul]
+gconftool --direct --config-source xml:readwrite:/etc/gconf/gconf.xml.defaults \
+--type list --list-type=string \
+--set /desktop/ibus/general/hotkey/trigger [Control+space,Hangul,Alt+grave,Alt+Release+Alt_R,Zenkaku_Hankaku,Alt+Kanji]
+EOF
+
+#
+# for multi menu
+#
+cat > config/includes.binary/isolinux/live.cfg << EOF
+label live-amd64
+	menu label ^Live "English" (amd64)
+	menu default
+	linux /live/vmlinuz
+	initrd /live/initrd.img
+	append boot=live config quiet splash persistence
+
+label live-amd64-ko
+        menu label ^Live "Korean" (amd64)
+        linux /live/vmlinuz
+        initrd /live/initrd.img
+        append boot=live config quiet splash persistence live-config.locales=ko_
+KR.UTF-8 live-config.timezone=Asia/Seoul live-config.utc=yes live-config.keyboar
+d-model=kr106 live-config.keyboard-layouts=kr
+
+label live-amd64-failsafe
+	menu label ^Live (amd64 failsafe)
+	linux /live/vmlinuz
+	initrd /live/initrd.img
+	append boot=live config memtest noapic noapm nodma nomce nolapic nomodes
+et nosmp nosplash vga=normal
+EOF

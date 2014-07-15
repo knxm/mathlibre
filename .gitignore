@@ -34,3 +34,4 @@ config/includes.chroot/etc/emacs/site-start.d/99lang.*.el
 config/package-lists/lang.*.list.chroot
 config/source
 garbage/
+live.cfg

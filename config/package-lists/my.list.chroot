@@ -131,6 +131,7 @@ x11proto-core-dev
 x11proto-input-dev
 x11proto-kb-dev
 x11proto-xext-dev
+xbacklight
 xsltproc
 xtrans-dev
 emacs
