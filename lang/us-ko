@@ -12,7 +12,7 @@ lb config \
    --bootappend-live \
     "boot=live config quiet splash persistence\
     live-config.locales=$LOCALES \
-    live-config.timezone=$TIMEZONE live-config.utc=yes \
+    live-config.timezone=$TIMEZONE live-config.utc=no \
     live-config.keyboard-model=$KEYBOARD_MODEL \
     live-config.keyboard-layouts=$KEYBOARD_LAYOUTS"
 
@@ -69,7 +69,7 @@ label live-amd64-ko
         menu label ^Live -- Korean  -- (amd64)
         linux /live/vmlinuz
         initrd /live/initrd.img
-        append boot=live config quiet splash persistence live-config.locales=ko_KR.UTF-8 live-config.timezone=Asia/Seoul live-config.utc=yes live-config.keyboard-model=kr106 live-config.keyboard-layouts=kr
+        append boot=live config quiet splash persistence live-config.locales=ko_KR.UTF-8 live-config.utc=no live-config.timezone=Asia/Seoul live-config.keyboard-model=kr106 live-config.keyboard-layouts=kr
 
 label live-amd64-failsafe
 	menu label ^Live (amd64 failsafe)
