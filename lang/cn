@@ -24,6 +24,19 @@ echo "task-$LANGUAGE task-$LANGUAGE-desktop ibus-pinyin ibus-sunpinyin ibus-goog
 # for tex
 #
 echo "texlive-lang-cjk auctex" > config/package-lists/lang.$LANGUAGE.tex.list.chroot
+#
+# for LatexMk
+#
+cat > config/includes.chroot/etc/LatexMk << EOF
+\$pdflatex		= 'pdflatex -synctex=1';
+\$pdflatex_silent	= 'pdflatex -synctex=1 -interaction=batchmode';
+\$bibtex		= 'bibtex';
+\$makeindex	= 'mendex %O -o %D %S';
+\$max_repeat	= 5;
+\$pdf_mode	= 1;
+\$pdf_previewer	='start evince';
+\$pdf_update_method = 1;
+EOF
 
 #
 # for ibus
@@ -37,3 +50,4 @@ gconftool --direct --config-source xml:readwrite:/etc/gconf/gconf.xml.defaults \
 --type list --list-type=string \
 --set /desktop/ibus/general/hotkey/trigger [Control+space,Hangul,Alt+grave,Alt+Release+Alt_R,Zenkaku_Hankaku,Alt+Kanji]
 EOF
+
