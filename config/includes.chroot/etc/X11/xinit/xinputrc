@@ -2,7 +2,7 @@
 # This file is for starting input method for some language environments.
 # Copyright (C) 2014 Tatsuyoshi Hamada <hamada@holst.sm.fukuoka-u.ac.jp>
 case "${LANG}" in
-  cn*|ja*|ko*|th*|vi*)
+  zh*|ja*|ko*|th*|vi*)
     run_im default
     ;;	
 esac
