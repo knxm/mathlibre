@@ -53,6 +53,7 @@ latexmk
 lcalc
 libfile-mmagic-perl
 libgsl0-dev
+libjas-java
 libjs-mathjax
 libkakasi2
 libnkf-perl
