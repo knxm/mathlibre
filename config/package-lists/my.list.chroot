@@ -34,6 +34,8 @@ icedtea-7-plugin
 imagemagick
 inkscape
 java-common
+jruby
+jython
 ksnapshot
 lacheck
 libaccess-bridge-java
