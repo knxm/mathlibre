@@ -17,6 +17,7 @@ config: clean
 	--parent-archive-areas "main contrib non-free" \
 	--apt-options "--yes -oAcquire::Check-Valid-Until=false" \
 	--apt-secure false \
+        --backports true \
 	--bootappend-live "boot=live config quiet splash persistence" \
         --linux-packages "linux-image linux-headers" \
 	--architectures amd64 --linux-flavours amd64 --debian-installer live \
