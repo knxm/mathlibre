@@ -1,0 +1,12 @@
+#!/bin/sh
+
+# For Java
+update-alternatives --set java /usr/lib/jvm/java-7-openjdk-amd64/jre/bin/java
+update-alternatives --set javac /usr/lib/jvm/java-7-openjdk-amd64/bin/javac
+update-alternatives --set javadoc /usr/lib/jvm/java-7-openjdk-amd64/bin/javadoc
+update-alternatives --set javah /usr/lib/jvm/java-7-openjdk-amd64/bin/javah
+update-alternatives --set javap /usr/lib/jvm/java-7-openjdk-amd64/bin/javap
+update-alternatives --set javaws /usr/lib/jvm/java-7-openjdk-amd64/bin/javaws
+
+# For Editor
+update-alternatives --set editor /usr/bin/vim.tiny
