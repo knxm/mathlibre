@@ -19,7 +19,7 @@ common-lisp-controller
 cvs
 debhelper
 default-jdk
-#eclipse
+# eclipse
 ed
 evince
 fakeroot

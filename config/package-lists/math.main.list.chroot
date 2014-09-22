@@ -41,9 +41,11 @@ gv
 hugs
 ipython
 ipython-qtconsole
+jas
 jsmath
 jsmath-fonts
 jsmath-fonts-sprite
+junit4
 kakasi-dic
 kig
 kile
@@ -53,9 +55,9 @@ latexmk
 lcalc
 libfile-mmagic-perl
 libgsl0-dev
-libjas-java
 libjs-mathjax
 libkakasi2
+liblog4j1.2-java
 libnkf-perl
 libssreflect-coq
 libssreflect-ocaml-dev
@@ -109,7 +111,7 @@ scilab-include
 scilab-minimal-bin
 scratch
 sketch
-snappea
+# snappea
 step
 sympow
 swi-prolog
