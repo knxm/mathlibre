@@ -30,10 +30,6 @@ Package: apache2-utils
 Pin: version *
 Pin-Priority: -1
 
-Package: openjdk-6-jdk
-Pin: version *
-Pin-Priority: -1
-
 Package: texlive-latex-extra-doc
 Pin: version *
 Pin-Priority: -1
