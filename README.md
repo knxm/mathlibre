@@ -27,7 +27,7 @@ Makefile is supporting "us(default), ko, cn, tw, etc." languages too.
 ## Sage system
 Sage is a huge computer algebra system, so we extract and make it manually.
 We are using sage-6.1.1, which is extracted to config/includes.chroot/usr/local.
-You can download the source code:sage-6.2.tar.gz from
+You can download the source code:sage-6.4.1.tar.gz from
 http://www.sagemath.org/download-source.html
 It will take your computer a while to compile Sage from the source code.
 
