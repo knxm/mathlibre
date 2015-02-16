@@ -30,7 +30,7 @@ gauche
 genus2reduction
 geomview
 gfan
-ghc
+#ghc
 ginac-tools
 gnuplot-doc
 gnutls-bin
