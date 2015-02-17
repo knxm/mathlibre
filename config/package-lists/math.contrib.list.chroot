@@ -1,5 +1,5 @@
 iucode-tool
-prism2-usb-firmware-installer
+#prism2-usb-firmware-installer
 #if ARCHITECTURES amd64
 ruby-pgplot
 #endif
