@@ -1,9 +1,0 @@
-[Desktop Entry]
-Name=Processing
-GenericName=
-Exec=processing
-Icon=processing
-Terminal=false
-Type=Application
-StartupNotify=true
-Categories=Math;Development
