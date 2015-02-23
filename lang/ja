@@ -64,5 +64,5 @@ if [ -f doc/README_vbox_ja.pdf ]; then
   cp doc/README_vbox_ja.pdf config/includes.binary/vbox
 fi
 if [ -f vbox/mathlibre2014ja-vm.zip ]; then
-  cp vbox/mathlibre2014ja-vm.zip config/includes.binary/vbox
+  cp vbox/mathlibre-ja-vm.zip config/includes.binary/vbox
 fi
