@@ -30,7 +30,7 @@ gauche
 genus2reduction
 geomview
 gfan
-#ghc
+ghc
 ginac-tools
 gnuplot-doc
 gnutls-bin
@@ -38,7 +38,7 @@ gprolog
 gsl-ref-html
 gv
 # hol-light
-hugs
+#hugs
 ipython
 ipython-qtconsole
 jas
@@ -47,7 +47,7 @@ jsmath-fonts
 jsmath-fonts-sprite
 junit4
 kakasi-dic
-kig
+#kig
 kile
 kile-l10n
 kmplot
@@ -98,7 +98,7 @@ python-tornado
 python-visual
 qhull-bin
 regina-normal
-rkward
+#rkward
 rocs
 ruby-fftw3
 ruby-gsl
