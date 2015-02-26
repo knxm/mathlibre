@@ -38,7 +38,7 @@ gprolog
 gsl-ref-html
 gv
 # hol-light
-#hugs
+hugs
 ipython
 ipython-qtconsole
 jas
