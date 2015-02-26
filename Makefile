@@ -14,6 +14,7 @@ config: clean
 	--mirror-chroot $(MIRROR) \
 	--archive-areas "main contrib non-free" \
 	--parent-mirror-binary "http://cdn.debian.net/debian/" \
+        --parent-mirror-binary-backports "http://ftp.debian.org/debian/" \
 	--parent-archive-areas "main contrib non-free" \
 	--apt-options "--yes -oAcquire::Check-Valid-Until=false" \
 	--apt-secure false \
