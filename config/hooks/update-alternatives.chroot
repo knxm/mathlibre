@@ -10,3 +10,6 @@ update-alternatives --set javap /usr/lib/jvm/java-7-openjdk-amd64/bin/javap
 
 # For Editor
 update-alternatives --set editor /usr/bin/vim.tiny
+
+# For Singular
+update-alternatives --set emacs /usr/bin/emacs23-x

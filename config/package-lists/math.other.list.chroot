@@ -32,7 +32,7 @@ gap-gapdoc
 gap-quagroup
 gap-sla
 geogebra5
-geonext
+#geonext
 gfan-doc
 kseg
 libmathcomp-coq

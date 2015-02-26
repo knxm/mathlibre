@@ -110,11 +110,13 @@ memtest86+
 namazu
 nuvola-icon-theme
 openjdk-7-jdk
+openjdk-7-jre-lib
 parted
 pgf
 purifyeps
 realpath
-#remmina
+remmina
+recoll
 rsync
 sharutils
 shutter
