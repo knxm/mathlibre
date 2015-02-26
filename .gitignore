@@ -1,5 +1,6 @@
 *.buildlog
 *.dmg
+*.deb
 *.exe
 *.img
 *.iso
