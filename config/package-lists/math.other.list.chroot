@@ -34,7 +34,6 @@ gap-sla
 geogebra5
 geonext
 gfan-doc
-#giac
 kseg
 libmathcomp-coq
 macaulay2
@@ -44,8 +43,6 @@ math-polyglot
 nzmath
 nzmath-doc
 polymake
-#python-giacpy 
-#qcas
 qfract
 r-cran-rcmdr-knxm
 reduce-algebra
@@ -57,3 +54,7 @@ sollya
 singular-help
 singular-icons
 # topcom
+# # GiaC
+# giac
+# qcas
+# python-giacpy 
