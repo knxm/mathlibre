@@ -103,6 +103,7 @@ regina-normal
 rocs
 ruby-fftw3
 ruby-gsl
+ruby-gtk2
 ruby-sqlite3
 scilab
 scilab-cli
