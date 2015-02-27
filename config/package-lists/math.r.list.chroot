@@ -1,9 +1,9 @@
 ess
-rstudio
 r-base-core
 r-base-dev
 r-cran-abind
 r-cran-boot
+r-cran-cairodevice
 r-cran-car
 r-cran-chron
 r-cran-class
@@ -38,6 +38,7 @@ r-cran-rcolorbrewer
 r-cran-relimp
 r-cran-rgl
 r-cran-rglpk
+r-cran-rgtk2
 r-cran-robustbase
 r-cran-rodbc
 r-cran-rpart
@@ -60,3 +61,4 @@ r-cran-zelig
 r-cran-zoo
 r-mathlib
 r-recommended
+rstudio
