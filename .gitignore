@@ -30,6 +30,7 @@ config/hooks/lang.*.chroot
 config/includes.chroot/usr/share/doc/mathlibre-doc/ja
 config/includes.chroot/usr/local/sage
 config/includes.chroot/usr/local/sage-?.?
+config/includes.chroot/usr/local/julia
 config/includes.chroot/etc/emacs/site-start.d/99lang.*.el
 #config/includes.chroot/etc/skel/.kseg
 config/package-lists/lang.*.list.chroot

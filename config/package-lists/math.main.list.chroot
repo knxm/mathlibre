@@ -94,6 +94,7 @@ python-openssl
 python-pygments
 python-scipy
 python-setuptools
+python-sklearn
 python-sympy
 python-tornado
 python-visual
