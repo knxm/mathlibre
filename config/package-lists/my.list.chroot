@@ -32,7 +32,7 @@ gparted
 html2text
 icedtea-7-plugin
 imagemagick
-inkscape
+#inkscape
 java-common
 jruby
 jython

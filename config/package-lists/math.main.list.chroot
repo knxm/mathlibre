@@ -60,6 +60,7 @@ libjs-mathjax
 libkakasi2
 liblog4j1.2-java
 libnkf-perl
+libopenblas-dev
 libssreflect-coq
 libssreflect-ocaml-dev
 libtext-kakasi-perl
@@ -91,6 +92,7 @@ python-dev
 python-gnuplot
 python-matplotlib
 python-openssl
+python-pandas
 python-pygments
 python-scipy
 python-setuptools
