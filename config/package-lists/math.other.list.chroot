@@ -4,7 +4,6 @@ eggx-example
 gappa
 gudhi
 knxm-mkusbmath-debian
-julia-desktop
 libgtk1.2
 libgtk1.2-common
 msjproc
@@ -35,6 +34,7 @@ gap-sla
 geogebra5
 #geonext
 gfan-doc
+julia-desktop
 kseg
 libmathcomp-coq
 macaulay2
