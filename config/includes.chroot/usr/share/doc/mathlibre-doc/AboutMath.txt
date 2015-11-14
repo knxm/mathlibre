@@ -1,7 +1,7 @@
 MathLibre
 
  - MathLibre is a Live Linux for mathematical software.
- - MathLibre is construted with Debian Live System.
+ - MathLibre is constructed with Debian Live System.
  
  "To start the DVD, set up the BIOS of your computer to boot off the DVD,
  put the DVD in the drive, and power up the computer."
