@@ -13,17 +13,17 @@ config: clean
 	--mirror-bootstrap $(MIRROR) \
 	--mirror-chroot $(MIRROR) \
 	--archive-areas "main contrib non-free" \
-	--parent-mirror-binary "http://cdn.debian.net/debian/" \
-        --parent-mirror-binary-backports "http://ftp.debian.org/debian/" \
-	--parent-archive-areas "main contrib non-free" \
-	--apt-options "--yes -oAcquire::Check-Valid-Until=false" \
-	--apt-secure false \
-        --backports true \
-	--bootappend-live "boot=live config quiet splash persistence" \
-        --linux-packages "linux-image linux-headers" \
-	--architectures amd64 --linux-flavours amd64 --debian-installer live \
-	--win32-loader false \
-#	--distribution testing \
+	--parent-mirror-binary "http://www.jp.debian.org/debian/" \
+#        --parent-mirror-binary-backports "http://ftp.debian.org/debian/" \
+#	--parent-archive-areas "main contrib non-free" \
+#	--apt-options "--yes -oAcquire::Check-Valid-Until=false" \
+#	--apt-secure false \
+#        --backports true \
+#	--bootappend-live "boot=live config quiet splash persistence" \
+#        --linux-packages "linux-image linux-headers" \
+#	--architectures amd64 --linux-flavours amd64 --debian-installer live \
+#	--win32-loader false \
+#	--distribution jessie \
 #	--binary-images hdd
 
 build: 	config
