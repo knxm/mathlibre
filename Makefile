@@ -3,7 +3,7 @@
 #
 # Eg:  make lang=ja
 #
-MIRROR="http://dennou-q.gfd-dennou.org/debian/"
+MIRROR="http://ftp.jp.debian.org/debian/"
 
 all: build
 
@@ -13,12 +13,12 @@ config: clean
 	--mirror-bootstrap $(MIRROR) \
 	--mirror-chroot $(MIRROR) \
 	--archive-areas "main contrib non-free" \
-	--apt-options "--yes -oAcquire::Check-Valid-Until=false" \
+	--parent-archive-areas "main contrib non-free" \
+	--apt-options "--fix-missing --yes -oAcquire::Check-Valid-Until=false" \
 	--bootappend-live "boot=live config quiet splash persistence" \
 #	--architectures amd64 --linux-flavours amd64 --debian-installer live \
 #	--parent-mirror-binary "http://www.jp.debian.org/debian/" \
 #        --parent-mirror-binary-backports "http://ftp.debian.org/debian/" \
-#	--parent-archive-areas "main contrib non-free" \
 #	--apt-secure false \
 #        --backports true \
 #       --linux-packages "linux-image linux-headers" \

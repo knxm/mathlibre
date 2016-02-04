@@ -2,7 +2,7 @@
 Architecture: amd64
 Archive-Areas: main contrib non-free
 Distribution: jessie
-Mirror-Bootstrap: http://dennou-q.gfd-dennou.org/debian/
+Mirror-Bootstrap: http://ftp.jp.debian.org/debian/
 
 [FIXME]
 Configuration-Version: 4.0.3
