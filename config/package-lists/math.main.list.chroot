@@ -63,8 +63,16 @@ libnkf-perl
 libopenblas-dev
 # libssreflect-coq : Depends: libssreflect-ocaml (>= 1.5-2) but it is not going to be installed
 #                    Depends: coq-8.4pl3+4.01.0
+# libssreflect-coq is supported from Debian "jessie".
+libssreflect-coq
 # libssreflect-ocaml-dev : Depends: libcoq-ocaml-dev-g3g57
 #                          Depends: libssreflect-ocaml-6d7i7
+# libssreflect-ocaml-dev is supported from Debian "jessie".
+libssreflect-ocaml-dev
+# libmathcomp-coq : Depends: libssreflect-coq (>= 1.5) but it is not going to be installed
+#                   Depends: libssreflect-coq (< 1.6) but it is not going to be installed
+# libmathcomp-coq is supported from Debian "jessie".
+libmathcomp-coq
 libtext-kakasi-perl
 lie
 lp-solve

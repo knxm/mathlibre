@@ -42,11 +42,6 @@ julia-desktop
 # kseg : Depends: libqt3-mt (>= 3:3.3.8b) but it is not going to be installed
 # We changed archives/tryphon.list.chroot to "jessie".
 kseg
-# libmathcomp-coq : Depends: libssreflect-coq (>= 1.5) but it is not going to be installed
-#                   Depends: libssreflect-coq (< 1.6) but it is not going to be installed
-# libssreflect-coq is supported from Debian "jessie".
-libmathcomp-coq
-libssreflect-coq
 # macaulay2 : Depends: libpari-gmp3 but it is not installable
 # We changed archives/m2.list.chroot to "jessie"
 macaulay2
@@ -64,8 +59,8 @@ sage-desktop
 setxkbmap-gadget
 snappea-snappy
 sollya
-singular-help
-singular-icons
+singular
+singular-ui-emacs
 # topcom
 # # GiaC
 # giac

@@ -16,10 +16,10 @@ config: clean
 	--parent-archive-areas "main contrib non-free" \
 	--apt-options "--fix-missing --yes -oAcquire::Check-Valid-Until=false" \
 	--bootappend-live "boot=live config quiet splash persistence" \
+	--apt-secure false \
 #	--architectures amd64 --linux-flavours amd64 --debian-installer live \
 #	--parent-mirror-binary "http://www.jp.debian.org/debian/" \
 #        --parent-mirror-binary-backports "http://ftp.debian.org/debian/" \
-#	--apt-secure false \
 #        --backports true \
 #       --linux-packages "linux-image linux-headers" \
 #	--win32-loader false \

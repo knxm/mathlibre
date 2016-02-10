@@ -1,0 +1,9 @@
+ 4ti2 : Depends: libglpk0 (>= 4.31) but it is not installable
+ cca : Depends: openjdk-6-jre but it is not installable or
+ kseg : Depends: libqt3-mt (>= 3:3.3.8b) but it is not going to be installed
+ libssreflect-coq : Depends: libssreflect-ocaml (>= 1.5-2) but it is not going to be installed
+                    Depends: coq-8.4pl3+4.01.0
+ libssreflect-ocaml-dev : Depends: libcoq-ocaml-dev-g3g57
+                          Depends: libssreflect-ocaml-6d7i7
+ macaulay2 : Depends: libpari-gmp3 but it is not installable
+ qfract : Depends: libboost-thread1.49.0 (>= 1.49.0-1) but it is not installable
