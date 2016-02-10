@@ -61,8 +61,10 @@ libkakasi2
 liblog4j1.2-java
 libnkf-perl
 libopenblas-dev
-libssreflect-coq
-libssreflect-ocaml-dev
+# libssreflect-coq : Depends: libssreflect-ocaml (>= 1.5-2) but it is not going to be installed
+#                    Depends: coq-8.4pl3+4.01.0
+# libssreflect-ocaml-dev : Depends: libcoq-ocaml-dev-g3g57
+#                          Depends: libssreflect-ocaml-6d7i7
 libtext-kakasi-perl
 lie
 lp-solve
