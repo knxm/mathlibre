@@ -1,2 +1,3 @@
 # Singular
-deb http://www.mathematik.uni-kl.de/~mschulze/repo/debian stable Singular
+# deb http://www.mathematik.uni-kl.de/~mschulze/repo/debian stable Singular
+deb ftp://jim.mathematik.uni-kl.de/repo/debian jessie main
