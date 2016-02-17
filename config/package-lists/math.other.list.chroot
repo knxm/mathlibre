@@ -60,7 +60,12 @@ setxkbmap-gadget
 snappea-snappy
 sollya
 singular
+singular-modules
+singular-ui
 singular-ui-emacs
+libsingular4
+libflint-2.4.4
+libntl5
 # topcom
 # # GiaC
 # giac
