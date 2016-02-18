@@ -43,7 +43,7 @@ cat > config/includes.chroot/etc/LatexMk << EOF
 EOF
 
 #
-# for ibus
+# for uim (ibus)
 #
 cat > config/hooks/lang.ibus.chroot << EOF
 #!/bin/sh
