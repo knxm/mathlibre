@@ -23,7 +23,7 @@ echo "task-$LANGUAGE task-$LANGUAGE-desktop fonts-takao ibus-mozc emacs-mozc" > 
 #
 # for tex
 #
-echo "texlive-lang-cjk xdvik-ja yatex" > config/package-lists/lang.$LANGUAGE.tex.list.chroot
+#echo "texlive-lang-cjk xdvik-ja yatex" > config/package-lists/lang.$LANGUAGE.tex.list.chroot
 #
 # for LatexMk
 # Thanks to Prof. Y. Mizoguchi and Mr. H. Ishii,
