@@ -17,7 +17,7 @@ config: clean
 	--apt-options "--fix-missing --yes -oAcquire::Check-Valid-Until=false" \
 	--bootappend-live "boot=live config quiet splash persistence" \
 	--apt-secure false \
-#	--architectures amd64 --linux-flavours amd64 --debian-installer live \
+	--architectures amd64 --linux-flavours amd64 --debian-installer live \
 #	--parent-mirror-binary "http://www.jp.debian.org/debian/" \
 #        --parent-mirror-binary-backports "http://ftp.debian.org/debian/" \
 #        --backports true \

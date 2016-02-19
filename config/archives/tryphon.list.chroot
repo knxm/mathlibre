@@ -1,3 +1,0 @@
-# for qt3 library ( kseg needs qt3. )
-# deb http://debian.tryphon.eu wheezy main contrib
-deb http://debian.tryphon.eu jessie main contrib
