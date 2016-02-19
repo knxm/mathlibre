@@ -1,8 +1,8 @@
 [Desktop Entry]
 Name=Singular
-Comment=run Singular in Emacs
-Exec=ESingular --browser=firefox
-#Terminal=true
+Comment=run Singular
+Exec=Singular
+Terminal=true
 Icon=singular
 Type=Application
 Categories=Math;

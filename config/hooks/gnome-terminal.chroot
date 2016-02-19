@@ -1,6 +1,8 @@
-#!/bin/sh
-if [ -x /usr/bin/gconftool ]; then
-  /usr/bin/gconftool --direct --config-source xml:readwrite:/etc/gconf/gconf.xml.defaults --type string --set /apps/gnome-terminal/profiles/Default/background_color "#000000000000"
-  /usr/bin/gconftool --direct --config-source xml:readwrite:/etc/gconf/gconf.xml.defaults --type string --set /apps/gnome-terminal/profiles/Default/foreground_color "#FFFFFFFFFFFF"
-  /usr/bin/gconftool --direct --config-source xml:readwrite:/etc/gconf/gconf.xml.defaults --type bool --set /apps/gnome-terminal/profiles/Default/use_theme_colors "false"
+#!/bin/bash
+if [ -x /usr/bin/gsettings ]; then
+  profile=$(gsettings get org.gnome.Terminal.ProfilesList default)
+  profile=${profile:1:-1}
+  gsettings set "org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:$profile/" background-color '#000000'
+  gsettings set "org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:$profile/" foreground-color '#FFFFFF'
+  gsettings set "org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:$profile/" use-theme-colors false
 fi
