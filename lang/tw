@@ -22,7 +22,7 @@ echo "task-$LANGUAGE task-$LANGUAGE-desktop ibus-chewing" > config/package-lists
 #
 # for tex
 #
-echo "texlive-lang-cjk auctex" > config/package-lists/lang.$LANGUAGE.tex.list.chroot
+echo "texlive-lang-chinese auctex" > config/package-lists/lang.$LANGUAGE.tex.list.chroot
 #
 # for LatexMk
 #

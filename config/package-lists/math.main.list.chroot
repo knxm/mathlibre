@@ -46,6 +46,7 @@ jsmath
 jsmath-fonts
 jsmath-fonts-sprite
 jsxgraph
+julia
 junit4
 kakasi-dic
 #kig
@@ -137,7 +138,8 @@ sympow
 swi-prolog
 tex4ht
 texlive
-# texmacs is not available in jessie.
+texlive-luatex
+texmacs
 texmaker
 texstudio
 texworks

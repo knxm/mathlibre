@@ -38,7 +38,7 @@ gap-sla
 geogebra5
 #geonext
 gfan-doc
-julia-desktop
+#julia-desktop: julia is supported from Debian "jessie".
 # kseg : Depends: libqt3-mt (>= 3:3.3.8b) but it is not going to be installed
 # We changed archives/tryphon.list.chroot to "jessie".
 kseg
@@ -52,7 +52,7 @@ nzmath
 nzmath-doc
 polymake
 # qfract : Depends: libboost-thread1.49.0 (>= 1.49.0-1) but it is not installable
-r-cran-rcmdr-knxm
+# r-cran-rcmdr-knxm
 reduce-algebra
 #saclib
 sage-desktop
