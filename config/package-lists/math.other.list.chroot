@@ -14,10 +14,10 @@ qepcad-b
 r-openxm-hgm
 simplify
 skeleton
-surf
-surf-examples
-surfex
-surfer
+# surf
+# surf-examples
+# surfex
+# surfer
 #endif
 3d-xplormath-j
 # 4ti2 : Depends: libglpk0 (>= 4.31) but it is not installable

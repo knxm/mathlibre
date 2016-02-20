@@ -1,7 +1,7 @@
 bc
 bison
 cadabra
-calibre
+# calibre
 coq
 coqide
 coq-theories

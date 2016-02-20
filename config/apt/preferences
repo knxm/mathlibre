@@ -62,6 +62,10 @@ Package: texlive-metapost-doc
 Pin: version *
 Pin-Priority: -1
 
+Package: texlive-science-doc
+Pin: version *
+Pin-Priority: -1
+
 Package: libx11-doc
 Pin: version *
 Pin-Priority: -1

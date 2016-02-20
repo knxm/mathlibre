@@ -129,11 +129,11 @@ testdisk
 tzdata-java
 unison
 # vim
-virtualbox
+# virtualbox
+# virtualbox-qt
 virtualbox-dkms
 virtualbox-guest-dkms
 virtualbox-guest-x11
-virtualbox-qt
 w3c-dtd-xhtml
 x11proto-core-dev
 x11proto-input-dev
