@@ -18,11 +18,11 @@ config: clean
 	--bootappend-live "boot=live config quiet splash persistence" \
 	--apt-secure false \
 	--architectures amd64 --linux-flavours amd64 --debian-installer live \
+        --linux-packages "linux-image linux-headers" \
+	--win32-loader false \
 #	--parent-mirror-binary "http://www.jp.debian.org/debian/" \
 #        --parent-mirror-binary-backports "http://ftp.debian.org/debian/" \
 #        --backports true \
-#       --linux-packages "linux-image linux-headers" \
-#	--win32-loader false \
 #	--distribution jessie \
 #	--binary-images hdd
 

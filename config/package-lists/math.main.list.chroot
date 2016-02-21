@@ -41,7 +41,7 @@ gv
 hugs
 ipython
 ipython-qtconsole
-# jas is not available in jessie. 
+jas
 jsmath
 jsmath-fonts
 jsmath-fonts-sprite
