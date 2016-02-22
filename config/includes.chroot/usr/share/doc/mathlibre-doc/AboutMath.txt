@@ -14,7 +14,9 @@ MathLibre
    to the extent permitted by applicable law.
  - MathLibre is the direct descendant of KNOPPIX/Math.
 
+ - MathLibre/2016 was distributed in MSJ meeting, 15-19 March 2016, at Tsukuba University.
  - MathLibre/2015 was distributed in MSJ meeting, 20-24 March 2015, at Meiji University.
+ - MathLibre/ICMS2014 was distributed in ICMS2014 at Hanyang University, 5-9 August 2014, and ICM2014 Seoul at Coex, 13-21 August 2014.
  - MathLibre/2014 was distributed in MSJ meeting, 14-18 March 2014, at Gakushuin University.
  - MathLibre/2014 was distributed in GeoGebra Conference Budapest 2014, 23-25 January 2014, at Budapest College of Communication and Business, Hungary.
  - MathLibre/2013 was distributed in AMMS2013, 6-8 December 2013, at NSYSU, Taiwan.

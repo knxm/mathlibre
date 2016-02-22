@@ -303,6 +303,8 @@
 /pool/main/i/isc-dhcp
 /pool/main/i/isc-dhcp/isc-dhcp-client-udeb_4.3.1-6+deb8u2_amd64.udeb
 /pool/main/j
+/pool/main/j/jas
+/pool/main/j/jas/jas-java_2.6.5428_all.deb
 /pool/main/j/jfsutils
 /pool/main/j/jfsutils/jfsutils-udeb_1.1.15-2.1_amd64.udeb
 /pool/main/j/jfsutils/jfsutils_1.1.15-2.1_amd64.deb
@@ -361,6 +363,10 @@
 /pool/main/l/live-installer/live-installer_49_amd64.udeb
 /pool/main/l/lowmem
 /pool/main/l/lowmem/lowmem_1.42_all.udeb
+/pool/main/l/lrslib
+/pool/main/l/lrslib/liblrsgmp-dev_0.51-2_amd64.deb
+/pool/main/l/lrslib/liblrsgmp0_0.51-2_amd64.deb
+/pool/main/l/lrslib/lrslib_0.51-2_amd64.deb
 /pool/main/l/lvm2
 /pool/main/l/lvm2/dmeventd_2%3a1.02.90-2.2_amd64.deb
 /pool/main/l/lvm2/dmsetup-udeb_1.02.90-2.2_amd64.udeb
@@ -526,6 +532,8 @@
 /pool/main/p/polybori/libpolybori-0.8-3_0.8.3-3+b2_amd64.deb
 /pool/main/p/polybori/libpolybori-groebner-0.8-3_0.8.3-3+b2_amd64.deb
 /pool/main/p/polybori/python-polybori_0.8.3-3+b2_amd64.deb
+/pool/main/p/polymake
+/pool/main/p/polymake/polymake_3.0r1-4_amd64.deb
 /pool/main/p/popt
 /pool/main/p/popt/libpopt0-udeb_1.16-10_amd64.udeb
 /pool/main/p/ppp
