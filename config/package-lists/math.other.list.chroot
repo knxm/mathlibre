@@ -4,6 +4,7 @@ eggx-example
 gappa
 gudhi
 knxm-mkusbmath-debian
+jas-java
 libgtk1.2
 libgtk1.2-common
 msjproc
@@ -50,7 +51,6 @@ mathlibre-start
 math-polyglot
 nzmath
 nzmath-doc
-polymake
 # qfract : Depends: libboost-thread1.49.0 (>= 1.49.0-1) but it is not installable
 # r-cran-rcmdr-knxm
 reduce-algebra

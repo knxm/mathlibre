@@ -6,7 +6,6 @@
 /.disk/info
 /.disk/udeb_include
 /AboutMath.txt
-/autorun.inf
 /debian
 /dists
 /dists/jessie
@@ -62,8 +61,6 @@
 /firmware/firmware-zd1211_3.0.0.56-3_all.deb
 /firmware/intel-microcode_3.20151106.1~deb8u1_amd64.deb
 /firmware/prism2-usb-firmware-installer_0.2.9+dfsg-5_amd64.deb
-/g2ldr
-/g2ldr.mbr
 /install
 /install/gtk
 /install/gtk/initrd.gz
@@ -642,7 +639,6 @@
 /pool/non-free/z
 /pool/non-free/z/zd1211-firmware
 /pool/non-free/z/zd1211-firmware/firmware-zd1211_3.0.0.56-3_all.deb
-/setup.exe
 /tools
 /tools/loadlin.exe
 /tools/loadlin.txt
@@ -650,7 +646,7 @@
 /vbox/Ext2Fsd-0.53.zip
 /vbox/README_vbox_en.pdf
 /vbox/README_vbox_ja.pdf
+/vbox/VirtualBox-5.0.14-105127-Win.exe
 /vbox/ir053_portable.zip
 /vbox/ir053_portable_x64.zip
 /vbox/mathlibre-ja-vm.zip
-/win32-loader.ini

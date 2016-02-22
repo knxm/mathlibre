@@ -41,7 +41,6 @@ gv
 hugs
 ipython
 ipython-qtconsole
-jas
 jsmath
 jsmath-fonts
 jsmath-fonts-sprite
@@ -77,6 +76,7 @@ libmathcomp-coq
 libtext-kakasi-perl
 lie
 lp-solve
+lrslib
 lua5.2
 lyx
 mandelbulber
@@ -99,6 +99,7 @@ pari-galpol
 pari-gp2c
 pdftk
 pdfgrep
+polymake
 proofgeneral
 proofgeneral-doc
 prover9-doc
