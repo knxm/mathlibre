@@ -68,6 +68,8 @@ libflint-2.4.4
 libntl5
 # topcom
 # # GiaC
-# giac
-# qcas
-# python-giacpy 
+#giac
+#qcas
+#python-giacpy 
+# surf
+surf-alggeo-doc

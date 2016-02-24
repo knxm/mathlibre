@@ -25,7 +25,7 @@ evince
 fakeroot
 feynmf
 g++
-# gcl
+gcl
 git
 gnome-terminal
 gparted

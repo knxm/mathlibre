@@ -1,0 +1,14 @@
+[Desktop Entry]
+Type=Application
+Encoding=UTF-8
+Name=JAS.rb
+GenericName=Java Algebra System
+Comment=jruby shell for JAS
+Icon=jas.xpm
+Exec=jas -rb
+#Exec=gnome-terminal --show-menubar -x jas -rb
+#Exec=gnome-terminal --show-menubar -x jas -d -v -rb
+Terminal=true
+Categories=Education;Science;Java;Math;
+#
+#$Id: jas-rb.desktop 5114 2015-02-14 13:04:01Z kredel $

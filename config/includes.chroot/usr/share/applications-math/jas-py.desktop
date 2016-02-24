@@ -1,0 +1,14 @@
+[Desktop Entry]
+Type=Application
+Encoding=UTF-8
+Name=JAS.py
+GenericName=Java Algebra System
+Comment=jpython shell for JAS
+Icon=jas.xpm
+Exec=jas -py
+#Exec=gnome-terminal --show-menubar -x jas -py
+#Exec=gnome-terminal --show-menubar -x jas -d -v -py
+Terminal=true
+Categories=Education;Science;Java;Math;
+#
+#$Id: jas-py.desktop 5114 2015-02-14 13:04:01Z kredel $

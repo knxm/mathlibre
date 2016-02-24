@@ -89,6 +89,7 @@ octave-htmldoc
 octave-gsl
 octave-geometry
 palp
+pandoc
 # pari-extra is not available in jessie.
 pari-gp
 pari-gp2c

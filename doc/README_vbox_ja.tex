@@ -3,7 +3,7 @@
 \newcommand{\ir}{ir053\_portable\_x64}
 \newcommand{\vboxwin}{VirtualBox-5.0.14-105127-Win.exe}
 \newcommand{\vboxmac}{VirtualBox-5.0.14-105127-OSX.dmg}
-\newcommand{\vm}{mathlibre-ja-vm}
+\newcommand{\vm}{mathlibre2016ja-vm}
 \pagestyle{fancy}
 \lstset{
   basicstyle=\small\ttfamily,
@@ -24,7 +24,7 @@ MathLibreはDVDから起動できるLinuxです．しかし，DVDはアクセス
 WindowsやMacを使いながら同時に利用することができます．
 以下に紹介する仮想環境 \vm.zip は既に設定済みですので，
 継続的なホームディレクトリやパッケージの追加インストールも可能です．
-ISOイメージファイルとホームディレクトリのため，約12GB以上の空き容量が必要です．
+ISOイメージファイルとホームディレクトリのため，約12GB以上の空き領域が必要です．
 
 仮想化ソフトウェアとして，オープンソースソフトウェアの VirtualBox を利用します．
 VirtualBoxは既存のオペレーティングシステム上のアプリケーションの一つとし
@@ -41,14 +41,7 @@ VirtualBoxは既存のオペレーティングシステム上のアプリケー�
 
 \paragraph{DVDのISOイメージを取得}
 
-ISOイメージの取得方法として「ダウンロード」と「DVDから作成」の2通りの方法があります．
-\subparagraph{「ダウンロードして取得」}
-
-ネットワーク環境が整っている場合には，
-\url{ftp://ftp.mathlibre.org/pub/mathlibre/}より
-最新版のISOイメージファイル（約4GB）をダウンロードしてください．
-ダウンロードしたら，先ほどのフォルダ \vm 内に移動させて，ファイル名をmathlibre.isoに変更してください．
-
+ISOイメージの取得方法として「DVDから作成」と「ダウンロード」の2通りの方法があります．
 \subparagraph{「DVDから作成」}
 ネットワーク環境がない場合でもMathLibre DVDがあれば，ISOイメージを作成できます．
 DVDにWindowsアプリケーションInfraRecorderを同梱しています．
@@ -63,14 +56,21 @@ InfraRecorderを用いてハードディスク上にMathLibre DVDのISOイメー
  \item OKボタンを押すと，DVDの複製が始まります．
  \item 約4GBのファイルを作成するのに約15分ほどかかります．
 \end{enumerate}
+\subparagraph{「ダウンロードして取得」}
+
+ネットワーク環境が整っている場合には，
+\url{ftp://ftp.mathlibre.org/pub/mathlibre/}より
+最新版のISOイメージ（約4GB）をダウンロードできます．
+ダウンロードしたら，先ほどのフォルダ \vm 内に移動させて，ファイル名をmathlibre.isoに変更してください．
 
 \paragraph{仮想環境の起動}
 すべての作業を終えたら，\vm 内の \vm.vbox をダブルクリックして
-VirtualBox を起動してください．起動ボタンを押すと仮想環境が起動します．
+VirtualBox を起動してください．起動ボタンを押すと仮想環境が起動します．終了時に，「仮想マシンの状態を保存」すると次回の起動時間を短縮できます．
 
 \section{MacOS Xの場合}
 次にMacOS X上でMathLibreを動かす方法を解説します．
 最近のMacは標準では光学ドライブを搭載していませんのでネットワークを用いる方法を紹介します．
+
 \paragraph{VirtualBoxのインストール}
 \begin{enumerate}
  \item \url{http://www.virtualbox.org/}からMacOS X用最の新版を取得し，実行してインストールします．
@@ -100,6 +100,7 @@ VirtualBox を起動してください．起動ボタンを押すと仮想環境
  \item すべての作業を終えたら VirtualBox を起動してください．
  \item メニューから「仮想マシン」＞「追加」で\vm 内の \vm.vbox を選択してください．
  \item 起動ボタンを押すと仮想環境が起動します．
+ \item 終了時に「仮想マシンの状態を保存」すると次回の起動時間を短縮できます．
 \end{enumerate}
 
 \section{共有フォルダの作成}

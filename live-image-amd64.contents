@@ -558,6 +558,8 @@
 /pool/main/s/singular/singular-modules_4.0.2-p2+ds-3_amd64.deb
 /pool/main/s/singular/singular-ui_4.0.2-p2+ds-3_amd64.deb
 /pool/main/s/singular/singular_4.0.2-p2+ds-3_amd64.deb
+/pool/main/s/snappea-snappy
+/pool/main/s/snappea-snappy/snappea-snappy_2.3.2-1_amd64.deb
 /pool/main/s/squid-deb-proxy
 /pool/main/s/squid-deb-proxy/squid-deb-proxy-client-udeb_0.8.9_all.udeb
 /pool/main/s/ssreflect
@@ -658,3 +660,4 @@
 /vbox/ir053_portable.zip
 /vbox/ir053_portable_x64.zip
 /vbox/mathlibre-ja-vm.zip
+/vbox/mathlibre2016ja-vm.zip
