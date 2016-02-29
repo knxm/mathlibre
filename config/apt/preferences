@@ -78,10 +78,3 @@ Package: gnome-user-guide
 Pin: version *
 Pin-Priority: -1
 
-Package: texlive-lang-korean
-Pin: version *
-Pin-Priority: -1
-
-Package: texlive-lang-chinese
-Pin: version *
-Pin-Priority: -1

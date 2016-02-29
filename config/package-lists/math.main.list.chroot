@@ -141,6 +141,7 @@ swi-prolog
 tex4ht
 texlive
 texlive-luatex
+texlive-xetex
 texmacs
 texmaker
 texstudio

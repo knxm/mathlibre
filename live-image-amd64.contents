@@ -320,6 +320,8 @@
 /pool/main/k/klibc/klibc-utils-floppy-udeb_2.0.4-2_amd64.udeb
 /pool/main/k/kmod
 /pool/main/k/kmod/libkmod2-udeb_18-3_amd64.udeb
+/pool/main/k/knxm-mkusbmath-debian
+/pool/main/k/knxm-mkusbmath-debian/knxm-mkusbmath-debian_0.0.3-1_all.deb
 /pool/main/l
 /pool/main/l/lilo
 /pool/main/l/lilo-installer
@@ -659,5 +661,4 @@
 /vbox/VirtualBox-5.0.14-105127-Win.exe
 /vbox/ir053_portable.zip
 /vbox/ir053_portable_x64.zip
-/vbox/mathlibre-ja-vm.zip
 /vbox/mathlibre2016ja-vm.zip

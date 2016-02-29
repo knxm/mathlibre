@@ -20,6 +20,7 @@ config: clean
 	--architectures amd64 --linux-flavours amd64 --debian-installer live \
         --linux-packages "linux-image linux-headers" \
 	--win32-loader false \
+	--iso-volume "MathLibre" \
 #	--parent-mirror-binary "http://www.jp.debian.org/debian/" \
 #        --parent-mirror-binary-backports "http://ftp.debian.org/debian/" \
 #        --backports true \
