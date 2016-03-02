@@ -1,0 +1,96 @@
+print("surfplotの例")$
+load("surfplot.mac")$
+/* circle */
+print("半径1の円");
+poly:x^2+y^2-1;
+surfplot(poly);
+/* Ducky */
+poly:2*y^8-4*y^7+55*x^2*y^6/9-9*y^6-40*x^2*y^5/9+48*y^5+19*x^4*y^4/3
+-170*x^2*y^4/3-101*y^4+28*x^4*y^3/9-196*x^2*y^3/9-60*y^3
++7*x^6*y^2/3-437*x^4*y^2/9+2086*x^2*y^2/9+196*y^2+32*x^6*y/9
+-628*x^4*y/9+388*x^2*y-432*y+x^8/9-8*x^6/9-65*x^4/9+72*x^2-144;
+print("先程の式を因子分解すると…");
+factor(poly);
+surfplot(poly);
+
+print(" SuSE 5.3: Steinerのローマ曲面")$
+put(surf,0,transparence);
+poly:x^2*y^2+x^2*z^2+y^2*z^2-17*x*y*z;
+surfplot(poly);
+put(surf,50,transparence);
+surfplot(poly);
+system("echo \"int i=-8;\">>surf.tmp;");
+system("echo \"int j=0;\">>surf.tmp");
+system("echo \"int k=100;\">>surf.tmp");
+system("echo \"curve_width=5;\">>surf.tmp");
+system("echo \"color_file_format=jpg;filename=\\\"surf.jpeg\\\";save_color_image;\">>surf.tmp");
+system("echo \"loop:\">>surf.tmp");
+system("echo \"k=k+1;\">>surf.tmp");
+system("echo \"plane=z-i;\">>surf.tmp");
+system("echo \"curve_red=255-j;\">>surf.tmp");
+system("echo \"curve_green=j;\">>surf.tmp");
+system("echo \"curve_blue=0;\">>surf.tmp");
+system("echo \"j=j+10;\">>surf.tmp");
+system("echo \"cut_with_plane;\">>surf.tmp");
+system("echo \"i=i+1;\">>surf.tmp");
+system("echo \"if(i<9) goto loop;\">>surf.tmp");
+system("echo \"save_color_image;\">>surf.tmp");
+system("surf -n surf.tmp>surf.log");
+system("display surf.jpeg&");
+
+put(surf,50,transparence);
+surfplot(poly);
+system("echo \"int i=-8;\">>surf.tmp;");
+system("echo \"int j=0;\">>surf.tmp");
+system("echo \"int k=100;\">>surf.tmp");
+system("echo \"curve_width=5;\">>surf.tmp");
+system("echo \"loop:\">>surf.tmp");
+system("echo \"k=k+1;\">>surf.tmp");
+system("echo \"draw_surface;\">>surf.tmp");
+system("echo \"plane=z-i;\">>surf.tmp");
+system("echo \"curve_red=255-j;\">>surf.tmp");
+system("echo \"curve_green=j;\">>surf.tmp");
+system("echo \"curve_blue=0;\">>surf.tmp");
+system("echo \"j=j+10;\">>surf.tmp");
+system("echo \"filename=\\\"Roman\\\"+itostrn(3,k)+\\\".jpeg\\\";\">>surf.tmp");
+system("echo \"cut_with_plane;\">>surf.tmp");
+system("echo \"i=i+1;\">>surf.tmp");
+system("echo \"save_color_image;\">>surf.tmp");
+system("echo \"if(i<9) goto loop;\">>surf.tmp");
+system("surf -n surf.tmp>surf.log");
+system("convert -loop 10 Roman*jpeg Roman.gif");
+system("firefox Roman.gif&");
+
+put(surf,0,transparence);
+print("SuSE 6.1: Kummer surface");
+myu:13/10;
+lambda:(3*myu^2-1)/(3-myu^2);
+p:1-z-sqrt(2)*x;q:1-z+sqrt(2)*x;
+r:1+z-sqrt(2)*y;s:1+z+sqrt(2)*y;
+poly:(x^2+y^2+z^2-myu^2)^2-lambda*p*q*r*s;
+surfplot(poly);
+
+print("SuSE 6.3: Septics with nodes");
+lambda:0.0001;
+poly:z^2*(z-1)^2*(z+1)^2+lambda*(x^7-21*x^5*y^2+
+35*x^3*y^4-7*x*y^6+7*x^6+21*x^4*y^2+
+21*x^2*y^4+7*y^6-56*x^4-112*x^2*y^2-56*y^4+
+112*x^2+112*y^2-64);
+surfplot(poly);
+
+print("Barth Diec")$
+/* set rot_x,y,z and scale_x,y,z */
+put(surf,0.6,rot_x);
+put(surf,0.2,rot_y);
+put(surf,0.6,rot_z);
+put(surf,0.3,scale_x);
+put(surf,0.3,scale_y);
+put(surf,0.3,scale_z);
+/* set tau */
+tau:(1+sqrt(5))/2;
+/* polynomial */
+poly:8*(x^2-tau^4*y^2)*(y^2-tau^4*z^2)*(z^2-tau^4*x^2)*
+(x^4+y^4+z^4-2*(x^2*y^2+y^2*z^2+z^2*x^2))+
+(3+5*tau)*(x^2+y^2+z^2-1)^2*(x^2+y^2+z^2-(2-tau))^2;
+surfplot(poly);
+

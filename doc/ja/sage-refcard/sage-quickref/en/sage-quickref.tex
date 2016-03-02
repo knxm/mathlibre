@@ -1,0 +1,300 @@
+\documentclass[a4paper]{article}
+\usepackage[landscape]{geometry}
+\usepackage[dvipdfm]{color}
+
+\usepackage{quickrefcard}  
+
+\usepackage{multicol}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+\begin{document}
+\begin{multicols*}{3}
+\begin{center}
+\textbf{Sage Quick Reference (Basic Math)}\\
+Peter Jipsen, version 1.1
+(w/modification by nu)
+\\
+latest version at \url{wiki.sagemath.org/quickref}\\
+GNU Free Document License, extend for your own use\\
+Aim: map standard math notation to Sage commands
+\end{center}
+\vspace{-2ex}
+\sect{Notebook (and commandline)}
+
+Evaluate cell: \shiftEnterkey{}
+
+\EXVAR{com}\tabkey{} tries to complete \sagevar{command}
+
+\EXVAR{command}\EX{?}\tabkey{} shows documentation
+
+\EXVAR{command}\EX{??}\tabkey{} shows source
+
+\EX{a.}\tabkey{} shows all methods for object \sagecommand{a} \quad
+(more: \EX{dir(a)})
+
+\EX{search_doc('}\EXVAR{string or regexp}\EX{')} \quad shows links to docs
+
+\EX{search_src('}\EXVAR{string or regexp}\EX{')} \quad shows links to source
+
+\EX{lprint()} \quad toggle \LaTeX{} output mode
+
+\EX{version()} \quad print version of Sage
+
+Insert cell: click on blue line between cells
+
+Delete cell: delete content then backspace
+
+%*********************************************
+\sect{Numerical types}
+
+Integers: $\mathbb Z=$ \EX{ZZ} e.g. \EX{-2  -1  0  1  10^100}
+
+Rationals: $\mathbb Q=$ \EX{QQ} e.g. \EX{1/2  1/1000  314/100  -42}
+
+Decimals: $\mathbb R\approx$ \EX{RR} e.g. \EX{.5  0.001  3.14  -42}
+
+Complex: $\mathbb C\approx$ \EX{CC} e.g. \EX{1+i  2.5-3*i}
+
+%*********************************************
+\sect{Basic constants and functions}
+
+Constants: $\pi=$ \EX{pi} \quad $e=$ \EX{e} \quad $i=$ \EX{i}
+\quad $\infty=$ \EX{oo}
+
+Approximate: \EX{pi.n(digits=18)} $=3.14159265358979324$
+
+%Binary operations: \EX{+  -  *  /  ^|
+
+Functions: 
+\EX{sin} 
+\EX{cos} 
+\EX{tan} 
+\EX{sec} 
+\EX{csc} 
+\EX{cot} 
+\EX{sinh} 
+\EX{cosh} 
+\EX{tanh} 
+\EX{sech} 
+\EX{csch} 
+\EX{coth} 
+\EX{log} 
+\EX{ln} 
+\EX{exp}
+
+$ab=$ \EX{a*b} \quad $\frac a b=$ \EX{a/b} 
+\quad 
+$a^b=$ \EX{a^b} \quad $\sqrt{x}=$ \EX{sqrt(x)}
+
+$\sqrt[n]{x}=$ \EX{x^(1/n)}
+\quad 
+$|x|=$ \EX{abs(x)}
+\quad 
+$\log_b(x)=$ \EX{log(x,b)}
+
+Symbolic variables: e.g.\ 
+%\EX{t,u,v,y,z = var('t u v y z')}
+\EX{t,u,v,y = var('t u v y')}
+
+Define function: e.g. $f(x)=x^2$ \qquad 
+\BreakLineAndIndent
+As symbolic function (can integrate, etc): \EX{f(x)=x^2} or 
+\BreakLineAndIndent
+As Python function: \EX{f=lambda x: x^2} or 
+\BreakLineAndIndent[\phantom{\skipin As Python function:}]
+\EX{def f(x): return x^2}
+
+%*********************************************
+\sect{Operations on expressions}
+
+\EX{factor(...)}\qquad \EX{expand(...)}\qquad \EX{(...).simplify_...}
+
+Symbolic equations: \EX{f(x)==g(x)}
+
+\EX{_} is previous output
+
+\EX{_+a} \quad \EX{_-a} \quad \EX{_*a} \quad \EX{_/a} manipulates equation
+
+Solve $f(x)=g(x)$: \EX{ solve(f(x)==g(x),x)}
+
+\EX{solve([f(x,y)==0, g(x,y)==0], x,y)}
+
+\EX{find_root(f(x), a, b)}\quad find $x\in [a,b]$ s.t. $f(x)\approx 0$
+
+$\displaystyle\sum_{i=k}^n f(i)=$ \EX{sum([f(i) for i in [k..n]])}
+%$\sum_{i=k}^n f(i)=$ \EX{sum([f(i) for i in [k..n]])}
+
+$\displaystyle\prod_{i=k}^n f(i)=$ \EX{prod([f(i) for i in [k..n]])}
+%$\prod_{i=k}^n f(i)=$ \EX{prod([f(i) for i in [k..n]])}
+
+%*********************************************
+\sect{Calculus}
+
+$\displaystyle\lim_{x\to a} f(x)=$ \EX{limit(f(x), x=a)}
+
+$\displaystyle\lim_{x\to a^-} f(x)=$ \EX{limit(f(x), x=a, dir='minus')}
+
+$\displaystyle\lim_{x\to a^+} f(x)=$ \EX{limit(f(x), x=a, dir='plus')}
+
+$\frac{d}{dx}(f(x))=$ \EX{diff(f(x),x)}
+
+$\frac{\partial}{\partial x}(f(x,y))=$ \EX{diff(f(x,y),x)}
+
+\EX{diff} $=$ \EX{differentiate} $=$ \EX{derivative}
+
+$\int f(x)dx=$ \EX{integral(f(x),x)}
+
+\EX{integral} = \EX{integrate}
+
+$\int_a^b f(x)dx=$ \EX{integral(f(x),x,a,b)}
+
+Taylor polynomial, deg $n$ about $a$: \EX{taylor(f(x),x,a,n)} 
+
+%*********************************************
+\sect{2d graphics}
+
+\EXtt{line([(\EXvar{x_1},\EXvar{y_1}),\EXvar{\ldots},(\EXvar{x_n},\EXvar{y_n})],\EXVAR{options})}
+
+\EXtt{polygon([(\EXvar{x_1},\EXvar{y_1}),\EXvar{\ldots},(\EXvar{x_n},\EXvar{y_n})],\EXVAR{options})}
+
+\EXtt{circle((\EXvar{x},\EXvar{y}),\EXvar{r},\EXVAR{options})}
+
+\EXtt{text("txt",(\EXvar{x},\EXvar{y}),\EXVAR{options})}
+
+\sagevar{options} as in \sagecommand{plot.options}, 
+\BreakLineAndFulshLeft
+e.g. 
+\sagecommand{thickness=}\sagevar{pixel},
+\sagecommandtt{rgbcolor=($r$,$g$,$b$)},
+\sagecommandtt{hue=$h$}, 
+\BreakLineAndFulshLeft
+where $0\le r,b,g,h\le 1$
+
+use option \sagecommand{figsize=[w,h]} to adjust aspect ratio
+
+\EXtt{plot(f(\EXvar{x}),\EXvar{x_{\rm min}},\EXvar{x_{\rm max}},\EXVAR{options})}
+
+\EX{parametric_plot}\EXtt{((f(\EXvar{t}),g(\EXvar{t})),\EXvar{t_{\rm min}},\EXvar{t_{\rm max}},\EXVAR{options})}
+
+\EX{polar_plot}\EXtt{(f(\EXvar{t}),\EXvar{t_{\rm min}},\EXvar{t_{\rm max}},\EXVAR{options})}
+
+combine graphs: 
+\EX{circle((1,1),1)+line([(0,0),(2,2)])}
+
+\EX{animate(}\EXVAR{list of graphics objects
+}\EX{,}\EXVAR{options}\EX{).show(delay=20)}
+
+%*********************************************
+\sect{3d graphics}
+
+\EXtt{line3d([(\EXvar{x_1},\EXvar{y_1},\EXvar{z_1}),\EXvar{\ldots},(\EXvar{x_n},\EXvar{y_n},\EXvar{z_n})],\EXVAR{options})}
+
+\EXtt{sphere((\EXvar{x},\EXvar{y},\EXvar{z}),\EXvar{r},\EXVAR{options})}
+
+\EXtt{tetrahedron((\EXvar{x},\EXvar{y},\EXvar{z}),\EXVAR{size},\EXVAR{options})}
+
+\EXtt{cube((\EXvar{x},\EXvar{y},\EXvar{z}),\EXVAR{size},\EXVAR{options})}
+
+\EXtt{octahedron((\EXvar{x},\EXvar{y},\EXvar{z}),\EXVAR{size},\EXVAR{options})}
+
+\EXtt{dodecahedron((\EXvar{x},\EXvar{y},\EXvar{z}),\EXVAR{size},\EXVAR{options})}
+
+\EXtt{icosahedron((\EXvar{x},\EXvar{y},\EXvar{z}),\EXVAR{size},\EXVAR{options})}
+
+
+\sagevar{options} e.g. \sagecommand{aspect_ratio=[1,1,1] color='red' opacity}
+
+
+\EXtt{plot3d(f(\EXvar{x},\EXvar{y}),[\EXvar{x_{\rm b}},\EXvar{x_{\rm e}}],[\EXvar{y_{\rm b}},\EXvar{y_{\rm e}}],\EXVAR{options})}
+
+add option \sagecommand{plot_points}\sagecommandtt{=[$m,n$]} or use \sagecommand{plot3d_adaptive}
+
+\EX{parametric_plot3d}\EXtt{((f(\EXvar{t}),g(\EXvar{t}),h(\EXvar{t})),[\EXvar{t_{\rm b}},\EXvar{t_{\rm e}}],\EXVAR{options})}
+
+\EX{parametric_plot3d}\EXtt{((f(\EXvar{u},\EXvar{v}),g(\EXvar{u},\EXvar{v}),h(\EXvar{u},\EXvar{v})),}
+\BreakLineAndFulshLeft
+\EXtt{[\EXvar{u_{\rm b}},\EXvar{u_{\rm e}}],[\EXvar{v_{\rm b}},\EXvar{v_{\rm e}}],\EXVAR{options})}
+
+use \EX{+} to combine graphics objects
+
+%*********************************************
+\sect{Discrete math}
+
+$\lfloor x\rfloor=$ \EX{floor(x)} 
+\quad 
+$\lceil x\rceil=$ \EX{ceil(x)}
+
+Remainder of $n$ divided by $k=$ {\ex\verb|n%k|} \quad\, $k|n$ iff {\ex\verb|n%k==0|}
+
+$n!=$ \EX{factorial(n)} \qquad
+${x\choose m}=$ \EX{binomial(x,m)}
+
+$\phi=$ \EX{golden_ratio} \qquad $\phi(n)=$ \EX{euler_phi(n)}
+
+Strings: e.g. \ \EX{s = 'Hello'} = \EX{"Hello"} = \EX{""+"He"+'llo'}
+
+\texttt{s[0]='H' \quad s[-1]='o' \quad s[1:3]='el' \quad s[3:]='lo'}
+
+Lists: e.g. \ \EX{[1,'Hello',x]} = \EX{[]+[1,'Hello']+[x]}
+
+Tuples: e.g. \ \EX{(1,'Hello',x)} \quad (immutable)
+
+Sets: e.g. \ $\{1,2,1,a\}=$ \EX{Set([1,2,1,'a'])} \ ($=\{1,2,a\}$)
+
+List comprehension $\approx$ set builder notation, e.g.
+\BreakLineAndFulshLeft
+$\{f(x):x\in X, x>0\}=$ 
+\EX{Set([f(x) for x in X if x>0])}
+
+%*********************************************
+\sect{Linear algebra}
+
+$\begin{pmatrix}1\\2\end{pmatrix}=$ \EX{vector([1,2])}
+
+$\begin{pmatrix}1&2\\3&4\end{pmatrix}=$ \EX{matrix([[1,2],[3,4]])}
+
+$\left|\begin{matrix}1&2\\3&4\end{matrix}\right|=$
+\EX{det(matrix([[1,2],[3,4]]))}
+
+$Av=$ \EX{A*v} \quad $A^{-1}=$ \EX{A^-1} \quad $A^t=$ \EX{A.transpose()}
+
+methods: \EX{nrows() ncols() nullity() rank() trace()}...
+
+%*********************************************
+\sect{Sage modules and packages}
+
+\EX{from} \EXVAR{module_name} \EX{import *} \qquad (many preloaded)
+
+e.g. 
+\sagecommand{calculus} 
+\sagecommand{coding}
+\sagecommand{combinat} 
+\sagecommand{crypto} 
+\sagecommand{functions} 
+\sagecommand{games}
+\sagecommand{geometry} 
+\sagecommand{graphs} 
+\sagecommand{groups} 
+\sagecommand{logic} 
+\sagecommand{matrix} 
+\sagecommand{numerical} 
+\sagecommand{plot} 
+\sagecommand{probability} 
+\sagecommand{rings} 
+\sagecommand{sets} 
+\sagecommand{stats}
+
+\EX{sage.}\EXVAR{module_name}\EX{.all.}\tabkey{} shows exported commands
+
+Std packages: Maxima GP/PARI GAP Singular R Shell...
+
+Opt packages: Biopython Fricas(Axiom) Gnuplot Kash...
+
+{\ex\verb!%!}\EXVAR{package_name} then use package command syntax
+
+\EX{time} \EXVAR{command} \quad to show timing information
+
+\end{multicols*}
+
+\end{document}

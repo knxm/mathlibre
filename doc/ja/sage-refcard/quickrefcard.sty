@@ -1,0 +1,132 @@
+\pagestyle{empty}
+\usepackage[landscape]{geometry}
+\usepackage[obeyspaces,spaces]{url}
+\advance\topmargin-.85in
+\advance\textheight2.2in
+\advance\textwidth3.2in
+\advance\oddsidemargin-1.6in
+\advance\evensidemargin-1.6in
+\parindent0pt
+\parskip1.5pt
+
+\newcommand{\hr}{\centerline{\rule{\columnwidth}{1pt}}}
+% Adjust gap to affect spacing, page count
+%\newcommand{\sect}[1]{\hr\par\vspace*{2pt}\textbf{#1}\par}
+\newcommand{\sect}[2][]{\hr\par\vspace*{0.7pt}\textbf{#2}\quad\textbf{\secttitle@shaded@color@nu #1}}
+%\newcommand{\sect}[1]{\hr\par\vspace*{0.1pt}\textbf{#1}}
+
+% Mandatory indentation on subsidiary lines
+\newcommand{\skipin}{\hspace*{12pt}}
+
+
+
+
+
+\newcommand{\EX}[1]{\Ex{\sagecommand{#1}}}
+\newcommand{\Ex}[1]{{\ex #1}}
+
+\newcommand{\EXtt}[1]{\Ex{\sagecommandtt{#1}}}
+
+\newcommand{\EXVAR}[1]{\Exvar{\sagevar{#1}}}
+\newcommand{\EXvar}[1]{\Exvar{$#1$}}
+\newcommand{\Exvar}[1]{{\exvar #1}}
+
+
+
+
+\newcommand{\CAUTION}[1]{\Caution #1}
+\newcommand{\Caution}{{\warn Caution}: }
+
+\newcommand{\NOTE}[1]{\Note #1}
+\newcommand{\Note}{{\warn Note}: }
+
+
+\newcommand{\ex}{\ex@color@nu}
+\newcommand{\exvar}{\exvar@color@nu}
+\newcommand{\warn}{\bf\warn@color@nu}
+\newcommand{\keystroke}{\keystroke@color@nu}
+
+\newcommand{\KEYSTROKE}[1]{{\keystroke$\langle${#1}$\rangle$}}
+
+
+\DeclareUrlCommand\sagecommand{\urlstyle{tt}}
+\DeclareUrlCommand\sagevar{\def\UrlFont{\it}}
+\newcommand{\sagecommandtt}[1]{\texttt{#1}}
+
+
+
+
+\newcommand{\tabkey}{\KEYSTROKE{tab}}
+\newcommand{\shiftEnterkey}{\KEYSTROKE{shift-enter}}
+\newcommand{\altEnterkey}{\KEYSTROKE{alt-enter}}
+\newcommand{\controlBackspacekey}{\KEYSTROKE{control-backspace}}
+
+
+
+
+\newcommand{\BreakLineAndFulshLeft}{\\$\phantom{z}$\ \hfill}
+\newcommand{\BreakLineAndIndent}[1][\skipin]{\\{}#1{}}
+\newcommand{\BreakLineAndDoubleIndent}{\BreakLineAndIndent[\skipin\skipin]}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\newenvironment{original}{\par
+%{}\hfill\begin{minipage}[b]{0.87\columnwidth}
+%\base@shaded@color@nu
+%\def\ex@color@nu{\ex@shaded@color@nu}
+%\def\exvar@color@nu{\exvar@shaded@color@nu}
+%\def\keystroke@color@nu{\keystroke@shaded@color@nu}
+%\def\warn@color@nu{\warn@shaded@color@nu}
+%}{\end{minipage}\par}
+
+\newenvironment{original}{%
+\par{}\begin{originallist@nu}
+\base@shaded@color@nu
+\def\ex@color@nu{\ex@shaded@color@nu}
+\def\exvar@color@nu{\exvar@shaded@color@nu}
+\def\keystroke@color@nu{\keystroke@shaded@color@nu}
+\def\warn@color@nu{\warn@shaded@color@nu} %
+}{\end{originallist@nu}\par}
+
+\newenvironment{originallist@nu}{\begin{list}{}{
+\setlength\itemsep{0pt}
+\setlength\baselineskip{0pt}
+\setlength\itemindent{0pt}
+\setlength\labelsep{0pt}
+\setlength\labelwidth{0pt}
+\setlength\leftmargin{24pt}
+\setlength\listparindent{0pt}
+\setlength\parsep{0pt}
+\setlength\parskip{1.2pt}
+\setlength\partopsep{0pt}
+\setlength\topsep{0pt}
+\setlength\rightmargin{0pt}
+}
+\item}{\end{list}\par}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\definecolor{shadedblack@nu}{rgb}{0.4, 0.4, 0.5}
+\definecolor{shadedblack@I@nu}{rgb}{0.4, 0.4, 0.5}
+\definecolor{shadedblue@nu}{rgb}{0.25, 0.25, 0.7}
+\definecolor{shadedred@nu}{rgb}{0.7, 0.25, 0.25}
+
+% If you want to modify only colors, please renewcommand the following:
+
+\newcommand{\ex@color@nu}{\color{blue}}
+\newcommand{\exvar@color@nu}{\color{blue}}
+\newcommand{\keystroke@color@nu}{\ex@color@nu}
+\newcommand{\warn@color@nu}{\bf\color{red}}
+
+\newcommand{\base@shaded@color@nu}{\color{shadedblack@nu}\footnotesize}
+\newcommand{\secttitle@shaded@color@nu}{\color{shadedblack@I@nu}\footnotesize}
+\newcommand{\ex@shaded@color@nu}{\color{shadedblue@nu}}
+\newcommand{\exvar@shaded@color@nu}{\color{shadedblue@nu}}
+\newcommand{\keystroke@shaded@color@nu}{\ex@shaded@color@nu}
+\newcommand{\warn@shaded@color@nu}{\color{shadedred@nu}\bf}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+

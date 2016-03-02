@@ -1,0 +1,483 @@
+\documentclass{article}
+\usepackage{graphicx}  
+\usepackage[landscape]{geometry}
+\usepackage{url}
+\usepackage{multicol}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\pagestyle{empty}
+\advance\topmargin-.9in
+\advance\textheight2in
+\advance\textwidth3.0in
+\advance\oddsidemargin-1.45in
+\advance\evensidemargin-1.45in
+\parindent0pt
+\parskip2pt
+\newcommand{\hr}{\centerline{\rule{3.5in}{1pt}}}
+\begin{document}
+\begin{multicols*}{3}
+\begin{center}
+\textbf{Sage Quick Reference}\\
+William Stein (based on work of P. Jipsen)\\
+%Latest version at \url{http://wiki.sagemath.org/quickref}\\
+GNU Free Document License, extend for your own use\\
+\end{center}
+\vspace{-2ex}
+\hr\textbf{Notebook}
+
+\includegraphics[width=23em]{nb2}
+
+Evaluate cell: $\langle$shift-enter$\rangle$
+
+Evaluate cell creating new cell: $\langle$alt-enter$\rangle$
+
+Split cell: $\langle$control-;$\rangle$
+
+Join cells: $\langle$control-backspace$\rangle$
+
+Insert math cell: click blue line between cells
+
+Insert text/HTML cell: shift-click blue line between cells
+
+Delete cell: delete content then backspace
+
+%*********************************************
+\hr\textbf{Command line}
+
+\emph{com}$\langle$tab$\rangle$ complete \emph{command}
+
+*\emph{bar}*? list command names containing ``bar''
+
+\emph{command}\verb|?|$\langle$tab$\rangle$ shows documentation
+
+\emph{command}\verb|??|$\langle$tab$\rangle$ shows source code
+
+\verb|a.|$\langle$tab$\rangle$ shows methods for object \verb|a| \quad
+(more: \verb|dir(a)|)
+
+\verb|a._|$\langle$tab$\rangle$ shows hidden methods for object \verb|a| \quad
+
+\verb|search_doc("|\emph{string or regexp}\verb|")| \quad fulltext search of docs
+
+\verb|search_src("|\emph{string or regexp}\verb|")| \quad search source code
+
+\verb|_| is previous output
+
+
+%*********************************************
+\hr\textbf{Numbers}
+
+Integers: $\mathbf Z=$ \verb|ZZ | e.g. \verb|-2  -1  0  1  10^100|
+
+Rationals: $\mathbf Q=$ \verb|QQ | e.g. \verb|1/2  1/1000  314/100  -2/1|
+
+Reals: $\mathbf R\approx$ \verb|RR | e.g. \verb|.5  0.001  3.14  1.23e10000|
+
+Complex: $\mathbf C\approx$ \verb|CC | e.g. \verb|CC(1,1)  CC(2.5,-3)|
+
+Double precision: \verb|RDF| and \verb|CDF | e.g. \verb|CDF(2.1,3)|
+
+Mod $n$: $\mathbf Z/n\mathbf Z = $ \verb|Zmod | e.g. \verb|Mod(2,3)   Zmod(3)(2)|
+
+Finite fields: $\mathbf F_q=$ \verb|GF | e.g. \verb|GF(3)(2)   GF(9,"a").0|
+
+Polynomials: $R[x,y]$ e.g. \verb|S.<x,y>=QQ[]   x+2*y^3|
+
+Series: $R[[t]]$ e.g. \verb|S.<t>=QQ[[]]    1/2+2*t+O(t^2)|
+
+$p$-adic numbers: $\mathbf Z_p\approx$\verb|Zp|, $\mathbf Q_p\approx$\verb|Qp| e.g. \verb| 2+3*5+O(5^2)|
+
+Algebraic closure: $\overline{\mathbf Q} = $ \verb|QQbar| e.g. \verb|QQbar(2^(1/5))|
+
+Interval arithmetic: \verb| RIF | e.g. \verb|sage: RIF((1,1.00001))|
+
+Number field: \verb|R.<x>=QQ[];K.<a>=NumberField(x^3+x+1)|
+
+
+%*********************************************
+ \hr\textbf{Arithmetic}
+
+$ab=$ \verb|a*b| \quad $\frac a b=$ \verb|a/b| 
+\quad 
+$a^b=$ \verb|a^b| \quad $\sqrt{x}=$ \verb|sqrt(x)|
+
+$\sqrt[n]{x}=$ \verb|x^(1/n)|
+\quad 
+$|x|=$ \verb|abs(x)|
+\quad 
+$\log_b(x)=$ \verb|log(x,b)|
+
+Sums:
+$\displaystyle\sum_{i=k}^n f(i)=$ \verb|sum(f(i) for i in (k..n))|
+
+Products:
+$\displaystyle\prod_{i=k}^n f(i)=$ \verb|prod(f(i) for i in (k..n))|
+
+
+%*********************************************
+ \hr\textbf{Constants and functions}
+
+Constants: $\pi=$ \verb|pi| \quad $e=$ \verb|e| \quad $i=$ \verb|i| 
+\quad $\infty=$ \verb|oo| 
+
+$\phi=$ \verb|golden_ratio| \quad $\gamma=$ \verb|euler_gamma|
+
+Approximate: \verb|pi.n(digits=18)| $=3.14159265358979324$
+
+Functions: \verb|sin cos tan sec csc cot sinh cosh tanh| \verb|sech csch coth log ln exp| ...
+
+Python function: \verb| def f(x): return x^2|
+
+%*********************************************
+\hr\textbf{Interactive functions}
+
+Put \verb|@interact| before function (vars determine controls)
+
+\verb|@interact|
+
+\verb|def f(n=[0..4], s=(1..5), c=Color("red")):|
+
+\verb|  var("x");show(plot(sin(n+x^s),-pi,pi,color=c))|
+
+%*********************************************
+\hr\textbf{Symbolic expressions}
+
+Define new symbolic variables: \verb|var("t u v y z")|
+
+Symbolic function: e.g. $f(x)=x^2$ \qquad \verb| f(x)=x^2|
+
+Relations: \verb|f==g  f<=g  f>=g  f<g  f>g|
+
+Solve $f=g$: \verb| solve(f(x)==g(x), x)|
+
+\verb|            solve([f(x,y)==0, g(x,y)==0], x,y)|
+
+\verb|factor(...)|\qquad \verb|expand(...)|\qquad \verb|(...).simplify_...|
+
+\verb|find_root(f(x), a, b)|\quad find $x\in [a,b]$ s.t. $f(x)\approx 0$
+
+%*********************************************
+\hr\textbf{Calculus}
+
+$\displaystyle\lim_{x\to a} f(x)=$ \verb|limit(f(x), x=a)|
+
+$\frac{d}{dx}(f(x))=$ \verb|diff(f(x),x)|
+
+$\frac{\partial}{\partial x}(f(x,y))=$ \verb|diff(f(x,y),x)|
+
+\verb|diff| $=$ \verb|differentiate| $=$ \verb|derivative|
+
+$\int f(x)dx=$ \verb|integral(f(x),x)|
+
+$\int_a^b f(x)dx=$ \verb|integral(f(x),x,a,b)|
+
+$\int_a^b f(x)dx \approx$ \verb|numerical_integral(f(x),a,b)|
+
+Taylor polynomial, deg $n$ about $a$: \texttt{taylor(f(x),x,$a$,$n$)} 
+
+
+%*********************************************
+\hr\textbf{2D graphics}
+
+\includegraphics[width=12em]{2d}
+
+\texttt{line([($x_1$,$y_1$),$\ldots$,($x_n$,$y_n$)],$\it options$)}
+
+\texttt{polygon([($x_1$,$y_1$),$\ldots$,($x_n$,$y_n$)],$\it options$)}
+
+\texttt{circle(($x$,$y$),$r$,$\it options$)}
+
+\texttt{text("txt",($x$,$y$),$\it options$)}
+
+\emph{options} as in \verb|plot.options|, 
+e.g. \texttt{thickness=$\it pixel$},
+
+\texttt{rgbcolor=($r$,$g$,$b$)},
+\quad \texttt{hue=$h$} \quad where $0\le r,b,g,h\le 1$
+
+\texttt{show({\it graphic}, {\it options})}
+
+use \verb|figsize=[w,h]| to adjust size
+
+use \verb|aspect_ratio=|{\it number} to adjust aspect ratio
+
+
+\texttt{plot(f($x$),$(x, x_{\rm min}, x_{\rm max})$,$\it options$)}
+
+\texttt{parametric\_plot((f($t$),g($t$)),$(t, t_{\rm min}, t_{\rm max})$,$\it options$)}
+
+\texttt{polar\_plot(f($t$),$(t, t_{\rm min}, t_{\rm max})$,$\it options$)}
+
+combine: \verb|circle((1,1),1)+line([(0,0),(2,2)])|
+
+\texttt{animate(}\emph{list of graphics, options}\texttt{).show(delay=20)}
+
+%*********************************************
+\hr\textbf{3D graphics}
+ 
+\includegraphics[width=15em,height=8em]{3d}
+
+\texttt{line3d([($x_1$,$y_1$,$z_1$),$\ldots$,($x_n$,$y_n$,$z_n$)],$\it options$)}
+
+\texttt{sphere(($x$,$y$,$z$),$r$,$\it options$)}
+
+\texttt{text3d("txt", ($x$,$y$,$z$), $\it options$)}
+
+\texttt{tetrahedron(($x$,$y$,$z$),$size$,$\it options$)}
+
+\texttt{cube(($x$,$y$,$z$),$size$,$\it options$)}
+
+\texttt{octahedron(($x$,$y$,$z$),$size$,$\it options$)}
+
+\texttt{dodecahedron(($x$,$y$,$z$),$size$,$\it options$)}
+
+\texttt{icosahedron(($x$,$y$,$z$),$size$,$\it options$)}
+
+\texttt{plot3d(f($x,y$),$(x,x_{\rm b},x_{\rm e})$, $(y,y_{\rm b},y_{\rm e})$,$\it options$)}
+
+\texttt{parametric\_plot3d((f,g,h),$(t, t_{\rm b}, t_{\rm e})$,$\it options$)}
+
+\texttt{parametric\_plot3d((f($u,v$),g($u,v$),h($u,v$)),}
+
+\qquad \qquad \qquad \qquad 
+\texttt{$(u,u_{\rm b},u_{\rm e})$,$(v,v_{\rm b},v_{\rm e})$,$\it options$)}
+
+\emph{options}: \texttt{aspect\_ratio=$[1,1,1]$, color="red"} 
+
+\texttt{opacity=0.5, figsize=6, viewer="tachyon"}
+
+%*********************************************
+\hr\textbf{Discrete math}
+
+$\lfloor x\rfloor=$ \verb|floor(x)| 
+\quad 
+$\lceil x\rceil=$ \verb|ceil(x)|
+
+Remainder of $n$ divided by $k=$ \verb|n%k| \quad\, $k|n$ iff \verb| n%k==0|
+
+$n!=$ \verb|factorial(n)| \qquad
+${x\choose m}=$ \verb|binomial(x,m)|
+
+$\phi(n)=$ \texttt{euler\_phi($n$)}
+
+Strings: e.g. \ \verb|s = "Hello"| = \verb|"He"+'llo'|
+
+\texttt{s[0]="H" \quad s[-1]="o" \quad s[1:3]="el" \quad s[3:]="lo"}
+
+Lists: e.g. \ \verb|[1,"Hello",x]| = \verb|[]+[1,"Hello"]+[x]|
+
+Tuples: e.g. \ \verb|(1,"Hello",x)| \quad (immutable)
+
+Sets: e.g. \ $\{1,2,1,a\}=$ \verb|Set([1,2,1,"a"])| \ ($=\{1,2,a\}$)
+
+List comprehension $\approx$ set builder notation, e.g.
+
+$\{f(x):x\in X, x>0\}=$ \verb|Set([f(x) for x in X if x>0])|
+
+ 
+%*********************************************
+\hr\textbf{Graph theory}
+
+\includegraphics[width=6em]{graph}  
+
+Graph: \texttt{G = Graph(\{0:[1,2,3], 2:[4]\})}
+
+Directed Graph: \texttt{DiGraph({\it dictionary})}
+
+Graph families: \texttt{graphs.}$\langle$tab$\rangle$  
+
+Invariants: \texttt{G.chromatic\_polynomial()}, \texttt{G.is\_planar()}
+
+Paths: \texttt{G.shortest\_path()}
+
+Visualize: \texttt{G.plot()}, \texttt{G.plot3d()}
+
+Automorphisms: \texttt{G.automorphism\_group()},
+
+\texttt{G1.is\_isomorphic(G2)}, \texttt{G1.is\_subgraph(G2)}
+
+
+%*********************************************
+\hr\textbf{Combinatorics}
+
+\includegraphics[width=8em]{polytope.png}
+
+Integer sequences: \texttt{sloane\_find({\it list})}, \texttt{sloane.}$\langle$tab$\rangle$  
+
+Partitions:
+\texttt{P=Partitions({\it n})}\quad \texttt{P.count()}
+
+Combinations: \texttt{C=Combinations({\it list})}\quad\texttt{C.list()}
+
+Cartesian product: \texttt{CartesianProduct(P,C)}
+
+Tableau: \texttt{Tableau([[1,2,3],[4,5]])}
+
+Words: \texttt{W=Words("abc"); W("aabca")}
+
+Posets: \texttt{Poset([[1,2],[4],[3],[4],[]])}
+
+Root systems: \texttt{RootSystem(["A",3])}
+
+Crystals: \texttt{CrystalOfTableaux(["A",3], shape=[3,2])}
+
+Lattice Polytopes: \verb|A=random_matrix(ZZ,3,6,x=7)|
+
+\verb|L=LatticePolytope(A)    L.npoints()   L.plot3d()|
+
+%*********************************************
+\hr\textbf{Matrix algebra}
+
+$\begin{pmatrix}1\\2\end{pmatrix}=$ \verb|vector([1,2])|
+
+$\begin{pmatrix}1&2\\3&4\end{pmatrix}=$ \verb|matrix(QQ,[[1,2],[3,4]], sparse=False)|
+
+$\begin{pmatrix}1&2&3\\4&5&6\end{pmatrix}=$ \verb|matrix(QQ,2,3,[1,2,3, 4,5,6])|
+
+$\left|\begin{matrix}1&2\\3&4\end{matrix}\right|=$
+\verb|det(matrix(QQ,[[1,2],[3,4]]))|
+
+$Av=$ \verb|A*v| \quad $A^{-1}=$ \verb|A^-1| \quad $A^t=$ \verb|A.transpose()|
+
+Solve $Ax=v$: \verb| A\v  | or \verb| A.solve_right(v)|
+
+Solve $xA=v$: \verb| A.solve_left(v)|
+
+Reduced row echelon form: \verb| A.echelon_form()|
+
+Rank and nullity: \verb|A.rank()    A.nullity()|
+
+Hessenberg form: \verb|A.hessenberg_form()|
+
+Characteristic polynomial: \verb|A.charpoly()|
+
+Eigenvalues: \verb|A.eigenvalues()| 
+
+Eigenvectors: \verb|A.eigenvectors_right()| (also left)
+
+Gram-Schmidt: \verb|A.gram_schmidt()|
+
+Visualize: \verb|A.plot()|
+
+LLL reduction: \verb|matrix(ZZ,...).LLL()|
+
+Hermite form: \verb|matrix(ZZ,...).hermite_form()|
+
+%*********************************************
+\hr\textbf{Linear algebra}
+
+\includegraphics[width=12em,height=6em]{linalg}
+
+Vector space $K^n = $ \verb| K^n | e.g. \verb| QQ^3   RR^2   CC^4|
+
+Subspace: \verb|span(vectors, |{\it field}\verb| )| 
+
+E.g., \verb|span([[1,2,3], [2,3,5]], QQ)|
+
+Kernel: \verb|A.right_kernel()| (also left)
+
+Sum and intersection: \verb|V + W | and \verb| V.intersection(W)|
+
+Basis: \verb|V.basis()|
+
+Basis matrix: \verb|V.basis_matrix()|
+
+Restrict matrix to subspace: \texttt{A.restrict(V)}
+
+Vector in terms of basis: \texttt{V.coordinates({\it vector})}
+
+%*********************************************
+\hr\textbf{Numerical mathematics}
+
+Packages: \verb|import numpy, scipy, cvxopt|
+
+Minimization: \verb|var("x y z")|
+
+\verb|   minimize(x^2+x*y^3+(1-z)^2-1, [1,1,1])|
+
+
+%*********************************************
+\hr\textbf{Number theory}
+
+Primes: \verb|prime_range(n,m)|, \verb|is_prime|, \verb|next_prime|
+
+Factor: \verb|factor(n)|, \verb|qsieve(n)|, \verb|ecm.factor(n)|
+
+Kronecker symbol: $\left(\frac{a}{b}\right) = $ \texttt{kronecker\_symbol({\it a},{\it b})}
+
+Continued fractions: \verb|continued_fraction(x)|
+
+Bernoulli numbers: \texttt{bernoulli(n)}, \texttt{bernoulli\_mod\_p(p)}
+
+Elliptic curves: \verb|EllipticCurve([|$a_1,a_2,a_3,a_4,a_6$\verb|])|
+
+Dirichlet characters: \texttt{DirichletGroup({\it N})}
+
+%Congruence subgroups: \texttt{Gamma0({\it N})}, \texttt{Gamma1({\it N})}, \texttt{GammaH}
+
+Modular forms: \texttt{ModularForms({\it level}, {\it weight})}
+
+Modular symbols: \texttt{ModularSymbols({\it level}, {\it weight}, {\it sign})}
+
+Brandt modules: \texttt{BrandtModule({\it level}, {\it weight})}
+
+Modular abelian varieties: \texttt{J0({\it N})}, \texttt{J1({\it N})}
+
+%*********************************************
+\hr\textbf{Group theory}
+
+\texttt{G = PermutationGroup([[(1,2,3),(4,5)],[(3,4)]])}
+
+\texttt{SymmetricGroup({\it n})}, \texttt{AlternatingGroup({\it n})} 
+
+Abelian groups: \texttt{AbelianGroup([3,15])}
+
+Matrix groups: \texttt{GL, SL, Sp, SU, GU, SO, GO}
+
+Functions: \texttt{G.sylow\_subgroup(p)}, \texttt{G.character\_table()}, 
+
+\texttt{G.normal\_subgroups()}, \texttt{G.cayley\_graph()}
+
+
+%*********************************************
+\hr\textbf{Noncommutative rings}
+
+Quaternions: \texttt{Q.<i,j,k> = QuaternionAlgebra(a,b)}
+
+Free algebra: \texttt{R.<a,b,c> = FreeAlgebra(QQ, 3)}
+
+%Steenrod algebra: \texttt{SteenrodAlgebra({\it prime})}
+
+%*********************************************
+\hr\textbf{Python modules}
+
+\verb|import| \emph{module\_name}
+
+\verb|module_name.|$\langle$tab$\rangle$ and \verb|help(module_name)|
+
+%\verb|sage.|\emph{module\_name}\verb|.all.|$\langle$tab$\rangle$ shows exported commands
+
+%\mbox{Std packages: Maxima GP/PARI GAP Singular R Shell ...}
+
+%Opt packages: Biopython Gnuplot Kash ...
+
+%\%\emph{package\_name} then use package command syntax
+
+%*********************************************
+\hr\textbf{Profiling and debugging}
+
+\verb|time| \emph{command}: \quad  show timing information
+
+\verb|timeit("command")|: accurately time command
+
+\verb|t = cputime(); cputime(t)|: elapsed CPU time
+
+\verb|t = walltime(); walltime(t)|: elapsed wall time
+
+\verb|%pdb|: turn on interactive debugger (command line only)
+
+\verb|%prun command|: profile command (command line only)
+
+\end{multicols*}
+
+\end{document}

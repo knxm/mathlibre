@@ -1,0 +1,894 @@
+% Sage Linear Algebra Quick Reference
+% (c) 2009 by Robert A. Beezer
+% Licensed with the GNU Free Documentation License (GFDL)
+%   http://www.gnu.org/copyleft/fdl.html
+%
+%  History
+%
+%    2009-05-10  Initial version based on Sage 3.4
+%    2009-05-13  Added right paren to vector u in "vector operations" section
+%
+%
+\documentclass[a4paper]{article}
+\usepackage{graphicx}  
+\usepackage[landscape]{geometry}
+%\usepackage[pdftex]{color}
+\usepackage[dvipdfm]{color}
+
+\usepackage{quickrefcard}  
+
+\usepackage{multicol}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\newcommand{\QQ}{\mathbb{Q}}
+\newcommand{\ZZ}{\mathbb{Z}}
+\newcommand{\FF}{\mathbb{F}}
+
+\begin{document}
+\begin{multicols*}{3}
+\begin{center}
+\textbf{Sage Quick Reference: Linear Algebra}\\
+Robert A. Beezer (w/mod.\ by nu)\\
+Sage Version 3.4\\
+\url{http://wiki.sagemath.org/quickref}\\
+GNU Free Document License, extend for your own use\\
+Based on work by Peter Jipsen, William Stein 
+\end{center}
+% backup over center environment gap
+\vspace{-2ex}
+%*********************************************
+\sect[Vector Constructions]{ベクトルの作成}
+
+\CAUTION{ベクトルの添字は0始まり}\\
+\EX{u = vector(QQ, [1, 3/2, -1])} 有理数体上, 長さ3\\
+\EX{v = vector(QQ, {2:4, 95:4, 210:0})}                  \BreakLineAndIndent
+211成分, 非零なのは第2成分と第95成分の4だけ, 
+sparse
+
+\begin{original}
+\CAUTION{First entry of a vector is numbered 0}\\
+\EX{u = vector(QQ, [1, 3/2, -1])} length 3 over rationals\\
+\EX{v = vector(QQ, {2:4, 95:4, 210:0})}                  \BreakLineAndIndent
+211 entries, nonzero in entry 2 and entry 95, sparse
+\end{original}
+%*********************************************
+\sect[Vector Operations]{ベクトルへの操作}
+
+\EX{u=vector(QQ,[1, 3/2, -1])},
+\EX{v=vector(ZZ,[1, 8, -2])}
+
+\EX{2*u - 3*v} 線型結合\\
+\EX{u.dot_product(v)}\\
+\EX{u.cross_product(v)}  順序: \sagecommand{u}$\times$\sagecommand{v}\\
+\EX{u.inner_product(v)}  \sagecommand{u}と\sagecommand{v}の内積\\
+\EX{u.pairwise_product(v)} 結果のベクトル\\
+\EX{u.norm() == u.norm(2)} ユークリッドノルム\\
+\EX{u.norm(1)} 要素の絶対値の和\\
+\EX{u.norm(Infinity)} 絶対値が最大の要素\\
+\EX{A.gram_schmidt()}
+行列\sagecommand{A}の行を変換
+
+\begin{original}
+\EX{u=vector(QQ,[1, 3/2, -1])},
+\EX{v=vector(ZZ,[1, 8, -2])}
+
+\EX{2*u - 3*v} linear combination\\
+\EX{u.dot_product(v)}\\
+\EX{u.cross_product(v)}  order: \sagecommand{u}$\times$\sagecommand{v}\\
+\EX{u.inner_product(v)}  inner product matrix from parent\\
+\EX{u.pairwise_product(v)} vector as a result\\
+\EX{u.norm() == u.norm(2)} Euclidean norm\\
+\EX{u.norm(1)} sum of entries\\
+\EX{u.norm(Infinity)} maximum entry\\
+\EX{A.gram_schmidt()} converts the rows of matrix \sagecommand{A}
+\end{original}
+%*********************************************
+\sect[Matrix Constructions]{行列の作成}
+
+\CAUTION{行も列も添字は$0$始まり}
+
+\EX{A = matrix(ZZ, [[1,2],[3,4],[5,6]])}
+ $3\times 2$ 整数行列
+
+\EX{B = matrix(QQ, 2, [1,2,3,4,5,6])}    \BreakLineAndIndent
+リストから2行の行列を作る. つまり$2\times 3$有理数行列.
+
+\EX{C = matrix(CDF, 2, 2, [[5*I, 4*I], [I, 6]])} \BreakLineAndIndent
+複素数, 53-bit精度の行列
+
+\EX{Z = matrix(QQ, 2, 2, 0)} 
+零行列
+
+\EX{D = matrix(QQ, 2, 2, 8)} 
+対角成分は$8$, それ以外は$0$
+
+\EX{I = identity_matrix(5)} 
+$5\times 5$単位行列
+
+\EX{J = jordan_block(-2,3)}   \BreakLineAndIndent
+$3\times 3$行列, 対角は$-2$, その一つ上は$1$
+
+\EX{var('x y z'); K = matrix(SR,[[x,y+z],[0,x^2*z]])} \BreakLineAndIndent
+シンボリックな数式のなす環\sagecommand{SR}の元を成分とする行列.
+
+\EX{L=matrix(ZZ, 20, 80, {(5,9):30, (15,77):-6})}  \BreakLineAndIndent
+$20\times 80$, 2つの要素だけ非零な行列, sparse
+
+\begin{original}
+\CAUTION{Row, column numbering begins at $0$}
+
+\EX{A = matrix(ZZ, [[1,2],[3,4],[5,6]])} \BreakLineAndIndent
+ $3\times 2$ over the integers
+
+\EX{B = matrix(QQ, 2, [1,2,3,4,5,6])}    \BreakLineAndIndent
+2 rows from a list, so $2\times 3$ over rationals
+
+\EX{C = matrix(CDF, 2, 2, [[5*I, 4*I], [I, 6]])} \BreakLineAndIndent
+complex entries, 53-bit precision
+
+\EX{Z = matrix(QQ, 2, 2, 0)} 
+zero matrix 
+
+\EX{D = matrix(QQ, 2, 2, 8)}  \BreakLineAndIndent
+diagonal entries all $8$, other entries zero
+
+\EX{I = identity_matrix(5)} 
+$5\times 5$ identity matrix
+
+\EX{J = jordan_block(-2,3)}   \BreakLineAndIndent
+$3\times 3$ matrix, $-2$ on diagonal, $1$'s on super-diagonal
+
+\EX{var('x y z'); K = matrix(SR,[[x,y+z],[0,x^2*z]])} \BreakLineAndIndent
+symbolic expressions live in the ring \sagecommand{SR}
+
+\EX{L=matrix(ZZ, 20, 80, {(5,9):30, (15,77):-6})}  \BreakLineAndIndent
+$20\times 80$, two non-zero entries, sparse representation
+\end{original}
+%*********************************************
+\sect[Matrix Multiplication]{行列の積}
+
+\EX{u=vector(QQ,[1,2,3])}, \EX{v=vector(QQ,[1,2])}, \\
+\EX{A = matrix(QQ, [[1,2,3],[4,5,6]])},\\
+\EX{B = matrix(QQ, [[1,2],[3,4]])},
+
+\EX{u*A},\quad
+\EX{A*v},\quad
+\EX{B*A},\quad
+\EX{B^6},\quad
+\EX{B^(-3)} などと出来る
+
+\EX{B.iterates(v, 6)}で$vB^0, vB^1,\dots, vB^5$が出来る  \BreakLineAndIndent
+\sagecommand{rows = False}なら\sagecommand{v}は行列の巾の右にくる
+
+\EX{f(x)=x^2+5*x+3}なら\EX{f(B)}と出来る
+
+\EX{B.exp()} 行列の指数関数, つまり$\sum_{k=0}^{\infty}\frac{B^k}{k!}$
+
+\begin{original}
+\EX{u=vector(QQ,[1,2,3])}, \EX{v=vector(QQ,[1,2])}, \\
+\EX{A = matrix(QQ, [[1,2,3],[4,5,6]])},\\
+\EX{B = matrix(QQ, [[1,2],[3,4]])},
+
+\EX{u*A},\quad
+\EX{A*v},\quad
+\EX{B*A},\quad
+\EX{B^6},\quad
+\EX{B^(-3)} all possible
+
+\EX{B.iterates(v, 6)}  produces $vB^0, vB^1,\dots, vB^5$  \BreakLineAndIndent
+\sagecommand{rows = False} moves \sagecommand{v} to right of matrix powers
+
+\EX{f(x)=x^2+5*x+3} then \EX{f(B)} is possible
+
+\EX{B.exp()} matrix exponential, i.e.\ $\sum_{k=0}^{\infty}\frac{B^k}{k!}$
+\end{original}
+%*********************************************
+\sect[Matrix Spaces]{行列の空間}
+
+\EX{M = MatrixSpace(QQ, 3, 4)}
+$3\times 4$行列の$12$次元空間          \\
+\EX{A = M([1,2,3,4,5,6,7,8,9,10,11,12])}
+$3\times 4$行列, \sagecommand{M}の元   \\
+\EX{M.basis()} \\
+\EX{M.dimension()}  \\
+\EX{M.zero_matrix()}
+
+\begin{original}
+\EX{M = MatrixSpace(QQ, 3, 4)}  \BreakLineAndIndent
+dimension 12 space of $3\times 4$ matrices
+
+\EX{A = M([1,2,3,4,5,6,7,8,9,10,11,12])} \BreakLineAndIndent
+is a $3\times 4$ matrix, an element of \sagecommand{M}
+
+\EX{M.basis()}
+
+\EX{M.dimension()}
+
+\EX{M.zero_matrix()}
+\end{original}
+%*********************************************
+\sect[Matrix Operations]{行列の操作}
+
+\EX{5*A+2*B} 線型結合
+
+\EX{A.inverse()}  (\EX{A^(-1)}, \EX{~A}でもOK)\BreakLineAndIndent
+もし正則でないなら\sagecommand{ZeroDivisionError}
+
+\EX{A.transpose()}
+
+\EX{A.antitranspose()} 転置 + 順序の反転
+
+\EX{A.adjoint()}  余因子行列
+
+\EX{A.conjugate()} 成分ごとの複素共役
+
+\EX{A.restrict(V)} 
+不変部分空間\sagecommand{V}への制限
+
+\begin{original}
+\EX{5*A+2*B} linear combination
+
+\EX{A.inverse()}, also \EX{A^(-1)}, \EX{~A} \BreakLineAndIndent
+\sagecommand{ZeroDivisionError} if singular
+
+\EX{A.transpose()}
+
+\EX{A.antitranspose()} transpose + reverse orderings
+
+\EX{A.adjoint()}  matrix of cofactors
+
+\EX{A.conjugate()} entry-by-entry complex conjugates
+
+\EX{A.restrict(V)} restriction on invariant subspace \sagecommand{V}
+\end{original}
+%*********************************************
+\sect[Row Operations]{行基本変形}
+
+行変形: (直接行列を書き換える)\\
+\CAUTION{最初の行は0行目}\\
+\EX{A.rescale_row(i,a)} \sagecommand{a*}(\sagecommand{i}行目)\\
+\EX{A.add_multiple_of_row(i,j,a)} \sagecommand{a*}(\sagecommand{j}行目) + \sagecommand{i}行目\\
+\EX{A.swap_rows(i,j)}
+
+列基本変形は, \sagecommand{row}$\rightarrow$\sagecommand{col}\\
+書き換えたくない時は\EX{B = A.with_rescaled_row(i,a)}等.
+
+\begin{original}
+Row Operations: (change matrix in place)\\
+\CAUTION{first row is numbered 0}\\
+\EX{A.rescale_row(i,a)} \sagecommand{a*}(row \sagecommand{i})\\
+\EX{A.add_multiple_of_row(i,j,a)} \sagecommand{a*}(row \sagecommand{j}) + row \sagecommand{i}\\
+\EX{A.swap_rows(i,j)}
+
+Each has a column variant, \sagecommand{row}$\rightarrow$\sagecommand{col}\\
+For a new matrix, use e.g.\ \EX{B = A.with_rescaled_row(i,a)}
+\end{original}
+%*********************************************
+\sect[Echelon Form]{階段行列}
+
+\EX{A.echelon_form()},
+\EX{A.echelonize()},
+\EX{A.hermite_form()}\\
+\CAUTION{どの環の元かによって結果が代わってくる}\\
+\EX{A = matrix(ZZ,[[4,2,1],[6,3,2]])}\\
+\EX{B = matrix(QQ,[[4,2,1],[6,3,2]])}\\
+\begin{tabular}{ll}
+\EX{A.echelon_form()} & \EX{B.echelon_form()}\\
+$\left(\begin{array}{rrr}
+2 & 1 & 0 \\
+0 & 0 & 1
+\end{array}\right)$
+&
+$\left(\begin{array}{rrr}
+1 & \frac{1}{2} & 0 \\
+0 & 0 & 1
+\end{array}\right)$
+\end{tabular}\\
+\EX{A.pivots()} 
+列空間を生成している列の添字\\
+\EX{A.pivot_rows()} 
+行空間を生成している行の添字
+
+
+\begin{original}
+\EX{A.echelon_form()},
+\EX{A.echelonize()},
+\EX{A.hermite_form()}\\
+\CAUTION{Base ring affects results}\\
+\EX{A = matrix(ZZ,[[4,2,1],[6,3,2]])}\\
+\EX{B = matrix(QQ,[[4,2,1],[6,3,2]])}\\
+\begin{tabular}{ll}
+\EX{A.echelon_form()} & \EX{B.echelon_form()}\\
+$\left(\begin{array}{rrr}
+2 & 1 & 0 \\
+0 & 0 & 1
+\end{array}\right)$
+&
+$\left(\begin{array}{rrr}
+1 & \frac{1}{2} & 0 \\
+0 & 0 & 1
+\end{array}\right)$
+\end{tabular}\\
+\EX{A.pivots()} indices of columns spanning column space\\
+\EX{A.pivot_rows()} indices of rows spanning row space
+\end{original}
+%*********************************************
+\sect[Pieces of Matrices]{小行列など}
+
+\CAUTION{行も列も添字は0から}
+
+\EX{A.nrows()}, \EX{A.ncols()}
+
+\EX{A[i,j]}  \sagecommand{i}行\sagecommand{j}列の成分  \BreakLineAndIndent
+\CAUTION{OK: \sagecommand{A[2,3] = 8}, Error: \sagecommand{A[2][3] = 8}}
+
+\EX{A[i]} 
+\sagecommand{i}行目, (immutable Python tuple)
+
+\EX{A.row(i)} 
+Sage vectorとして\sagecommand{i}行目を返す 
+
+\EX{A.column(j)} 
+Sage vectorとして\sagecommand{j}行目を返す 
+
+
+\EX{A.list()} 
+single Python listを返す. (row-major order)
+
+\EX{A.matrix_from_columns([8,2,8])} \BreakLineAndIndent
+リストにある列で新しい行列を作る. 列が重複しててもよい.
+
+
+\EX{A.matrix_from_rows([2,5,1])}\BreakLineAndIndent
+リストにある行で新しい行列を作る. 未ソートでも可.
+
+
+\EX{A.matrix_from_rows_and_columns([2,4,2],[3,1])} \BreakLineAndIndent
+行と列から新しい行列
+
+\EX{A.rows()}  
+全ての行 (tuplesのリスト)
+
+\EX{A.columns()}  
+全ての列 (tuplesのリスト)
+
+
+\EX{A.submatrix(i,j,nr,nc)} \BreakLineAndIndent
+\sagecommand{(i,j)}から始め
+\sagecommand{nr}行\sagecommand{nc}列を使った行列
+
+\EX{A[2:4,1:7]}, \EX{A[0:8:2,3::-1]} 
+Python-style list slicing 
+
+\begin{original}
+\CAUTION{row, column numbering begins at 0}
+
+\EX{A.nrows()}, \EX{A.ncols()}
+
+\EX{A[i,j]} entry in row \sagecommand{i} and column \sagecommand{j}  \BreakLineAndIndent
+\CAUTION{OK: \sagecommand{A[2,3] = 8}, Error: \sagecommand{A[2][3] = 8}}
+
+\EX{A[i]} 
+row \sagecommand{i} as immutable Python tuple
+
+\EX{A.row(i)} 
+returns row \sagecommand{i} as Sage vector
+
+\EX{A.column(j)} 
+returns column \sagecommand{j} as Sage vector
+
+\EX{A.list()} 
+returns single Python list, row-major order
+
+\EX{A.matrix_from_columns([8,2,8])} \BreakLineAndIndent
+ new matrix from columns in list, repeats OK
+
+\EX{A.matrix_from_rows([2,5,1])}\BreakLineAndIndent
+new matrix from rows in list, out-of-order OK
+
+\EX{A.matrix_from_rows_and_columns([2,4,2],[3,1])} \BreakLineAndIndent
+common to the rows and the columns
+
+\EX{A.rows()}  
+all rows as a list of tuples
+
+\EX{A.columns()}  
+all columns as a list of tuples
+
+\EX{A.submatrix(i,j,nr,nc)} \BreakLineAndIndent
+start at entry \sagecommand{(i,j)}, 
+use \sagecommand{nr} rows, \sagecommand{nc} cols
+
+\EX{A[2:4,1:7]}, \EX{A[0:8:2,3::-1]} 
+Python-style list slicing 
+\end{original}
+%*********************************************
+\sect[Combining Matrices]{行列の組合せ}
+
+\EX{A.augment(B)}  
+\sagecommand{A}を左に, \sagecommand{B}を右に置いてできる行列\\
+\EX{A.stack(B)}  
+\sagecommand{A}を上に, \sagecommand{B}を下に置いてできる行列\\
+\EX{A.block_sum(B)}  
+\sagecommand{A}を左上に, \sagecommand{B}を右下, ブロック対角行列\\
+\EX{A.tensor_product(B)}  
+\sagecommand{A}に従って\sagecommand{B}の定数倍を配置した行列
+
+\begin{original}
+\EX{A.augment(B)}  \sagecommand{A} in first columns, \sagecommand{B} to the right\\
+\EX{A.stack(B)}  \sagecommand{A} in top rows, \sagecommand{B} below\\
+\EX{A.block_sum(B)}  Diagonal, \sagecommand{A} upper left, \sagecommand{B} lower right\\
+\EX{A.tensor_product(B)}  Multiples of \sagecommand{B}, arranged as in \sagecommand{A}
+\end{original}
+%*********************************************
+\sect[Scalar Functions on Matrices]{行列のスカラー関数}
+
+\EX{A.rank()}\\
+\EX{A.nullity() == A.left_nullity()}\\
+\EX{A.right_nullity()}\\
+\EX{A.determinant() == A.det()}\\
+\EX{A.permanent()}\\
+\EX{A.trace()}\\
+\EX{A.norm() == A.norm(2)} ユークリッドノルム\\
+\EX{A.norm(1)} 列和の最大\\
+\EX{A.norm(Infinity)} 行和の最大\\
+\EX{A.norm('frob')} フロベニウスノルム
+
+\begin{original}
+\EX{A.rank()}\\
+\EX{A.nullity() == A.left_nullity()}\\
+\EX{A.right_nullity()}\\
+\EX{A.determinant() == A.det()}\\
+\EX{A.permanent()}\\
+\EX{A.trace()}\\
+\EX{A.norm() == A.norm(2)} Euclidean norm\\
+\EX{A.norm(1)} largest column sum\\
+\EX{A.norm(Infinity)} largest row sum\\
+\EX{A.norm('frob')} Frobenius norm
+\end{original}
+%*********************************************
+\sect[Matrix Properties]{行列の情報}
+
+\EX{.is_zero()} (零行列?), 
+\EX{.is_one()} (単位行列?),\\
+\EX{.is_scalar()} (単位行列の定数倍?), 
+\EX{.is_square()},\\
+\EX{.is_symmetric()}, 
+\EX{.is_invertible()}, 
+\EX{.is_nilpotent()}
+
+\begin{original}
+\EX{.is_zero()} (totally?), 
+\EX{.is_one()} (identity matrix?),\\
+\EX{.is_scalar()} (multiple of identity?), 
+\EX{.is_square()},\\
+\EX{.is_symmetric()}, 
+\EX{.is_invertible()}, 
+\EX{.is_nilpotent()}
+\end{original}
+%*********************************************
+\sect[Eigenvalues]{固有値}
+
+\EX{A.charpoly('t')}  
+変数を指定しない時のデフォルトは\sagecommand{x} \BreakLineAndIndent
+\EX{A.characteristic_polynomial() == A.charpoly()}
+
+\EX{A.fcp('t')}  
+因数分解した特性多項式
+
+\EX{A.minpoly()}  
+最小多項式  \BreakLineAndIndent
+\EX{A.minimal_polynomial() == A.minpoly()}
+
+\EX{A.eigenvalues()} 
+重複のある未ソートのリスト.
+
+\EX{A.eigenvectors_left()} 
+ベクトルは左, \sagecommand{_right}も有 \BreakLineAndIndent
+三つ組\sagecommand{(e,V,n)}のリストを返す: \BreakLineAndDoubleIndent
+\sagecommand{e}: 固有値          \BreakLineAndDoubleIndent
+\sagecommand{V}: ベクトルのリスト, 固有空間の基底 \BreakLineAndDoubleIndent
+\sagecommand{n}: 代数的重複度  
+
+\EX{A.eigenmatrix_right()} 
+ベクトルは右, \sagecommand{_left}も有 \BreakLineAndIndent
+行列2つ\sagecommand{(D,P)}を返す: \BreakLineAndDoubleIndent
+\sagecommand{D}: 固有値が対角にある対角行列 \BreakLineAndDoubleIndent
+\sagecommand{P}: 各列が固有ベクトルの行列 (leftなら行)\BreakLineAndIndent[\skipin\skipin\phantom{P:}]
+もし対角化可能でなければ, 0ベクトルが列に現れる
+
+                    
+
+\begin{original}
+\EX{A.charpoly('t')}  
+no variable specified defaults to \sagecommand{x} \BreakLineAndIndent
+\EX{A.characteristic_polynomial() == A.charpoly()}
+
+\EX{A.fcp('t')}  
+factored characteristic polynomial
+
+\EX{A.minpoly()}  
+the minimum polynomial  \BreakLineAndIndent
+\EX{A.minimal_polynomial() == A.minpoly()}
+
+\EX{A.eigenvalues()} 
+unsorted list, with mutiplicities
+
+\EX{A.eigenvectors_left()} 
+vectors on left, \sagecommand{_right} too \BreakLineAndIndent
+Returns a list of triples, one per eigenvalue: \BreakLineAndDoubleIndent
+\sagecommand{e}: the eigenvalue          \BreakLineAndDoubleIndent
+\sagecommand{V}: list of vectors, basis for eigenspace \BreakLineAndDoubleIndent
+\sagecommand{n}: algebraic multiplicity  
+
+\EX{A.eigenmatrix_right()} 
+vectors on right, \sagecommand{_left} too \BreakLineAndIndent
+Returns two matrices: \BreakLineAndDoubleIndent
+\sagecommand{D}: diagonal matrix with eigenvalues \BreakLineAndDoubleIndent
+\sagecommand{P}: eigenvectors as columns (rows for left version)\BreakLineAndIndent[\skipin\skipin\phantom{P:}]
+ has zero columns if matrix not diagonalizable
+\end{original}
+%*********************************************
+\sect[Decompositions]{分解}
+%
+
+\Note{どの環の元かによって使えないものあり}
+
+\EX{A.jordan_form(transformation=True)}  
+行列のペアを返す:                                       \BreakLineAndIndent
+\sagecommand{J}: 固有値に対するジョルダンブロックの行列 \BreakLineAndIndent
+\sagecommand{P}: 正則行列                               \BreakLineAndIndent
+so \sagecommand{    A == P^(-1)*J*P} 
+
+%
+\EX{A.smith_form()} 行列の3つ組を返す:          \BreakLineAndIndent
+\sagecommand{D}: 単因子の対角行列               \BreakLineAndIndent
+\sagecommand{U}, \sagecommand{V}: 固有値1の行列 \BreakLineAndIndent
+so \sagecommand{    D == U*A*V}
+
+%
+\EX{A.LU()} 行列の3つ組を返す:               \BreakLineAndIndent
+\sagecommand{P}: 置換行列                    \BreakLineAndIndent
+\sagecommand{L}: 下三角行列                  \BreakLineAndIndent
+\sagecommand{U}: 上三角行列                  \BreakLineAndIndent
+so \sagecommand{    P*A == L*U}
+
+%
+\EX{A.QR()} 行列の組を返す:      \BreakLineAndIndent
+\sagecommand{Q}: 直交行列        \BreakLineAndIndent
+\sagecommand{R}: 上三角行列      \BreakLineAndIndent
+so \sagecommand{    A == Q*R}
+
+%
+\EX{A.SVD()} 行列の3つ組を返す:   \BreakLineAndIndent
+\sagecommand{U}: 直交行列        \BreakLineAndIndent
+\sagecommand{S}: zero off the diagonal, \sagecommand{A}と同じ次元 \BreakLineAndIndent
+\sagecommand{V}: 直交行列        \BreakLineAndIndent
+so \sagecommand{  A == U*S*(V-conjugate-transpose)}
+
+%
+\EX{A.symplectic_form()}\\
+\EX{A.hessenberg_form()}\\
+\EX{A.cholesky()}
+
+
+\begin{original}
+\Note{availability depends on base ring of matrix}
+
+\EX{A.jordan_form(transformation=True)}  \BreakLineAndIndent
+returns a pair of matrices:      \BreakLineAndDoubleIndent
+\sagecommand{J}: matrix of Jordan blocks for eigenvalues \BreakLineAndDoubleIndent
+\sagecommand{P}: nonsingular matrix \BreakLineAndDoubleIndent
+ so \sagecommand{    A == P^(-1)*J*P} 
+
+%
+\EX{A.smith_form()} returns a triple of matrices:       \BreakLineAndIndent
+\sagecommand{D}: elementary divisors on diagonal        \BreakLineAndIndent
+\sagecommand{U}, \sagecommand{V}: with unit determinant \BreakLineAndIndent
+so \sagecommand{    D == U*A*V}
+
+%
+\EX{A.LU()} returns a triple of matrices:    \BreakLineAndIndent
+\sagecommand{P}: a permutation matrix        \BreakLineAndIndent
+\sagecommand{L}: lower triangular matrix     \BreakLineAndIndent
+\sagecommand{U}: upper triangular matrix     \BreakLineAndIndent
+so \sagecommand{    P*A == L*U}
+
+%
+\EX{A.QR()} returns a pair of matrices:      \BreakLineAndIndent
+\sagecommand{Q}: an orthogonal matrix        \BreakLineAndIndent
+\sagecommand{R}: upper triangular matrix     \BreakLineAndIndent
+so \sagecommand{    A == Q*R}
+
+%
+\EX{A.SVD()} returns a triple of matrices:   \BreakLineAndIndent
+\sagecommand{U}: an orthogonal matrix        \BreakLineAndIndent
+\sagecommand{S}: zero off the diagonal, same dimensions as \sagecommand{A} \BreakLineAndIndent
+\sagecommand{V}: an orthogonal matrix        \BreakLineAndIndent
+so \sagecommand{  A == U*S*(V-conjugate-transpose)}
+
+%
+\EX{A.symplectic_form()}\\
+\EX{A.hessenberg_form()}\\
+\EX{A.cholesky()}
+\end{original}
+%*********************************************
+\sect[Solutions to Systems]{方程式系の解}
+
+\EX{A.solve_right(B)} \sagecommand{_left}も有 \BreakLineAndIndent
+\sagecommand{A*X = B}の解, ただし\sagecommand{X}はベクトル{\bf or}
+行列
+
+\EX{A = matrix(QQ, [[1,2],[3,4]])}\\
+\EX{b = vector(QQ, [3,4])}\BreakLineAndIndent
+とすると\EX{A\b}は解\EX{(-2, 5/2)}を返す
+
+\begin{original}
+\EX{A.solve_right(B)} \sagecommand{_left} too \BreakLineAndIndent
+ is solution to \sagecommand{A*X = B}, where \sagecommand{X} is a vector {\bf or} matrix
+
+\EX{A = matrix(QQ, [[1,2],[3,4]])} \\
+\EX{b = vector(QQ, [3,4])}\BreakLineAndIndent
+ then \EX{A\b} returns the solution \EX{(-2, 5/2)}
+\end{original}
+%*********************************************
+\sect[Vector Spaces]{ベクトル空間}
+
+\EX{U = VectorSpace(QQ, 4)}  
+4次元, 係数体は有理数体
+
+\EX{V = VectorSpace(RR, 4)}  
+``係数体''は53-bit精度の実数
+
+\EX{W = VectorSpace(RealField(200), 4)} \BreakLineAndIndent
+ ``係数体''は200 bit精度
+
+\EX{X = CC^4} 
+4次元, 53-bit精度の複素数
+
+\EX{Y = VectorSpace(GF(7), 4)}  
+有限          \BreakLineAndIndent
+\EX{Y.finite()} は \sagecommand{True} を返す     \BreakLineAndIndent
+\EX{len(Y.list())} は $7^4=2401$ elements を返す
+
+\begin{original}
+\EX{U = VectorSpace(QQ, 4)}  
+dimension 4, rationals as field
+
+\EX{V = VectorSpace(RR, 4)}  
+``field'' is 53-bit precision reals
+
+\EX{W = VectorSpace(RealField(200), 4)} \BreakLineAndIndent
+ ``field'' has 200 bit precision
+
+\EX{X = CC^4} 
+4-dimensional, 53-bit precision complexes
+
+\EX{Y = VectorSpace(GF(7), 4)}  
+finite          \BreakLineAndIndent
+\EX{Y.finite()} returns \sagecommand{True}      \BreakLineAndIndent
+\EX{len(Y.list())} returns $7^4=2401$ elements
+\end{original}
+%*********************************************
+\sect[Vector Space Properties]{べくトルク空間の情報}
+
+\EX{V.dimension()}
+
+\EX{V.basis()}
+
+\EX{V.echelonized_basis()}
+
+\EX{V.has_user_basis()} 
+標準基底以外の基底を使っている?
+
+\EX{V.is_subspace(W)}
+  \sagecommand{W}が\sagecommand{V}の部分空間なら\sagecommand{True}
+
+\EX{V.is_full()} (加群として)階数が次元と等しいか?
+
+\EX{Y = GF(7)^4},\quad\EX{T = Y.subspaces(2)} \BreakLineAndIndent
+\sagecommand{T}は \sagecommand{Y}の二次元部分空間に対する
+a generator object  \BreakLineAndIndent
+\sagecommand{[U for U in T]}は\sagecommand{Y}の(2850個の)二次元部分空間
+ のリスト
+
+
+
+\begin{original}
+\EX{V.dimension()}
+
+\EX{V.basis()}
+
+\EX{V.echelonized_basis()}
+
+\EX{V.has_user_basis()} 
+with non-canonical basis?
+
+\EX{V.is_subspace(W)} 
+\sagecommand{True} if \sagecommand{W} is a subspace of \sagecommand{V}
+
+\EX{V.is_full()} rank equals degree (as module)?
+
+\EX{Y = GF(7)^4},\quad\EX{T = Y.subspaces(2)} \BreakLineAndIndent
+\sagecommand{T} is a generator object 
+for 2-D subspaces of \sagecommand{Y} \BreakLineAndIndent
+\sagecommand{[U for U in T]} is list of 2850 2-D subspaces of \sagecommand{Y}
+\end{original}
+%*********************************************
+\sect[Constructing Subspaces]{部分空間の作成}
+
+\EX{span([v1,v2,v3], QQ)} 
+%span of list of vectors over ring
+環\sagecommand{QQ}上\sagecommand{v1},\sagecommand{v3},\sagecommand{v3}で
+ 生成される空間
+
+行列\sagecommand{A}に対し, 返されるのは  \BreakLineAndIndent
+基礎環が体ならベクトル空間 \BreakLineAndIndent
+基礎環が体でないなら加群       \\
+\EX{A.left_kernel() == A.kernel()}      
+\sagecommand{right_} も有                     \\
+\EX{A.row_space() == A.row_module()}         \\
+\EX{A.column_space() == A.column_module()}   
+
+\EX{A.eigenspaces_right()} 
+ベクトルは右, \sagecommand{_left}も有                  \BreakLineAndIndent
+固有値と右固有空間の組
+
+
+もし\sagecommand{V}と\sagecommand{W}が部分空間なら\\
+\EX{V.quotient(W)} \sagecommand{V}の\sagecommand{W}による商空間\\
+\EX{V.intersection(W)} \sagecommand{V}と\sagecommand{W}の共通部分\\
+\EX{V.direct_sum(W)} \sagecommand{V}と\sagecommand{W}の直和\\
+\EX{V.subspace([v1,v2,v3])} リストのベクトルによる部分空間
+
+\begin{original}
+\EX{span([v1,v2,v3], QQ)} span of list of vectors over ring
+
+For a matrix \sagecommand{A}, objects returned are  \BreakLineAndIndent
+vector spaces when base ring is a field \BreakLineAndIndent
+ modules when base ring is just a ring       \\
+\EX{A.left_kernel() == A.kernel()}      
+\sagecommand{right_} too                     \\
+\EX{A.row_space() == A.row_module()}         \\
+\EX{A.column_space() == A.column_module()}   
+
+\EX{A.eigenspaces_right()} 
+vectors on right, \sagecommand{_left} too                  \BreakLineAndIndent
+Pairs, having eigenvalue with its right eigenspace
+
+If \sagecommand{V} and \sagecommand{W} are subspaces\\
+\EX{V.quotient(W)} quotient of \sagecommand{V} by subspace \sagecommand{W}\\
+\EX{V.intersection(W)} intersection of \sagecommand{V} and \sagecommand{W}\\
+\EX{V.direct_sum(W)} direct sum of \sagecommand{V} and \sagecommand{W}\\
+\EX{V.subspace([v1,v2,v3])} specify basis vectors in a list
+\end{original}
+%*********************************************
+\sect[Dense versus Sparse]{Dense vs Sparse}
+
+\Note{アルゴリズムは表現の仕方に依存するかもしれない}
+
+ベクトルと行列にはふたつの表現がある \BreakLineAndIndent
+Dense: リスト(ベクトル)  リストのリスト(行列)           \BreakLineAndIndent
+Sparse: Python dictionary
+
+\EX{.is_dense()}, \EX{.is_sparse()}  でチェックできる
+
+\EX{A.sparse_matrix()}  \sagecommand{A}と等しいsparseな表現の行列を返す
+
+\EX{A.dense_rows()} \sagecommand{A}のdenseな行ベクトルを返す
+
+\sagecommand{sparse}(=\sagecommand{True}/\sagecommand{False})というキーワードを持つコマンドも有. 
+
+
+
+\begin{original}
+\Note{Algorithms may depend on representation}
+
+Vectors and matrices have two representations \BreakLineAndIndent
+Dense: lists, and lists of lists           \BreakLineAndIndent
+Sparse: Python dictionaries
+
+\EX{.is_dense()}, \EX{.is_sparse()}  to check
+
+\EX{A.sparse_matrix()} returns sparse version of \sagecommand{A}
+
+\EX{A.dense_rows()} returns dense row vectors of \sagecommand{A}
+
+Some commands have  boolean \sagecommand{sparse} keyword
+\end{original}
+%*********************************************
+\sect[Rings]{環}
+
+\Note{多くのアルゴリズムが基礎環が何かに依存している}
+
+\EX{<object>.base_ring(R)} ベクトル, 行列,\dots に対し\BreakLineAndIndent
+使用する環を指定する.
+
+
+\EX{<object>.change_ring(R)} ベクトル, 行列,\dots に対し\BreakLineAndIndent
+使用する環(体)を\sagecommand{R}に変更する.
+
+
+\EX{R.is_ring()},\quad\EX{R.is_field()}\\
+\EX{R.is_integral_domain()},\quad\EX{R.is_exact()}
+
+おもな環と体                   \BreakLineAndIndent
+\EX{ZZ}\quad 整数 $\ZZ$, 環     \BreakLineAndIndent
+\EX{QQ}\quad 有理数 $QQ$, 体   \BreakLineAndIndent
+\EX{QQbar}\quad 代数閉包 $\overline{\QQ}$, 厳密(exact)  \BreakLineAndIndent
+\EX{RDF}\quad 倍精度実数, 近似(inexact) \BreakLineAndIndent
+\EX{RR}\quad 53-bit精度実数, 近似(inexact)       \BreakLineAndIndent
+\EX{RealField(400)}\quad 400-bit精度実数, 近似(inexact) \BreakLineAndDoubleIndent
+(\sagecommand{CDF}, \sagecommand{CC}, \sagecommand{ComplexField(400)}\quad
+ 複素数も有) \BreakLineAndIndent
+\EX{RIF}\quad 実区間演算, 体 \BreakLineAndIndent
+\EX{GF(2)}\quad mod 2, 体, specialized implementations \BreakLineAndIndent
+\EX{GF(p) == FiniteField(p)}\quad \sagecommand{p}素数, $\ZZ/p\ZZ=\FF_p$, 体 \BreakLineAndIndent
+\EX{Integers(6)}\quad integers mod 6, $\ZZ/6\ZZ$, 環 \BreakLineAndIndent
+\EX{CyclotomicField(7)}\quad 
+$\QQ$に1の7乗根を添加した体 \BreakLineAndIndent
+\EX{QuadraticField(-5, 'x')}\quad $\QQ$に\sagecommand{x=}$\sqrt{-5}$を
+ 添加した体\BreakLineAndIndent
+\EX{SR}\quad ring of symbolic expressions
+
+\begin{original}
+\Note{Many algorithms depend on the base ring}
+
+\EX{<object>.base_ring(R)} for vectors, matrices,\dots \BreakLineAndIndent
+to determine the ring in use
+
+\EX{<object>.change_ring(R)} for vectors, matrices,\dots  \BreakLineAndIndent
+to change to the ring (or field), \sagecommand{R}.
+
+\EX{R.is_ring()},\quad\EX{R.is_field()}\\
+\EX{R.is_integral_domain()},\quad\EX{R.is_exact()}
+
+Some ring and fields                   \BreakLineAndIndent
+\EX{ZZ}\quad integers, ring     \BreakLineAndIndent
+\EX{QQ}\quad rationals, field   \BreakLineAndIndent
+\EX{QQbar}\quad algebraic field, exact  \BreakLineAndIndent
+\EX{RDF}\quad real double field, inexact \BreakLineAndIndent
+\EX{RR}\quad 53-bit reals, inexact       \BreakLineAndIndent
+\EX{RealField(400)}\quad 400-bit reals, inexact \BreakLineAndDoubleIndent
+\sagecommand{CDF}, \sagecommand{CC}, \sagecommand{ComplexField(400)} \quad
+ complexes, too \BreakLineAndIndent
+\EX{RIF}\quad real interval field \BreakLineAndIndent
+\EX{GF(2)}\quad mod 2, field, specialized implementations \BreakLineAndIndent
+\EX{GF(p) == FiniteField(p)}\quad \sagecommand{p} prime, field \BreakLineAndIndent
+\EX{Integers(6)}\quad integers mod 6, ring only \BreakLineAndIndent
+\EX{CyclotomicField(7)}\quad rationals with 7$^{\rm th}$ root of unity \BreakLineAndIndent
+\EX{QuadraticField(-5, 'x')}\quad rationals adjoin \sagecommand{x=}$\sqrt{-5}$\BreakLineAndIndent
+\EX{SR}\quad ring of symbolic expressions
+\end{original}
+
+%*********************************************
+\sect[Vector Spaces versus Modules]{ベクトル空間 vs 加群}
+
+加群とは(体では無く)環上のベクトル空間``みたいな''もの.\\
+先に述べたコマンド多くは加群にも使うことが出来る.\\
+いくつかの``ベクトル''は実際に加群の元.
+
+
+\begin{original}
+A module is ``like'' a vector space over a ring, not a field\\
+Many commands above apply to modules\\
+Some ``vectors'' are really module elements
+\end{original}
+%*********************************************
+\sect[More Help]{もっと助けて}
+
+コマンドの一部を書いて``tab-補完''\\
+\sagecommand{<object>.}を書いて``tab-補完''で 関連するコマンドを表示\\
+\sagecommand{<command>?}でコマンドの説明と例\\
+\sagecommand{<command>??}でソースコードを表示
+
+\begin{original}
+``tab-completion'' on partial commands\\
+``tab-completion'' on \sagecommand{<object.>} for all relevant methods\\
+\sagecommand{<command>?} for summary and examples\\
+\sagecommand{<command>??} for complete source code
+\end{original}
+%
+\end{multicols*}
+
+\end{document}

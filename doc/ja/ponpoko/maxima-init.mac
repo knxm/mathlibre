@@ -1,0 +1,15 @@
+put(surfg, d_chain_bisection,root_finder)$
+put(surfg, 0.0000000001,epsilon)$
+put(surfg, 20000,iterations)$
+put(surfg, 500,width)$
+put(surfg, 500,height)$ 
+put(surf, yes,do_background)$
+put(surf, 5,background_red)$ 
+put(surf, 5,background_green)$ 
+put(surf, 5,background_blue)$
+put(surf, 0.14,rot_x)$ 
+put(surf, -0.3,rot_y)$
+load("surfplot.mc")$
+load("fox.mc")$
+load("AlexanderPoly.mc")$
+load("ponpoko.lisp")$
