@@ -5,8 +5,8 @@ http://www.mathlibre.org/
  
 ## Environment for building
 We need these environments:
-* Debian jessie(8.0)
-* live-build (jessie)
+* Debian Jessie (8.3.0)
+* live-build (Jessie)
 * apt-cacher or apt-cacher-ng
 
 ### ex.
