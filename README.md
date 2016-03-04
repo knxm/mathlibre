@@ -5,8 +5,8 @@ http://www.mathlibre.org/
  
 ## Environment for building
 We need these environments:
-* Debian Wheezy(7.0)
-* live-build (Wheezy)
+* Debian jessie(8.0)
+* live-build (jessie)
 * apt-cacher or apt-cacher-ng
 
 ### ex.
@@ -26,8 +26,8 @@ Makefile is supporting "us(default), ko, cn, tw, etc." languages too.
 
 ## Sage system
 Sage is a huge computer algebra system, so we extract and make it manually.
-We are using sage-6.*, which is extracted to config/includes.chroot/usr/local.
-You can download the source code:sage-6.4.1.tar.gz from
+We are using sage-7.*, which is extracted to config/includes.chroot/usr/local.
+You can download the source code:sage-7.0.tar.gz from
 http://www.sagemath.org/download-source.html
 It will take your computer a while to compile Sage from the source code.
 
