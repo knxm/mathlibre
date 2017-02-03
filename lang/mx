@@ -1,0 +1,41 @@
+#
+# This script is not tested. 2017.02.03
+#
+COUNTRY=mx
+LANGUAGE=spanish
+LANG=es_MX.UTF-8
+LOCALES=es_MX.UTF-8 
+TIMEZONE=America/Mexico_City
+KEYBOARD_MODEL=pc105
+KEYBOARD_LAYOUTS=$COUNTRY
+
+lb config \
+   --mirror-binary "http://ftp.$COUNTRY.debian.org/debian/" \
+   --bootappend-live \
+    "boot=live config quiet splash persistence\
+    live-config.locales=$LOCALES \
+    live-config.timezone=$TIMEZONE live-config.utc=no \
+    live-config.keyboard-model=$KEYBOARD_MODEL \
+    live-config.keyboard-layouts=$KEYBOARD_LAYOUTS"
+
+#
+# for language environment
+#
+echo "task-$LANGUAGE task-$LANGUAGE-desktop" > config/package-lists/lang.$LANGUAGE.list.chroot
+#
+# for tex
+#
+echo "texlive-lang-$LANGUAGE auctex" > config/package-lists/lang.$LANGUAGE.tex.list.chroot
+#
+# for LatexMk
+#
+cat > config/includes.chroot/etc/LatexMk << EOF
+\$pdflatex		= 'pdflatex -synctex=1';
+\$pdflatex_silent	= 'pdflatex -synctex=1 -interaction=batchmode';
+\$bibtex		= 'bibtex';
+\$makeindex	= 'mendex %O -o %D %S';
+\$max_repeat	= 5;
+\$pdf_mode	= 1;
+\$pdf_previewer	='start evince';
+\$pdf_update_method = 1;
+EOF
