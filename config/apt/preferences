@@ -1,3 +1,7 @@
+Package: camlp4
+Pin: version *
+Pin-Priority: -1 
+
 Package: emacs24*
 Pin: release n=wheezy-backports
 Pin-Priority: 600
