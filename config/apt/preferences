@@ -6,6 +6,10 @@ Package: emacs24*
 Pin: release n=wheezy-backports
 Pin-Priority: 600
 
+Package: firefox-esr
+Pin: version *
+Pin-Priority: -1 
+
 Package: libgnutls-*
 Pin: release n=wheezy-backports
 Pin-Priority: 600
