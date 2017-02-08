@@ -44,7 +44,7 @@ libalgorithm-diff-perl
 libalgorithm-diff-xs-perl
 libalgorithm-merge-perl
 libasyncns0
-libboost-dev
+# libboost-dev
 # libboost-filesystem1.49.0 is not available in jessie.
 # libboost-system1.49.0 is not available in jessie.
 libc-dev-bin

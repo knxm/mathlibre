@@ -10,6 +10,14 @@ Package: firefox-esr
 Pin: version *
 Pin-Priority: -1 
 
+Package: freepats
+Pin: version *
+Pin-Priority: -1
+
+Package: gnome-user-guide
+Pin: version *
+Pin-Priority: -1
+
 Package: libgnutls-*
 Pin: release n=wheezy-backports
 Pin-Priority: 600
@@ -78,11 +86,10 @@ Package: libx11-doc
 Pin: version *
 Pin-Priority: -1
 
-Package: freepats
+Package: sbcl
 Pin: version *
 Pin-Priority: -1
 
-Package: gnome-user-guide
+Package: virtualbox
 Pin: version *
 Pin-Priority: -1
-
