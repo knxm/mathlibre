@@ -23,7 +23,7 @@ config: clean
 	--iso-volume "MathLibre" \
 #	--parent-mirror-binary "http://www.jp.debian.org/debian/" \
 #        --parent-mirror-binary-backports "http://ftp.debian.org/debian/" \
-#        --backports true \
+        --backports true \
 #	--distribution jessie \
 #	--binary-images hdd
 

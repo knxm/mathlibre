@@ -18,26 +18,6 @@ Package: gnome-user-guide
 Pin: version *
 Pin-Priority: -1
 
-Package: libgnutls-*
-Pin: release n=wheezy-backports
-Pin-Priority: 600
-
-Package: libhogweed2
-Pin: release n=wheezy-backports
-Pin-Priority: 600
-
-Package: libnettle4
-Pin: release n=wheezy-backports
-Pin-Priority: 600
-
-Package: libp11-kit0
-Pin: release n=wheezy-backports
-Pin-Priority: 600
-
-Package: libtasn1-6
-Pin: release n=wheezy-backports
-Pin-Priority: 600
-
 Package: apache2-bin
 Pin: version *
 Pin-Priority: -1
