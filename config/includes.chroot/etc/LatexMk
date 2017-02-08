@@ -1,6 +1,8 @@
-$pdflatex		= 'pdflatex -synctex=1';
-$pdflatex_silent	= 'pdflatex -synctex=1 -interaction=batchmode';
-$bibtex		= 'bibtex';
+#$latex	= 'platex -synctex=1';
+#$latex_silent	= 'platex -synctex=1 -interaction=batchmode';
+$pdflatex	= 'lualatex --shell-escape -synctex=1';
+$bibtex	= 'pbibtex';
+$dvipdf	= 'dvipdfmx %O -o %D %S';
 $makeindex	= 'mendex %O -o %D %S';
 $max_repeat	= 5;
 $pdf_mode	= 1;
