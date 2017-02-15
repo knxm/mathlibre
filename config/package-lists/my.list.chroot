@@ -112,8 +112,9 @@ lmodern
 memtest86+
 namazu
 nuvola-icon-theme
+openjdk-8-jre
+openjdk-8-jre-headless
 openjdk-8-jdk
-openjdk-8-jre-lib
 parted
 pgf
 purifyeps
@@ -131,9 +132,10 @@ unison
 # vim
 # virtualbox
 # virtualbox-qt
-virtualbox-dkms
+virtualbox-guest-utils
 virtualbox-guest-dkms
-virtualbox-guest-x11
+virtualbox-dkms
+# virtualbox-guest-x11
 w3c-dtd-xhtml
 x11proto-core-dev
 x11proto-input-dev
