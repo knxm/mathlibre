@@ -3,7 +3,19 @@ Pin: version *
 Pin-Priority: -1 
 
 Package: emacs24*
-Pin: release n=wheezy-backports
+Pin: release n=jessie-backports
+Pin-Priority: 600
+
+Package: virtualbox-guest-dkms
+Pin: release n=jessie-backports
+Pin-Priority: 600
+
+Package: openjdk-8-jdk
+Pin: release n=jessie-backports
+Pin-Priority: 600
+
+Package: openjdk-8-jre-lib
+Pin: release n=jessie-backports
 Pin-Priority: 600
 
 Package: firefox-esr
@@ -23,6 +35,14 @@ Pin: version *
 Pin-Priority: -1
 
 Package: apache2-utils
+Pin: version *
+Pin-Priority: -1
+
+Package: texlive-lang-chinese
+Pin: version *
+Pin-Priority: -1
+
+Package: texlive-lang-korean
 Pin: version *
 Pin-Priority: -1
 

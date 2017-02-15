@@ -112,8 +112,8 @@ lmodern
 memtest86+
 namazu
 nuvola-icon-theme
-openjdk-7-jdk
-openjdk-7-jre-lib
+openjdk-8-jdk
+openjdk-8-jre-lib
 parted
 pgf
 purifyeps
