@@ -62,6 +62,7 @@ libkakasi2
 liblog4j1.2-java
 libnkf-perl
 libopenblas-dev
+libosgi-core-java
 # libssreflect-coq : Depends: libssreflect-ocaml (>= 1.5-2) but it is not going to be installed
 #                    Depends: coq-8.4pl3+4.01.0
 # libssreflect-coq is supported from Debian "jessie".
@@ -74,6 +75,8 @@ libssreflect-ocaml-dev
 #                   Depends: libssreflect-coq (< 1.6) but it is not going to be installed
 # libmathcomp-coq is supported from Debian "jessie".
 libmathcomp-coq
+libservlet3.0-java
+libslf4j-java
 libtext-kakasi-perl
 lie
 lp-solve
