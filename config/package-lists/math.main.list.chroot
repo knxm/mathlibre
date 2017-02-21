@@ -59,7 +59,7 @@ libfile-mmagic-perl
 libgsl0-dev
 libjs-mathjax
 libkakasi2
-liblog4j1.2-java
+liblog4j2-java
 libnkf-perl
 libopenblas-dev
 libosgi-core-java
