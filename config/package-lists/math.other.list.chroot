@@ -3,11 +3,8 @@ cocoa5
 eggx-example
 gappa
 gudhi
-knxm-mkusbmath-debian
-jas-java
 libgtk1.2
 libgtk1.2-common
-mmx
 msjproc
 normaliz
 perseus
@@ -43,6 +40,8 @@ gfan-doc
 #julia-desktop: julia is supported from Debian "jessie".
 # kseg : Depends: libqt3-mt (>= 3:3.3.8b) but it is not going to be installed
 # We changed archives/tryphon.list.chroot to "jessie".
+jas-java
+knxm-mkusbmath-debian
 kseg
 # macaulay2 : Depends: libpari-gmp3 but it is not installable
 # We changed archives/m2.list.chroot to "jessie"
@@ -50,6 +49,7 @@ macaulay2
 macaulay2-common
 mathlibre-start
 math-polyglot
+mmx
 nzmath
 nzmath-doc
 # qfract : Depends: libboost-thread1.49.0 (>= 1.49.0-1) but it is not installable

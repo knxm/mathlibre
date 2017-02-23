@@ -11,6 +11,7 @@ config: clean
 	lb config \
 	--apt-http-proxy "http://localhost:3142" \
         --backports true \
+	--architectures amd64 \
 	--mirror-bootstrap $(MIRROR) \
 	--mirror-chroot $(MIRROR) \
 	--archive-areas "main contrib non-free" \
@@ -18,7 +19,8 @@ config: clean
 	--apt-options "--fix-missing --yes -oAcquire::Check-Valid-Until=false" \
 	--bootappend-live "boot=live config quiet splash persistence" \
 	--apt-secure false \
-	--architectures amd64 --linux-flavours amd64 --debian-installer live \
+	--linux-flavours amd64 \
+	--debian-installer live \
         --linux-packages "linux-image linux-headers" \
 	--win32-loader false \
 	--iso-volume "MathLibre" \
