@@ -1,4 +1,4 @@
-PWD /home/hamada/mathlibre/doc
+PWD /media/nvme/mathlibre/doc
 INPUT /var/lib/texmf/web2c/luatex/lualatex.fmt
 INPUT ./README_vbox_en.tex
 OUTPUT README_vbox_en.log

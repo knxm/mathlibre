@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 if [ -x /usr/bin/gsettings ]; then
   profile=$(gsettings get org.gnome.Terminal.ProfilesList default)
   profile=${profile:1:-1}

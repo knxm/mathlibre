@@ -1,4 +1,4 @@
-PWD /home/hamada/mathlibre/doc
+PWD /media/nvme/mathlibre/doc
 INPUT /var/lib/texmf/web2c/luatex/lualatex.fmt
 INPUT ./README_vbox_ja.tex
 OUTPUT README_vbox_ja.log
@@ -131,7 +131,7 @@ INPUT /usr/share/texlive/texmf-dist/tex/luatex/luatexja/patches/lltjdefs.sty
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
 INPUT /home/hamada/.texmf-var/luatex-cache/generic/names/luaotfload-lookup-cache.luc
 INPUT /home/hamada/.texmf-var/luatex-cache/generic/names/luaotfload-names.luc
-INPUT /home/hamada/.texmf-var/luatex-cache/generic/fonts/otf/fonts-japanese-mincho.luc
+INPUT /home/hamada/.texmf-var/luatex-cache/generic/fonts/otf/ipaexm.luc
 INPUT /usr/share/texlive/texmf-dist/tex/luatex/luatexja/jfm-ujis.lua
 INPUT /usr/share/texlive/texmf-dist/tex/luatex/luatexja/patches/lltjcore.sty
 INPUT /usr/share/texlive/texmf-dist/tex/luatex/luatexja/patches/lltjcore.sty
@@ -160,7 +160,7 @@ INPUT /usr/share/texlive/texmf-dist/tex/luatex/luatexja/patches/lltjp-listings.s
 INPUT /usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
-INPUT /home/hamada/.texmf-var/luatex-cache/generic/fonts/otf/fonts-japanese-gothic.luc
+INPUT /home/hamada/.texmf-var/luatex-cache/generic/fonts/otf/ipaexg.luc
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmss12.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr7.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr5.tfm
