@@ -38,10 +38,6 @@ Package: openjdk-7-jdk
 Pin: version *
 Pin-Priority: -1
 
-Package: firefox-esr
-Pin: version *
-Pin-Priority: -1 
-
 Package: freepats
 Pin: version *
 Pin-Priority: -1

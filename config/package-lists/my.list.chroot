@@ -12,7 +12,7 @@ bar
 build-essential
 bluefish
 ca-certificates-java
-chromium-l10n
+# chromium-l10n
 cl-asdf
 # clisp is not available in jessie.
 # common-lisp-controller
