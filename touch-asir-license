@@ -1,0 +1,2 @@
+#!/bin/sh
+touch chroot/tmp/i-agree-with-asir-license
