@@ -1,7 +1,7 @@
 #!/bin/sh
 if [ -x /usr/bin/gsettings ]; then
   profile=$(gsettings get org.gnome.Terminal.ProfilesList default)
-  profile=${profile:1:-1}
+  profile=$(echo $profile | sed -e "s/'//g")
   gsettings set "org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:$profile/" background-color '#000000'
   gsettings set "org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:$profile/" foreground-color '#FFFFFF'
   gsettings set "org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:$profile/" use-theme-colors false

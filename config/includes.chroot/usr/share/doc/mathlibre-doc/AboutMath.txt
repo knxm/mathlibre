@@ -65,5 +65,5 @@ Links
  - http://live.debian.net/
 
 This DVD is partially supported by Grant-in-Aid for Scientific Research
-No. 24540104, Japan Society for the Promotion of Science 2012--2015 and 
+No. 16K05139, Japan Society for the Promotion of Science 2016--2020 and 
 Japan Science and Technology Agency.
