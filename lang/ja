@@ -70,7 +70,7 @@ fi
 #
 # for lxpanel
 #
-cat config/includes.chroot/etc/skel/.config/lxpanel/LXDE/panels/panel << EOF
+cat > config/includes.chroot/etc/skel/.config/lxpanel/LXDE/panels/panel << EOF
 # lxpanel <profile> config file. Manually editing is not recommended.
 # Use preference dialog in lxpanel to adjust config when you can.
 
