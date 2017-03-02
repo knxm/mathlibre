@@ -62,7 +62,8 @@ MathLibre
 Links
 
  - http://www.mathlibre.org/
- - http://live.debian.net/
+ - https://github.com/knxm/mathlibre/
+ - https://wiki.debian.org/DebianLive/
 
 This DVD is partially supported by Grant-in-Aid for Scientific Research
 No. 16K05139, Japan Society for the Promotion of Science 2016--2020 and 

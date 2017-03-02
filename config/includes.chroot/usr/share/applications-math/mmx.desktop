@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Mathemagix
+Version=20170220
+Comment=mmx-light in a terminal
+Exec=mmx-light 
+Terminal=true
+Icon=mathemagix
+MimeType=text/x-mmx
+Type=Application
+Categories=Math;
+Encoding=UTF-8

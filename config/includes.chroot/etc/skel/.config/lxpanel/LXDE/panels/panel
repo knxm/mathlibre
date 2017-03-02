@@ -157,6 +157,7 @@ Plugin {
         DisplayType=1
         PerAppLayout=1
         DefaultGroup=0
+	LayoutsList=jp,us
     }
 }
 

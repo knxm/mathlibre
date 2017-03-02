@@ -8,4 +8,4 @@ Type=Application
 Categories=Math;
 Encoding=UTF-8
 URL=http://www.math.kobe-u.ac.jp/OpenXM/Math/dojo/
-Exec=/usr/bin/chromium http://www.math.kobe-u.ac.jp/OpenXM/Math/dojo/
+Exec=/usr/bin/firefox http://www.math.kobe-u.ac.jp/OpenXM/Math/dojo/
