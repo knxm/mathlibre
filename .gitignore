@@ -19,8 +19,8 @@ binary.contents
 iso.ls-l
 binary/
 cache/
-chroot.packages.install
-chroot.packages.live
+#chroot.packages.install
+#chroot.packages.live
 chroot/
 config/binary
 config/bootstrap
