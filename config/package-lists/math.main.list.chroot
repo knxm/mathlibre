@@ -122,6 +122,8 @@ python-sklearn
 python-sympy
 python-tornado
 python-visual
+python3-matplotlib
+python3-numpy
 qhull-bin
 regina-normal
 rkward
@@ -139,6 +141,7 @@ scilab-minimal-bin
 # scratch
 sketch
 # snappea
+# spyder3
 step
 sympow
 swi-prolog

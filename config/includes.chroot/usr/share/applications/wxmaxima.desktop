@@ -1,8 +1,0 @@
-[Desktop Entry]
-Name=wxMaxima
-Comment=Perform symbolic and numeric calculations using Maxima
-Exec=wxmaxima
-Icon=/usr/share/wxMaxima/wxmaxima.png
-Terminal=false
-Type=Application
-Categories=Math;
