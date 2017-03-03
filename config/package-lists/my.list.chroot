@@ -111,6 +111,7 @@ live-build
 lmodern
 memtest86+
 namazu
+ntpdate
 nuvola-icon-theme
 openjdk-8-jre
 openjdk-8-jre-headless

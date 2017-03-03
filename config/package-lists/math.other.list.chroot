@@ -22,6 +22,7 @@ skeleton
 # 4ti2 : Depends: libglpk0 (>= 4.31) but it is not installable
 # 4ti2 is supported from Debian "stretch".
 4ti2
+4ti2-doc
 car
 # cca : Depends: openjdk-6-jre but it is not installable 
 # recompiled with fixing control file for cca package.
