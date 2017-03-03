@@ -1,0 +1,35 @@
+We make 8GB VirtualBox Disk Image.
+
+The disk image file is "persistence.dvi"
+
+% sudo fdisk /dev/sda
+make new partition /dev/sda1 for Linux 7G : 2048--14680064
+make new partition /dev/sda2 for Linux Swap 1GB
+w
+
+% sudo mkfs.ext4 /dev/sda1 -L persistence
+% sudo -s
+# mount /dev/sda1 /media
+# echo "/ union" > /media/persistence.conf
+# umount /media
+# exit
+
+% sudo mkswap /dev/sda2
+
+% sudo /sbin/shutdown -r now
+
+% sudo blkid /dev/sda2
+/dev/sda2: UUID="258c7120-e7f8-4cc6-90e4-bd53914aa2e4" TYPE="swap" PARTUUID="ebdc379a-05"
+
+% sudo vi /etc/fstab
+aufs / aufs rw 0 0
+tmpfs /tmp tmpfs nosuid,nodev 0 0
+UUID=258c7120-e7f8-4cc6-90e4-bd53914aa2e4 none swap sw 0 0
+
+% export HISTSIZE=0
+% rm .bash_history
+% history -c
+
+"Reboot"
+
+
