@@ -32,7 +32,9 @@ firmware-realtek
 gsl-ref-html
 intel-microcode
 libparmetis-dev
-libparmetis3.1
+# stretch_start
+libparmetis4.0
+# stretch_end
 libtet1.5
 libtet1.5-dev
 pgplot5

@@ -1,7 +1,7 @@
 [Image]
 Architecture: amd64
 Archive-Areas: main contrib non-free
-Distribution: jessie
+Distribution: stretch
 Mirror-Bootstrap: http://ftp.jp.debian.org/debian/
 
 [FIXME]

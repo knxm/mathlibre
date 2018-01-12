@@ -30,7 +30,9 @@ git
 gnome-terminal
 gparted
 html2text
-icedtea-7-plugin
+# stretch_start
+icedtea-8-plugin
+# stretch_end
 imagemagick
 #inkscape
 java-common
@@ -65,9 +67,11 @@ libm17n-0
 #libmagick++5 is not available in jessie
 # libmagickcore5 is not available in jessie.
 # libmagickwand5 is not available in jessie.
-libmagick++-6.q16-5
-libmagickcore-6.q16-2
-bmagickcore-6.q16-2
+# stretch_start
+libmagick++-6.q16-7
+libmagickcore-6.q16-3
+bmagickcore-6.q16-3
+# stretch_end
 libmail-sendmail-perl
 libmpfr-dev
 libncurses5-dev
@@ -128,7 +132,7 @@ shutter
 subversion
 testdisk
 # tgif
-tzdata-java
+# tzdata-java is not available in stretch.
 unison
 unoconv
 # vim
@@ -138,7 +142,7 @@ virtualbox-guest-utils
 virtualbox-guest-dkms
 virtualbox-dkms
 # virtualbox-guest-x11
-w3c-dtd-xhtml
+# w3c-dtd-xhtml is not available in stretch.
 x11proto-core-dev
 x11proto-input-dev
 x11proto-kb-dev

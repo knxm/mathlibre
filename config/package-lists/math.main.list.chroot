@@ -35,7 +35,7 @@ gfan
 ginac-tools
 gnuplot-doc
 gnutls-bin
-gprolog
+# gprolog is not available in stretch, but available in sid.
 gsl-ref-html
 gv
 # hol-light
@@ -56,11 +56,13 @@ kmplot
 latexmk
 lcalc
 libfile-mmagic-perl
+libflint-2.5.2
 libgsl0-dev
 libjs-mathjax
 libkakasi2
 liblog4j2-java
 libnkf-perl
+libntl27
 libopenblas-dev
 libosgi-core-java
 # libssreflect-coq : Depends: libssreflect-ocaml (>= 1.5-2) but it is not going to be installed
@@ -74,7 +76,8 @@ libssreflect-ocaml-dev
 # libmathcomp-coq : Depends: libssreflect-coq (>= 1.5) but it is not going to be installed
 #                   Depends: libssreflect-coq (< 1.6) but it is not going to be installed
 # libmathcomp-coq is supported from Debian "jessie".
-libmathcomp-coq
+# libmathcomp-coq is provided by: libssreflect-coq.
+# libmathcomp-coq
 libservlet3.0-java
 libslf4j-java
 libtext-kakasi-perl
@@ -149,7 +152,7 @@ tex4ht
 texlive
 texlive-luatex
 texlive-xetex
-texmacs
+# texmacs is not available in stretch, but available in jessie.
 texmaker
 texstudio
 texworks
