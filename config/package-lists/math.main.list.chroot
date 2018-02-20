@@ -1,3 +1,5 @@
+4ti2
+4ti2-doc
 bc
 bison
 cadabra
@@ -45,6 +47,7 @@ ipython-qtconsole
 jsmath
 jsmath-fonts
 jsmath-fonts-sprite
+jsurf-alggeo
 jsxgraph
 julia
 junit4
@@ -87,6 +90,7 @@ lrslib
 lua5.2
 lyx
 mandelbulber
+mathicgb
 matita
 maxima
 maxima-emacs
@@ -135,6 +139,7 @@ ruby-fftw3
 ruby-gsl
 ruby-gtk2
 ruby-sqlite3
+sagemath
 scilab
 scilab-cli
 scilab-data
@@ -146,6 +151,8 @@ sketch
 # snappea
 # spyder3
 step
+surf-alggeo
+surf-alggeo-nox
 sympow
 swi-prolog
 tex4ht
