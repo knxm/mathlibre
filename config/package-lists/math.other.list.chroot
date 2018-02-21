@@ -54,7 +54,7 @@ macaulay2
 macaulay2-common
 mathlibre-start
 math-polyglot
-# mmx Depends: libreadline6 (>= 6.0) but it is not installable
+mmx
 nzmath
 nzmath-doc
 # qfract : Depends: libboost-thread1.49.0 (>= 1.49.0-1) but it is not installable

@@ -2,10 +2,12 @@
 Name=GNU Octave
 Comment=Scientific Computing using GNU Octave
 TryExec=/usr/bin/octave
-Exec=/usr/bin/octave --force-gui
-Icon=/usr/share/octave/3.8.2/imagelib/octave-logo.svg
+Exec=/usr/bin/octave --force-gui %f
+Icon=/usr/share/octave/4.0.3/imagelib/octave-logo.svg
 Terminal=false
 Type=Application
 Categories=Education;Science;Math;
 StartupNotify=false
-X-Desktop-File-Install-Version=0.22
+MimeType=text/x-octave;text/x-matlab;
+Keywords=science;math;matrix;numerical computation;plotting;
+X-Desktop-File-Install-Version=0.23
