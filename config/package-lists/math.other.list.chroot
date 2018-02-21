@@ -13,7 +13,7 @@ perseus
 phat
 # qepcad-b Depends: libreadline6 (>= 6.0) but it is not installable
 r-openxm-hgm
-rstudio-xenial
+rstudio
 # simplify Depends: libreadline6 (>= 6.0) but it is not installable
 skeleton
 # surf

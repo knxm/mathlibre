@@ -58,7 +58,7 @@ Plugin {
             id=pcmanfm.desktop
         }
         Button {
-            id=/usr/share/applications/gnome-terminal.desktop
+            id=org.gnome.Terminal.desktop
         }
         Button {
             id=/usr/share/applications/firefox-esr.desktop
