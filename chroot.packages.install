@@ -2178,7 +2178,7 @@ openmpi-bin	2.0.2-2
 openmpi-common	2.0.2-2
 openssh-client	1:7.4p1-10+deb9u2
 openssl	1.1.0f-3+deb9u1
-openxm	1.3.2-3
+openxm	1.3.2-4
 oxygen-icon-theme	5:5.28.0-1
 p11-kit	0.23.3-2
 p11-kit-modules:amd64	0.23.3-2
@@ -2200,7 +2200,6 @@ parted	3.2-17
 passwd	1:4.4-4.1
 patch	2.7.5-1+b2
 pavucontrol	3.0-3.1
-pciutils	1:3.5.2-1
 pcmanfm	1.2.5-3
 pdfgrep	2.0-1
 pdftk	2.02-4+b2
@@ -2844,9 +2843,6 @@ va-driver-all:amd64	1.7.3-2
 vdpau-driver-all:amd64	1.1.1-6
 vim-common	2:8.0.0197-4+deb9u1
 vim-tiny	2:8.0.0197-4+deb9u1
-virtualbox-dkms	5.1.30-dfsg-1~bpo9+1
-virtualbox-guest-dkms	5.1.30-dfsg-1~bpo9+1
-virtualbox-guest-utils	5.1.30-dfsg-1~bpo9+1
 vlc-data	2.2.7-1~deb9u1
 vlc-plugin-base:amd64	2.2.7-1~deb9u1
 vlc-plugin-video-output:amd64	2.2.7-1~deb9u1
