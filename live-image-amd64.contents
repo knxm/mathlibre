@@ -607,10 +607,8 @@
 /live/filesystem.size
 /live/filesystem.squashfs
 /live/initrd.img
-/live/initrd.img-4.9.0-5-amd64
 /live/initrd.img-4.9.0-6-amd64
 /live/vmlinuz
-/live/vmlinuz-4.9.0-5-amd64
 /live/vmlinuz-4.9.0-6-amd64
 /md5sum.txt
 /pool
