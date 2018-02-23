@@ -64,7 +64,7 @@ reduce-algebra
 #saclib
 #sage-desktop
 setxkbmap-gadget
-snappea-snappy
+python3-snappy3mfd
 sollya
 # Singular is supported from Debian "stretch"
 #singular
