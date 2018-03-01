@@ -1,6 +1,7 @@
 #if ARCHITECTURES amd64
 # cocoa5 : Depends: libboost-filesystem1.49.0 (>= 1.49.0-1) but it is not installable
 # cocoa5
+cocoalib
 eggx-example
 gappa
 # gudhi: Depends: libboost-program-options1.49.0 (>= 1.49.0-1) but it is not installable
@@ -47,7 +48,7 @@ gfan-doc
 # kseg : Depends: libqt3-mt (>= 3:3.3.8b) but it is not going to be installed
 # We changed archives/tryphon.list.chroot to "jessie".
 # kseg
-#jas-java
+jas-java
 knxm-mkusbmath-debian
 # macaulay2 : Depends: libpari-gmp3 but it is not installable
 # We changed archives/m2.list.chroot to "jessie"
@@ -58,13 +59,13 @@ math-polyglot
 mmx
 nzmath
 nzmath-doc
+python3-snappy3mfd
 # qfract : Depends: libboost-thread1.49.0 (>= 1.49.0-1) but it is not installable
 # r-cran-rcmdr-knxm
 reduce-algebra
 #saclib
 #sage-desktop
 setxkbmap-gadget
-#snappea-snappy
 sollya
 # Singular is supported from Debian "stretch"
 #singular
