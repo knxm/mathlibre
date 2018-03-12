@@ -39,6 +39,6 @@ EOF
 if [ -f doc/README_vbox_en.pdf ]; then 
   cp doc/README_vbox_en.pdf config/includes.binary/vbox
 fi
-if [ -f vbox/mathlibre2017en-vm.zip ]; then
-  cp vbox/mathlibre2017en-vm.zip config/includes.binary/vbox
+if [ -f vbox/mathlibre2018en-vm.zip ]; then
+  cp vbox/mathlibre2018en-vm.zip config/includes.binary/vbox
 fi
