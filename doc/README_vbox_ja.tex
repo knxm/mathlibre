@@ -119,11 +119,13 @@ VBoxGuestAdditions\_VERSION.iso
 このISOイメージに対して，以下の作業を行います. 
 \begin{enumerate}
  \item ダウンロードしたVBOXGuestAddtions\_VERSION.isoをマウントする. 
-       \begin{lstlisting}
-	sudo mount VBOXGuestAdditions\_VERSION.iso /media
-	cd /media
-	sudo sh VBoxLinuxAdditions.run
-       \end{lstlisting}
+\begin{lstlisting}
+sudo mount VBOXGuestAdditions\_VERSION.iso /media
+\end{lstlisting}
+ \item /media内のシェルスクリプト VBOXLinuxAdditinos.run を実行する．
+\begin{lstlisting}
+sudo sh /media/VBoxLinuxAdditions.run
+\end{lstlisting}
 \end{enumerate}
 数分でGuestAdditionsインストールされます. 
 あとは，仮想環境を再起動すれば完成です. 
