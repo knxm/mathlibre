@@ -105,6 +105,29 @@ VirtualBox を起動してください．起動ボタンを押すと仮想環境
  \item 終了時に「仮想マシンの状態を保存」すると次回の起動時間を短縮できます．
 \end{enumerate}
 
+\section{VirtualBoxGuestAdditionsの追加}
+仮想環境を起動できれば一応は使えますが，高解像度のデスクトップ利用や，
+共有フォルダの作成にはGuestAdditionsと呼ばれる機能の追加が必要です．
+まずは，利用しているVirtualBoxのバージョン番号を調べてください．
+このバージョン番号をVERSIONとします. 
+仮想環境の中でWebブラウザを用いて
+\url{http://download.virtualbox.org/virtualbox/} を開くと，
+バージョン番号の一覧が表示されます. 適切なバージョン番号を選び，
+VBoxGuestAdditions\_VERSION.iso
+をダウンロードします. 
+
+このISOイメージに対して，以下の作業を行います. 
+\begin{enumerate}
+ \item ダウンロードしたVBOXGuestAddtions\_VERSION.isoをマウントする. 
+       \begin{lstlisting}
+	sudo mount VBOXGuestAdditions\_VERSION.iso /media
+	cd /media
+	sudo sh VBoxLinuxAdditions.run
+       \end{lstlisting}
+\end{enumerate}
+数分でGuestAdditionsインストールされます. 
+あとは，仮想環境を再起動すれば完成です. 
+
 \section{共有フォルダの作成}
 \begin{enumerate}
  \item VirtualBoxの設定アイコンから「共有フォルダー」の\verb|<+>|アイコンをクリックし，「フォルダーのパス」で共有したいフォルダーを指定，表示される「フォルダー名」（この名前は変更可能です．仮に\verb|X|とします．）を控え，「自動マウント」（および，もしあれば「永続化する」）にチェックを入れ，「OK」をクリックしてください．
@@ -120,6 +143,6 @@ ln -s /media/sf_X Y
 \end{enumerate}
 
 %\begin{thebibliography}{9}
-% \bibitem{diskutil} Disk Utility 12.x: ディスク、CD、または DVD を複製する, \url{http://support.apple.com/kb/PH5846?viewlocale=ja_JP}
+% \bibitem{diskutil} Disk Utility 12.x: ディスク，CD，または DVD を複製する, \url{http://support.apple.com/kb/PH5846?viewlocale=ja_JP}
 %\end{thebibliography}
 \end{document}
