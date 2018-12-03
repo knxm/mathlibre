@@ -16,7 +16,7 @@ lb config \
     live-config.keyboard-layouts=$KEYBOARD_LAYOUTS"
 
 #
-# for input method
+# for Japanese
 #
 echo "task-$LANGUAGE task-$LANGUAGE-desktop fonts-takao emacs-mozc" > config/package-lists/lang.$LANGUAGE.list.chroot
 
@@ -41,6 +41,11 @@ cat > config/includes.chroot/etc/LatexMk << EOF
 \$pdf_previewer	='start evince';
 \$pdf_update_method = 1;
 EOF
+
+#
+# for Sage
+#
+echo "sagemath-doc-ja" > config/package-lists/lang.$LANGUAGE.sage.list.chroot
 
 #
 # for uim (ibus)
