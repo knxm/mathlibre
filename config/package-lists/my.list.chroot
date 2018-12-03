@@ -85,6 +85,9 @@ libpulse0
 libreadline-dev
 libsigsegv2
 libsm-dev
+# for remmina
+# libssh-4
+#
 libsvn-perl
 libsys-hostname-long-perl
 libterm-readline-gnu-perl
@@ -125,7 +128,7 @@ parted
 pgf
 purifyeps
 realpath
-remmina
+# remmina
 recoll
 rsync
 sharutils
