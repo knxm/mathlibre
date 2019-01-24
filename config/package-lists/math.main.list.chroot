@@ -44,7 +44,7 @@ gv
 hugs
 ipython
 ipython3
-ipython-qtconsole
+# ipython-qtconsole for 2019
 jsmath
 jsmath-fonts
 jsmath-fonts-sprite
@@ -55,9 +55,9 @@ junit4
 jupyter-notebook
 kakasi-dic
 #kig
-kile
-kile-l10n
-kmplot
+#kile for 2019
+#kile-l10n
+#kmplot
 latexmk
 lcalc
 libfile-mmagic-perl
@@ -90,17 +90,17 @@ lie
 lp-solve
 lrslib
 lua5.2
-lyx
+# lyx for 2019
 mandelbulber
 mathicgb
 matita
 maxima
 maxima-emacs
 namazu2-index-tools
-octave
-octave-htmldoc
-octave-gsl
-octave-geometry
+#octave for 2019
+#octave-htmldoc
+#octave-gsl
+#octave-geometry for 2019
 palp
 pandoc
 # pari-extra is not available in jessie.
@@ -137,14 +137,14 @@ python3-networkx
 python3-setuptools
 python3-tk
 qhull-bin
-regina-normal
-rkward
-rocs
+#regina-normal for 2019
+#rkward for 2019
+#rocs for 2019
 ruby-fftw3
 ruby-gsl
 ruby-gtk2
 ruby-sqlite3
-sagemath
+# sagemath
 scilab
 scilab-cli
 scilab-data
@@ -155,7 +155,7 @@ scilab-minimal-bin
 sketch
 # snappea
 # spyder3
-step
+# step for 2019
 surf-alggeo
 surf-alggeo-nox
 sympow
@@ -165,9 +165,9 @@ texlive
 texlive-luatex
 texlive-xetex
 # texmacs is not available in stretch, but available in jessie.
-texmaker
-texstudio
-texworks
+# texmaker for 2019
+# texstudio for 2019
+# texworks for 2019
 xaos
 # xgraph is not availabe in jessie.
 xmaxima

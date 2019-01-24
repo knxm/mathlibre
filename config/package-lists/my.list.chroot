@@ -38,7 +38,7 @@ imagemagick
 java-common
 jruby
 jython
-ksnapshot
+# ksnapshot for 2019
 lacheck
 #libaccess-bridge-java is not available in jessie.
 #libaccess-bridge-java-jni is not available in jessie.
@@ -129,7 +129,7 @@ pgf
 purifyeps
 realpath
 # remmina
-recoll
+# recoll for 2019
 rsync
 sharutils
 shutter
@@ -156,5 +156,6 @@ xsltproc
 xtrans-dev
 emacs
 gedit
+task-desktop
 task-laptop
 task-lxde-desktop
