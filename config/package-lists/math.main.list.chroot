@@ -97,7 +97,7 @@ matita
 maxima
 maxima-emacs
 namazu2-index-tools
-#octave for 2019
+octave
 #octave-htmldoc
 #octave-gsl
 #octave-geometry for 2019
@@ -144,7 +144,7 @@ ruby-fftw3
 ruby-gsl
 ruby-gtk2
 ruby-sqlite3
-# sagemath
+sagemath
 scilab
 scilab-cli
 scilab-data

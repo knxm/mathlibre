@@ -3,3 +3,5 @@ iucode-tool
 #if ARCHITECTURES amd64
 ruby-pgplot
 #endif
+glx-alternative-mesa
+glx-alternative-nvidia
