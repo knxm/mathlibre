@@ -2,53 +2,53 @@ Package: camlp4
 Pin: version *
 Pin-Priority: -1 
 
-Package: ca-certificates-java
-Pin: release n=jessie-backports
-Pin-Priority: 600
+#Package: ca-certificates-java
+#Pin: release n=jessie-backports
+#Pin-Priority: 600
 
-Package: emacs24*
-Pin: release n=jessie-backports
-Pin-Priority: 600
+#Package: emacs24*
+#Pin: release n=jessie-backports
+#Pin-Priority: 600
 
-Package: gnuplot5
-Pin: release n=jessie-backports
-Pin-Priority: 600
+#Package: gnuplot5
+#Pin: release n=jessie-backports
+#Pin-Priority: 600
 
-Package: virtualbox-guest-utils
-Pin: release n=jessie-backports
-Pin-Priority: 600
+#Package: virtualbox-guest-utils
+#Pin: release n=jessie-backports
+#Pin-Priority: 600
 
-Package: virtualbox-guest-dkms
-Pin: release n=jessie-backports
-Pin-Priority: 600
+#Package: virtualbox-guest-dkms
+#Pin: release n=jessie-backports
+#Pin-Priority: 600
 
-Package: virtualbox-dkms
-Pin: release n=jessie-backports
-Pin-Priority: 600
+#Package: virtualbox-dkms
+#Pin: release n=jessie-backports
+#Pin-Priority: 600
 
-Package: openjdk-8-jre
-Pin: release n=jessie-backports
-Pin-Priority: 600
+#Package: openjdk-8-jre
+#Pin: release n=jessie-backports
+#Pin-Priority: 600
 
-Package: openjdk-8-jdk-headless
-Pin: release n=jessie-backports
-Pin-Priority: 600
+#Package: openjdk-8-jdk-headless
+#Pin: release n=jessie-backports
+#Pin-Priority: 600
 
-Package: openjdk-8-jdk
-Pin: release n=jessie-backports
-Pin-Priority: 600
+#Package: openjdk-8-jdk
+#Pin: release n=jessie-backports
+#Pin-Priority: 600
 
-Package: pari-gp
-Pin: release n=jessie-backports
-Pin-Priority: 600
+#Package: pari-gp
+#Pin: release n=jessie-backports
+#Pin-Priority: 600
 
-Package: pari-doc
-Pin: release n=jessie-backports
-Pin-Priority: 600
+#Package: pari-doc
+#Pin: release n=jessie-backports
+#Pin-Priority: 600
 
-Package: wxmaxima
-Pin: release n=jessie-backports
-Pin-Priority: 600
+#Package: wxmaxima
+#Pin: release n=jessie-backports
+#Pin-Priority: 600
 
 Package: openjdk-7-jdk
 Pin: version *
