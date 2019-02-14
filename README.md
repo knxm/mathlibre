@@ -5,7 +5,7 @@ http://www.mathlibre.org/
  
 ## Environment for building
 We need these environments:
-* Debian Stretch (9.3)
+* Debian Stretch (9.7)
 * live-build (Stretch)
 * apt-cacher or apt-cacher-ng
 

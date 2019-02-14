@@ -1,54 +1,110 @@
+Package: linux-compiler-gcc-6-x86
+Pin: version 4.19.16-1~bpo9+1
+Pin-Priority: 600
+
+Package: firmware-linux
+Pin: version 20180825+dfsg-1~bpo9+1
+Pin-Priority: 600
+
+Package: firmware-linux-nonfree
+Pin: version 20180825+dfsg-1~bpo9+1
+Pin-Priority: 600
+
+Package: firmware-misc-nonfree
+Pin: version 20180825+dfsg-1~bpo9+1
+Pin-Priority: 600
+
+Package: firmware-amd-graphics
+Pin: version 20180825+dfsg-1~bpo9+1
+Pin-Priority: 600
+
+Package: firmware-atheros
+Pin: version 20180825+dfsg-1~bpo9+1
+Pin-Priority: 600
+
+Package: firmware-bnx2
+Pin: version 20180825+dfsg-1~bpo9+1
+Pin-Priority: 600
+
+Package: firmware-bnx2x
+Pin: version 20180825+dfsg-1~bpo9+1
+Pin-Priority: 600
+
+Package: firmware-brcm80211
+Pin: version 20180825+dfsg-1~bpo9+1
+Pin-Priority: 600
+
+Package: firmware-cavium
+Pin: version 20180825+dfsg-1~bpo9+1
+Pin-Priority: 600
+
+Package: firmware-intel-sound
+Pin: version 20180825+dfsg-1~bpo9+1
+Pin-Priority: 600
+
+Package: firmware-intelwimax
+Pin: version 20180825+dfsg-1~bpo9+1
+Pin-Priority: 600
+
+Package: firmware-ipw2x00
+Pin: version 20180825+dfsg-1~bpo9+1
+Pin-Priority: 600
+
+Package: firmware-ivtv
+Pin: version 20180825+dfsg-1~bpo9+1
+Pin-Priority: 600
+
+Package: firmware-iwlwifi
+Pin: version 20180825+dfsg-1~bpo9+1
+Pin-Priority: 600
+
+Package: firmware-libertas
+Pin: version 20180825+dfsg-1~bpo9+1
+Pin-Priority: 600
+
+Package: firmware-misc-nonfree
+Pin: version 20180825+dfsg-1~bpo9+1
+Pin-Priority: 600
+
+Package: firmware-myricom
+Pin: version 20180825+dfsg-1~bpo9+1
+Pin-Priority: 600
+
+Package: firmware-netronome
+Pin: version 20180825+dfsg-1~bpo9+1
+Pin-Priority: 600
+
+Package: firmware-netxen
+Pin: version 20180825+dfsg-1~bpo9+1
+Pin-Priority: 600
+
+Package: firmware-qcom-media
+Pin: version 20180825+dfsg-1~bpo9+1
+Pin-Priority: 600
+
+Package: firmware-qlogic
+Pin: version 20180825+dfsg-1~bpo9+1
+Pin-Priority: 600
+
+Package: firmware-realtek
+Pin: version 20180825+dfsg-1~bpo9+1
+Pin-Priority: 600
+
+Package: firmware-samsung
+Pin: version 20180825+dfsg-1~bpo9+1
+Pin-Priority: 600
+
+Package: firmware-siano
+Pin: version 20180825+dfsg-1~bpo9+1
+Pin-Priority: 600
+
+Package: firmware-ti-connectivity
+Pin: version 20180825+dfsg-1~bpo9+1
+Pin-Priority: 600
+
 Package: camlp4
 Pin: version *
 Pin-Priority: -1 
-
-#Package: ca-certificates-java
-#Pin: release n=jessie-backports
-#Pin-Priority: 600
-
-#Package: emacs24*
-#Pin: release n=jessie-backports
-#Pin-Priority: 600
-
-#Package: gnuplot5
-#Pin: release n=jessie-backports
-#Pin-Priority: 600
-
-#Package: virtualbox-guest-utils
-#Pin: release n=jessie-backports
-#Pin-Priority: 600
-
-#Package: virtualbox-guest-dkms
-#Pin: release n=jessie-backports
-#Pin-Priority: 600
-
-#Package: virtualbox-dkms
-#Pin: release n=jessie-backports
-#Pin-Priority: 600
-
-#Package: openjdk-8-jre
-#Pin: release n=jessie-backports
-#Pin-Priority: 600
-
-#Package: openjdk-8-jdk-headless
-#Pin: release n=jessie-backports
-#Pin-Priority: 600
-
-#Package: openjdk-8-jdk
-#Pin: release n=jessie-backports
-#Pin-Priority: 600
-
-#Package: pari-gp
-#Pin: release n=jessie-backports
-#Pin-Priority: 600
-
-#Package: pari-doc
-#Pin: release n=jessie-backports
-#Pin-Priority: 600
-
-#Package: wxmaxima
-#Pin: release n=jessie-backports
-#Pin-Priority: 600
 
 Package: openjdk-7-jdk
 Pin: version *
