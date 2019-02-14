@@ -11,6 +11,7 @@ config: clean
 	lb config \
 	--apt-http-proxy "http://localhost:3142" \
 	--architectures amd64 \
+        --backports true \
 	--mirror-bootstrap $(MIRROR) \
 	--mirror-chroot $(MIRROR) \
 	--archive-areas "main contrib non-free" \
@@ -27,7 +28,6 @@ config: clean
 #        --parent-mirror-binary-backports "http://ftp.debian.org/debian/" \
 #	--distribution jessie \
 #	--binary-images hdd \
-#       --backports true \
 
 build: 	config
 ifdef lang

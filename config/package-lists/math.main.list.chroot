@@ -135,6 +135,7 @@ python3-matplotlib
 python3-numpy
 python3-networkx
 python3-setuptools
+python3-sklearn
 python3-tk
 qhull-bin
 #regina-normal for 2019
