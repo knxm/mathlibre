@@ -1,0 +1,79 @@
+Package: camlp4
+Pin: version *
+Pin-Priority: -1 
+
+Package: openjdk-7-jdk
+Pin: version *
+Pin-Priority: -1
+
+Package: freepats
+Pin: version *
+Pin-Priority: -1
+
+Package: gnome-user-guide
+Pin: version *
+Pin-Priority: -1
+
+Package: apache2-bin
+Pin: version *
+Pin-Priority: -1
+
+Package: apache2-utils
+Pin: version *
+Pin-Priority: -1
+
+Package: texlive-lang-chinese
+Pin: version *
+Pin-Priority: -1
+
+Package: texlive-lang-korean
+Pin: version *
+Pin-Priority: -1
+
+Package: texlive-latex-extra-doc
+Pin: version *
+Pin-Priority: -1
+
+Package: texlive-pstricks-doc
+Pin: version *
+Pin-Priority: -1
+
+Package: texlive-fonts-extra-doc
+Pin: version *
+Pin-Priority: -1
+
+Package: texlive-pictures-doc
+Pin: version *
+Pin-Priority: -1
+
+Package: texlive-latex-base-doc
+Pin: version *
+Pin-Priority: -1
+
+Package: texlive-latex-recommended-doc
+Pin: version *
+Pin-Priority: -1
+
+Package: texlive-fonts-recommended-doc
+Pin: version *
+Pin-Priority: -1
+
+Package: texlive-metapost-doc
+Pin: version *
+Pin-Priority: -1
+
+Package: texlive-science-doc
+Pin: version *
+Pin-Priority: -1
+
+Package: libx11-doc
+Pin: version *
+Pin-Priority: -1
+
+Package: sbcl
+Pin: version *
+Pin-Priority: -1
+
+Package: virtualbox
+Pin: version *
+Pin-Priority: -1
