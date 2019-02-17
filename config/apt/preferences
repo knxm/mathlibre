@@ -2,38 +2,6 @@ Package: linux-compiler-gcc-6-x86
 Pin: version 4.19.16-1~bpo9+1
 Pin-Priority: 600
 
-Package: firmware-linux
-Pin: version 20180825+dfsg-1~bpo9+1
-Pin-Priority: 600
-
-Package: firmware-linux-nonfree
-Pin: version 20180825+dfsg-1~bpo9+1
-Pin-Priority: 600
-
-Package: firmware-misc-nonfree
-Pin: version 20180825+dfsg-1~bpo9+1
-Pin-Priority: 600
-
-Package: firmware-amd-graphics
-Pin: version 20180825+dfsg-1~bpo9+1
-Pin-Priority: 600
-
-Package: firmware-atheros
-Pin: version 20180825+dfsg-1~bpo9+1
-Pin-Priority: 600
-
-Package: firmware-iwlwifi
-Pin: version 20180825+dfsg-1~bpo9+1
-Pin-Priority: 600
-
-Package: firmware-misc-nonfree
-Pin: version 20180825+dfsg-1~bpo9+1
-Pin-Priority: 600
-
-Package: firmware-realtek
-Pin: version 20180825+dfsg-1~bpo9+1
-Pin-Priority: 600
-
 Package: camlp4
 Pin: version *
 Pin-Priority: -1 
