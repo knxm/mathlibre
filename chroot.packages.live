@@ -133,6 +133,7 @@ docutils-doc	0.13.1+dfsg-2
 dosfstools	4.1-1
 dpkg	1.18.25
 dpkg-dev	1.18.25
+dropbox	2019.01.31
 dvipng	1.14-2+b3
 e2fslibs:amd64	1.43.4-2
 e2fsprogs	1.43.4-2
@@ -1314,6 +1315,7 @@ libpam-systemd:amd64	232-25+deb9u8
 libpam0g:amd64	1.1.8-3.6
 libpango-1.0-0:amd64	1.40.5-1
 libpango-perl	1.227-1+b1
+libpango1.0-0:amd64	1.40.5-1
 libpango1.0-dev	1.40.5-1
 libpangocairo-1.0-0:amd64	1.40.5-1
 libpangoft2-1.0-0:amd64	1.40.5-1
@@ -1531,6 +1533,7 @@ libsnappy1v5:amd64	1.1.3-3
 libsndfile1:amd64	1.0.27-3
 libsndio6.1:amd64	1.1.0-3
 libsodium18:amd64	1.0.11-2
+libsollya6:amd64	6.0+ds-1
 libsonic0:amd64	0.2.0-4+b1
 libsort-naturally-perl	1.03-1
 libsoup-gnome2.4-1:amd64	2.56.0-2+deb9u2
@@ -1871,6 +1874,8 @@ lxtask	0.1.8-1
 lxterminal	0.3.0-2
 m17n-db	1.7.0-2
 m4	1.4.18-1
+macaulay2	1.13
+macaulay2-common	1.13
 mailutils	1:3.1.1-1
 mailutils-common	1:3.1.1-1
 make	4.1-9.1
@@ -2404,6 +2409,7 @@ slib	3b1-5
 smplayer	16.11.0~ds0-1+deb9u1
 smplayer-l10n	16.11.0~ds0-1+deb9u1
 smplayer-themes	1:16.8.0-1
+sollya	6.0+ds-1
 speech-dispatcher	0.8.6-4+deb9u1
 speech-dispatcher-audio-plugins:amd64	0.8.6-4+deb9u1
 speech-dispatcher-espeak-ng	0.8.6-4+deb9u1
@@ -2412,6 +2418,7 @@ sqlite3	3.16.2-5+deb9u1
 subversion	1.9.5-1+deb9u3
 sudo	1.8.19p1-2.1
 surf-alggeo	1.0.6+ds-4
+surf-alggeo-doc	1.0.6+ds-4
 surf-alggeo-nox	1.0.6+ds-4
 swi-prolog	7.2.3+dfsg-6
 swi-prolog-nox	7.2.3+dfsg-6
