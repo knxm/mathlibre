@@ -11,7 +11,7 @@ config: clean
 	lb config \
 	--apt-http-proxy "http://localhost:3142" \
 	--architectures amd64 \
-        --backports true \
+        --backports false \
 	--mirror-bootstrap $(MIRROR) \
 	--mirror-chroot $(MIRROR) \
 	--archive-areas "main contrib non-free" \
