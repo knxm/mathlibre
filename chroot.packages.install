@@ -1311,7 +1311,7 @@ libpam-gnome-keyring:amd64	3.20.0-3
 libpam-modules:amd64	1.1.8-3.6
 libpam-modules-bin	1.1.8-3.6
 libpam-runtime	1.1.8-3.6
-libpam-systemd:amd64	232-25+deb9u8
+libpam-systemd:amd64	232-25+deb9u9
 libpam0g:amd64	1.1.8-3.6
 libpango-1.0-0:amd64	1.40.5-1
 libpango-perl	1.227-1+b1
@@ -1566,7 +1566,7 @@ libswscale4:amd64	7:3.2.12-1~deb9u1
 libsymmetrica2:amd64	2.0+ds-4
 libsynctex1:amd64	2016.20160513.41080.dfsg-2+deb9u1
 libsys-hostname-long-perl	1.5-1
-libsystemd0:amd64	232-25+deb9u8
+libsystemd0:amd64	232-25+deb9u9
 libsz2:amd64	0.3.2-1
 libtablelayout-java	20090826-3
 libtachyon-mt-0:amd64	0.99~b6+dsx-8
@@ -1608,7 +1608,7 @@ libtwolame0:amd64	0.3.13-2
 libtxc-dxtn-s2tc:amd64	1.0+git20151227-2
 libtypes-serialiser-perl	1.0-1
 libubsan0:amd64	6.3.0-18+deb9u1
-libudev1:amd64	232-25+deb9u8
+libudev1:amd64	232-25+deb9u9
 libudisks2-0:amd64	2.1.8-1
 libuim-custom2:amd64	1:1.8.6+gh20161003.0.d63dadd-2
 libuim-data	1:1.8.6+gh20161003.0.d63dadd-2
@@ -1979,7 +1979,7 @@ openmpi-bin	2.0.2-2
 openmpi-common	2.0.2-2
 openssh-client	1:7.4p1-10+deb9u5
 openssl	1.1.0j-1~deb9u1
-openxm	1.3.2-4
+openxm	1.3.2-5
 p11-kit	0.23.3-2
 p11-kit-modules:amd64	0.23.3-2
 p7zip	16.02+dfsg-3+deb9u1
@@ -2430,8 +2430,8 @@ system-config-printer	1.5.7-3
 system-config-printer-common	1.5.7-3
 system-config-printer-udev	1.5.7-3+b1
 system-tools-backends	2.10.2-3+b1
-systemd	232-25+deb9u8
-systemd-sysv	232-25+deb9u8
+systemd	232-25+deb9u9
+systemd-sysv	232-25+deb9u9
 sysvinit-utils	2.88dsf-59.9
 t1utils	1.39-2
 tachyon	0.99~b6+dsx-8
@@ -2489,7 +2489,7 @@ ttf-bitstream-vera	1.10-8
 ttf-unifont	1:9.0.06-2
 tzdata	2018i-0+deb9u1
 ucf	3.0036
-udev	232-25+deb9u8
+udev	232-25+deb9u9
 udisks2	2.1.8-1
 uim	1:1.8.6+gh20161003.0.d63dadd-2
 uim-anthy	1:1.8.6+gh20161003.0.d63dadd-2
