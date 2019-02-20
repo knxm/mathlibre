@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Encoding=UTF-8
+Name=LiE
+GenericName=
+Comment=A Computer algebra package for Lie group computations 
+Icon=lie.xpm
+Exec=lie
+Terminal=true
+Categories=Math;

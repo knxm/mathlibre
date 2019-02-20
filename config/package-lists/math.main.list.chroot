@@ -55,8 +55,8 @@ junit4
 jupyter-notebook
 kakasi-dic
 #kig
-#kile for 2019
-#kile-l10n
+kile
+kile-l10n
 #kmplot
 latexmk
 lcalc
@@ -90,7 +90,7 @@ lie
 lp-solve
 lrslib
 lua5.2
-# lyx for 2019
+lyx
 mandelbulber
 mathicgb
 matita
@@ -131,14 +131,20 @@ python-sklearn
 python-sympy
 python-tornado
 python-visual
+python3-gpg
+python3-markdown
 python3-matplotlib
 python3-numpy
 python3-networkx
+python3-pip
+python3-rope
 python3-setuptools
 python3-sklearn
+python3-termcolor
 python3-tk
+python3-werkzeug
 qhull-bin
-#regina-normal for 2019
+regina-normal
 #rkward for 2019
 #rocs for 2019
 ruby-fftw3
@@ -155,8 +161,8 @@ scilab-minimal-bin
 # scratch
 sketch
 # snappea
-# spyder3
-# step for 2019
+spyder3
+step
 surf-alggeo
 surf-alggeo-nox
 sympow
@@ -166,13 +172,13 @@ texlive
 texlive-luatex
 texlive-xetex
 # texmacs is not available in stretch, but available in jessie.
-# texmaker for 2019
-# texstudio for 2019
-# texworks for 2019
+texmaker
+texstudio
+texworks
 xaos
 # xgraph is not availabe in jessie.
 xmaxima
-wxmaxima
+#wxmaxima for 2019
 yacas
 yorick-doc
 yorick-hdf5
