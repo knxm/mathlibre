@@ -100,6 +100,8 @@ dash	0.5.8-2.4
 dbus	1.10.26-0+deb9u1
 dbus-user-session	1.10.26-0+deb9u1
 dbus-x11	1.10.26-0+deb9u1
+dconf-cli	0.26.0-2+b1
+dconf-editor	3.22.3-1
 dconf-gsettings-backend:amd64	0.26.0-2+b1
 dconf-service	0.26.0-2+b1
 debconf	1.5.61
@@ -452,8 +454,6 @@ jsmath-fonts-sprite	1.0-3
 jsurf-alggeo	0.3.0+ds-1
 jsxcompressor	0.99.5+dfsg1-1
 jsxgraph	0.99.5+dfsg1-1
-julia	0.4.7-6+b3
-julia-common	0.4.7-6
 junit	3.8.2-8
 junit4	4.12-4
 jupyter-client	4.4.0-2
@@ -735,7 +735,6 @@ libdrm-nouveau2:amd64	2.4.74-1
 libdrm-radeon1:amd64	2.4.74-1
 libdrm2:amd64	2.4.74-1
 libdsdp-5.8gf	5.8-9.4
-libdsfmt-19937-1:amd64	2.2.3+dfsg-3
 libdv4:amd64	1.0.0-11
 libdvbpsi10:amd64	1.3.0-5
 libdvdnav4:amd64	5.0.3-3
@@ -1289,7 +1288,6 @@ liblinboxsage-1.4.2-0:amd64	1.4.2-3
 liblirc-client0:amd64	0.9.4c-9
 liblivemedia57:amd64	2016.11.28-1+deb9u1
 liblivetribe-jsr223-java	2.0.6-1
-libllvm3.8:amd64	1:3.8.1-24
 libllvm3.9:amd64	1:3.9.1-9
 libloader-java	1.1.6.dfsg-4
 liblocale-gettext-perl	1.07-3+b1
@@ -1434,12 +1432,10 @@ libopencv-imgproc2.4v5:amd64	2.4.9.1+dfsg1-2
 libopenexr22:amd64	2.2.0-11+b1
 libopengl0-glvnd-nvidia:amd64	390.87-8~deb9u1
 libopenjp2-7:amd64	2.1.2-1.1+deb9u2
-libopenlibm2:amd64	0.5.4+dfsg-3
 libopenmpi-dev	2.0.2-2
 libopenmpi2:amd64	2.0.2-2
 libopenmpt-modplug1:amd64	0.2.7386~beta20.3-3+deb9u3
 libopenmpt0:amd64	0.2.7386~beta20.3-3+deb9u3
-libopenspecfun1:amd64	0.5.3-3
 libopts25:amd64	1:5.18.12-3
 libopus0:amd64	1.2~alpha2-1
 liborbit-2-0:amd64	1:2.14.19-2+b1
@@ -1728,7 +1724,6 @@ libspectre1:amd64	0.2.8-1
 libspeechd2:amd64	0.8.6-4+deb9u1
 libspeex1:amd64	1.2~rc1.2-1+b2
 libspeexdsp1:amd64	1.2~rc1.2-1+b2
-libspqr2:amd64	1:4.5.4-1
 libsqlite3-0:amd64	3.16.2-5+deb9u1
 libss2:amd64	1.43.4-2
 libssh-gcrypt-4:amd64	0.7.3-2+deb9u2
@@ -1807,7 +1802,6 @@ libunbound2:amd64	1.6.0-3+deb9u2
 libunique-1.0-0	1.1.6-5
 libunistring0:amd64	0.9.6+really0.9.3-0.1
 libunsafe-mock-java	8.0-1
-libunwind8	1.1-4.1
 libupnp6	1:1.6.19+git20160116-1.2
 libupower-glib3:amd64	0.99.4-4+b1
 liburi-perl	1.71-1
@@ -1817,7 +1811,6 @@ libusbmuxd4:amd64	1.0.10-3+b1
 libuser1	1:0.62~dfsg-0.1
 libustr-1.0-1:amd64	1.0.4-6
 libutempter0:amd64	1.1.6-3
-libutf8proc2:amd64	2.0.2-1
 libuuid-perl	0.27-1
 libuuid1:amd64	2.29.2-1+deb9u1
 libv4l-0:amd64	1.12.3-1
@@ -2514,6 +2507,7 @@ python3-pickleshare	0.7.4-1
 python3-pil:amd64	4.0.0-4
 python3-pip	9.0.1-2
 python3-pkg-resources	33.1.1-1
+python3-plotly	1.13.0+dfsg-1
 python3-prompt-toolkit	1.0.9-1
 python3-psutil	5.0.1-1
 python3-ptyprocess	0.5.1-1

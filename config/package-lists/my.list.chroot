@@ -22,6 +22,8 @@ debhelper
 # eclipse
 ed
 evince
+dconf-cli
+dconf-editor
 fakeroot
 feynmf
 firefox-esr
