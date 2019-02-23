@@ -10,7 +10,7 @@ autopoint
 autotools-dev
 bar
 build-essential
-bluefish
+# bluefish
 ca-certificates-java
 # chromium-l10n
 cl-asdf

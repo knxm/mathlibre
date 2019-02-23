@@ -50,7 +50,7 @@ echo "sagemath-doc-ja" > config/package-lists/lang.$LANGUAGE.sage.list.chroot
 #
 # for uim (ibus)
 #
-cat > config/hooks/lang.ibus.chroot << EOF
+cat > config/hooks/live/lang.ibus.hook.chroot << EOF
 #!/bin/sh
 if [ -x /usr/bin/gconftool ]; then
 gconftool --direct --config-source xml:readwrite:/etc/gconf/gconf.xml.defaults \

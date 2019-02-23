@@ -1,8 +1,0 @@
-#!/bin/sh
-set -e
-
-# for LXDE menu
-for DESKTOP in scilab-adv-cli scilab-cli *Singular*
-do
-  rm -f /usr/share/applications/$DESKTOP.desktop
-done

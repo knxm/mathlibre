@@ -1,5 +1,0 @@
-#!/bin/sh
-if [ -f /usr/share/applications/debian-installer-launcher.desktop ]; then
-	sed -i -e 's/Install Debian sid/Install MathLibre/g' /usr/share/applications/debian-installer-launcher.desktop
-
-fi
