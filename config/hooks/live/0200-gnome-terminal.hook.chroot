@@ -1,8 +1,0 @@
-#!/bin/sh
-if [ -x /usr/bin/dconf ]; then
-  profile_id=":b1dcc9dd-5262-4d8d-a863-c897e6d979b9/"
-#  /usr/bin/dconf write /org/gnome/terminal/legacy/default-show-menubar "false"
-  /usr/bin/dconf write /org/gnome/terminal/legacy/profiles:/$profile_id"use-theme-colors" "false"
-  /usr/bin/dconf write /org/gnome/terminal/legacy/profiles:/$profile_id"background-color" "'rgb(0, 0, 0)'"
-  /usr/bin/dconf write /org/gnome/terminal/legacy/profiles:/$profile_id"foreground-color" "'rgb(255, 255, 255)'"
-fi
