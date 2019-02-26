@@ -134,10 +134,12 @@ realpath
 # remmina
 # recoll for 2019
 rsync
+screen
 sharutils
 shutter
 subversion
 testdisk
+tmux
 # tgif
 # tzdata-java is not available in stretch.
 unison
@@ -162,3 +164,4 @@ gedit
 task-desktop
 task-laptop
 task-lxde-desktop
+xdg-user-dirs-gtk

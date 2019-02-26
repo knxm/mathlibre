@@ -9,6 +9,7 @@ coq
 coqide
 coq-theories
 # drgeo is not available in jessie.
+dosbox
 eukleides
 euler
 evolver

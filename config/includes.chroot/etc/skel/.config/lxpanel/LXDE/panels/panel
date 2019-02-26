@@ -138,7 +138,7 @@ Plugin {
   type=launchbar
   Config {
     Button {
-      id=lxde-screenlock.desktop
+      id=setxkbmap-gadget.desktop
     }
     Button {
       id=lxde-logout.desktop
