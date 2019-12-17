@@ -34,17 +34,17 @@ gnome-terminal
 gparted
 html2text
 # stretch_start
-icedtea-8-plugin
+# icedtea-8-plugin
 # stretch_end
 imagemagick
-#inkscape
+# inkscape
 java-common
 jruby
 jython
 # ksnapshot for 2019
 lacheck
-#libaccess-bridge-java is not available in jessie.
-#libaccess-bridge-java-jni is not available in jessie.
+# libaccess-bridge-java is not available in jessie.
+# libaccess-bridge-java-jni is not available in jessie.
 libalgorithm-diff-perl
 libalgorithm-diff-xs-perl
 libalgorithm-merge-perl
@@ -56,7 +56,7 @@ libc-dev-bin
 libcgal-dev
 libc6-dev
 liberror-perl
-libffcall1
+libffcall1b
 libfont-afm-perl
 libgmp-dev
 libgmp3-dev
@@ -67,14 +67,13 @@ libice-dev
 libkpathsea6
 liblqr-1-0
 libm17n-0
-#libmagick++5 is not available in jessie
+# libmagick++5 is not available in jessie
 # libmagickcore5 is not available in jessie.
 # libmagickwand5 is not available in jessie.
-# stretch_start
-libmagick++-6.q16-7
-libmagickcore-6.q16-3
-bmagickcore-6.q16-3
-# stretch_end
+# buster_start
+libmagick++-6.q16-8
+libmagickcore-6.q16-6
+# buster_end
 libmail-sendmail-perl
 libmpfr-dev
 libncurses5-dev
@@ -90,7 +89,6 @@ libsigsegv2
 libsm-dev
 # for remmina
 # libssh-4
-#
 libsvn-perl
 libsys-hostname-long-perl
 libterm-readline-gnu-perl
@@ -123,20 +121,20 @@ locate
 memtest86+
 namazu
 ntpdate
-nuvola-icon-theme
-openjdk-8-jre
-openjdk-8-jre-headless
-openjdk-8-jdk
+# nuvola-icon-theme is not available in buster
+openjdk-11-jre
+openjdk-11-jre-headless
+openjdk-11-jdk
 parted
-pgf
+# pgf is not available in buster
 purifyeps
-realpath
-# remmina
+# realpath is not available in buster
+# remmina 
 # recoll for 2019
 rsync
 screen
 sharutils
-shutter
+# shutter is not available in buster
 subversion
 testdisk
 tmux
@@ -147,9 +145,9 @@ unoconv
 # vim
 # virtualbox
 # virtualbox-qt
-#virtualbox-guest-utils
-#virtualbox-guest-dkms
-#virtualbox-dkms
+# virtualbox-guest-utils
+# virtualbox-guest-dkms
+# virtualbox-dkms
 # virtualbox-guest-x11
 # w3c-dtd-xhtml is not available in stretch.
 x11proto-core-dev
