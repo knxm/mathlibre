@@ -8,9 +8,9 @@ bluez-firmware
 #broadcom-sta-common
 broadcom-sta-dkms
 #broadcom-sta-source
-coq-doc
-coq-doc-html
-coq-doc-pdf
+#coq-doc
+#coq-doc-html
+#coq-doc-pdf
 #etoys
 #etoys-doc
 firmware-atheros

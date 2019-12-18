@@ -24,9 +24,9 @@ config: clean
         --linux-packages "linux-image linux-headers" \
 	--win32-loader false \
 	--iso-volume "MathLibre" \
+        --distribution "buster" \
 #	--parent-mirror-binary "http://www.jp.debian.org/debian/" \
 #        --parent-mirror-binary-backports "http://ftp.debian.org/debian/" \
-#	--distribution jessie \
 #	--binary-images hdd \
 
 build: 	config

@@ -2,11 +2,11 @@
 4ti2-doc
 bc
 bison
-cadabra
+# cadabra is huge system in buster
 cafeobj
 # calibre
 coq
-coqide
+# coqide is not available in buster.
 coq-theories
 # drgeo is not available in jessie.
 dosbox
@@ -68,23 +68,27 @@ libjs-mathjax
 libkakasi2
 liblog4j2-java
 libnkf-perl
-libntl27
+libntl35
 libopenblas-dev
 libosgi-core-java
 # libssreflect-coq : Depends: libssreflect-ocaml (>= 1.5-2) but it is not going to be installed
 #                    Depends: coq-8.4pl3+4.01.0
 # libssreflect-coq is supported from Debian "jessie".
-libssreflect-coq
 # libssreflect-ocaml-dev : Depends: libcoq-ocaml-dev-g3g57
 #                          Depends: libssreflect-ocaml-6d7i7
 # libssreflect-ocaml-dev is supported from Debian "jessie".
-libssreflect-ocaml-dev
+################
+# start bullseye
+# libssreflect-coq
+# libssreflect-ocaml-dev
+# end bullseye
+################
 # libmathcomp-coq : Depends: libssreflect-coq (>= 1.5) but it is not going to be installed
 #                   Depends: libssreflect-coq (< 1.6) but it is not going to be installed
 # libmathcomp-coq is supported from Debian "jessie".
 # libmathcomp-coq is provided by: libssreflect-coq.
 # libmathcomp-coq
-libservlet3.0-java
+# libservlet3.1-java
 libslf4j-java
 libtext-kakasi-perl
 lie
@@ -92,12 +96,12 @@ lp-solve
 lrslib
 lua5.2
 lyx
-mandelbulber
-mathicgb
-matita
+mandelbulber2
+# mathicgb is not available in buster, but available in sid
+# matita is not available in buster, but available in sid
 maxima
 maxima-emacs
-namazu2-index-tools
+# namazu2-index-tools
 octave
 #octave-htmldoc
 #octave-gsl
@@ -115,8 +119,9 @@ pari-gp2c
 pdftk
 pdfgrep
 polymake
-proofgeneral
-proofgeneral-doc
+# proofgeneral is not available in buster, but available in sid.
+# proofgeneral
+# proofgeneral-doc
 prover9-doc
 prover9-mace4
 pspp
@@ -131,7 +136,7 @@ python-setuptools
 python-sklearn
 python-sympy
 python-tornado
-python-visual
+# python-visual is not available in buster.
 python3-gpg
 python3-markdown
 python3-matplotlib
