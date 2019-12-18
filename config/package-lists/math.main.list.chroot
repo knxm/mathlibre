@@ -1,8 +1,9 @@
 4ti2
 4ti2-doc
+auto-multiple-choice
 bc
 bison
-# cadabra is huge system in buster
+# cadabra is removed for 2020.
 cafeobj
 # calibre
 coq
