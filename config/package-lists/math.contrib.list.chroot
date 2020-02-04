@@ -4,4 +4,4 @@ iucode-tool
 ruby-pgplot
 #endif
 glx-alternative-mesa
-glx-alternative-nvidia
+#glx-alternative-nvidia

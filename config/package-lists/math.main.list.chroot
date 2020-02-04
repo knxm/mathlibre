@@ -57,8 +57,8 @@ junit4
 jupyter-notebook
 kakasi-dic
 #kig
-kile
-kile-l10n
+#kile
+#kile-l10n
 #kmplot
 latexmk
 lcalc
@@ -170,7 +170,7 @@ scilab-minimal-bin
 sketch
 # snappea
 spyder3
-step
+#step
 surf-alggeo
 surf-alggeo-nox
 sympow

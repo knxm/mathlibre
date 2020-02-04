@@ -40,4 +40,4 @@ libtet1.5-dev
 pgplot5
 tetgen
 zd1211-firmware
-xserver-xorg-video-nvidia
+# xserver-xorg-video-nvidia
