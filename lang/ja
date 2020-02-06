@@ -69,6 +69,6 @@ chmod 755 config/hooks/live/0500-lang.ibus.hook.chroot
 if [ -f doc/README_vbox_ja.pdf ]; then 
   cp doc/README_vbox_ja.pdf config/includes.binary/vbox
 fi
-if [ -f vbox/mathlibre2018ja-vm.zip ]; then
-  cp vbox/mathlibre2018ja-vm.zip config/includes.binary/vbox
+if [ -f vbox/mathlibre2020ja-vm.zip ]; then
+  cp vbox/mathlibre2020ja-vm.zip config/includes.binary/vbox
 fi

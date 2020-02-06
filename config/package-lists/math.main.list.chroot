@@ -4,7 +4,7 @@ auto-multiple-choice
 bc
 bison
 # cadabra is removed for 2020.
-cafeobj
+# cafeobj
 # calibre
 coq
 # coqide is not available in buster.
@@ -19,7 +19,7 @@ flex
 fraqtive
 freefem++
 freefem++-doc
-freemat
+# freemat
 gap
 gap-character-tables
 gap-core
@@ -31,9 +31,9 @@ gap-small-groups
 gap-small-groups-extra
 gap-table-of-marks
 gap-trans-groups
-gauche
+# gauche
 # genus2reduction is not available in jessie.
-geomview
+# geomview
 gfan
 # ghc
 ginac-tools
@@ -97,7 +97,7 @@ lp-solve
 lrslib
 lua5.2
 lyx
-mandelbulber2
+# mandelbulber2
 # mathicgb is not available in buster, but available in sid
 # matita is not available in buster, but available in sid
 maxima
@@ -160,12 +160,12 @@ ruby-gsl
 ruby-gtk2
 ruby-sqlite3
 sagemath
-scilab
-scilab-cli
-scilab-data
-scilab-full-bin
-scilab-include
-scilab-minimal-bin
+#scilab
+#scilab-cli
+#scilab-data
+#scilab-full-bin
+#scilab-include
+#scilab-minimal-bin
 # scratch
 sketch
 # snappea
