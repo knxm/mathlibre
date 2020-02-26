@@ -1,105 +1,105 @@
 Package: linux-compiler-gcc-6-x86
-Pin: version 4.19.16-1~bpo9+1
+Pin: version *
 Pin-Priority: 600
 
 Package: firmware-linux
-Pin: version 20180825+dfsg-1~bpo9+1
+Pin: version *
 Pin-Priority: 600
 
 Package: firmware-linux-nonfree
-Pin: version 20180825+dfsg-1~bpo9+1
+Pin: version *
 Pin-Priority: 600
 
 Package: firmware-misc-nonfree
-Pin: version 20180825+dfsg-1~bpo9+1
+Pin: version *
 Pin-Priority: 600
 
 Package: firmware-amd-graphics
-Pin: version 20180825+dfsg-1~bpo9+1
+Pin: version *
 Pin-Priority: 600
 
 Package: firmware-atheros
-Pin: version 20180825+dfsg-1~bpo9+1
+Pin: version *
 Pin-Priority: 600
 
 Package: firmware-bnx2
-Pin: version 20180825+dfsg-1~bpo9+1
+Pin: version *
 Pin-Priority: 600
 
 Package: firmware-bnx2x
-Pin: version 20180825+dfsg-1~bpo9+1
+Pin: version *
 Pin-Priority: 600
 
 Package: firmware-brcm80211
-Pin: version 20180825+dfsg-1~bpo9+1
+Pin: version *
 Pin-Priority: 600
 
 Package: firmware-cavium
-Pin: version 20180825+dfsg-1~bpo9+1
+Pin: version *
 Pin-Priority: 600
 
 Package: firmware-intel-sound
-Pin: version 20180825+dfsg-1~bpo9+1
+Pin: version *
 Pin-Priority: 600
 
 Package: firmware-intelwimax
-Pin: version 20180825+dfsg-1~bpo9+1
+Pin: version *
 Pin-Priority: 600
 
 Package: firmware-ipw2x00
-Pin: version 20180825+dfsg-1~bpo9+1
+Pin: version *
 Pin-Priority: 600
 
 Package: firmware-ivtv
-Pin: version 20180825+dfsg-1~bpo9+1
+Pin: version *
 Pin-Priority: 600
 
 Package: firmware-iwlwifi
-Pin: version 20180825+dfsg-1~bpo9+1
+Pin: version *
 Pin-Priority: 600
 
 Package: firmware-libertas
-Pin: version 20180825+dfsg-1~bpo9+1
+Pin: version *
 Pin-Priority: 600
 
 Package: firmware-misc-nonfree
-Pin: version 20180825+dfsg-1~bpo9+1
+Pin: version *
 Pin-Priority: 600
 
 Package: firmware-myricom
-Pin: version 20180825+dfsg-1~bpo9+1
+Pin: version *
 Pin-Priority: 600
 
 Package: firmware-netronome
-Pin: version 20180825+dfsg-1~bpo9+1
+Pin: version *
 Pin-Priority: 600
 
 Package: firmware-netxen
-Pin: version 20180825+dfsg-1~bpo9+1
+Pin: version *
 Pin-Priority: 600
 
 Package: firmware-qcom-media
-Pin: version 20180825+dfsg-1~bpo9+1
+Pin: version *
 Pin-Priority: 600
 
 Package: firmware-qlogic
-Pin: version 20180825+dfsg-1~bpo9+1
+Pin: version *
 Pin-Priority: 600
 
 Package: firmware-realtek
-Pin: version 20180825+dfsg-1~bpo9+1
+Pin: version *
 Pin-Priority: 600
 
 Package: firmware-samsung
-Pin: version 20180825+dfsg-1~bpo9+1
+Pin: version *
 Pin-Priority: 600
 
 Package: firmware-siano
-Pin: version 20180825+dfsg-1~bpo9+1
+Pin: version *
 Pin-Priority: 600
 
 Package: firmware-ti-connectivity
-Pin: version 20180825+dfsg-1~bpo9+1
+Pin: version *
 Pin-Priority: 600
 
 Package: camlp4
@@ -131,6 +131,10 @@ Pin: version *
 Pin-Priority: -1
 
 Package: texlive-lang-korean
+Pin: version *
+Pin-Priority: -1
+
+Package: texlive-lang-greek
 Pin: version *
 Pin-Priority: -1
 
