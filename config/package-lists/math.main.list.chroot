@@ -47,11 +47,11 @@ hugs
 ipython
 ipython3
 # ipython-qtconsole for 2019
-jsmath
-jsmath-fonts
-jsmath-fonts-sprite
+# jsmath
+# jsmath-fonts
+# jsmath-fonts-sprite
 jsurf-alggeo
-jsxgraph
+# jsxgraph
 # julia
 junit4
 jupyter-notebook

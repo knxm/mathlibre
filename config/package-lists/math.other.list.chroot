@@ -54,7 +54,7 @@ knxm-mkusbmath-debian
 # We changed archives/m2.list.chroot to "jessie"
 macaulay2
 macaulay2-common
-mathlibre-start
+#mathlibre-start
 math-polyglot
 # mmx
 nzmath

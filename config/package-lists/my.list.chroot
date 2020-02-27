@@ -39,8 +39,8 @@ html2text
 imagemagick
 # inkscape
 java-common
-jruby
-jython
+#jruby
+#jython
 # ksnapshot for 2019
 lacheck
 # libaccess-bridge-java is not available in jessie.
