@@ -14,7 +14,7 @@ perseus
 phat
 # qepcad-b Depends: libreadline6 (>= 6.0) but it is not installable
 r-openxm-hgm
-#rstudio
+# rstudio
 # simplify Depends: libreadline6 (>= 6.0) but it is not installable
 skeleton
 # surf
@@ -59,7 +59,7 @@ math-polyglot
 # mmx
 nzmath
 nzmath-doc
-python3-snappy3mfd
+# python3-snappy3mfd
 # qfract : Depends: libboost-thread1.49.0 (>= 1.49.0-1) but it is not installable
 # r-cran-rcmdr-knxm
 reduce-algebra

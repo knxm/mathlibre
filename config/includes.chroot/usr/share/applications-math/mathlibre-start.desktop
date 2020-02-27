@@ -1,9 +1,0 @@
-[Desktop Entry]
-Name=MathLibre Start
-Version=1.0
-Comment=Open the MathLibre starting page.
-Exec=mathlibre-start
-Icon=knxm-start-penguin
-Type=Application
-Categories=Math;
-Encoding=UTF-8

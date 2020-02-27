@@ -2,6 +2,14 @@ Package: linux-compiler-gcc-6-x86
 Pin: version 4.19.16-1~bpo9+1
 Pin-Priority: 600
 
+Package: texlive-science 
+Pin: version *
+Pin-Priority: -1 
+
+Package: texlive-lang-greek 
+Pin: version *
+Pin-Priority: -1 
+
 Package: sagemath-doc-en 
 Pin: version *
 Pin-Priority: -1 
