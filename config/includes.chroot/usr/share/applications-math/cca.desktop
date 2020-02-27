@@ -1,8 +1,0 @@
-[Desktop Entry]
-Name=cca
-Comment=Algorithmic Annimation of Buchberger Type Algorithms
-Exec=cca_start
-Icon=/usr/share/pixmaps/cca.png
-Type=Application
-Encoding=UTF-8
-Categories=Math;
