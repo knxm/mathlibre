@@ -1,0 +1,196 @@
+4ti2
+4ti2-doc
+auto-multiple-choice
+bc
+bison
+# cadabra is removed for 2020.
+# cafeobj
+# calibre
+coq
+# coqide is not available in buster.
+coq-theories
+# drgeo is not available in jessie.
+dosbox
+eukleides
+euler
+evolver
+evolver-doc
+flex
+fraqtive
+freefem++
+freefem++-doc
+# freemat
+gap
+gap-character-tables
+gap-core
+gap-guava
+gap-libs
+gap-online-help
+gap-prim-groups
+gap-small-groups
+gap-small-groups-extra
+gap-table-of-marks
+gap-trans-groups
+# gauche
+# genus2reduction is not available in jessie.
+# geomview
+gfan
+# ghc
+ginac-tools
+gnuplot-doc
+gnutls-bin
+# gprolog is not available in stretch, but available in sid.
+gsl-ref-html
+gv
+# hol-light
+hugs
+ipython
+ipython3
+# ipython-qtconsole for 2019
+# jsmath
+# jsmath-fonts
+# jsmath-fonts-sprite
+jsurf-alggeo
+# jsxgraph
+# julia
+junit4
+jupyter-notebook
+kakasi-dic
+#kig
+#kile
+#kile-l10n
+#kmplot
+latexmk
+lcalc
+libfile-mmagic-perl
+libflint-2.5.2
+libgsl0-dev
+libjs-mathjax
+libkakasi2
+liblog4j2-java
+libnkf-perl
+libntl35
+libopenblas-dev
+libosgi-core-java
+# libssreflect-coq : Depends: libssreflect-ocaml (>= 1.5-2) but it is not going to be installed
+#                    Depends: coq-8.4pl3+4.01.0
+# libssreflect-coq is supported from Debian "jessie".
+# libssreflect-ocaml-dev : Depends: libcoq-ocaml-dev-g3g57
+#                          Depends: libssreflect-ocaml-6d7i7
+# libssreflect-ocaml-dev is supported from Debian "jessie".
+################
+# start bullseye
+# libssreflect-coq
+# libssreflect-ocaml-dev
+# end bullseye
+################
+# libmathcomp-coq : Depends: libssreflect-coq (>= 1.5) but it is not going to be installed
+#                   Depends: libssreflect-coq (< 1.6) but it is not going to be installed
+# libmathcomp-coq is supported from Debian "jessie".
+# libmathcomp-coq is provided by: libssreflect-coq.
+# libmathcomp-coq
+# libservlet3.1-java
+libslf4j-java
+libtext-kakasi-perl
+lie
+lp-solve
+lrslib
+lua5.2
+lyx
+# mandelbulber2
+# mathicgb is not available in buster, but available in sid
+# matita is not available in buster, but available in sid
+maxima
+maxima-emacs
+# namazu2-index-tools
+octave
+#octave-htmldoc
+#octave-gsl
+#octave-geometry for 2019
+palp
+pandoc
+# pari-extra is not available in jessie.
+pari-gp
+pari-gp2c
+pari-elldata
+pari-galdata
+pari-seadata
+pari-galpol
+pari-gp2c
+pdftk
+pdfgrep
+polymake
+# proofgeneral is not available in buster, but available in sid.
+# proofgeneral
+# proofgeneral-doc
+prover9-doc
+prover9-mace4
+pspp
+python-dev
+python-gnuplot
+python-matplotlib
+python-openssl
+python-pandas
+python-pygments
+python-scipy
+python-setuptools
+python-sklearn
+python-sympy
+python-tornado
+# python-visual is not available in buster.
+python3-gpg
+python3-markdown
+python3-matplotlib
+python3-numpy
+python3-networkx
+python3-pip
+python3-plotly
+python3-rope
+python3-setuptools
+python3-sklearn
+python3-termcolor
+python3-tk
+python3-werkzeug
+python3-keras
+python3-rope
+qhull-bin
+regina-normal
+#rkward for 2019
+#rocs for 2019
+ruby-fftw3
+ruby-gsl
+ruby-gtk2
+ruby-sqlite3
+sagemath
+#scilab
+#scilab-cli
+#scilab-data
+#scilab-full-bin
+#scilab-include
+#scilab-minimal-bin
+# scratch
+sketch
+# snappea
+spyder3
+#step
+surf-alggeo
+surf-alggeo-nox
+sympow
+swi-prolog
+tex4ht
+texlive
+texlive-luatex
+texlive-xetex
+# texmacs is not available in stretch, but available in jessie.
+texmaker
+texstudio
+texworks
+xaos
+# xgraph is not availabe in jessie.
+xmaxima
+#wxmaxima for 2019
+yacas
+yorick-doc
+yorick-hdf5
+yorick-soy
+yorick-z

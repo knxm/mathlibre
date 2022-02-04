@@ -11,8 +11,11 @@ config: clean
 	lb config \
 	--apt-http-proxy "http://localhost:3142" \
 	--architectures amd64 \
-        --backports false \
+	--backports false \
+	--parent-mirror-bootstrap $(MIRROR) \
+	--parent-mirror-binary $(MIRROR) \
 	--mirror-bootstrap $(MIRROR) \
+	--mirror-binary $(MIRROR) \
 	--mirror-chroot $(MIRROR) \
 	--archive-areas "main contrib non-free" \
 	--parent-archive-areas "main contrib non-free" \
@@ -24,9 +27,8 @@ config: clean
         --linux-packages "linux-image linux-headers" \
 	--win32-loader false \
 	--iso-volume "MathLibre" \
-        --distribution "buster" \
-#	--parent-mirror-binary "http://www.jp.debian.org/debian/" \
-#        --parent-mirror-binary-backports "http://ftp.debian.org/debian/" \
+#       --distribution "bullseye" \
+#       --parent-mirror-binary-backports "http://ftp.debian.org/debian/" \
 #	--binary-images hdd \
 
 build: 	config

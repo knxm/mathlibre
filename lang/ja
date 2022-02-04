@@ -45,7 +45,7 @@ EOF
 #
 # for Sage
 #
-echo "sagemath-doc-ja" > config/package-lists/lang.$LANGUAGE.sage.list.chroot
+#echo "sagemath-doc-ja" > config/package-lists/lang.$LANGUAGE.sage.list.chroot
 
 #
 # for uim (ibus)
