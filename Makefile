@@ -3,7 +3,7 @@
 #
 # Eg:  make lang=ja
 #
-MIRROR="http://ftp.jp.debian.org/debian/"
+MIRROR="http://ftp.debian.org/debian/"
 
 all: build
 
