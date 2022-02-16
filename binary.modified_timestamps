@@ -369,7 +369,6 @@ d binary/pool/main/e
 d binary/pool/main/e/efivar
 d binary/pool/main/f
 d binary/pool/main/f/firmware-free
-d binary/pool/main/f/fuse
 d binary/pool/main/g
 d binary/pool/main/g/grub2
 d binary/pool/main/c
