@@ -50,6 +50,7 @@ blt	2.5.3+dfsg-4.1
 bluetooth	5.55-3.1
 bluez	5.55-3.1
 bluez-firmware	1.2-4
+broadcom-sta-dkms	6.30.223.271-17
 bsdextrautils	2.36.1-8+deb11u1
 bsdutils	1:2.36.1-8+deb11u1
 bubblewrap	0.4.1-3
@@ -94,6 +95,7 @@ dconf-cli	0.38.0-2
 dconf-editor	3.38.2-1
 dconf-gsettings-backend:amd64	0.38.0-2
 dconf-service	0.38.0-2
+dctrl-tools	2.24-3+b1
 debconf	1.5.77
 debconf-i18n	1.5.77
 debhelper	13.3.4
@@ -115,6 +117,7 @@ dictionaries-common	1.28.4
 diffutils	1:3.7-5
 dirmngr	2.2.27-2
 distro-info-data	0.51+deb11u1
+dkms	2.8.4-3
 dmidecode	3.3-2
 dmsetup	2:1.02.175-2.1
 doc-base	0.11.1
@@ -221,6 +224,7 @@ fonts-mathjax	2.7.9+dfsg-1
 fonts-mathjax-extras	2.7.9+dfsg-1
 fonts-noto-mono	20201225-1
 fonts-opensymbol	2:102.11+LibO7.0.4-4+deb11u1
+fonts-povray	1:3.7.0.8-5
 fonts-quicksand	0.2016-2.1
 fonts-sil-padauk	4.000-1
 fonts-symbola	2.60-1.1
@@ -331,6 +335,9 @@ glib-networking:amd64	2.66.0-2
 glib-networking-common	2.66.0-2
 glib-networking-services	2.66.0-2
 glpk-utils	5.0-1
+glx-alternative-mesa	1.2.0
+glx-alternative-nvidia	1.2.0
+glx-diversions	1.2.0
 gmp-ecm	7.0.4+ds-5
 gnome-accessibility-themes	3.28-1
 gnome-brave-icon-theme	5.5.1-2.1
@@ -408,6 +415,7 @@ hugs	98.200609.21-5.4+b5
 hunspell-en-us	1:2019.10.06-1
 hyphen-en-us	2.8.8-7
 i965-va-driver:amd64	2.4.1+dfsg1-1
+ibverbs-providers:amd64	33.2-1
 icu-devtools	67.1-7
 ifupdown	0.8.36
 iio-sensor-proxy	3.0-2
@@ -613,6 +621,7 @@ libc6:amd64	2.31-13+deb11u2
 libc6-dbg:amd64	2.31-13+deb11u2
 libc6-dev:amd64	2.31-13+deb11u2
 libcaca0:amd64	0.99.beta19-2.2
+libcaf-openmpi-3:amd64	2.9.2-3
 libcairo-gobject-perl	1.005-2+b2
 libcairo-gobject2:amd64	1.16.0-5
 libcairo-perl:amd64	1.109-1
@@ -658,6 +667,8 @@ libclucene-core1v5:amd64	2.3.3.4+dfsg-1+b1
 libcmark-gfm-extensions0:amd64	0.29.0.gfm.0-6
 libcmark-gfm0:amd64	0.29.0.gfm.0-6
 libcmis-0.5-5v5	0.5.2-3
+libcoarrays-dev:amd64	2.9.2-3
+libcoarrays-openmpi-dev:amd64	2.9.2-3
 libcodec2-0.9:amd64	0.9.2-4
 libcolamd2:amd64	1:5.8.1+dfsg-2
 libcolord2:amd64	1.4.5-3
@@ -677,6 +688,7 @@ libcrypt1:amd64	1:4.4.18-4
 libcryptsetup12:amd64	2:2.3.7-1+deb11u1
 libctf-nobfd0:amd64	2.35.2-2
 libctf0:amd64	2.35.2-2
+libcuda1:amd64	460.91.03-1
 libcups2:amd64	2.3.3op2-3+deb11u1
 libcurl3-gnutls:amd64	7.74.0-1.3+deb11u1
 libcurl4:amd64	7.74.0-1.3+deb11u1
@@ -735,6 +747,7 @@ libecm1:amd64	7.0.4+ds-5
 libedit2:amd64	3.1-20191231-2+b1
 libegl-dev:amd64	1.3.2-1
 libegl-mesa0:amd64	20.3.5-1
+libegl-nvidia0:amd64	460.91.03-1
 libegl1:amd64	1.3.2-1
 libelf1:amd64	0.183-1
 libemail-date-format-perl	1.005-1.1
@@ -755,6 +768,9 @@ libevdev2:amd64	1.11.0+dfsg-1
 libevdocument3-4:amd64	3.38.2-1
 libevent-2.1-7:amd64	2.1.12-stable-1
 libevent-core-2.1-7:amd64	2.1.12-stable-1
+libevent-dev	2.1.12-stable-1
+libevent-extra-2.1-7:amd64	2.1.12-stable-1
+libevent-openssl-2.1-7:amd64	2.1.12-stable-1
 libevent-pthreads-2.1-7:amd64	2.1.12-stable-1
 libevview3-3:amd64	3.38.2-1
 libexception-class-perl	1.44-1
@@ -769,6 +785,7 @@ libexttextcat-data	3.4.5-1
 libextutils-depends-perl	0.8000-1
 libextutils-pkgconfig-perl	1.16-1.1
 libfaad2:amd64	2.10.0-1
+libfabric1	1.11.0-2
 libfakeroot:amd64	1.25.3-1.1
 libfastjson4:amd64	0.99.9-1
 libfdisk1:amd64	2.36.1-8+deb11u1
@@ -870,9 +887,12 @@ libgl-dev:amd64	1.3.2-1
 libgl1:amd64	1.3.2-1
 libgl1-mesa-dev:amd64	20.3.5-1
 libgl1-mesa-dri:amd64	20.3.5-1
+libgl1-nvidia-glvnd-glx:amd64	460.91.03-1
 libgl2ps1.4	1.4.2+dfsg1-1
 libglapi-mesa:amd64	20.3.5-1
 libgles-dev:amd64	1.3.2-1
+libgles-nvidia1:amd64	460.91.03-1
+libgles-nvidia2:amd64	460.91.03-1
 libgles1:amd64	1.3.2-1
 libgles2:amd64	1.3.2-1
 libglew2.1:amd64	2.1.0-4+b1
@@ -888,6 +908,7 @@ libglvnd-dev:amd64	1.3.2-1
 libglvnd0:amd64	1.3.2-1
 libglx-dev:amd64	1.3.2-1
 libglx-mesa0:amd64	20.3.5-1
+libglx-nvidia0:amd64	460.91.03-1
 libglx0:amd64	1.3.2-1
 libgme0:amd64	0.6.3-2
 libgmp-dev:amd64	2:6.2.1+dfsg-1+deb11u1
@@ -996,7 +1017,12 @@ libhugs-unix-bundled	98.200609.21-5.4+b5
 libhugs-x11-bundled	98.200609.21-5.4+b5
 libhugs-xhtml-bundled	98.200609.21-5.4+b5
 libhunspell-1.7-0:amd64	1.7.0-3
+libhwloc-dev:amd64	2.4.1+dfsg-1
+libhwloc-plugins:amd64	2.4.1+dfsg-1
+libhwloc15:amd64	2.4.1+dfsg-1
 libhyphen0:amd64	2.8.8-7
+libibverbs-dev:amd64	33.2-1
+libibverbs1:amd64	33.2-1
 libice-dev:amd64	2:1.0.10-1
 libice6:amd64	2:1.0.10-1
 libicu-dev:amd64	67.1-7
@@ -1149,6 +1175,7 @@ libmd0:amd64	1.0.3-3
 libmd4c0:amd64	0.4.7-2
 libmenu-cache-bin	1.1.0-1.1
 libmenu-cache3:amd64	1.1.0-1.1
+libmetis-dev	5.1.0.dfsg-7
 libmetis5:amd64	5.1.0.dfsg-7
 libmfx1:amd64	21.1.0-1
 libmhash2:amd64	0.9.9.9-9
@@ -1220,8 +1247,10 @@ libnghttp2-14:amd64	1.43.0-1
 libnice10:amd64	0.1.16-1
 libnkf-perl	1:2.1.5-1+b3
 libnl-3-200:amd64	3.4.0-1+b1
+libnl-3-dev:amd64	3.4.0-1+b1
 libnl-genl-3-200:amd64	3.4.0-1+b1
 libnl-route-3-200:amd64	3.4.0-1+b1
+libnl-route-3-dev:amd64	3.4.0-1+b1
 libnmz7	2.0.21-23
 libnorm1:amd64	1.5.9+dfsg-2
 libnormaliz3:amd64	3.8.9+ds-0.1
@@ -1238,9 +1267,20 @@ libntfs-3g883	1:2017.3.23AR.3-4+deb11u1
 libntl43:amd64	11.4.3-1+b1
 libntlm0:amd64	1.6-3
 libnum-ocaml	1.4-1
+libnuma-dev:amd64	2.0.12-1+b1
 libnuma1:amd64	2.0.12-1+b1
 libnumbertext-1.0-0:amd64	1.0.7-1
 libnumbertext-data	1.0.7-1
+libnvcuvid1:amd64	460.91.03-1
+libnvidia-cbl:amd64	460.91.03-1
+libnvidia-cfg1:amd64	460.91.03-1
+libnvidia-eglcore:amd64	460.91.03-1
+libnvidia-encode1:amd64	460.91.03-1
+libnvidia-glcore:amd64	460.91.03-1
+libnvidia-glvkspirv:amd64	460.91.03-1
+libnvidia-ml1:amd64	460.91.03-1
+libnvidia-ptxjitcompiler1:amd64	460.91.03-1
+libnvidia-rtcore:amd64	460.91.03-1
 libobrender32v5	3.6.1-9+deb11u1
 libobt2v5	3.6.1-9+deb11u1
 liboctave8:amd64	6.2.0-1
@@ -1263,6 +1303,8 @@ libopenexr25:amd64	2.5.4-2
 libopengl-dev:amd64	1.3.2-1
 libopengl0:amd64	1.3.2-1
 libopenjp2-7:amd64	2.4.0-3
+libopenmpi-dev:amd64	4.1.0-10
+libopenmpi3:amd64	4.1.0-10
 libopenmpt0:amd64	0.4.11-1
 libopenni2-0:amd64	2.2.0.33+dfsg-15
 libopts25:amd64	1:5.18.16-4
@@ -1298,6 +1340,8 @@ libparams-util-perl	1.102-1+b1
 libparams-validationcompiler-perl	0.30-1
 libpari-dev:amd64	2.13.1-1
 libpari-gmp-tls7:amd64	2.13.1-1
+libparmetis-dev	4.0.3-5+b1
+libparmetis4.0	4.0.3-5+b1
 libparted-fs-resize0:amd64	3.4-1
 libparted2:amd64	3.4-1
 libpathplan4:amd64	2.42.2-5
@@ -1332,6 +1376,8 @@ libplanarity0:amd64	3.0.1.0-1
 libplist3:amd64	2.2.0-6
 libplot2c2:amd64	2.6-11
 libplymouth5:amd64	0.9.5-3
+libpmix-dev:amd64	4.0.0-4.1
+libpmix2:amd64	4.0.0-4.1
 libpng-dev:amd64	1.6.37-3
 libpng-tools	1.6.37-3
 libpng16-16:amd64	1.6.37-3
@@ -1355,6 +1401,8 @@ libprotobuf-c1:amd64	1.3.3-1+b2
 libprotobuf23:amd64	3.12.4-1
 libproxy1v5:amd64	0.4.17-1
 libpsl5:amd64	0.21.0-1.2
+libpsm-infinipath1	3.3+20.604758e7-6.1
+libpsm2-2	11.2.185-1
 libpstoedit0c2a:amd64	3.75-1
 libptexenc1:amd64	2020.20200327.54578-7
 libpthread-stubs0-dev:amd64	0.4-1
@@ -1420,6 +1468,7 @@ libratpoints-2.1.3:amd64	1:2.1.3-1+b2
 libraw1394-11:amd64	2.1.2-2
 libraw20:amd64	0.20.2-1
 librdf0:amd64	1.0.17-1.1+b1
+librdmacm1:amd64	33.2-1
 libre2-9:amd64	20210201+dfsg-1
 libreadline-dev:amd64	8.1-1
 libreadline8:amd64	8.1-1
@@ -1569,6 +1618,8 @@ libteckit0:amd64	2.5.10+ds1-3
 libtepl-5-0:amd64	5.0.1-2
 libterm-readkey-perl	2.38-1+b2
 libterm-readline-gnu-perl	1.37-1
+libtet1.5:amd64	1.5.0-5
+libtet1.5-dev:amd64	1.5.0-5
 libtevent0:amd64	0.10.2-1
 libtexlua53:amd64	2020.20200327.54578-7
 libtexluajit2:amd64	2020.20200327.54578-7
@@ -1610,6 +1661,7 @@ libtypes-serialiser-perl	1.01-1
 libu2f-udev	1.1.10-3
 libubsan1:amd64	10.2.1-6
 libuchardet0:amd64	0.0.7-1
+libucx0:amd64	1.10.1~rc1+really.1.10.0-1
 libudev1:amd64	247.3-6
 libudfread0:amd64	1.1.1-1
 libudisks2-0:amd64	2.9.2-2+deb11u1
@@ -1777,6 +1829,7 @@ libxmu-dev:amd64	2:1.1.2-2+b3
 libxmu-headers	2:1.1.2-2
 libxmu6:amd64	2:1.1.2-2+b3
 libxmuu1:amd64	2:1.1.2-2+b3
+libxnvctrl0:amd64	460.91.03-1
 libxpm-dev:amd64	1:3.5.12-1
 libxpm4:amd64	1:3.5.12-1
 libxrandr2:amd64	2:1.5.1-1
@@ -1919,6 +1972,7 @@ mousepad	0.5.2-1
 mozc-data	2.26.4220.100+dfsg-4
 mozc-server	2.26.4220.100+dfsg-4
 mozc-utils-gui	2.26.4220.100+dfsg-4
+mpi-default-dev	1.13
 mpv	0.32.0-3
 mysql-common	5.8+1.0.7
 mythes-en-us	1:7.1.0~rc3-3
@@ -1943,6 +1997,25 @@ ntfs-3g	1:2017.3.23AR.3-4+deb11u1
 ntpdate	1:4.2.8p15+dfsg-1
 numba-doc	0.52.0-4
 numlockx	1.2-8
+nvidia-alternative	460.91.03-1
+nvidia-driver	460.91.03-1
+nvidia-driver-bin	460.91.03-1
+nvidia-driver-libs:amd64	460.91.03-1
+nvidia-egl-common	460.91.03-1
+nvidia-egl-icd:amd64	460.91.03-1
+nvidia-installer-cleanup	20151021+13
+nvidia-kernel-common	20151021+13
+nvidia-kernel-dkms	460.91.03-1
+nvidia-kernel-support	460.91.03-1
+nvidia-legacy-check	460.91.03-1
+nvidia-modprobe	460.32.03-1
+nvidia-persistenced	460.32.03-1
+nvidia-settings	460.91.03-1
+nvidia-smi	460.91.03-1
+nvidia-support	20151021+13
+nvidia-vdpau-driver:amd64	460.91.03-1
+nvidia-vulkan-common	460.91.03-1
+nvidia-vulkan-icd:amd64	460.91.03-1
 obconf	1:2.0.4+git20150213-2
 obsession	20140608-2+b1
 ocaml-base-nox	4.11.1-4
@@ -1967,6 +2040,8 @@ openjdk-11-jdk:amd64	11.0.14+9-1~deb11u1
 openjdk-11-jdk-headless:amd64	11.0.14+9-1~deb11u1
 openjdk-11-jre:amd64	11.0.14+9-1~deb11u1
 openjdk-11-jre-headless:amd64	11.0.14+9-1~deb11u1
+openmpi-bin	4.1.0-10
+openmpi-common	4.1.0-10
 openssh-client	1:8.4p1-5
 openssl	1.1.1k-1+deb11u1
 orca	3.38.2-1
@@ -1992,6 +2067,7 @@ passwd	1:4.8.1-1
 patch	2.7.6-7
 pavucontrol	4.0-2
 pci.ids	0.0~2021.02.08-1
+pciutils	1:3.7.0-5
 pcmanfm	1.3.2-1
 pdfgrep	2.1.2-1
 pdftk	2.02-5+b1
@@ -2001,6 +2077,7 @@ perl-base	5.32.1-4+deb11u2
 perl-modules-5.32	5.32.1-4+deb11u2
 perl-openssl-defaults:amd64	5
 perl-tk	1:804.035-0.1+b1
+pgplot5	5.2.2-19.4
 pigz	2.6-1
 pinentry-curses	1.1.0-4
 pinentry-gnome3	1.1.0-4
@@ -2018,6 +2095,8 @@ polymake	4.3-4
 polymake-common	4.3-4
 poppler-data	0.4.10-1
 poppler-utils	20.09.0-3.1
+povray	1:3.7.0.8-5
+povray-includes	1:3.7.0.8-5
 powertop	2.11-1
 preview-latex-style	12.2-1
 procps	2:3.3.17-5
@@ -2433,6 +2512,7 @@ tcl8.6	8.6.11+dfsg-1
 teckit	2.5.10+ds1-3
 tegaki-zinnia-japanese	0.3-1.1
 testdisk	7.1-5+b1
+tetgen	1.5.0-5
 tex-common	6.16
 tex-gyre	20180621-3.1
 texinfo	6.7.0.dfsg.2-6
@@ -2492,6 +2572,7 @@ unison-2.51+4.11.1	2.51.3-1
 uno-libs-private	1:7.0.4-4+deb11u1
 unoconv	0.7-2
 unzip	6.0-26
+update-glx	1.2.0
 update-inetd	4.51
 upower	0.99.11-2
 ure	1:7.0.4-4+deb11u1
@@ -2576,6 +2657,7 @@ xserver-xorg-video-ati	1:19.1.0-2
 xserver-xorg-video-fbdev	1:0.5.0-1
 xserver-xorg-video-intel	2:2.99.917+git20200714-1+b1
 xserver-xorg-video-nouveau	1:1.0.17-1
+xserver-xorg-video-nvidia	460.91.03-1
 xserver-xorg-video-qxl	0.1.5+git20200331-1
 xserver-xorg-video-radeon	1:19.1.0-2
 xserver-xorg-video-vesa	1:2.5.0-1
