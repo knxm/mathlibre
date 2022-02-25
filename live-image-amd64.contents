@@ -1370,8 +1370,8 @@
 /pool/main/c/console-setup/console-setup_1.205_all.deb
 /pool/main/c/console-setup/keyboard-configuration_1.205_all.deb
 /pool/main/c/cryptsetup
-/pool/main/c/cryptsetup/cryptsetup-bin_2%3a2.3.5-1_amd64.deb
-/pool/main/c/cryptsetup/cryptsetup_2%3a2.3.5-1_amd64.deb
+/pool/main/c/cryptsetup/cryptsetup-bin_2%3a2.3.7-1+deb11u1_amd64.deb
+/pool/main/c/cryptsetup/cryptsetup_2%3a2.3.7-1+deb11u1_amd64.deb
 /pool/main/e
 /pool/main/e/efivar
 /pool/main/e/efivar/libefiboot1_37-6_amd64.deb
