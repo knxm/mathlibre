@@ -5,8 +5,8 @@ http://www.mathlibre.org/
  
 ## Environment for building
 We need these environments:
-* Debian buster (10.3)
-* live-build (buster)
+* Debian bullseye (11.2)
+* live-build (bullseye)
 * apt-cacher or apt-cacher-ng
 
 ### ex.
