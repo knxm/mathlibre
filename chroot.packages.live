@@ -1,5 +1,6 @@
+3d-xplormath-j	1.0-1
 4ti2	1.6.9+ds-2
-4ti2-doc	1.6.9+ds-2
+4ti2-doc	1.6.7+ds-2
 acl	2.2.53-10
 adduser	3.118
 adwaita-icon-theme	3.38.0-1
@@ -60,10 +61,12 @@ bzip2	1.0.8-4
 bzip2-doc	1.0.8-4
 ca-certificates	20210119
 ca-certificates-java	20190909
+car	11.0-1
 chromium	98.0.4758.102-1~deb11u1
 chromium-common	98.0.4758.102-1~deb11u1
 chromium-sandbox	98.0.4758.102-1~deb11u1
 cl-asdf	2:3.3.4-2
+coinor-csdp	6.2.0-3
 coinor-libcbc3:amd64	2.10.5+ds1-3
 coinor-libcgl1	0.60.3+repack1-2
 coinor-libclp1	1.17.5+repack1-1
@@ -127,6 +130,7 @@ dosbox	0.74-3-3
 dosfstools	4.2-1
 dpkg	1.20.9
 dpkg-dev	1.20.9
+dropbox	2020.03.04
 dvipng	1.15-1.1+b1
 dvisvgm	2.11.1-1
 dwz	0.13+20210201-1
@@ -134,7 +138,10 @@ e2fsprogs	1.46.2-2
 ecl	20.4.24+ds-2
 eclib-tools	20190909-3+b1
 ed	1.17-1
+eggx	0.93r4-1
+eggx-example	0.93-2
 eject	2.36.1-8+deb11u1
+elpa-ess	18.10.2-2
 emacs	1:27.1+1-3.1
 emacs-bin-common	1:27.1+1-3.1
 emacs-common	1:27.1+1-3.1
@@ -146,6 +153,7 @@ emacsen-common	3.0.4
 enchant-2	2.2.15-1
 epstool	3.09-3
 espeak-ng-data:amd64	1.50+dfsg-7
+ess	18.10.2-2
 eukleides	1.5.4-4.3
 euler	1.61.0-12
 evince	3.38.2-1
@@ -294,6 +302,8 @@ gcc	4:10.2.1-1
 gcc-10	10.2.1-6
 gcc-10-base:amd64	10.2.1-6
 gcc-9-base:amd64	9.3.0-22
+gconf-service	3.2.6-7
+gconf2-common	3.2.6-7
 gcr	3.38.1-2
 gdal-data	3.2.2+dfsg-2+deb11u1
 gdb	10.1-1.7
@@ -301,11 +311,14 @@ gdisk	1.0.6-1.1
 gedit	3.38.1-1
 gedit-common	3.38.1-1
 geoclue-2.0	2.5.7-3
+geogebra-classic	6.0.666.0-202109211234
+geogebra5	5.0.668.0-3930
 geoip-database	20191224-3
 geomview	1.9.5-3
 gettext	0.21-4
 gettext-base	0.21-4
 gfan	0.6.2-4
+gfan-doc	0.5.2013.02.28.1121-2
 gfortran	4:10.2.1-1
 gfortran-10	10.2.1-6
 ghostscript	9.53.3~dfsg-7+deb11u2
@@ -363,6 +376,7 @@ gnome-wise-icon-theme	5.5.1-2.1
 gnupg	2.2.27-2
 gnupg-l10n	2.2.27-2
 gnupg-utils	2.2.27-2
+gnuplot	5.4.1+dfsg1-1
 gnuplot-data	5.4.1+dfsg1-1
 gnuplot-doc	5.4.1+dfsg1-1
 gnuplot-qt	5.4.1+dfsg1-1
@@ -457,6 +471,7 @@ kasumi	2.5-9+b1
 keyboard-configuration	1.205
 klibc-utils	2.0.8-6.1
 kmod	28-1
+knxm-mkusbmath-debian	0.0.3-1
 lacheck	1.26-17
 laptop-detect	0.16
 latex-cjk-all	4.8.4+git20170127-3
@@ -593,6 +608,7 @@ libboost-python1.74.0	1.74.0-9
 libboost-regex1.74.0:amd64	1.74.0-9
 libboost-serialization1.74-dev:amd64	1.74.0-9
 libboost-serialization1.74.0:amd64	1.74.0-9
+libboost-stacktrace1.74.0:amd64	1.74.0-9
 libboost-system-dev:amd64	1.74.0.3
 libboost-system1.74-dev:amd64	1.74.0-9
 libboost-system1.74.0:amd64	1.74.0-9
@@ -629,6 +645,8 @@ libcairo2:amd64	1.16.0-5
 libcairo2-ocaml	0.6.2+dfsg-1
 libcairomm-1.0-1v5:amd64	1.12.2-4
 libcamd2:amd64	1:5.8.1+dfsg-2
+libcanberra-gtk-module:amd64	0.30-7
+libcanberra-gtk0:amd64	0.30-7
 libcanberra-gtk3-0:amd64	0.30-7
 libcanberra-gtk3-module:amd64	0.30-7
 libcanberra0:amd64	0.30-7
@@ -836,6 +854,7 @@ libfreehand-0.1-1	0.1.2-3
 libfreetype6:amd64	2.10.4+dfsg-1
 libfreexl1:amd64	1.0.6-1
 libfribidi0:amd64	1.0.8-2
+libfrobby0:amd64	0.9.1-1
 libfstrm0:amd64	0.6.0-1+b1
 libfuse2:amd64	2.9.9-5
 libfuse3-3:amd64	3.10.3-2
@@ -850,6 +869,7 @@ libgc1:amd64	1:8.0.4-3
 libgcc-10-dev:amd64	10.2.1-6
 libgcc-s1:amd64	10.2.1-6
 libgck-1-0:amd64	3.38.1-2
+libgconf-2-4:amd64	3.2.6-7
 libgcr-base-3-1:amd64	3.38.1-2
 libgcr-ui-3-1:amd64	3.38.1-2
 libgcroots0:amd64	0.9.1-1
@@ -1222,6 +1242,7 @@ libnamespace-clean-perl	0.27-1
 libnautilus-extension1a:amd64	3.38.2-1+deb11u1
 libnauty2:amd64	2.7r1+ds-2
 libncurses-dev:amd64	6.2+20201114-2
+libncurses5:amd64	6.2+20201114-2
 libncurses5-dev:amd64	6.2+20201114-2
 libncurses6:amd64	6.2+20201114-2
 libncursesw6:amd64	6.2+20201114-2
@@ -1329,6 +1350,7 @@ libpam-runtime	1.4.0-9+deb11u1
 libpam-systemd:amd64	247.3-6
 libpam0g:amd64	1.4.0-9+deb11u1
 libpango-1.0-0:amd64	1.46.2-3
+libpango1.0-0:amd64	1.46.2-3
 libpangocairo-1.0-0:amd64	1.46.2-3
 libpangoft2-1.0-0:amd64	1.46.2-3
 libpangomm-1.4-1v5:amd64	2.42.1-1
@@ -1412,6 +1434,9 @@ libpulsedsp:amd64	14.2-2
 libpwquality-common	1.4.4-1
 libpwquality1:amd64	1.4.4-1
 libpynac18py3:amd64	0.7.27-1
+libpython2-stdlib:amd64	2.7.18-3
+libpython2.7-minimal:amd64	2.7.18-8
+libpython2.7-stdlib:amd64	2.7.18-8
 libpython3-dev:amd64	3.9.2-3
 libpython3-stdlib:amd64	3.9.2-3
 libpython3.9:amd64	3.9.2-1
@@ -1508,9 +1533,9 @@ libsafe-isa-perl	1.000010-1
 libsamplerate0:amd64	0.2.1+ds0-1
 libsane-common	1.0.31-4.1
 libsane1:amd64	1.0.31-4.1
-libsasl2-2:amd64	2.1.27+dfsg-2.1
-libsasl2-modules:amd64	2.1.27+dfsg-2.1
-libsasl2-modules-db:amd64	2.1.27+dfsg-2.1
+libsasl2-2:amd64	2.1.27+dfsg-2.1+deb11u1
+libsasl2-modules:amd64	2.1.27+dfsg-2.1+deb11u1
+libsasl2-modules-db:amd64	2.1.27+dfsg-2.1+deb11u1
 libsbc1:amd64	1.5-3
 libsdl-image1.2:amd64	1.2.12-12
 libsdl-mixer1.2:amd64	1.2.12-16+b1
@@ -1519,6 +1544,7 @@ libsdl-sound1.2:amd64	1.0.3-9+b1
 libsdl-ttf2.0-0:amd64	2.0.11-6
 libsdl1.2debian:amd64	1.2.15+dfsg2-6
 libsdl2-2.0-0:amd64	2.0.14+dfsg2-3
+libsdp0:amd64	6.2.0-3
 libseccomp2:amd64	2.5.1-1+deb11u1
 libsecret-1-0:amd64	0.20.4-2
 libsecret-common	0.20.4-2
@@ -1548,6 +1574,7 @@ libsndio7.0:amd64	1.5.0-3
 libsnmp-base	5.9+dfsg-3
 libsnmp40:amd64	5.9+dfsg-3+b1
 libsodium23:amd64	1.0.18-1
+libsollya7:amd64	7.0+ds-3+b2
 libsombok3:amd64	2.4.0-2+b1
 libsonic0:amd64	0.2.0-10
 libsord-0-0:amd64	0.16.8-2
@@ -1634,6 +1661,7 @@ libtheora0:amd64	1.1.1+dfsg.1-15
 libtie-ixhash-perl	1.23-2.1
 libtiff5:amd64	4.2.0-1
 libtimedate-perl	2.3300-2
+libtinfo5:amd64	6.2+20201114-2
 libtinfo6:amd64	6.2+20201114-2
 libtirpc-common	1.3.1-1
 libtirpc-dev:amd64	1.3.1-1
@@ -1935,6 +1963,8 @@ lyx	2.3.6-1
 lyx-common	2.3.6-1
 m17n-db	1.8.0-3
 m4	1.4.18-5
+macaulay2	1.19.1
+macaulay2-common	1.19.1
 mailcap	3.69
 mailutils	1:3.10-3+b1
 mailutils-common	1:3.10-3
@@ -1945,6 +1975,8 @@ manpages-dev	5.10-1
 manpages-ja	0.5.0.0.20210215+dfsg-1
 manpages-ja-dev	0.5.0.0.20210215+dfsg-1
 mariadb-common	1:10.5.12-0+deb11u1
+math-polyglot	1.3-4
+mathlibre-start	0.2019.02.27.13-2
 mawk	1.3.4.20200120-2
 maxima	5.44.0-3
 maxima-doc	5.44.0-3
@@ -1974,6 +2006,7 @@ mozc-server	2.26.4220.100+dfsg-4
 mozc-utils-gui	2.26.4220.100+dfsg-4
 mpi-default-dev	1.13
 mpv	0.32.0-3
+msjproc	0.9.7-1
 mysql-common	5.8+1.0.7
 mythes-en-us	1:7.1.0~rc3-3
 namazu2	2.0.21-23
@@ -2016,6 +2049,8 @@ nvidia-support	20151021+13
 nvidia-vdpau-driver:amd64	460.91.03-1
 nvidia-vulkan-common	460.91.03-1
 nvidia-vulkan-icd:amd64	460.91.03-1
+nzmath	1.2.0-2
+nzmath-doc	1.1.2013.02.28.1300-2
 obconf	1:2.0.4+git20150213-2
 obsession	20140608-2+b1
 ocaml-base-nox	4.11.1-4
@@ -2044,6 +2079,7 @@ openmpi-bin	4.1.0-10
 openmpi-common	4.1.0-10
 openssh-client	1:8.4p1-5
 openssl	1.1.1k-1+deb11u1
+openxm	1.3.2-5
 orca	3.38.2-1
 p11-kit	0.23.22-1
 p11-kit-modules:amd64	0.23.22-1
@@ -2077,7 +2113,9 @@ perl-base	5.32.1-4+deb11u2
 perl-modules-5.32	5.32.1-4+deb11u2
 perl-openssl-defaults:amd64	5
 perl-tk	1:804.035-0.1+b1
+perseus	4.0-2
 pgplot5	5.2.2-19.4
+phat	1.4.0-2
 pigz	2.6-1
 pinentry-curses	1.1.0-4
 pinentry-gnome3	1.1.0-4
@@ -2116,6 +2154,7 @@ pyflakes3	2.2.0-2
 pylint	2.7.2-3
 python-babel-localedata	2.8.0+dfsg.1-7
 python-gmpy2-common	2.1.0~b5-0.1
+python-is-python2	2.7.18-9
 python-matplotlib-data	3.3.4-1
 python-odf-doc	1.4.1-1
 python-odf-tools	1.4.1-1
@@ -2123,6 +2162,10 @@ python-pip-whl	20.3.4-4
 python-ppl-doc	0.8.7-1
 python-qtawesome-common	1.0.2-1
 python-tables-data	3.6.1-3
+python2	2.7.18-3
+python2-minimal	2.7.18-3
+python2.7	2.7.18-8
+python2.7-minimal	2.7.18-8
 python3	3.9.2-3
 python3-alabaster	0.7.8-1.1
 python3-appdirs	1.4.4-1
@@ -2377,8 +2420,10 @@ python3.9-minimal	3.9.2-1
 qhull-bin	2020.2-3
 qt5-gtk-platformtheme:amd64	5.15.2+dfsg-9
 qttranslations5-l10n	5.15.2-2
+r-base	4.0.4-1
 r-base-core	4.0.4-1
 r-base-dev	4.0.4-1
+r-base-html	4.0.4-1
 r-cran-boot	1.3-27-1
 r-cran-class	7.3-18-1
 r-cran-cluster	2.1.1-1
@@ -2395,9 +2440,13 @@ r-cran-rpart	4.1-15-2+b1
 r-cran-spatial	7.3-13-1
 r-cran-survival	3.2-7-1
 r-doc-html	4.0.4-1
+r-openxm-hgm	0.20140224-1
 r-recommended	4.0.4-1
 rake	13.0.3-1
 readline-common	8.1-1
+reduce-algebra	20110414-1~getdeb2
+reduce-algebra-docs	20110414-1~getdeb2
+reduce-algebra-fonts	20110414-1~getdeb2
 regina-normal	6.0.1-4
 regina-normal-doc	6.0.1-4
 rlwrap	0.43-1+b2
@@ -2448,6 +2497,7 @@ screen	4.8.0-6
 scrot	1.5-1
 sed	4.7-1
 sensible-utils	0.0.14
+setxkbmap-gadget	0.0.3-1
 sgml-base	1.30
 sgml-data	2.0.11+nmu1
 shared-mime-info	2.0-1
@@ -2458,11 +2508,13 @@ singular-data	1:4.1.1-p2+ds-4
 singular-doc	1:4.1.1-p2+ds-4
 singular-modules:amd64	1:4.1.1-p2+ds-4+b2
 singular-ui	1:4.1.1-p2+ds-4+b2
+skeleton	2010.07.14-1
 sketch	1:0.3.7-12
 sketch-doc	1:0.3.7-12
 smplayer	20.6.0~ds0-1
 smplayer-l10n	20.6.0~ds0-1
 smplayer-themes	1:20.11.0-1
+sollya	7.0+ds-3+b2
 sound-icons	0.1-7
 sound-theme-freedesktop	0.8-2
 speech-dispatcher	0.10.2-2+deb11u1
@@ -2477,6 +2529,7 @@ sqlite3	3.34.1-3
 subversion	1.14.1-3
 sudo	1.9.5p2-3
 surf-alggeo	1.0.6+ds-5
+surf-alggeo-doc	1.0.6+ds-5
 surf-alggeo-nox	1.0.6+ds-5
 swi-prolog	8.2.4+dfsg-1
 swi-prolog-core	8.2.4+dfsg-1
@@ -2588,6 +2641,7 @@ va-driver-all:amd64	2.10.0-1
 vdpau-driver-all:amd64	1.4-3
 vim-common	2:8.2.2434-3+deb11u1
 vim-tiny	2:8.2.2434-3+deb11u1
+w3m	0.5.3+git20210102-6
 wget	1.21-1+deb11u1
 whiptail	0.52.21-4+b3
 wireless-regdb	2020.04.29-2

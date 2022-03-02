@@ -1,0 +1,91 @@
+#if ARCHITECTURES amd64
+# cocoa5 : Depends: libboost-filesystem1.49.0 (>= 1.49.0-1) but it is not installable
+# cocoa5
+# cocoalib : Depends: libreadline7 (>= 6.0) but it is not installable
+# cocoalib
+eggx-example
+# gappa : Depends: libmpfr4 (>= 3.1.0) but it is not installable
+# gappa
+# gudhi: Depends: libboost-program-options1.49.0 (>= 1.49.0-1) but it is not installable
+# gudhi
+# libgtk1.2
+# libgtk1.2-common
+msjproc
+normaliz
+perseus
+phat
+# qepcad-b Depends: libreadline6 (>= 6.0) but it is not installable
+r-openxm-hgm
+# rstudio
+# simplify Depends: libreadline6 (>= 6.0) but it is not installable
+skeleton
+# surf
+# surf-examples
+# surfex
+# surfer
+#endif
+3d-xplormath-j
+# 4ti2 : Depends: libglpk0 (>= 4.31) but it is not installable
+# 4ti2 is supported from Debian "stretch".
+# 4ti2
+# 4ti2-doc
+car
+# cca : Depends: openjdk-6-jre but it is not installable 
+# recompiled with fixing control file for cca package.
+# cca : Depends: openjdk-7-jre but it is not installable
+# recompiled with fixing control file for cca package.
+# cca : Depends: openjdk-8-jre but it is not installable
+# cca
+# dndtools : Depends: python-gtk2 but it is not installable
+# dndtools
+dropbox
+eggx
+# gap-corelg
+# gap-gapdoc
+# gap-quagroup
+# gap-sla
+geogebra5
+#geonext
+gfan-doc
+#julia-desktop: julia is supported from Debian "jessie".
+# kseg : Depends: libqt3-mt (>= 3:3.3.8b) but it is not going to be installed
+# We changed archives/tryphon.list.chroot to "jessie".
+# kseg
+# jas-java : Depends: openjdk-8-jre but it is not installable
+#            Depends: jruby but it is not installable
+# jas-java
+knxm-mkusbmath-debian
+# macaulay2 : Depends: libpari-gmp3 but it is not installable
+# We changed archives/m2.list.chroot to "jessie"
+macaulay2
+macaulay2-common
+mathlibre-start
+math-polyglot
+# mmx : Depends: libmpfr4 (>= 3.1.3) but it is not installable
+#       Depends: libreadline7 (>= 6.0) but it is not installable
+# mmx
+nzmath
+nzmath-doc
+# python3-snappy3mfd
+# qfract : Depends: libboost-thread1.49.0 (>= 1.49.0-1) but it is not installable
+# r-cran-rcmdr-knxm
+reduce-algebra
+#saclib
+#sage-desktop
+setxkbmap-gadget
+sollya
+# Singular is supported from Debian "stretch"
+#singular
+#singular-modules
+#singular-ui
+#singular-ui-emacs
+#libsingular4
+# libflint-2.4.4a, libflint-2.5.2 is available in sid, moved to math.main.
+# libntl5, libntl27 is available in  stretch, moved to math.main.
+# topcom
+# # GiaC
+#giac
+#qcas
+#python-giacpy 
+# surf
+surf-alggeo-doc
