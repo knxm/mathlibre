@@ -96,7 +96,7 @@ libtext-kakasi-perl
 lie
 lp-solve
 lrslib
-lua5.2
+lua5.4
 lyx
 # mandelbulber2
 # mathicgb is not available in buster, but available in sid
@@ -122,6 +122,8 @@ pari-gp2c
 pdftk
 pdfgrep
 polymake
+povray
+povray-includes
 # proofgeneral is not available in buster, but available in sid.
 # proofgeneral
 # proofgeneral-doc

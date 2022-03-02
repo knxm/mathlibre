@@ -1,18 +1,19 @@
-#if ARCHITECTURES amd64
-povray
-povray-includes
-#endif
+#if ARCHITECTURES amd64 
 amd64-microcode
+#endif
 atmel-firmware
 bluez-firmware
-#broadcom-sta-common
+broadcom-sta-common
 broadcom-sta-dkms
-#broadcom-sta-source
+broadcom-sta-source
+# removed for bullseye in 2022
 #coq-doc
 #coq-doc-html
 #coq-doc-pdf
+#
 #etoys
 #etoys-doc
+firmware-amd-graphics
 firmware-atheros
 firmware-bnx2
 firmware-bnx2x
@@ -31,13 +32,8 @@ firmware-ralink
 firmware-realtek
 gsl-ref-html
 intel-microcode
-libparmetis-dev
-# stretch_start
-libparmetis4.0
-# stretch_end
-libtet1.5
-libtet1.5-dev
+#libparmetis-dev
+#libparmetis4.0
 pgplot5
-tetgen
 zd1211-firmware
 xserver-xorg-video-nvidia
