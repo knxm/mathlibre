@@ -26,17 +26,9 @@ Package: libx11-doc
 Pin: version *
 Pin-Priority: -1
 
-# Package: linux-compiler-gcc-6-x86
-# Pin: version 4.19.16-1~bpo9+1
-# Pin-Priority: 600
-
-# Package: nvidia-cuda-dev 
-# Pin: version *
-# Pin-Priority: -1 
-
-# Package: openjdk-7-jdk
-# Pin: version *
-# Pin-Priority: -1
+Package: nvidia-cuda-dev 
+Pin: version *
+Pin-Priority: -1 
 
 Package: sagemath-doc-en 
 Pin: version *
