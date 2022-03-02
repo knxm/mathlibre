@@ -63,6 +63,7 @@ kakasi-dic
 latexmk
 lcalc
 libclang-11-dev
+libcgal-dev
 libfile-mmagic-perl
 libflint-2.6.3 
 libgsl0-dev
@@ -70,29 +71,15 @@ libjs-mathjax
 libkakasi2
 liblog4j2-java
 libnkf-perl
-libntl43
 libopenblas-dev
 libosgi-core-java
-# libssreflect-coq : Depends: libssreflect-ocaml (>= 1.5-2) but it is not going to be installed
-#                    Depends: coq-8.4pl3+4.01.0
-# libssreflect-coq is supported from Debian "jessie".
-# libssreflect-ocaml-dev : Depends: libcoq-ocaml-dev-g3g57
-#                          Depends: libssreflect-ocaml-6d7i7
-# libssreflect-ocaml-dev is supported from Debian "jessie".
-################
-# start bullseye
-# libssreflect-coq
-# libssreflect-ocaml-dev
-# end bullseye
-################
-# libmathcomp-coq : Depends: libssreflect-coq (>= 1.5) but it is not going to be installed
-#                   Depends: libssreflect-coq (< 1.6) but it is not going to be installed
-# libmathcomp-coq is supported from Debian "jessie".
-# libmathcomp-coq is provided by: libssreflect-coq.
+libntl43
 # libmathcomp-coq
-# libservlet3.1-java
+libssreflect-coq
 libslf4j-java
 libtext-kakasi-perl
+libtet1.5
+libtet1.5-dev
 lie
 lp-solve
 lrslib
@@ -109,7 +96,7 @@ octave
 #octave-gsl
 #octave-geometry for 2019
 palp
-# removed for the size in 2022
+# removed in 2022
 # pandoc
 # pari-extra is not available in jessie.
 pari-gp
@@ -179,6 +166,7 @@ surf-alggeo
 surf-alggeo-nox
 sympow
 swi-prolog
+tet-gen
 tex4ht
 texlive
 texlive-luatex
