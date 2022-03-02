@@ -1,32 +1,16 @@
-Package: chromium
+Package: apache2-bin
 Pin: version *
 Pin-Priority: -1
 
-Package: linux-compiler-gcc-6-x86
-Pin: version 4.19.16-1~bpo9+1
-Pin-Priority: 600
-
-Package: nvidia-cuda-dev 
+Package: apache2-utils
 Pin: version *
-Pin-Priority: -1 
-
-Package: texlive-science 
-Pin: version *
-Pin-Priority: -1 
-
-Package: texlive-lang-greek 
-Pin: version *
-Pin-Priority: -1 
-
-Package: sagemath-doc-en 
-Pin: version *
-Pin-Priority: -1 
+Pin-Priority: -1
 
 Package: camlp4
 Pin: version *
 Pin-Priority: -1 
 
-Package: openjdk-7-jdk
+Package: chromium
 Pin: version *
 Pin-Priority: -1
 
@@ -38,27 +22,27 @@ Package: gnome-user-guide
 Pin: version *
 Pin-Priority: -1
 
-Package: apache2-bin
+Package: libx11-doc
 Pin: version *
 Pin-Priority: -1
 
-Package: apache2-utils
-Pin: version *
-Pin-Priority: -1
+# Package: linux-compiler-gcc-6-x86
+# Pin: version 4.19.16-1~bpo9+1
+# Pin-Priority: 600
 
-Package: texlive-lang-chinese
-Pin: version *
-Pin-Priority: -1
+# Package: nvidia-cuda-dev 
+# Pin: version *
+# Pin-Priority: -1 
 
-Package: texlive-lang-korean
-Pin: version *
-Pin-Priority: -1
+# Package: openjdk-7-jdk
+# Pin: version *
+# Pin-Priority: -1
 
-Package: texlive-latex-extra-doc
+Package: sagemath-doc-en 
 Pin: version *
-Pin-Priority: -1
+Pin-Priority: -1 
 
-Package: texlive-pstricks-doc
+Package: sbcl
 Pin: version *
 Pin-Priority: -1
 
@@ -66,7 +50,19 @@ Package: texlive-fonts-extra-doc
 Pin: version *
 Pin-Priority: -1
 
-Package: texlive-pictures-doc
+Package: texlive-fonts-recommended-doc
+Pin: version *
+Pin-Priority: -1
+
+Package: texlive-lang-chinese
+Pin: version *
+Pin-Priority: -1
+
+Package: texlive-lang-greek 
+Pin: version *
+Pin-Priority: -1 
+
+Package: texlive-lang-korean
 Pin: version *
 Pin-Priority: -1
 
@@ -74,11 +70,11 @@ Package: texlive-latex-base-doc
 Pin: version *
 Pin-Priority: -1
 
-Package: texlive-latex-recommended-doc
+Package: texlive-latex-extra-doc
 Pin: version *
 Pin-Priority: -1
 
-Package: texlive-fonts-recommended-doc
+Package: texlive-latex-recommended-doc
 Pin: version *
 Pin-Priority: -1
 
@@ -86,15 +82,19 @@ Package: texlive-metapost-doc
 Pin: version *
 Pin-Priority: -1
 
+Package: texlive-pictures-doc
+Pin: version *
+Pin-Priority: -1
+
+Package: texlive-pstricks-doc
+Pin: version *
+Pin-Priority: -1
+
+Package: texlive-science 
+Pin: version *
+Pin-Priority: -1 
+
 Package: texlive-science-doc
-Pin: version *
-Pin-Priority: -1
-
-Package: libx11-doc
-Pin: version *
-Pin-Priority: -1
-
-Package: sbcl
 Pin: version *
 Pin-Priority: -1
 
