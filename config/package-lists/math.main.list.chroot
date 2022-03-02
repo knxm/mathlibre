@@ -108,7 +108,8 @@ octave
 #octave-gsl
 #octave-geometry for 2019
 palp
-pandoc
+# removed for the size in 2022
+# pandoc
 # pari-extra is not available in jessie.
 pari-gp
 pari-gp2c

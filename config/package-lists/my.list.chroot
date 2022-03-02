@@ -119,12 +119,12 @@ live-build
 lmodern
 locate
 memtest86+
-namazu
+# namazu
 ntpdate
 # nuvola-icon-theme is not available in buster
-openjdk-11-jre
-openjdk-11-jre-headless
-openjdk-11-jdk
+openjdk-17-jre
+openjdk-17-jre-headless
+openjdk-17-jdk
 parted
 # pgf is not available in buster
 purifyeps
