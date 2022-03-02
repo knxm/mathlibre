@@ -62,6 +62,7 @@ kakasi-dic
 #kmplot
 latexmk
 lcalc
+libclang-11-dev
 libfile-mmagic-perl
 libflint-2.6.3 
 libgsl0-dev

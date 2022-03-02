@@ -122,9 +122,9 @@ memtest86+
 # namazu
 ntpdate
 # nuvola-icon-theme is not available in buster
-openjdk-17-jre
-openjdk-17-jre-headless
-openjdk-17-jdk
+# openjdk-17-jre
+# openjdk-17-jre-headless
+# openjdk-17-jdk
 parted
 # pgf is not available in buster
 purifyeps
