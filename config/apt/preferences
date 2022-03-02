@@ -1,3 +1,7 @@
+Package: chromium
+Pin: version *
+Pin-Priority: -1
+
 Package: linux-compiler-gcc-6-x86
 Pin: version 4.19.16-1~bpo9+1
 Pin-Priority: 600
