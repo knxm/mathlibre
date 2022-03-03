@@ -16,6 +16,7 @@ ant	1.10.9-4
 ant-optional	1.10.9-4
 anthy	1:0.4-2
 anthy-common	1:0.4-2
+antlr3.2	3.2-16
 apparmor	2.13.6-10
 apt	2.2.4
 apt-cacher-ng	3.6.4-1
@@ -63,6 +64,7 @@ bzip2	1.0.8-4
 bzip2-doc	1.0.8-4
 ca-certificates	20210119
 ca-certificates-java	20190909
+cadabra2	2.3.6.8-1
 car	11.0-1
 cl-asdf	2:3.3.4-2
 coinor-csdp	6.2.0-3
@@ -105,6 +107,8 @@ debian-archive-keyring	2021.1.1
 debianutils	4.11.2
 debootstrap	1.0.123
 debugedit	4.16.1.2+dfsg1-3
+default-jdk	2:1.11-72
+default-jdk-headless	2:1.11-72
 default-jre	2:1.11-72
 default-jre-headless	2:1.11-72
 deluge	2.0.3-3.1
@@ -208,6 +212,7 @@ flintqs	1:1.0-3+b1
 fontconfig	2.13.1-4.2
 fontconfig-config	2.13.1-4.2
 fonts-arphic-uming	0.2.20080216.2-11
+fonts-cmu	0.7.0-4
 fonts-dejavu	2.37-2
 fonts-dejavu-core	2.37-2
 fonts-dejavu-extra	2.37-2
@@ -464,6 +469,7 @@ jupyter-client	6.1.11-2
 jupyter-core	4.7.1-1
 jupyter-nbextension-jupyter-js-widgets	6.0.0-8
 jupyter-notebook	6.2.0-1
+jython	2.7.2+repack1-3
 kakasi-dic	2.3.6-4.1
 kasumi	2.5-9+b1
 keyboard-configuration	1.205
@@ -495,6 +501,7 @@ libaacs0:amd64	0.9.0-2
 libabsl20200923:amd64	0~20200923.3-2
 libabw-0.1-1:amd64	0.1.3-1
 libacl1:amd64	2.2.53-10
+libactivation-java	1.2.0-2
 libadwaitaqt1:amd64	1.2.0-2
 libadwaitaqtpriv1:amd64	1.2.0-2
 libaec0:amd64	1.0.4-1
@@ -509,6 +516,7 @@ libamtk-5-common	5.2.0-1
 libann0	1.1.2+doc-7
 libanthy1:amd64	1:0.4-2
 libanthyinput0:amd64	1:0.4-2
+libantlr-java	2.7.7+dfsg-10
 libantlr3-runtime-java	3.5.2-9
 libao-common	1.2.2+20180113-1.1
 libao4:amd64	1.2.2+20180113-1.1
@@ -526,6 +534,7 @@ libargon2-1:amd64	0~20171227-0.2
 libarmadillo10	1:10.1.2+dfsg-6+b1
 libarpack2:amd64	3.8.0-1
 libasan6:amd64	10.2.1-6
+libasm-java	9.1-1
 libasound2:amd64	1.2.4-1.1
 libasound2-data	1.2.4-1.1
 libasound2-plugins:amd64	1.2.2-2
@@ -534,6 +543,7 @@ libass9:amd64	1:0.15.0-2
 libassuan0:amd64	2.5.3-7.1
 libasyncns0:amd64	0.8-6+b2
 libatasmart4:amd64	0.19-5
+libatinject-jsr330-api-java	1.0+ds1-5
 libatk-adaptor:amd64	2.38.0-1
 libatk-bridge2.0-0:amd64	2.38.0-1
 libatk-wrapper-java	0.38.0-2+deb11u1
@@ -695,6 +705,7 @@ libcom-err2:amd64	1.46.2-2
 libcommon-sense-perl	3.75-1+b4
 libcommons-cli-java	1.4-2
 libcommons-codec-java	1.15-1
+libcommons-compress-java	1.20-1
 libcommons-io-java	2.8.0-1
 libcommons-lang3-java	3.11-1
 libcommons-logging-java	1.2-2
@@ -981,6 +992,7 @@ libgtksourceview-4-0:amd64	4.8.0-1
 libgtksourceview-4-common	4.8.0-1
 libgts-0.7-5:amd64	0.7.6+darcs121130-4+b1
 libgts-bin	0.7.6+darcs121130-4+b1
+libguava-java	29.0-6
 libgucharmap-2-90-7:amd64	1:13.0.5-1
 libgudev-1.0-0:amd64	234-1
 libgupnp-1.2-0:amd64	1.2.4-1
@@ -993,6 +1005,7 @@ libhamcrest-java	1.3-9
 libhandy-1-0:amd64	1.0.3-2
 libharfbuzz-icu0:amd64	2.7.4-1
 libharfbuzz0b:amd64	2.7.4-1
+libhawtjni-runtime-java	1.17-1
 libhdf4-0-alt	4.2.15-3
 libhdf5-103-1:amd64	1.10.6+repack-4+deb11u1
 libhdf5-hl-100:amd64	1.10.6+repack-4+deb11u1
@@ -1038,6 +1051,7 @@ libhyphen0:amd64	2.8.8-7
 libice-dev:amd64	2:1.0.10-1
 libice6:amd64	2:1.0.10-1
 libicu-dev:amd64	67.1-7
+libicu4j-java	68.2-2
 libicu67:amd64	67.1-7
 libid3tag0:amd64	0.15.1b-14
 libidn11:amd64	1.33-3
@@ -1068,12 +1082,25 @@ libisl23:amd64	0.23-1
 libitm1:amd64	10.2.1-6
 libiw30:amd64	30~pre9-13.1
 libjack-jackd2-0:amd64	1.9.17~dfsg-1
+libjansi-java	1.18-1
+libjansi-native-java	1.8-1
 libjansson4:amd64	2.13.1-1.1
+libjas-java	2.5.4408-1.1
 libjavascriptcoregtk-4.0-18:amd64	2.34.6-1~deb11u1
+libjaxb-api-java	2.3.1-1
 libjbig0:amd64	2.1-3.1+b2
 libjbig2dec0:amd64	0.19-2
+libjctools-java	2.0.2-1
+libjffi-java	1.2.7-11
+libjffi-jni:amd64	1.2.7-11+b1
 libjim0.79:amd64	0.79+dfsg0-2
+libjline2-java	2.14.6-4
 libjmol-java	14.6.4+2016.11.05+dfsg1-4
+libjnr-constants-java	0.10.1-1
+libjnr-ffi-java	2.1.7-1
+libjnr-netdb-java	1.1.6-1.1
+libjnr-posix-java	3.0.45-2
+libjnr-x86asm-java	1.0.2-5.1
 libjpeg-dev:amd64	1:2.0.6-4
 libjpeg-turbo-progs	1:2.0.6-4
 libjpeg62-turbo:amd64	1:2.0.6-4
@@ -1102,6 +1129,7 @@ libjson-glib-1.0-0:amd64	1.6.2-1
 libjson-glib-1.0-common	1.6.2-1
 libjson-perl	4.03000-1
 libjson-xs-perl	4.030-1+b1
+libjsr305-java	0.1~+svn49-11
 libjuh-java	1:7.0.4-4+deb11u1
 libjurt-java	1:7.0.4-4+deb11u1
 libjxr-tools	1.1-6+b1
@@ -1144,6 +1172,7 @@ liblmdb0:amd64	0.9.24-1
 liblocale-gettext-perl	1.07-4+b1
 liblog-dispatch-perl	2.70-1
 liblog-log4perl-perl	1.54-1
+liblog4j1.2-java	1.2.17-10
 liblog4j2-java	2.17.0-1~deb11u1
 liblognorm5:amd64	2.0.5-1.1
 liblouis-data	3.16.0-1
@@ -1249,6 +1278,7 @@ libnetcdf18:amd64	1:4.7.4-1
 libnetfilter-conntrack3:amd64	1.0.8-3
 libnetpbm10	2:10.0-15.4
 libnettle8:amd64	3.7.3-1
+libnetty-java	1:4.1.48-4
 libnewt0.52:amd64	0.52.21-4+b3
 libnfnetlink0:amd64	1.0.1-3+b1
 libnfs13:amd64	4.0.0-1
@@ -1534,6 +1564,7 @@ libsensors5:amd64	1:3.6.0-7
 libsepol1:amd64	3.1-1
 libserd-0-0:amd64	0.30.10-2
 libserf-1-1:amd64	1.3.9-10
+libservlet-api-java	4.0.1-2
 libshine3:amd64	3.1.1-2
 libshout3:amd64	2.4.5-1+b1
 libsidplay1v5:amd64	1.36.60-1
@@ -1588,6 +1619,7 @@ libstdc++6:amd64	10.2.1-6
 libstemmer0d:amd64	2.1.0-1
 libstoken1:amd64	0.92-1
 libstrictures-perl	2.000006-1
+libstringtemplate-java	3.2.1-3
 libsub-exporter-perl	0.987-1
 libsub-exporter-progressive-perl	0.001013-1
 libsub-identify-perl	0.14-1+b3
@@ -2045,6 +2077,8 @@ openbox	3.6.1-9+deb11u1
 openbox-lxde-session	0.99.2-4
 opencl-c-headers	3.0~2020.12.18-1
 opencl-clhpp-headers	3.0~2.0.13-1
+openjdk-11-jdk:amd64	11.0.14+9-1~deb11u1
+openjdk-11-jdk-headless:amd64	11.0.14+9-1~deb11u1
 openjdk-11-jre:amd64	11.0.14+9-1~deb11u1
 openjdk-11-jre-headless:amd64	11.0.14+9-1~deb11u1
 openssh-client	1:8.4p1-5
