@@ -4,6 +4,7 @@
 bc
 bison
 # cadabra is removed for 2020.
+cadabra2
 # cafeobj
 # calibre
 coq
@@ -67,6 +68,7 @@ libcgal-dev
 libfile-mmagic-perl
 libflint-2.6.3 
 libgsl0-dev
+libjas-java
 libjs-mathjax
 libkakasi2
 liblog4j2-java
