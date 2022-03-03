@@ -94,6 +94,7 @@ maxima
 maxima-emacs
 # namazu2-index-tools
 octave
+jython
 #octave-htmldoc
 #octave-gsl
 #octave-geometry for 2019
