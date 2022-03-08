@@ -68,7 +68,7 @@ libcgal-dev
 libfile-mmagic-perl
 libflint-2.6.3 
 libgsl0-dev
-libjas-java
+#libjas-java
 libjs-mathjax
 libkakasi2
 liblog4j2-java
@@ -94,7 +94,7 @@ maxima
 maxima-emacs
 # namazu2-index-tools
 octave
-jython
+#jython
 #octave-htmldoc
 #octave-gsl
 #octave-geometry for 2019
