@@ -10,7 +10,7 @@ all: build
 config: clean
 	lb config \
 	--apt-http-proxy "http://localhost:3142" \
-	--architectures amd64 \
+	--architectures arm64 \
 	--backports false \
 	--parent-mirror-bootstrap $(MIRROR) \
 	--parent-mirror-binary $(MIRROR) \
@@ -22,7 +22,7 @@ config: clean
 	--apt-options "--fix-missing --yes -oAcquire::Check-Valid-Until=false" \
 	--bootappend-live "boot=live config quiet splash persistence" \
 	--apt-secure false \
-	--linux-flavours amd64 \
+	--linux-flavours arm64 \
 	--debian-installer live \
         --linux-packages "linux-image linux-headers" \
 	--win32-loader false \

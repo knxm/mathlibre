@@ -1,11 +1,14 @@
 #if ARCHITECTURES amd64 
+intel-microcode
+firmware-intelwimax
 amd64-microcode
-#endif
-atmel-firmware
-bluez-firmware
 broadcom-sta-common
 broadcom-sta-dkms
 broadcom-sta-source
+xserver-xorg-video-nvidia
+#endif
+atmel-firmware
+bluez-firmware
 # removed for bullseye in 2022
 #coq-doc
 #coq-doc-html
@@ -18,7 +21,6 @@ firmware-atheros
 firmware-bnx2
 firmware-bnx2x
 firmware-brcm80211
-firmware-intelwimax
 firmware-ipw2x00
 firmware-ivtv
 firmware-iwlwifi
@@ -31,9 +33,7 @@ firmware-qlogic
 firmware-ralink
 firmware-realtek
 gsl-ref-html
-intel-microcode
 #libparmetis-dev
 #libparmetis4.0
 pgplot5
 zd1211-firmware
-xserver-xorg-video-nvidia

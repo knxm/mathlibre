@@ -89,7 +89,9 @@ libxt-dev
 live-build
 lmodern
 locate
+#if ARCHITECTURES amd64
 memtest86+
+#endif
 ntpdate
 parted
 purifyeps
