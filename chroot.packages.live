@@ -1515,7 +1515,7 @@ libsrtp2-1:arm64	2.3.0-5
 libss2:arm64	1.46.2-2
 libssh-gcrypt-4:arm64	0.9.5-1+deb11u1
 libssh2-1:arm64	1.9.0-2
-libssl1.1:arm64	1.1.1k-1+deb11u1
+libssl1.1:arm64	1.1.1k-1+deb11u2
 libssreflect-coq	1.12.0-1
 libstaroffice-0.0-0:arm64	0.0.7-1
 libstartup-notification0:arm64	0.12-6+b1
@@ -1942,7 +1942,7 @@ opencl-clhpp-headers	3.0~2.0.13-1
 openjdk-11-jre:arm64	11.0.14+9-1~deb11u1
 openjdk-11-jre-headless:arm64	11.0.14+9-1~deb11u1
 openssh-client	1:8.4p1-5
-openssl	1.1.1k-1+deb11u1
+openssl	1.1.1k-1+deb11u2
 orca	3.38.2-1
 p11-kit	0.23.22-1
 p11-kit-modules:arm64	0.23.22-1
