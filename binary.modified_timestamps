@@ -2,7 +2,7 @@ d binary
 f binary/efi.img
 f binary/sha256sum.README
 d binary/live
-f binary/live/initrd.img-5.10.0-11-amd64
+f binary/live/initrd.img
 f binary/live/filesystem.squashfs
 f binary/live/filesystem.packages
 d binary/tools
