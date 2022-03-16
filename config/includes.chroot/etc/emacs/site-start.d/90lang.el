@@ -9,7 +9,7 @@
        (require 'mozc)
        (setq default-input-method "japanese-mozc")
 	(setq mozc-candidate-style 'echo-area))
-     (when (file-readable-p "/usr/share/emacs/site-lisp/yatex/yatex.el")
+     (when (file-readable-p "/etc/emacs/site-start.d/50yatex-init.el")
        (setq auto-mode-alist
          (cons (cons "\\.tex$" 'yatex-mode) auto-mode-alist))
          (autoload 'yatex-mode "yatex" "Yet Another LaTeX mode" t))
