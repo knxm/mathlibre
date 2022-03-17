@@ -14,7 +14,7 @@ MathLibre
    to the extent permitted by applicable law.
  - MathLibre is the direct descendant of KNOPPIX/Math.
 
- - MathLibre/2022 was released on 16h March 2022.
+ - MathLibre/2022 was released on 17h March 2022.
  - MathLibre/2020 was released on 3rd September 2020.
  - MathLibre/2019 was distributed in MSJ meeting, 17-20 March 2019, at Tokyo Institute of Technology.
  - MathLibre/2018 was distributed in MSJ meeting, 18-21 March 2018, at The University of Tokyo.
