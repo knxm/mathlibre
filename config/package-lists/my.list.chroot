@@ -20,6 +20,7 @@ fakeroot
 feynmf
 firefox-esr
 g++
+gconf2
 gedit
 git
 gnome-terminal
