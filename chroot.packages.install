@@ -303,6 +303,9 @@ gcc	4:10.2.1-1
 gcc-10	10.2.1-6
 gcc-10-base:amd64	10.2.1-6
 gcc-9-base:amd64	9.3.0-22
+gconf-service	3.2.6-7
+gconf2	3.2.6-7
+gconf2-common	3.2.6-7
 gcr	3.38.1-2
 gdal-data	3.2.2+dfsg-2+deb11u1
 gdb	10.1-1.7
@@ -862,6 +865,7 @@ libgc1:amd64	1:8.0.4-3
 libgcc-10-dev:amd64	10.2.1-6
 libgcc-s1:amd64	10.2.1-6
 libgck-1-0:amd64	3.38.1-2
+libgconf-2-4:amd64	3.2.6-7
 libgcr-base-3-1:amd64	3.38.1-2
 libgcr-ui-3-1:amd64	3.38.1-2
 libgcroots0:amd64	0.9.1-1
