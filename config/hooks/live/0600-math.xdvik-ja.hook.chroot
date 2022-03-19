@@ -1,0 +1,7 @@
+#!/bin/sh
+if [ -x /usr/bin/updmap-sys ]; then
+  updmap-sys --setoption pxdviUse=True
+fi
+if [ -x /usr/bin/kanji-config-updmap-sys ]; then
+  kanji-config-updmap-sys auto
+fi
