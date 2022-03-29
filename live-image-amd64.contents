@@ -599,7 +599,7 @@
 /firmware/firmware-ti-connectivity_20210315-3_all.deb
 /firmware/firmware-zd1211_1%3a1.5-7_all.deb
 /firmware/hdmi2usb-fx2-firmware_0.0.0~git20151225-3_all.deb
-/firmware/intel-microcode_3.20210608.2_amd64.deb
+/firmware/intel-microcode_3.20220207.1~deb11u1_amd64.deb
 /firmware/ixo-usb-jtag_0.0.1-2_all.deb
 /firmware/wireless-regdb_2020.04.29-2_all.deb
 /install
@@ -633,9 +633,9 @@
 /live/filesystem.packages
 /live/filesystem.squashfs
 /live/initrd.img
-/live/initrd.img-5.10.0-12-amd64
+/live/initrd.img-5.10.0-13-amd64
 /live/vmlinuz
-/live/vmlinuz-5.10.0-12-amd64
+/live/vmlinuz-5.10.0-13-amd64
 /md5sum.README
 /md5sum.txt
 /pool
@@ -1462,7 +1462,7 @@
 /pool/non-free/f/firmware-sof/firmware-sof-signed_1.7-1_all.deb
 /pool/non-free/i
 /pool/non-free/i/intel-microcode
-/pool/non-free/i/intel-microcode/intel-microcode_3.20210608.2_amd64.deb
+/pool/non-free/i/intel-microcode/intel-microcode_3.20220207.1~deb11u1_amd64.deb
 /pool/non-free/z
 /pool/non-free/z/zd1211-firmware
 /pool/non-free/z/zd1211-firmware/firmware-zd1211_1%3a1.5-7_all.deb

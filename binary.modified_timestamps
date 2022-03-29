@@ -328,6 +328,7 @@ l binary/firmware/firmware-intelwimax_20210315-3_all.deb
 l binary/firmware/firmware-iwlwifi_20210315-3_all.deb
 l binary/firmware/wireless-regdb_2020.04.29-2_all.deb
 l binary/firmware/firmware-intel-sound_20210315-3_all.deb
+l binary/firmware/intel-microcode_3.20220207.1~deb11u1_amd64.deb
 l binary/firmware/firmware-ath9k-htc_1.4.0-106-gc583009+dfsg1-1_all.deb
 l binary/firmware/firmware-qcom-soc_20210315-3_all.deb
 l binary/firmware/firmware-samsung_20210315-3_all.deb
@@ -337,7 +338,6 @@ l binary/firmware/hdmi2usb-fx2-firmware_0.0.0~git20151225-3_all.deb
 l binary/firmware/firmware-libertas_20210315-3_all.deb
 l binary/firmware/ixo-usb-jtag_0.0.1-2_all.deb
 l binary/firmware/firmware-qlogic_20210315-3_all.deb
-l binary/firmware/intel-microcode_3.20210608.2_amd64.deb
 l binary/firmware/firmware-cavium_20210315-3_all.deb
 l binary/firmware/firmware-myricom_20210315-3_all.deb
 l binary/firmware/firmware-sof-signed_1.7-1_all.deb
