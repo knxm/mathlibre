@@ -2,5 +2,7 @@
 #deb http://fe.math.kobe-u.ac.jp/MathLibre-all/ /
 #deb http://fe.math.kobe-u.ac.jp/MathLibre-amd64/ /
 #deb http://fe.math.kobe-u.ac.jp/MathLibre-i386/ /
-deb [signed-by=/usr/share/keyrings/fe-deb2-archive-keyring.gpg] http://www.math.kobe-u.ac.jp/deb2/ unstable/
-deb [signed-by=/usr/share/keyrings/fe-deb2-archive-keyring.gpg] http://www.math.kobe-u.ac.jp/deb2/ mathlibre2020/
+#deb [signed-by=/usr/share/keyrings/fe-deb2-archive-keyring.gpg] http://www.math.kobe-u.ac.jp/deb2/ unstable/
+#deb [signed-by=/usr/share/keyrings/fe-deb2-archive-keyring.gpg] http://www.math.kobe-u.ac.jp/deb2/ mathlibre2020/
+deb http://www.math.kobe-u.ac.jp/deb2/ unstable/
+deb http://www.math.kobe-u.ac.jp/deb2/ mathlibre2020/
