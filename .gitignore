@@ -6,7 +6,7 @@
 *.iso
 ir*_portable_x64.zip
 #*.list
-*.log
+#*.log
 # *.md5sum
 # *.packages
 *.zsync
