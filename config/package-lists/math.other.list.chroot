@@ -13,7 +13,7 @@ eggx-example
 msjproc
 normaliz
 perseus
-phat
+# phat is included in Debian bullseye
 # qepcad-b Depends: libreadline6 (>= 6.0) but it is not installable
 r-openxm-hgm
 # rstudio
