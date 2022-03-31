@@ -13,6 +13,7 @@ coq-theories
 # drgeo is not available in jessie.
 dosbox
 elpa-macaulay2
+ess
 eukleides
 euler
 evolver
@@ -73,11 +74,12 @@ libgsl0-dev
 libjs-mathjax
 libkakasi2
 liblog4j2-java
+# libcoq-mathcomp will be in bookworm
 libnkf-perl
+libntl43
 libopenblas-dev
 libosgi-core-java
-libntl43
-# libmathcomp-coq
+libphat-dev
 libssreflect-coq
 libslf4j-java
 libtext-kakasi-perl
@@ -114,7 +116,7 @@ pari-galpol
 pari-gp2c
 pdftk
 pdfgrep
-phat-util
+phat-utils
 polymake
 povray
 povray-includes
@@ -135,6 +137,7 @@ python3-numpy
 python3-networkx
 python3-openssl
 python3-pandas
+python3-phat
 python3-pip
 python3-plotly
 python3-pygments
@@ -150,6 +153,9 @@ python3-werkzeug
 python3-keras
 python3-rope
 qhull-bin
+r-base
+r-base-core
+r-base-dev
 regina-normal
 #rkward for 2019
 #rocs for 2019
