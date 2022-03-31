@@ -81,6 +81,7 @@ connman	1.36-2.2
 connman-gtk	1.1.1+git20180626.b72c6ab-2
 coq	8.12.0-3+b3
 coq-theories	8.12.0-3+b3
+coqide	8.12.0-3+b3
 coreutils	8.32-4+b1
 cpio	2.13+dfsg-4
 cpp	4:10.2.1-1
@@ -784,6 +785,7 @@ libegl-dev:amd64	1.3.2-1
 libegl-mesa0:amd64	20.3.5-1
 libegl-nvidia0:amd64	460.91.03-1
 libegl1:amd64	1.3.2-1
+libeigen3-dev	3.3.9-2
 libelf1:amd64	0.183-1
 libemail-date-format-perl	1.005-1.1
 libemf1:amd64	1.0.13-2
@@ -1400,6 +1402,7 @@ libperl4-corelibs-perl	0.004-2
 libperl5.32:amd64	5.32.1-4+deb11u2
 libpfm4:amd64	4.11.1+git32-gd0b85fb-1
 libpgm-5.3-0:amd64	5.3.128~dfsg-2
+libphat-dev	1.6-2
 libpipeline1:amd64	1.5.3-1
 libpipewire-0.3-0:amd64	0.3.19-4
 libpipewire-0.3-modules:amd64	0.3.19-4
@@ -2149,6 +2152,7 @@ publicsuffix	20211207.1025-0+deb11u1
 pulseaudio	14.2-2
 pulseaudio-utils	14.2-2
 purifyeps	1.1-2.1
+pybind11-dev	2.6.2-1
 pyflakes3	2.2.0-2
 pylint	2.7.2-3
 python-babel-localedata	2.8.0+dfsg.1-7
@@ -2292,6 +2296,7 @@ python3-pathspec	0.8.1-1
 python3-pbr	5.5.0-2
 python3-pep8	1.7.1-9
 python3-pexpect	4.8.0-2
+python3-phat	1.6-2
 python3-pickleshare	0.7.5-3
 python3-pil:amd64	8.1.2+dfsg-0.3+deb11u1
 python3-pip	20.3.4-4+deb11u1
@@ -2308,6 +2313,7 @@ python3-py	1.10.0-1
 python3-pyasn1	0.4.8-1
 python3-pyasn1-modules	0.2.1-1
 python3-pyatspi	2.38.1-1
+python3-pybind11	2.6.2-1
 python3-pycodestyle	2.6.0-1
 python3-pydocstyle	2.1.1-1
 python3-pydot	1.4.2-1

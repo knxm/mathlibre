@@ -81,6 +81,7 @@ connman	1.36-2.2
 connman-gtk	1.1.1+git20180626.b72c6ab-2
 coq	8.12.0-3+b3
 coq-theories	8.12.0-3+b3
+coqide	8.12.0-3+b3
 coreutils	8.32-4+b1
 cpio	2.13+dfsg-4
 cpp	4:10.2.1-1

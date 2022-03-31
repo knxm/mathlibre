@@ -50,18 +50,18 @@ EOF
 #
 # for uim (ibus)
 #
-cat > config/hooks/live/0500-lang.ibus.hook.chroot << EOF
+#cat > config/hooks/live/0500-lang.ibus.hook.chroot << EOF
 #!/bin/sh
-if [ -x /usr/bin/gconftool ]; then
-gconftool --direct --config-source xml:readwrite:/etc/gconf/gconf.xml.defaults \
---type list --list-type=string \
---set /desktop/ibus/general/preload_engines [mozc-jp]
-gconftool --direct --config-source xml:readwrite:/etc/gconf/gconf.xml.defaults \
---type list --list-type=string \
---set /desktop/ibus/general/hotkey/trigger [Shift+space,Zenkaku_Hankaku,Alt+Kanji]
-fi
-EOF
-chmod 755 config/hooks/live/0500-lang.ibus.hook.chroot
+#if [ -x /usr/bin/gconftool ]; then
+#gconftool --direct --config-source xml:readwrite:/etc/gconf/gconf.xml.defaults \
+#--type list --list-type=string \
+#--set /desktop/ibus/general/preload_engines [mozc-jp]
+#gconftool --direct --config-source xml:readwrite:/etc/gconf/gconf.xml.defaults \
+#--type list --list-type=string \
+#--set /desktop/ibus/general/hotkey/trigger [Shift+space,Zenkaku_Hankaku,Alt+Kanji]
+#fi
+#EOF
+#chmod 755 config/hooks/live/0500-lang.ibus.hook.chroot
 
 #
 # for VirtualBox
