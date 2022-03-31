@@ -1,7 +1,0 @@
-# Macaulay2
-#deb http://www.math.uiuc.edu/Macaulay2/Repositories/Debian squeeze main
-#deb http://www.math.uiuc.edu/Macaulay2/Repositories/Debian wheezy main
-#deb http://www.math.uiuc.edu/Macaulay2/Repositories/Debian jessie main
-#deb http://www.math.uiuc.edu/Macaulay2/Repositories/Debian stretch main
-#deb http://www.math.uiuc.edu/Macaulay2/Repositories/Debian buster main
-deb http://www.math.uiuc.edu/Macaulay2/Repositories/Debian bullseye main
