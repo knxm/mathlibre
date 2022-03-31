@@ -8,7 +8,7 @@ cadabra2
 # cafeobj
 # calibre
 coq
-# coqide is not available in buster.
+coqide
 coq-theories
 # drgeo is not available in jessie.
 dosbox
@@ -36,7 +36,7 @@ gap-table-of-marks
 # gap-trans-groups
 # gauche
 # genus2reduction is not available in jessie.
-# geomview
+geomview
 gfan
 # ghc
 ginac-tools
@@ -157,24 +157,24 @@ r-base
 r-base-core
 r-base-dev
 regina-normal
-#rkward for 2019
-#rocs for 2019
+# rkward for 2019
+# rocs for 2019
 ruby-fftw3
 ruby-gsl
 ruby-gtk2
 ruby-sqlite3
 sagemath
-#scilab
-#scilab-cli
-#scilab-data
-#scilab-full-bin
-#scilab-include
-#scilab-minimal-bin
+# scilab
+# scilab-cli
+# scilab-data
+# scilab-full-bin
+# scilab-include
+# scilab-minimal-bin
 # scratch
 sketch
 # snappea
 spyder3
-#step
+# step
 surf-alggeo
 surf-alggeo-nox
 sympow

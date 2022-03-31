@@ -631,6 +631,7 @@
 /isolinux/vesamenu.c32
 /live
 /live/filesystem.packages
+/live/filesystem.packages-remove
 /live/filesystem.squashfs
 /live/initrd.img
 /live/initrd.img-5.10.0-13-amd64

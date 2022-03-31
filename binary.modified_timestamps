@@ -4,6 +4,7 @@ f binary/sha256sum.README
 d binary/live
 f binary/live/initrd.img
 f binary/live/filesystem.squashfs
+f binary/live/filesystem.packages-remove
 f binary/live/filesystem.packages
 d binary/tools
 d binary/boot

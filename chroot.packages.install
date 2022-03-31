@@ -66,6 +66,8 @@ ca-certificates-java	20190909
 cadabra2	2.3.6.8-1
 car	11.0-1
 cl-asdf	2:3.3.4-2
+cohomcalg	0.32+ds-3
+cohomcalg-common	0.32+ds-3
 coinor-csdp	6.2.0-3
 coinor-libcbc3:amd64	2.10.5+ds1-3
 coinor-libcgl1	0.60.3+repack1-2
@@ -153,6 +155,7 @@ eggx	0.93r4-1
 eggx-example	0.93-2
 eject	2.36.1-8+deb11u1
 elpa-ess	18.10.2-2
+elpa-macaulay2	1.17.1+ds-2
 emacs	1:27.1+1-3.1
 emacs-bin-common	1:27.1+1-3.1
 emacs-common	1:27.1+1-3.1
@@ -235,6 +238,7 @@ fonts-ipaexfont-mincho	00401-3
 fonts-ipafont	00303-21
 fonts-ipafont-gothic	00303-21
 fonts-ipafont-mincho	00303-21
+fonts-katex	0.10.2+dfsg-8
 fonts-lato	2.0-2.1
 fonts-liberation	1:1.07.4-11
 fonts-liberation2	2.1.3-1
@@ -1095,11 +1099,13 @@ libjs-backbone	1.4.0~dfsg+~1.4.5-2
 libjs-bootstrap	3.4.1+dfsg-2
 libjs-bootstrap-tour	0.12.0+dfsg-2
 libjs-codemirror	5.59.2+~cs0.23.109-1
+libjs-d3	3.5.17-4
 libjs-es6-promise	4.2.8-7
 libjs-jed	1.1.1-2
 libjs-jquery	3.5.1+dfsg+~3.5.5-7
 libjs-jquery-typeahead	2.11.0+dfsg1-2
 libjs-jquery-ui	1.12.1+dfsg-8+deb11u1
+libjs-katex	0.10.2+dfsg-8
 libjs-marked	0.8.0+ds+repack-2
 libjs-mathjax	2.7.9+dfsg-1
 libjs-moment	2.29.1+ds-2
@@ -1195,11 +1201,14 @@ libmailtools-perl	2.21-1
 libmailutils7:amd64	1:3.10-3+b1
 libmanette-0.2-0:amd64	0.2.5-1
 libmariadb3:amd64	1:10.5.15-0+deb11u1
+libmathic0v5:amd64	1.0~git20200526-1
+libmathicgb0:amd64	1.0~git20200526-1
 libmaxminddb0:amd64	1.5.2-1
 libmbim-glib4:amd64	1.24.6-0.1
 libmbim-proxy	1.24.6-0.1
 libmd0:amd64	1.0.3-3
 libmd4c0:amd64	0.4.7-2
+libmemtailor0:amd64	1.0~git20200526-1
 libmenu-cache-bin	1.1.0-1.1
 libmenu-cache3:amd64	1.1.0-1.1
 libmetis5:amd64	5.1.0.dfsg-7
@@ -1233,6 +1242,7 @@ libmpfr-dev:amd64	4.1.0-3
 libmpfr6:amd64	4.1.0-3
 libmpg123-0:amd64	1.26.4-1
 libmplex2-2.1-0:amd64	1:2.1.0+debian-6
+libmps3:amd64	3.2.1-2+b1
 libmro-compat-perl	0.13-1
 libmspub-0.1-1:amd64	0.1.4-3+b1
 libmtdev1:amd64	1.1.6-1
@@ -1404,6 +1414,7 @@ libpng16-16:amd64	1.6.37-3
 libpocketsphinx3:amd64	0.8+5prealpha+1-13
 libpolkit-agent-1-0:amd64	0.105-31+deb11u1
 libpolkit-gobject-1-0:amd64	0.105-31+deb11u1
+libpolylib64-8	5.22.5-4+dfsg
 libpolymake-dev-common	4.3-4
 libpoppler-cpp0v5:amd64	20.09.0-3.1
 libpoppler-glib8:amd64	20.09.0-3.1
@@ -1956,8 +1967,8 @@ lyx	2.3.6-1
 lyx-common	2.3.6-1
 m17n-db	1.8.0-3
 m4	1.4.18-5
-macaulay2	1.19.1
-macaulay2-common	1.19.1
+macaulay2	1.17.1+ds-2
+macaulay2-common	1.17.1+ds-2
 mailcap	3.69
 mailutils	1:3.10-3+b1
 mailutils-common	1:3.10-3
@@ -2012,6 +2023,7 @@ netpbm	2:10.0-15.4
 nftables	0.9.8-3.1
 ninja-build	1.10.1-1
 nkf	1:2.1.5-1+b3
+node-clipboard	2.0.6+ds+~cs7.6.4-1
 node-jed	1.1.1-2
 node-normalize.css	8.0.1-3
 normaliz	3.8.9+ds-0.1
@@ -2102,7 +2114,7 @@ perl-openssl-defaults:amd64	5
 perl-tk	1:804.035-0.1+b1
 perseus	4.0-2
 pgplot5	5.2.2-19.4
-phat	1.4.0-2
+phat-utils	1.6-2
 pigz	2.6-1
 pinentry-curses	1.1.0-4
 pinentry-gnome3	1.1.0-4
@@ -2589,6 +2601,8 @@ tk	8.6.11+1
 tk8.6	8.6.11-2
 tk8.6-blt2.5	2.5.3+dfsg-4.1
 tmux	3.1c-1+deb11u1
+topcom	0.17.8+ds-2
+topcom-examples	0.17.8+ds-2
 tpm-udev	0.5
 ttf-bitstream-vera	1.10-8.1
 tzdata	2021a-1+deb11u3
@@ -2704,6 +2718,7 @@ xserver-xorg-video-radeon	1:19.1.0-2
 xserver-xorg-video-vesa	1:2.5.0-1
 xserver-xorg-video-vmware	1:13.3.0-3
 xsltproc	1.1.34-4
+xterm	366-1+deb11u1
 xtrans-dev	1.4.0-1
 xxd	2:8.2.2434-3+deb11u1
 xz-utils	5.2.5-2
