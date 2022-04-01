@@ -18,7 +18,7 @@ lb config \
 #
 # for Japanese
 #
-echo "task-$LANGUAGE task-$LANGUAGE-desktop fonts-takao emacs-mozc" > config/package-lists/lang.$LANGUAGE.list.chroot
+echo "task-$LANGUAGE task-$LANGUAGE-desktop fonts-takao emacs-mozc fcitx-mozc" > config/package-lists/lang.$LANGUAGE.list.chroot
 
 #
 # for tex
