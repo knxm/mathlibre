@@ -66,6 +66,8 @@ ca-certificates-java	20190909
 cadabra2	2.3.6.8-1
 car	11.0-1
 cl-asdf	2:3.3.4-2
+cohomcalg	0.32+ds-3
+cohomcalg-common	0.32+ds-3
 coinor-csdp	6.2.0-3
 coinor-libcbc3:amd64	2.10.5+ds1-3
 coinor-libcgl1	0.60.3+repack1-2
@@ -79,6 +81,7 @@ connman	1.36-2.2
 connman-gtk	1.1.1+git20180626.b72c6ab-2
 coq	8.12.0-3+b3
 coq-theories	8.12.0-3+b3
+coqide	8.12.0-3+b3
 coreutils	8.32-4+b1
 cpio	2.13+dfsg-4
 cpp	4:10.2.1-1
@@ -105,6 +108,7 @@ dahdi-firmware-nonfree	2.11.1.0.20170917-1
 dash	0.5.11+git20200708+dd9ef66-5
 dbus	1.12.20-2
 dbus-user-session	1.12.20-2
+dbus-x11	1.12.20-2
 dconf-cli	0.38.0-2
 dconf-editor	3.38.2-1
 dconf-gsettings-backend:amd64	0.38.0-2
@@ -153,6 +157,7 @@ eggx	0.93r4-1
 eggx-example	0.93-2
 eject	2.36.1-8+deb11u1
 elpa-ess	18.10.2-2
+elpa-macaulay2	1.17.1+ds-2
 emacs	1:27.1+1-3.1
 emacs-bin-common	1:27.1+1-3.1
 emacs-common	1:27.1+1-3.1
@@ -178,6 +183,24 @@ exim4-config	4.94.2-7
 exim4-daemon-light	4.94.2-7
 fakeroot	1.25.3-1.1
 fbterm	1.7-5
+fcitx	1:4.2.9.8-3
+fcitx-bin	1:4.2.9.8-3
+fcitx-config-common	0.4.10-3
+fcitx-config-gtk	0.4.10-3
+fcitx-data	1:4.2.9.8-3
+fcitx-frontend-all	1:4.2.9.8-3
+fcitx-frontend-gtk2	1:4.2.9.8-3
+fcitx-frontend-gtk3	1:4.2.9.8-3
+fcitx-frontend-qt5:amd64	1.2.5-1+b2
+fcitx-module-dbus	1:4.2.9.8-3
+fcitx-module-kimpanel	1:4.2.9.8-3
+fcitx-module-lua	1:4.2.9.8-3
+fcitx-module-x11	1:4.2.9.8-3
+fcitx-modules	1:4.2.9.8-3
+fcitx-mozc:amd64	2.26.4220.100+dfsg-4
+fcitx-mozc-data	2.26.4220.100+dfsg-4
+fcitx-ui-classic	1:4.2.9.8-3
+fcitx5-module-quickphrase-editor:amd64	1.2.5-1+b2
 fdisk	2.36.1-8+deb11u1
 feynmf	1.08-12
 fflas-ffpack	2.4.3-2
@@ -235,6 +258,7 @@ fonts-ipaexfont-mincho	00401-3
 fonts-ipafont	00303-21
 fonts-ipafont-gothic	00303-21
 fonts-ipafont-mincho	00303-21
+fonts-katex	0.10.2+dfsg-8
 fonts-lato	2.0-2.1
 fonts-liberation	1:1.07.4-11
 fonts-liberation2	2.1.3-1
@@ -780,6 +804,7 @@ libegl-dev:amd64	1.3.2-1
 libegl-mesa0:amd64	20.3.5-1
 libegl-nvidia0:amd64	460.91.03-1
 libegl1:amd64	1.3.2-1
+libeigen3-dev	3.3.9-2
 libelf1:amd64	0.183-1
 libemail-date-format-perl	1.005-1.1
 libemf1:amd64	1.0.13-2
@@ -815,6 +840,12 @@ libextutils-pkgconfig-perl	1.16-1.1
 libfaad2:amd64	2.10.0-1
 libfakeroot:amd64	1.25.3-1.1
 libfastjson4:amd64	0.99.9-1
+libfcitx-config4:amd64	1:4.2.9.8-3
+libfcitx-core0:amd64	1:4.2.9.8-3
+libfcitx-gclient1:amd64	1:4.2.9.8-3
+libfcitx-qt5-1:amd64	1.2.5-1+b2
+libfcitx-qt5-data	1.2.5-1
+libfcitx-utils0:amd64	1:4.2.9.8-3
 libfdisk1:amd64	2.36.1-8+deb11u1
 libffcall1b:amd64	2.2-1
 libffi-dev:amd64	3.3-6
@@ -882,7 +913,6 @@ libgck-1-0:amd64	3.38.1-2
 libgconf-2-4:amd64	3.2.6-7
 libgcr-base-3-1:amd64	3.38.1-2
 libgcr-ui-3-1:amd64	3.38.1-2
-libgcroots0:amd64	0.9.1-1
 libgcrypt20:amd64	1.8.7-6
 libgd3:amd64	2.3.0-2
 libgdal28	3.2.2+dfsg-2+deb11u1
@@ -902,6 +932,7 @@ libgeomview-1.9.5	1.9.5-3
 libgeos-3.9.0:amd64	3.9.0-1
 libgeos-c1v5:amd64	3.9.0-1
 libgeotiff5:amd64	1.6.0-1
+libgettextpo0:amd64	0.21-4
 libgexiv2-2:amd64	0.12.1-1
 libgf2x3:amd64	1.3.0-1+b1
 libgfortran-10-dev:amd64	10.2.1-6
@@ -1095,11 +1126,13 @@ libjs-backbone	1.4.0~dfsg+~1.4.5-2
 libjs-bootstrap	3.4.1+dfsg-2
 libjs-bootstrap-tour	0.12.0+dfsg-2
 libjs-codemirror	5.59.2+~cs0.23.109-1
+libjs-d3	3.5.17-4
 libjs-es6-promise	4.2.8-7
 libjs-jed	1.1.1-2
 libjs-jquery	3.5.1+dfsg+~3.5.5-7
 libjs-jquery-typeahead	2.11.0+dfsg1-2
 libjs-jquery-ui	1.12.1+dfsg-8+deb11u1
+libjs-katex	0.10.2+dfsg-8
 libjs-marked	0.8.0+ds+repack-2
 libjs-mathjax	2.7.9+dfsg-1
 libjs-moment	2.29.1+ds-2
@@ -1195,11 +1228,14 @@ libmailtools-perl	2.21-1
 libmailutils7:amd64	1:3.10-3+b1
 libmanette-0.2-0:amd64	0.2.5-1
 libmariadb3:amd64	1:10.5.15-0+deb11u1
+libmathic0v5:amd64	1.0~git20200526-1
+libmathicgb0:amd64	1.0~git20200526-1
 libmaxminddb0:amd64	1.5.2-1
 libmbim-glib4:amd64	1.24.6-0.1
 libmbim-proxy	1.24.6-0.1
 libmd0:amd64	1.0.3-3
 libmd4c0:amd64	0.4.7-2
+libmemtailor0:amd64	1.0~git20200526-1
 libmenu-cache-bin	1.1.0-1.1
 libmenu-cache3:amd64	1.1.0-1.1
 libmetis5:amd64	5.1.0.dfsg-7
@@ -1233,6 +1269,7 @@ libmpfr-dev:amd64	4.1.0-3
 libmpfr6:amd64	4.1.0-3
 libmpg123-0:amd64	1.26.4-1
 libmplex2-2.1-0:amd64	1:2.1.0+debian-6
+libmps3:amd64	3.2.1-2+b1
 libmro-compat-perl	0.13-1
 libmspub-0.1-1:amd64	0.1.4-3+b1
 libmtdev1:amd64	1.1.6-1
@@ -1390,6 +1427,7 @@ libperl4-corelibs-perl	0.004-2
 libperl5.32:amd64	5.32.1-4+deb11u2
 libpfm4:amd64	4.11.1+git32-gd0b85fb-1
 libpgm-5.3-0:amd64	5.3.128~dfsg-2
+libphat-dev	1.6-2
 libpipeline1:amd64	1.5.3-1
 libpipewire-0.3-0:amd64	0.3.19-4
 libpipewire-0.3-modules:amd64	0.3.19-4
@@ -1404,6 +1442,7 @@ libpng16-16:amd64	1.6.37-3
 libpocketsphinx3:amd64	0.8+5prealpha+1-13
 libpolkit-agent-1-0:amd64	0.105-31+deb11u1
 libpolkit-gobject-1-0:amd64	0.105-31+deb11u1
+libpolylib64-8	5.22.5-4+dfsg
 libpolymake-dev-common	4.3-4
 libpoppler-cpp0v5:amd64	20.09.0-3.1
 libpoppler-glib8:amd64	20.09.0-3.1
@@ -1415,6 +1454,8 @@ libportmidi0:amd64	1:217-6
 libpostproc55:amd64	7:4.3.3-0+deb11u1
 libppl14:amd64	1:1.2-8.1
 libpq5:amd64	13.5-0+deb11u1
+libpresage-data	0.9.1-2.2
+libpresage1v5:amd64	0.9.1-2.2
 libprocps8:amd64	2:3.3.17-5
 libproj19:amd64	7.2.1-1
 libprotobuf-c1:amd64	1.3.3-1+b2
@@ -1659,6 +1700,7 @@ libtiff5:amd64	4.2.0-1+deb11u1
 libtimedate-perl	2.3300-2
 libtinfo5:amd64	6.2+20201114-2
 libtinfo6:amd64	6.2+20201114-2
+libtinyxml2.6.2v5:amd64	2.6.2-4
 libtirpc-common	1.3.1-1
 libtirpc-dev:amd64	1.3.1-1
 libtirpc3:amd64	1.3.1-1
@@ -1687,10 +1729,6 @@ libuchardet0:amd64	0.0.7-1
 libudev1:amd64	247.3-7
 libudfread0:amd64	1.1.1-1
 libudisks2-0:amd64	2.9.2-2+deb11u1
-libuim-custom2:amd64	1:1.8.8-9
-libuim-data	1:1.8.8-9
-libuim-scm0:amd64	1:1.8.8-9
-libuim8:amd64	1:1.8.8-9
 libumfpack5:amd64	1:5.8.1+dfsg-2
 libunbound8:amd64	1.13.1-1
 libunicode-linebreak-perl	0.0.20190101-1+b3
@@ -1956,8 +1994,8 @@ lyx	2.3.6-1
 lyx-common	2.3.6-1
 m17n-db	1.8.0-3
 m4	1.4.18-5
-macaulay2	1.19.1
-macaulay2-common	1.19.1
+macaulay2	1.17.1+ds-2
+macaulay2-common	1.17.1+ds-2
 mailcap	3.69
 mailutils	1:3.10-3+b1
 mailutils-common	1:3.10-3
@@ -2012,6 +2050,7 @@ netpbm	2:10.0-15.4
 nftables	0.9.8-3.1
 ninja-build	1.10.1-1
 nkf	1:2.1.5-1+b3
+node-clipboard	2.0.6+ds+~cs7.6.4-1
 node-jed	1.1.1-2
 node-normalize.css	8.0.1-3
 normaliz	3.8.9+ds-0.1
@@ -2066,7 +2105,7 @@ openjdk-11-jre:amd64	11.0.14+9-1~deb11u1
 openjdk-11-jre-headless:amd64	11.0.14+9-1~deb11u1
 openssh-client	1:8.4p1-5
 openssl	1.1.1n-0+deb11u1
-openxm	1.3.3-6
+openxm	1.3.3-7
 orca	3.38.2-1
 p11-kit	0.23.22-1
 p11-kit-modules:amd64	0.23.22-1
@@ -2102,7 +2141,7 @@ perl-openssl-defaults:amd64	5
 perl-tk	1:804.035-0.1+b1
 perseus	4.0-2
 pgplot5	5.2.2-19.4
-phat	1.4.0-2
+phat-utils	1.6-2
 pigz	2.6-1
 pinentry-curses	1.1.0-4
 pinentry-gnome3	1.1.0-4
@@ -2123,6 +2162,7 @@ poppler-utils	20.09.0-3.1
 povray	1:3.7.0.8-5
 povray-includes	1:3.7.0.8-5
 powertop	2.11-1
+presage	0.9.1-2.2
 preview-latex-style	12.2-1
 procps	2:3.3.17-5
 proj-bin	7.2.1-1
@@ -2137,6 +2177,7 @@ publicsuffix	20211207.1025-0+deb11u1
 pulseaudio	14.2-2
 pulseaudio-utils	14.2-2
 purifyeps	1.1-2.1
+pybind11-dev	2.6.2-1
 pyflakes3	2.2.0-2
 pylint	2.7.2-3
 python-babel-localedata	2.8.0+dfsg.1-7
@@ -2280,6 +2321,7 @@ python3-pathspec	0.8.1-1
 python3-pbr	5.5.0-2
 python3-pep8	1.7.1-9
 python3-pexpect	4.8.0-2
+python3-phat	1.6-2
 python3-pickleshare	0.7.5-3
 python3-pil:amd64	8.1.2+dfsg-0.3+deb11u1
 python3-pip	20.3.4-4+deb11u1
@@ -2296,6 +2338,7 @@ python3-py	1.10.0-1
 python3-pyasn1	0.4.8-1
 python3-pyasn1-modules	0.2.1-1
 python3-pyatspi	2.38.1-1
+python3-pybind11	2.6.2-1
 python3-pycodestyle	2.6.0-1
 python3-pydocstyle	2.1.1-1
 python3-pydot	1.4.2-1
@@ -2589,24 +2632,14 @@ tk	8.6.11+1
 tk8.6	8.6.11-2
 tk8.6-blt2.5	2.5.3+dfsg-4.1
 tmux	3.1c-1+deb11u1
+topcom	0.17.8+ds-2
+topcom-examples	0.17.8+ds-2
 tpm-udev	0.5
 ttf-bitstream-vera	1.10-8.1
 tzdata	2021a-1+deb11u3
 ucf	3.0043
 udev	247.3-7
 udisks2	2.9.2-2+deb11u1
-uim	1:1.8.8-9
-uim-data	1:1.8.8-9
-uim-fep	1:1.8.8-9
-uim-gtk2.0	1:1.8.8-9
-uim-gtk2.0-immodule:amd64	1:1.8.8-9
-uim-gtk3	1:1.8.8-9
-uim-gtk3-immodule:amd64	1:1.8.8-9
-uim-mozc:amd64	2.26.4220.100+dfsg-4
-uim-plugins:amd64	1:1.8.8-9
-uim-qt5	1:1.8.8-9
-uim-qt5-immodule:amd64	1:1.8.8-9
-uim-xim	1:1.8.8-9
 unifont	1:13.0.06-1
 unison	2.51.3+1
 unison-2.51+4.11.1	2.51.3-1
@@ -2704,6 +2737,7 @@ xserver-xorg-video-radeon	1:19.1.0-2
 xserver-xorg-video-vesa	1:2.5.0-1
 xserver-xorg-video-vmware	1:13.3.0-3
 xsltproc	1.1.34-4
+xterm	366-1+deb11u1
 xtrans-dev	1.4.0-1
 xxd	2:8.2.2434-3+deb11u1
 xz-utils	5.2.5-2
@@ -2724,6 +2758,6 @@ youtube-dl	2021.06.06-1
 zenity	3.32.0-6
 zenity-common	3.32.0-6
 zip	3.0-12
-zlib1g:amd64	1:1.2.11.dfsg-2
-zlib1g-dev:amd64	1:1.2.11.dfsg-2
+zlib1g:amd64	1:1.2.11.dfsg-2+deb11u1
+zlib1g-dev:amd64	1:1.2.11.dfsg-2+deb11u1
 zstd	1.4.8+dfsg-2.1

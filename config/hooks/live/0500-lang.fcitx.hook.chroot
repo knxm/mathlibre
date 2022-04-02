@@ -1,0 +1,4 @@
+#!/bin/sh
+if [ -f /usr/share/fcitx/configdesc/config.desc ]; then
+  sed -i -e 's/CTRL_SPACE/SHIFT_SPACE/g' /usr/share/fcitx/configdesc/config.desc
+fi

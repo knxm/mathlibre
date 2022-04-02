@@ -18,7 +18,7 @@ lb config \
 #
 # for Japanese
 #
-echo "task-$LANGUAGE task-$LANGUAGE-desktop fonts-takao emacs-mozc" > config/package-lists/lang.$LANGUAGE.list.chroot
+echo "task-$LANGUAGE task-$LANGUAGE-desktop fonts-takao emacs-mozc fcitx-mozc" > config/package-lists/lang.$LANGUAGE.list.chroot
 
 #
 # for tex
@@ -48,20 +48,15 @@ EOF
 #echo "sagemath-doc-ja" > config/package-lists/lang.$LANGUAGE.sage.list.chroot
 
 #
-# for uim (ibus)
+# for fcitx 
 #
-cat > config/hooks/live/0500-lang.ibus.hook.chroot << EOF
+cat > config/hooks/live/0500-lang.fcitx.hook.chroot << EOF
 #!/bin/sh
-if [ -x /usr/bin/gconftool ]; then
-gconftool --direct --config-source xml:readwrite:/etc/gconf/gconf.xml.defaults \
---type list --list-type=string \
---set /desktop/ibus/general/preload_engines [mozc-jp]
-gconftool --direct --config-source xml:readwrite:/etc/gconf/gconf.xml.defaults \
---type list --list-type=string \
---set /desktop/ibus/general/hotkey/trigger [Shift+space,Zenkaku_Hankaku,Alt+Kanji]
+if [ -f /usr/share/fcitx/configdesc/config.desc ]; then
+  sed -i -e 's/CTRL_SPACE/SHIFT_SPACE/g' /usr/share/fcitx/configdesc/config.desc
 fi
 EOF
-chmod 755 config/hooks/live/0500-lang.ibus.hook.chroot
+chmod 755 config/hooks/live/0500-lang.fcitx.hook.chroot
 
 #
 # for VirtualBox

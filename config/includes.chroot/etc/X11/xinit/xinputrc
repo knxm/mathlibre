@@ -1,9 +1,10 @@
 # im-config(8) generated on Sat, 26 Jun 2010 11:41:39 +0900
 # This file is for starting input method for some language environments.
 # Copyright (C) 2014 Tatsuyoshi Hamada <hamada@holst.sm.fukuoka-u.ac.jp>
+# Copyright (C) 2022 Tatsuyoshi Hamada <hamada.tatsuyoshi@nihon-u.ac.jp>
 case "${LANG}" in
   zh*|ja*|ko*|th*|vi*)
-    run_im default
+    run_im fcitx
     ;;	
 esac
 # im-config signiture: b4adf8baabbc92cf765f58e30f74c5e5  -

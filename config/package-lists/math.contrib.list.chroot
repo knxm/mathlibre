@@ -1,7 +1,7 @@
-iucode-tool
-# prism2-usb-firmware-installer
 #if ARCHITECTURES amd64
 # ruby-pgplot
+iucode-tool
 #endif
 glx-alternative-mesa
 glx-alternative-nvidia
+# prism2-usb-firmware-installer
