@@ -5,7 +5,7 @@ http://www.mathlibre.org/
  
 ## Environment for building
 We need these environments:
-* Debian bullseye (11.2)
+* Debian bullseye (11.3)
 * live-build (bullseye)
 * apt-cacher or apt-cacher-ng
 
