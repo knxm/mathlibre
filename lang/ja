@@ -52,8 +52,9 @@ EOF
 #
 cat > config/hooks/live/0500-lang.fcitx.hook.chroot << EOF
 #!/bin/sh
-if [ -d /usr/share/fcitx/configdesc ]; then
-  sed -i -e 's/CTRL_SPACE/SHIFT_SPACE/g' /usr/share/fcitx/configdesc
+if [ -f /usr/share/fcitx/configdesc/config.desc ]; then
+  sed -i -e 's/CTRL_SPACE/SHIFT_SPACE/g' /usr/share/fcitx/configdesc/config.desc
+fi
 EOF
 chmod 755 config/hooks/live/0500-lang.fcitx.hook.chroot
 
