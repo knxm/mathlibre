@@ -2775,6 +2775,6 @@ youtube-dl	2021.06.06-1
 zenity	3.32.0-6
 zenity-common	3.32.0-6
 zip	3.0-12
-zlib1g:amd64	1:1.2.11.dfsg-2
-zlib1g-dev:amd64	1:1.2.11.dfsg-2
+zlib1g:amd64	1:1.2.11.dfsg-2+deb11u1
+zlib1g-dev:amd64	1:1.2.11.dfsg-2+deb11u1
 zstd	1.4.8+dfsg-2.1
