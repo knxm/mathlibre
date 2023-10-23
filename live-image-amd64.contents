@@ -21,6 +21,7 @@
 /boot/grub/i386-efi
 /boot/grub/i386-efi/acpi.mod
 /boot/grub/i386-efi/adler32.mod
+/boot/grub/i386-efi/afsplitter.mod
 /boot/grub/i386-efi/ahci.mod
 /boot/grub/i386-efi/all_video.mod
 /boot/grub/i386-efi/aout.mod
@@ -129,6 +130,7 @@
 /boot/grub/i386-efi/iorw.mod
 /boot/grub/i386-efi/jfs.mod
 /boot/grub/i386-efi/jpeg.mod
+/boot/grub/i386-efi/json.mod
 /boot/grub/i386-efi/keylayouts.mod
 /boot/grub/i386-efi/keystatus.mod
 /boot/grub/i386-efi/ldm.mod
@@ -149,6 +151,7 @@
 /boot/grub/i386-efi/lspci.mod
 /boot/grub/i386-efi/lssal.mod
 /boot/grub/i386-efi/luks.mod
+/boot/grub/i386-efi/luks2.mod
 /boot/grub/i386-efi/lvm.mod
 /boot/grub/i386-efi/lzopio.mod
 /boot/grub/i386-efi/macbless.mod
@@ -223,10 +226,10 @@
 /boot/grub/i386-efi/setjmp_test.mod
 /boot/grub/i386-efi/setpci.mod
 /boot/grub/i386-efi/shift_test.mod
-/boot/grub/i386-efi/shim_lock.mod
 /boot/grub/i386-efi/signature_test.mod
 /boot/grub/i386-efi/sleep.mod
 /boot/grub/i386-efi/sleep_test.mod
+/boot/grub/i386-efi/smbios.mod
 /boot/grub/i386-efi/spkmodem.mod
 /boot/grub/i386-efi/squash4.mod
 /boot/grub/i386-efi/strtoull_test.mod
@@ -286,6 +289,7 @@
 /boot/grub/x86_64-efi
 /boot/grub/x86_64-efi/acpi.mod
 /boot/grub/x86_64-efi/adler32.mod
+/boot/grub/x86_64-efi/afsplitter.mod
 /boot/grub/x86_64-efi/ahci.mod
 /boot/grub/x86_64-efi/all_video.mod
 /boot/grub/x86_64-efi/aout.mod
@@ -393,6 +397,7 @@
 /boot/grub/x86_64-efi/iorw.mod
 /boot/grub/x86_64-efi/jfs.mod
 /boot/grub/x86_64-efi/jpeg.mod
+/boot/grub/x86_64-efi/json.mod
 /boot/grub/x86_64-efi/keylayouts.mod
 /boot/grub/x86_64-efi/keystatus.mod
 /boot/grub/x86_64-efi/ldm.mod
@@ -413,6 +418,7 @@
 /boot/grub/x86_64-efi/lspci.mod
 /boot/grub/x86_64-efi/lssal.mod
 /boot/grub/x86_64-efi/luks.mod
+/boot/grub/x86_64-efi/luks2.mod
 /boot/grub/x86_64-efi/lvm.mod
 /boot/grub/x86_64-efi/lzopio.mod
 /boot/grub/x86_64-efi/macbless.mod
@@ -487,10 +493,10 @@
 /boot/grub/x86_64-efi/setjmp_test.mod
 /boot/grub/x86_64-efi/setpci.mod
 /boot/grub/x86_64-efi/shift_test.mod
-/boot/grub/x86_64-efi/shim_lock.mod
 /boot/grub/x86_64-efi/signature_test.mod
 /boot/grub/x86_64-efi/sleep.mod
 /boot/grub/x86_64-efi/sleep_test.mod
+/boot/grub/x86_64-efi/smbios.mod
 /boot/grub/x86_64-efi/spkmodem.mod
 /boot/grub/x86_64-efi/squash4.mod
 /boot/grub/x86_64-efi/strtoull_test.mod
@@ -567,7 +573,7 @@
 /dists/unstable
 /efi.img
 /firmware
-/firmware/amd64-microcode_3.20191218.1_amd64.deb
+/firmware/amd64-microcode_3.20230808.1.1~deb11u1_amd64.deb
 /firmware/atmel-firmware_1.3-4.1_all.deb
 /firmware/bluez-firmware_1.2-4_all.deb
 /firmware/dahdi-firmware-nonfree_2.11.1.0.20170917-1_all.deb
@@ -599,9 +605,9 @@
 /firmware/firmware-ti-connectivity_20210315-3_all.deb
 /firmware/firmware-zd1211_1%3a1.5-7_all.deb
 /firmware/hdmi2usb-fx2-firmware_0.0.0~git20151225-3_all.deb
-/firmware/intel-microcode_3.20220207.1~deb11u1_amd64.deb
+/firmware/intel-microcode_3.20230808.1~deb11u1_amd64.deb
 /firmware/ixo-usb-jtag_0.0.1-2_all.deb
-/firmware/wireless-regdb_2020.04.29-2_all.deb
+/firmware/wireless-regdb_2022.04.08-2~deb11u1_all.deb
 /install
 /install/gtk
 /install/gtk/initrd.gz
@@ -633,9 +639,9 @@
 /live/filesystem.packages
 /live/filesystem.squashfs
 /live/initrd.img
-/live/initrd.img-5.10.0-13-amd64
+/live/initrd.img-5.10.0-26-amd64
 /live/vmlinuz
-/live/vmlinuz-5.10.0-13-amd64
+/live/vmlinuz-5.10.0-26-amd64
 /md5sum.README
 /md5sum.txt
 /pool
@@ -1381,10 +1387,10 @@
 /pool/main/f/firmware-free/firmware-linux-free_20200122-1_all.deb
 /pool/main/g
 /pool/main/g/grub2
-/pool/main/g/grub2/grub-common_2.04-20_amd64.deb
-/pool/main/g/grub2/grub-pc-bin_2.04-20_amd64.deb
-/pool/main/g/grub2/grub-pc_2.04-20_amd64.deb
-/pool/main/g/grub2/grub2-common_2.04-20_amd64.deb
+/pool/main/g/grub2/grub-common_2.06-3~deb11u6_amd64.deb
+/pool/main/g/grub2/grub-pc-bin_2.06-3~deb11u6_amd64.deb
+/pool/main/g/grub2/grub-pc_2.06-3~deb11u6_amd64.deb
+/pool/main/g/grub2/grub2-common_2.06-3~deb11u6_amd64.deb
 /pool/main/h
 /pool/main/h/hdmi2usb-fx2-firmware
 /pool/main/h/hdmi2usb-fx2-firmware/hdmi2usb-fx2-firmware_0.0.0~git20151225-3_all.deb
@@ -1417,14 +1423,14 @@
 /pool/main/o/open-ath9k-htc-firmware/firmware-ath9k-htc_1.4.0-106-gc583009+dfsg1-1_all.deb
 /pool/main/w
 /pool/main/w/wireless-regdb
-/pool/main/w/wireless-regdb/wireless-regdb_2020.04.29-2_all.deb
+/pool/main/w/wireless-regdb/wireless-regdb_2022.04.08-2~deb11u1_all.deb
 /pool/main/x
 /pool/main/x/xfsprogs
 /pool/main/x/xfsprogs/xfsprogs_5.10.0-4_amd64.deb
 /pool/non-free
 /pool/non-free/a
 /pool/non-free/a/amd64-microcode
-/pool/non-free/a/amd64-microcode/amd64-microcode_3.20191218.1_amd64.deb
+/pool/non-free/a/amd64-microcode/amd64-microcode_3.20230808.1.1~deb11u1_amd64.deb
 /pool/non-free/a/atmel-firmware
 /pool/non-free/a/atmel-firmware/atmel-firmware_1.3-4.1_all.deb
 /pool/non-free/b
@@ -1462,7 +1468,7 @@
 /pool/non-free/f/firmware-sof/firmware-sof-signed_1.7-1_all.deb
 /pool/non-free/i
 /pool/non-free/i/intel-microcode
-/pool/non-free/i/intel-microcode/intel-microcode_3.20220207.1~deb11u1_amd64.deb
+/pool/non-free/i/intel-microcode/intel-microcode_3.20230808.1~deb11u1_amd64.deb
 /pool/non-free/z
 /pool/non-free/z/zd1211-firmware
 /pool/non-free/z/zd1211-firmware/firmware-zd1211_1%3a1.5-7_all.deb

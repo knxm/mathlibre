@@ -2,7 +2,7 @@ d binary
 f binary/efi.img
 f binary/sha256sum.README
 d binary/live
-f binary/live/initrd.img
+f binary/live/initrd.img-5.10.0-26-amd64
 f binary/live/filesystem.squashfs
 f binary/live/filesystem.packages
 d binary/tools
@@ -312,9 +312,9 @@ f binary/.disk/base_components
 f binary/md5sum.README
 d binary/firmware
 l binary/firmware/firmware-ipw2x00_20210315-3_all.deb
-l binary/firmware/amd64-microcode_3.20191218.1_amd64.deb
 l binary/firmware/firmware-linux-free_20200122-1_all.deb
 l binary/firmware/atmel-firmware_1.3-4.1_all.deb
+l binary/firmware/wireless-regdb_2022.04.08-2~deb11u1_all.deb
 l binary/firmware/firmware-siano_20210315-3_all.deb
 l binary/firmware/firmware-netxen_20210315-3_all.deb
 l binary/firmware/dahdi-firmware-nonfree_2.11.1.0.20170917-1_all.deb
@@ -326,9 +326,7 @@ l binary/firmware/firmware-ti-connectivity_20210315-3_all.deb
 l binary/firmware/firmware-atheros_20210315-3_all.deb
 l binary/firmware/firmware-intelwimax_20210315-3_all.deb
 l binary/firmware/firmware-iwlwifi_20210315-3_all.deb
-l binary/firmware/wireless-regdb_2020.04.29-2_all.deb
 l binary/firmware/firmware-intel-sound_20210315-3_all.deb
-l binary/firmware/intel-microcode_3.20220207.1~deb11u1_amd64.deb
 l binary/firmware/firmware-ath9k-htc_1.4.0-106-gc583009+dfsg1-1_all.deb
 l binary/firmware/firmware-qcom-soc_20210315-3_all.deb
 l binary/firmware/firmware-samsung_20210315-3_all.deb
@@ -339,6 +337,8 @@ l binary/firmware/firmware-libertas_20210315-3_all.deb
 l binary/firmware/ixo-usb-jtag_0.0.1-2_all.deb
 l binary/firmware/firmware-qlogic_20210315-3_all.deb
 l binary/firmware/firmware-cavium_20210315-3_all.deb
+l binary/firmware/amd64-microcode_3.20230808.1.1~deb11u1_amd64.deb
+l binary/firmware/intel-microcode_3.20230808.1~deb11u1_amd64.deb
 l binary/firmware/firmware-myricom_20210315-3_all.deb
 l binary/firmware/firmware-sof-signed_1.7-1_all.deb
 l binary/firmware/firmware-netronome_20210315-3_all.deb
