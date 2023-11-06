@@ -17,8 +17,8 @@ config: clean
 	--mirror-bootstrap $(MIRROR) \
 	--mirror-binary $(MIRROR) \
 	--mirror-chroot $(MIRROR) \
-	--archive-areas "main contrib non-free" \
-	--parent-archive-areas "main contrib non-free" \
+	--archive-areas "main contrib non-free non-free-firmware" \
+	--parent-archive-areas "main contrib non-free non-free-firmware" \
 	--apt-options "--fix-missing --yes -oAcquire::Check-Valid-Until=false" \
 	--bootappend-live "boot=live config quiet splash persistence" \
 	--apt-secure false \
@@ -27,7 +27,7 @@ config: clean
         --linux-packages "linux-image linux-headers" \
 	--win32-loader false \
 	--iso-volume "MathLibre" \
-#       --distribution "bullseye" \
+#       --distribution "bookworm" \
 #       --parent-mirror-binary-backports "http://ftp.debian.org/debian/" \
 #	--binary-images hdd \
 
