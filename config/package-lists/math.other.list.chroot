@@ -69,7 +69,7 @@ nzmath-doc
 reduce-algebra
 #saclib
 #sage-desktop
-setxkbmap-gadget
+#setxkbmap-gadget
 sollya
 # Singular is supported from Debian "stretch"
 #singular

@@ -52,7 +52,8 @@ libmagickcore-6.q16-6
 libmail-sendmail-perl
 libmpfr-dev
 libncurses5-dev
-libotf0
+#libotf0 is not available in bookworm.
+libotf1
 libperl-dev
 libplot2c2
 libpstoedit0c2a

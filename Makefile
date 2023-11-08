@@ -27,7 +27,7 @@ config: clean
         --linux-packages "linux-image linux-headers" \
 	--win32-loader false \
 	--iso-volume "MathLibre" \
-#       --distribution "bookworm" \
+       --distribution "bookworm" \
 #       --parent-mirror-binary-backports "http://ftp.debian.org/debian/" \
 #	--binary-images hdd \
 

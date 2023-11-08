@@ -13,7 +13,7 @@ coq-theories
 # drgeo is not available in jessie.
 dosbox
 elpa-macaulay2
-ess
+# ess is not available in bookworm.
 eukleides
 euler
 evolver
@@ -65,10 +65,13 @@ kakasi-dic
 #kmplot
 latexmk
 lcalc
-libclang-11-dev
+# for bookworm
+libclang-13-dev
 libcgal-dev
 libfile-mmagic-perl
-libflint-2.6.3 
+#libflint-2.6.3 
+# for bookworm
+libflint-dev
 libgsl0-dev
 #libjas-java
 libjs-mathjax
@@ -76,7 +79,8 @@ libkakasi2
 liblog4j2-java
 # libcoq-mathcomp will be in bookworm
 libnkf-perl
-libntl43
+# for bookworm
+libntl44 
 libopenblas-dev
 libosgi-core-java
 libphat-dev
@@ -150,7 +154,7 @@ python3-termcolor
 python3-tk
 python3-tornado
 python3-werkzeug
-python3-keras
+# python3-keras # no package on bookworm
 python3-rope
 qhull-bin
 r-base
@@ -173,7 +177,8 @@ sagemath
 # scratch
 sketch
 # snappea
-spyder3
+#spyder3 for bookworm
+spyder
 # step
 surf-alggeo
 surf-alggeo-nox
