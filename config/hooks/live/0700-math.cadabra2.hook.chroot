@@ -3,5 +3,5 @@ if [ ! -e /usr/lib/python3.11/site-packages ]; then
   mkdir /usr/lib/python3.11/site-packages
 fi
 if [ -f /usr/lib/python3/dist-packages/cadabra2_defaults.py ]; then
-  ln -s /usr/lib/python3/dist-packages/cadabra2_defaults.py /usr/lib/python3.9/site-packages/cadabra2_defaults.py
+  ln -s /usr/lib/python3/dist-packages/cadabra2_defaults.py /usr/lib/python3.11/site-packages/cadabra2_defaults.py
 fi
