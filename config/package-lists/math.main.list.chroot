@@ -7,17 +7,17 @@ bison
 cadabra2
 # cafeobj
 # calibre
-coq
-coqide
-coq-theories
+# coq
+# coqide
+# coq-theories
 # drgeo is not available in jessie.
 dosbox
 elpa-macaulay2
 # ess is not available in bookworm.
-eukleides
-euler
-evolver
-evolver-doc
+# eukleides
+# euler
+# evolver
+# evolver-doc
 flex
 fraqtive
 freefem++
@@ -36,7 +36,7 @@ gap-table-of-marks
 # gap-trans-groups
 # gauche
 # genus2reduction is not available in jessie.
-geomview
+# geomview
 gfan
 # ghc
 ginac-tools
@@ -122,8 +122,8 @@ pdftk
 pdfgrep
 phat-utils
 polymake
-povray
-povray-includes
+# povray
+# povray-includes
 # proofgeneral is not available in buster, but available in sid.
 # proofgeneral
 # proofgeneral-doc
@@ -157,17 +157,17 @@ python3-werkzeug
 # python3-keras # no package on bookworm
 python3-rope
 qhull-bin
-r-base
-r-base-core
-r-base-dev
-regina-normal
+# r-base
+# r-base-core
+# r-base-dev
+# regina-normal
 # rkward for 2019
 # rocs for 2019
 ruby-fftw3
 ruby-gsl
 ruby-gtk2
 ruby-sqlite3
-sagemath
+# sagemath
 # scilab
 # scilab-cli
 # scilab-data

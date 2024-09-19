@@ -52,6 +52,9 @@ blt	2.5.3+dfsg-4.1
 bluetooth	5.66-1+deb12u2
 bluez	5.66-1+deb12u2
 bluez-firmware	1.2-9
+broadcom-sta-common	6.30.223.271-23
+broadcom-sta-dkms	6.30.223.271-23
+broadcom-sta-source	6.30.223.271-23
 bsdextrautils	2.38.1-5+deb12u1
 bsdutils	1:2.38.1-5+deb12u1
 bubblewrap	0.8.0-2+deb12u1
@@ -80,8 +83,9 @@ colord-data	1.4.6-2.2
 comerr-dev:amd64	2.1-1.47.0-2
 connman	1.41-3
 connman-gtk	1.1.1+git20180626.b72c6ab-3
+console-setup	1.221
+console-setup-linux	1.221
 coq	8.16.1+dfsg-1+b2
-coqide	8.16.1+dfsg-1+b2
 coreutils	9.1-1
 cpio	2.13+dfsg-7.1
 cpp	4:12.2.0-3
@@ -141,6 +145,7 @@ dh-strip-nondeterminism	1.13.1-1
 dictionaries-common	1.29.5
 diffutils	1:3.8-4
 dirmngr	2.2.40-1.1
+dkms	3.0.10-8+deb12u1
 dmidecode	3.4-1
 dmsetup	2:1.02.185-2
 doc-base	0.11.1
@@ -170,13 +175,8 @@ emacsen-common	3.0.5
 enchant-2	2.3.3-2
 epstool	3.09-4
 espeak-ng-data:amd64	1.51+dfsg-10+deb12u1
-eukleides	1.5.4-5
-euler	1.61.0-12
 evince	43.1-2+b1
 evince-common	43.1-2
-evolver	2.70+ds-8
-evolver-doc	2.70+ds-8
-evolver-nox	2.70+ds-8+b1
 exfatprogs	1.2.0-1+deb12u1
 exim4-base	4.96-15+deb12u5
 exim4-config	4.96-15+deb12u5
@@ -231,6 +231,7 @@ firmware-misc-nonfree	20230210-5
 firmware-myricom	20230210-5
 firmware-netronome	20230210-5
 firmware-netxen	20230210-5
+firmware-nvidia-gsp	535.183.01-1~deb12u1
 firmware-nvidia-tesla-gsp	525.147.05-7~deb12u1
 firmware-qcom-soc	20230210-5
 firmware-qlogic	20230210-5
@@ -273,7 +274,6 @@ fonts-mathjax-extras	2.7.9+dfsg-1
 fonts-noto-color-emoji	2.042-0+deb12u1
 fonts-noto-mono	20201225-1
 fonts-opensymbol	4:102.12+LibO7.4.7-1+deb12u5
-fonts-povray	1:3.7.0.10-2
 fonts-quicksand	0.2016-2.1
 fonts-sil-padauk	5.000-3
 fonts-symbola	2.60-1.1
@@ -360,7 +360,6 @@ gedit	44.2-1
 gedit-common	44.2-1
 geoclue-2.0	2.6.0-2
 geoip-database	20230203-1
-geomview	1.9.5-4+b1
 gettext	0.21-12
 gettext-base	0.21-12
 gfan	0.6.2-6+b1
@@ -513,6 +512,7 @@ jupyter-nbextension-jupyter-js-widgets	6.0.0-11
 jupyter-notebook	6.4.12-2.2
 kakasi-dic	2.3.6-4.1
 kasumi	2.5-11
+kbd	2.5.1-1+b1
 keyboard-configuration	1.221
 klibc-utils	2.0.12-1
 kmod	30+20221128-1
@@ -786,6 +786,7 @@ libcrypt1:amd64	1:4.4.33-2
 libcryptsetup12:amd64	2:2.6.1-4~deb12u2
 libctf-nobfd0:amd64	2.40-2
 libctf0:amd64	2.40-2
+libcuda1:amd64	535.183.01-1~deb12u1
 libcue2:amd64	2.2.1-4+deb12u1
 libcups2:amd64	2.4.2-3+deb12u7
 libcupsfilters1:amd64	1.28.17-3
@@ -864,6 +865,7 @@ libecm1-dev:amd64	7.0.5+ds-1
 libecm1-dev-common	7.0.5+ds-1
 libedit2:amd64	3.1-20221030-2
 libegl-mesa0:amd64	22.3.6-1+deb12u1
+libegl-nvidia0:amd64	535.183.01-1~deb12u1
 libegl1:amd64	1.6.0-1
 libeigen3-dev	3.4.0-4
 libelf1:amd64	0.188-2.1
@@ -1001,7 +1003,6 @@ libgdk-pixbuf2.0-common	2.42.10+dfsg-1+deb12u1
 libgegl-0.4-0:amd64	1:0.4.42-2
 libgegl-common	1:0.4.42-2
 libgeoip1:amd64	1.6.12-10
-libgeomview-1.9.5	1.9.5-4+b1
 libgeos-c1v5:amd64	3.11.1-1
 libgeos3.11.1:amd64	3.11.1-1
 libgeotiff5:amd64	1.7.1-2+b1
@@ -1024,8 +1025,12 @@ libgivaro9:amd64	4.2.0-3
 libgl-dev:amd64	1.6.0-1
 libgl1:amd64	1.6.0-1
 libgl1-mesa-dri:amd64	22.3.6-1+deb12u1
+libgl1-nvidia-glvnd-glx:amd64	535.183.01-1~deb12u1
 libgl2ps1.4	1.4.2+dfsg1-2
 libglapi-mesa:amd64	22.3.6-1+deb12u1
+libgles-nvidia1:amd64	535.183.01-1~deb12u1
+libgles-nvidia2:amd64	535.183.01-1~deb12u1
+libgles1:amd64	1.6.0-1
 libgles2:amd64	1.6.0-1
 libglew2.2:amd64	2.2.0-4+b1
 libglib-object-introspection-perl	0.049-3
@@ -1041,6 +1046,7 @@ libglut3.12:amd64	3.4.0-1
 libglvnd0:amd64	1.6.0-1
 libglx-dev:amd64	1.6.0-1
 libglx-mesa0:amd64	22.3.6-1+deb12u1
+libglx-nvidia0:amd64	535.183.01-1~deb12u1
 libglx0:amd64	1.6.0-1
 libgme0:amd64	0.6.3-6
 libgmp-dev:amd64	2:6.2.1+dfsg1-1.1
@@ -1094,8 +1100,6 @@ libgtk2.0-bin	2.24.33-2+deb12u1
 libgtk2.0-common	2.24.33-2+deb12u1
 libgtk3-perl	0.038-3
 libgtkmm-3.0-1v5:amd64	3.24.7-1
-libgtksourceview-3.0-1:amd64	3.24.11-2+b1
-libgtksourceview-3.0-common	3.24.11-2
 libgtksourceview-4-0:amd64	4.8.4-4
 libgtksourceview-4-common	4.8.4-4
 libgts-0.7-5:amd64	0.7.6+darcs121130-5+b1
@@ -1381,7 +1385,6 @@ libmongodb-java	3.6.3-2
 libmongodb-perl	2.2.2-2
 libmongoose2:amd64	1:5.12.0+dfsg-2
 libmoo-perl	2.005005-1
-libmotif-common	2.3.8-3
 libmount1:amd64	2.38.1-5+deb12u1
 libmousepad0:amd64	0.5.10-2
 libmp3lame0:amd64	3.100-6
@@ -1464,6 +1467,19 @@ libnuma1:amd64	2.0.16-1
 libnumber-compare-perl	0.03-3
 libnumbertext-1.0-0:amd64	1.0.11-1
 libnumbertext-data	1.0.11-1
+libnvcuvid1:amd64	535.183.01-1~deb12u1
+libnvidia-allocator1:amd64	535.183.01-1~deb12u1
+libnvidia-cfg1:amd64	535.183.01-1~deb12u1
+libnvidia-egl-gbm1:amd64	1.1.0-2
+libnvidia-egl-wayland1:amd64	1:1.1.10-1
+libnvidia-eglcore:amd64	535.183.01-1~deb12u1
+libnvidia-encode1:amd64	535.183.01-1~deb12u1
+libnvidia-glcore:amd64	535.183.01-1~deb12u1
+libnvidia-glvkspirv:amd64	535.183.01-1~deb12u1
+libnvidia-ml1:amd64	535.183.01-1~deb12u1
+libnvidia-pkcs11-openssl3:amd64	535.183.01-1~deb12u1
+libnvidia-ptxjitcompiler1:amd64	535.183.01-1~deb12u1
+libnvidia-rtcore:amd64	535.183.01-1~deb12u1
 libobjc-12-dev:amd64	12.2.0-14
 libobjc4:amd64	12.2.0-14
 libobrender32v5	3.6.1-10
@@ -1689,9 +1705,6 @@ libqt6core6:amd64	6.4.2+dfsg-10
 libqt6dbus6:amd64	6.4.2+dfsg-10
 libqt6gui6:amd64	6.4.2+dfsg-10
 libqt6network6:amd64	6.4.2+dfsg-10
-libqt6svg6:amd64	6.4.2-2
-libqt6svgwidgets6:amd64	6.4.2-2
-libqt6widgets6:amd64	6.4.2+dfsg-10
 libqtermwidget5-1:amd64	1.2.0-2
 libquadmath0:amd64	12.2.0-14
 libquazip5-1:amd64	0.9.1-3
@@ -1922,7 +1935,6 @@ libtirpc-common	1.3.3+ds-1
 libtirpc-dev:amd64	1.3.3+ds-1
 libtirpc3:amd64	1.3.3+ds-1
 libtk8.6:amd64	8.6.13-2
-libtokyocabinet9:amd64	1.4.48-15
 libtomcrypt1:amd64	1.18.2-6
 libtommath1:amd64	1.2.0-6+deb12u1
 libtool	2.4.7-7~deb12u1
@@ -2100,7 +2112,6 @@ libxkbcommon0:amd64	1.5.0-1
 libxkbfile1:amd64	1:1.1.0-1
 libxkbregistry0:amd64	1.5.0-1
 libxklavier16:amd64	5.4-4
-libxm4:amd64	2.3.8-3
 libxml-dom-perl	1.46-2
 libxml-filter-xslt-perl	0.03-10
 libxml-libxml-perl	2.0207+dfsg+really+2.0134-1+b1
@@ -2277,6 +2288,7 @@ mime-support	3.66
 miscfiles	1.5+dfsg-4
 mmm-mode	0.5.8-4
 modemmanager	1.20.4-1
+module-assistant	0.11.11
 mount	2.38.1-5+deb12u1
 mousepad	0.5.10-2
 mozc-data	2.28.4715.102+dfsg-2.2
@@ -2311,11 +2323,28 @@ ntpsec-ntpdate	1.2.2+dfsg1-1+deb12u1
 ntpsec-ntpdig	1.2.2+dfsg1-1+deb12u1
 numba-doc	0.56.4+dfsg-2
 numlockx	1.2-9
+nvidia-alternative	535.183.01-1~deb12u1
+nvidia-driver	535.183.01-1~deb12u1
+nvidia-driver-bin	535.183.01-1~deb12u1
+nvidia-driver-libs:amd64	535.183.01-1~deb12u1
+nvidia-egl-common	535.183.01-1~deb12u1
+nvidia-egl-icd:amd64	535.183.01-1~deb12u1
 nvidia-installer-cleanup	20220217+3~deb12u1
 nvidia-kernel-common	20220217+3~deb12u1
+nvidia-kernel-dkms	535.183.01-1~deb12u1
+nvidia-kernel-support	535.183.01-1~deb12u1
+nvidia-legacy-check	535.183.01-1~deb12u1
 nvidia-modprobe	535.161.07-1~deb12u1
+nvidia-persistenced	535.171.04-1~deb12u1
+nvidia-settings	535.171.04-1~deb12u1
+nvidia-smi	535.183.01-1~deb12u1
+nvidia-support	20220217+3~deb12u1
+nvidia-suspend-common	535.183.01-1~deb12u1
 nvidia-tesla-470-alternative	470.256.02-1~deb12u1
 nvidia-tesla-470-kernel-support	470.256.02-1~deb12u1
+nvidia-vdpau-driver:amd64	535.183.01-1~deb12u1
+nvidia-vulkan-common	535.183.01-1~deb12u1
+nvidia-vulkan-icd:amd64	535.183.01-1~deb12u1
 obconf	1:2.0.4+git20150213-2+b1
 ocaml	4.13.1-4
 ocaml-base	4.13.1-4
@@ -2358,6 +2387,7 @@ passwd	1:4.13+dfsg1-1+b1
 patch	2.7.6-7
 pavucontrol	5.0-2
 pci.ids	0.0~2023.04.11-1
+pciutils	1:3.9.0-4
 pcmanfm	1.3.2-1
 pdfgrep	2.1.2-1
 pdftk	2.02-5+b1
@@ -2367,6 +2397,7 @@ perl-base	5.36.0-7+deb12u1
 perl-modules-5.36	5.36.0-7+deb12u1
 perl-openssl-defaults:amd64	7+b1
 perl-tk	1:804.036-1+b2
+pgplot5	5.2.2-19.5
 phat-utils	1.6-2+b4
 phonon4qt5:amd64	4:4.11.1-4
 phonon4qt5-backend-vlc:amd64	0.11.3-1
@@ -2390,8 +2421,6 @@ polymake	4.6-5+b2
 polymake-common	4.6-5
 poppler-data	0.4.12-1
 poppler-utils	22.12.0-2+b1
-povray	1:3.7.0.10-2+b2
-povray-includes	1:3.7.0.10-2
 powertop	2.14-1+b2
 ppl-dev	1:1.2-8.1+b1
 presage	0.9.1-2.5
@@ -2653,7 +2682,6 @@ python3-ruamel.yaml	0.17.21-1
 python3-ruamel.yaml.clib:amd64	0.2.7-1+b2
 python3-sage	9.5-6
 python3-sagenb-export	3.2-4
-python3-sagetex	3.6.1+ds-1
 python3-scipy	1.10.1-2
 python3-secretstorage	3.3.3-1
 python3-send2trash	1.8.1~b0-2
@@ -2732,10 +2760,8 @@ qtermwidget5-data	1.2.0-2
 qtspeech5-speechd-plugin:amd64	5.15.8-2
 qttranslations5-l10n	5.15.8-2
 qtwayland5:amd64	5.15.8-2
-r-base	4.2.2.20221110-2
 r-base-core	4.2.2.20221110-2
 r-base-dev	4.2.2.20221110-2
-r-base-html	4.2.2.20221110-2
 r-cran-boot	1.3-28.1-1
 r-cran-class	7.3-21-1
 r-cran-cluster	2.1.4-1
@@ -2756,8 +2782,6 @@ r-recommended	4.2.2.20221110-2
 rake	13.0.6-3
 raspi-firmware	1.20220830+ds-1
 readline-common	8.2-1.3
-regina-normal	7.3-2
-regina-normal-doc	7.3-2
 rlwrap	0.46.1-1
 rpcsvc-proto	1.4.3-1
 rpm	4.18.0+dfsg-1+deb12u1
@@ -2789,15 +2813,11 @@ ruby-webrick	1.8.1-1
 ruby-xmlrpc	0.3.2-2
 ruby3.1	3.1.2-7+deb12u1
 rubygems-integration	1.18
-sagemath	9.5-6
 sagemath-database-conway-polynomials	0.5-8
 sagemath-database-elliptic-curves	0.8.1-5
 sagemath-database-graphs	20210214+dfsg-1
 sagemath-database-mutually-combinatorial-designs	20140630-6
 sagemath-database-polytopes	20170220-5
-sagemath-doc	9.5-6
-sagemath-jupyter	9.5-6
-sagetex	3.6.1+ds-1
 samba-libs:amd64	2:4.17.12+dfsg-0+deb12u1
 sane-airscan	0.99.27-1+b1
 sane-utils	1.2.1-2
@@ -3005,6 +3025,7 @@ xserver-xorg-video-ati	1:19.1.0-3
 xserver-xorg-video-fbdev	1:0.5.0-2
 xserver-xorg-video-intel	2:2.99.917+git20210115-1
 xserver-xorg-video-nouveau	1:1.0.17-2
+xserver-xorg-video-nvidia	535.183.01-1~deb12u1
 xserver-xorg-video-qxl	0.1.5+git20200331-3
 xserver-xorg-video-radeon	1:19.1.0-3
 xserver-xorg-video-vesa	1:2.5.0-1+b1
