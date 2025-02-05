@@ -611,7 +611,7 @@
 /firmware/firmware-zd1211_1%3a1.5-10_all.deb
 /firmware/hdmi2usb-fx2-firmware_0.0.0~git20151225-3_all.deb
 /firmware/indi-dsi_0.4+20221223123028-1_amd64.deb
-/firmware/intel-microcode_3.20240813.1~deb12u1_amd64.deb
+/firmware/intel-microcode_3.20241112.1~deb12u1_amd64.deb
 /firmware/ixo-usb-jtag_0.0.1-2_all.deb
 /firmware/libfishcamp1_1.2+20220607003151-1_amd64.deb
 /firmware/libsbig4_4.9.9-4_amd64.deb
@@ -650,9 +650,9 @@
 /live/filesystem.packages
 /live/filesystem.squashfs
 /live/initrd.img
-/live/initrd.img-6.1.0-25-amd64
+/live/initrd.img-6.1.0-30-amd64
 /live/vmlinuz
-/live/vmlinuz-6.1.0-25-amd64
+/live/vmlinuz-6.1.0-30-amd64
 /md5sum.README
 /md5sum.txt
 /pool
@@ -1223,7 +1223,7 @@
 /pool/main/c/cryptsetup/cryptsetup-initramfs_2%3a2.6.1-4~deb12u2_all.deb
 /pool/main/c/cryptsetup/cryptsetup_2%3a2.6.1-4~deb12u2_amd64.deb
 /pool/main/c/curl
-/pool/main/c/curl/libcurl3-gnutls_7.88.1-10+deb12u7_amd64.deb
+/pool/main/c/curl/libcurl3-gnutls_7.88.1-10+deb12u8_amd64.deb
 /pool/main/c/cyrus-sasl2
 /pool/main/c/cyrus-sasl2/libsasl2-2_2.1.28+dfsg-10_amd64.deb
 /pool/main/c/cyrus-sasl2/libsasl2-modules-db_2.1.28+dfsg-10_amd64.deb
@@ -1299,8 +1299,8 @@
 /pool/main/l/linux-base
 /pool/main/l/linux-base/linux-base_4.9_all.deb
 /pool/main/l/linux-signed-amd64
-/pool/main/l/linux-signed-amd64/linux-image-6.1.0-25-amd64_6.1.106-3_amd64.deb
-/pool/main/l/linux-signed-amd64/linux-image-amd64_6.1.106-3_amd64.deb
+/pool/main/l/linux-signed-amd64/linux-image-6.1.0-30-amd64_6.1.124-1_amd64.deb
+/pool/main/l/linux-signed-amd64/linux-image-amd64_6.1.124-1_amd64.deb
 /pool/main/l/lvm2
 /pool/main/l/lvm2/dmeventd_2%3a1.02.185-2_amd64.deb
 /pool/main/l/lvm2/libdevmapper-event1.02.1_2%3a1.02.185-2_amd64.deb
@@ -1362,7 +1362,7 @@
 /pool/main/m/mokutil/mokutil_0.6.0-2_amd64.deb
 /pool/main/n
 /pool/main/n/nghttp2
-/pool/main/n/nghttp2/libnghttp2-14_1.52.0-1+deb12u1_amd64.deb
+/pool/main/n/nghttp2/libnghttp2-14_1.52.0-1+deb12u2_amd64.deb
 /pool/main/o
 /pool/main/o/open-ath9k-htc-firmware
 /pool/main/o/open-ath9k-htc-firmware/firmware-ath9k-htc_1.4.0-108-gd856466+dfsg1-1.3+deb12u1_all.deb
@@ -1376,10 +1376,10 @@
 /pool/main/p/python3-defaults/python3-minimal_3.11.2-1+b1_amd64.deb
 /pool/main/p/python3-defaults/python3_3.11.2-1+b1_amd64.deb
 /pool/main/p/python3.11
-/pool/main/p/python3.11/libpython3.11-minimal_3.11.2-6+deb12u3_amd64.deb
-/pool/main/p/python3.11/libpython3.11-stdlib_3.11.2-6+deb12u3_amd64.deb
-/pool/main/p/python3.11/python3.11-minimal_3.11.2-6+deb12u3_amd64.deb
-/pool/main/p/python3.11/python3.11_3.11.2-6+deb12u3_amd64.deb
+/pool/main/p/python3.11/libpython3.11-minimal_3.11.2-6+deb12u5_amd64.deb
+/pool/main/p/python3.11/libpython3.11-stdlib_3.11.2-6+deb12u5_amd64.deb
+/pool/main/p/python3.11/python3.11-minimal_3.11.2-6+deb12u5_amd64.deb
+/pool/main/p/python3.11/python3.11_3.11.2-6+deb12u5_amd64.deb
 /pool/main/r
 /pool/main/r/rtmpdump
 /pool/main/r/rtmpdump/librtmp1_2.4+20151223.gitfa8646d.1-2+b2_amd64.deb
@@ -1392,10 +1392,10 @@
 /pool/main/s/shim-signed/shim-signed_1.44~1+deb12u1+15.8-1~deb12u1_amd64.deb
 /pool/main/s/shim/shim-unsigned_15.8-1~deb12u1_amd64.deb
 /pool/main/s/sqlite3
-/pool/main/s/sqlite3/libsqlite3-0_3.40.1-2_amd64.deb
+/pool/main/s/sqlite3/libsqlite3-0_3.40.1-2+deb12u1_amd64.deb
 /pool/main/u
 /pool/main/u/ucf
-/pool/main/u/ucf/ucf_3.0043+nmu1_all.deb
+/pool/main/u/ucf/ucf_3.0043+nmu1+deb12u1_all.deb
 /pool/main/w
 /pool/main/w/wireless-regdb
 /pool/main/w/wireless-regdb/wireless-regdb_2022.06.06-1_all.deb
@@ -1448,7 +1448,7 @@
 /pool/non-free-firmware/f/firmware-sof/firmware-sof-signed_2.2.4-1_all.deb
 /pool/non-free-firmware/i
 /pool/non-free-firmware/i/intel-microcode
-/pool/non-free-firmware/i/intel-microcode/intel-microcode_3.20240813.1~deb12u1_amd64.deb
+/pool/non-free-firmware/i/intel-microcode/intel-microcode_3.20241112.1~deb12u1_amd64.deb
 /pool/non-free-firmware/n
 /pool/non-free-firmware/n/nvidia-graphics-drivers-tesla
 /pool/non-free-firmware/n/nvidia-graphics-drivers-tesla/firmware-nvidia-tesla-gsp_525.147.05-7~deb12u1_amd64.deb

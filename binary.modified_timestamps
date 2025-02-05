@@ -2,7 +2,7 @@ d binary
 f binary/efi.img
 f binary/sha256sum.README
 d binary/live
-f binary/live/initrd.img-6.1.0-25-amd64
+f binary/live/initrd.img
 f binary/live/filesystem.squashfs
 f binary/live/filesystem.packages
 d binary/tools
@@ -269,12 +269,12 @@ l binary/firmware/alsa-topology-conf_1.2.5.1-2_all.deb
 l binary/firmware/firmware-ath9k-htc_1.4.0-108-gd856466+dfsg1-1.3+deb12u1_all.deb
 l binary/firmware/firmware-ti-connectivity_20230210-5_all.deb
 l binary/firmware/firmware-cavium_20230210-5_all.deb
+l binary/firmware/intel-microcode_3.20241112.1~deb12u1_amd64.deb
 l binary/firmware/firmware-netronome_20230210-5_all.deb
 l binary/firmware/firmware-brcm80211_20230210-5_all.deb
 l binary/firmware/firmware-myricom_20230210-5_all.deb
 l binary/firmware/firmware-siano_20230210-5_all.deb
 l binary/firmware/atmel-firmware_1.3-7_all.deb
-l binary/firmware/intel-microcode_3.20240813.1~deb12u1_amd64.deb
 l binary/firmware/firmware-samsung_20230210-5_all.deb
 l binary/firmware/bluez-firmware_1.2-9_all.deb
 l binary/firmware/dahdi-firmware-nonfree_2.11.1.0.20170917-2_all.deb

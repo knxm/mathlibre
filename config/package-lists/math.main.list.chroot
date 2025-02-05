@@ -7,8 +7,8 @@ bison
 cadabra2
 # cafeobj
 # calibre
-# coq
-# coqide
+#coq
+coqide
 # coq-theories
 # drgeo is not available in jessie.
 dosbox
@@ -84,7 +84,7 @@ libntl44
 libopenblas-dev
 libosgi-core-java
 libphat-dev
-libssreflect-coq
+# libssreflect-coq
 libslf4j-java
 libtext-kakasi-perl
 libtet1.5
@@ -129,7 +129,7 @@ polymake
 # proofgeneral-doc
 # prover9-doc
 # prover9-mace4
-pspp
+# pspp
 # python-visual is not available in buster.
 python3-dev
 python3-setuptools
@@ -157,9 +157,9 @@ python3-werkzeug
 # python3-keras # no package on bookworm
 python3-rope
 qhull-bin
-# r-base
-# r-base-core
-# r-base-dev
+r-base
+r-base-core
+r-base-dev
 # regina-normal
 # rkward for 2019
 # rocs for 2019
@@ -190,15 +190,15 @@ texlive
 texlive-luatex
 texlive-xetex
 # texmacs is not available in stretch, but available in jessie.
-texmaker
-texstudio
-texworks
+# texmaker
+# texstudio
+# texworks
 xaos
 # xgraph is not availabe in jessie.
 xmaxima
 #wxmaxima for 2019
-yacas
-yorick-doc
-yorick-hdf5
-yorick-soy
-yorick-z
+# yacas
+# yorick-doc
+# yorick-hdf5
+# yorick-soy
+# yorick-z
