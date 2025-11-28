@@ -3,7 +3,7 @@
 #
 # Eg:  make lang=ja
 #
-MIRROR="http://ftp.debian.org/debian/"
+MIRROR="http://deb.debian.org/debian/"
 
 all: build
 
@@ -11,6 +11,7 @@ config: clean
 	lb config \
 	--apt-http-proxy "http://localhost:3142" \
 	--architectures amd64 \
+	--bootappend-live "boot=live config quiet splash persistence username=user autologin" \
 	--backports false \
 	--parent-mirror-bootstrap $(MIRROR) \
 	--parent-mirror-binary $(MIRROR) \
@@ -20,14 +21,13 @@ config: clean
 	--archive-areas "main contrib non-free non-free-firmware" \
 	--parent-archive-areas "main contrib non-free non-free-firmware" \
 	--apt-options "--fix-missing --yes -oAcquire::Check-Valid-Until=false" \
-	--bootappend-live "boot=live config quiet splash persistence username=user autologin" \
 	--apt-secure false \
 	--linux-flavours amd64 \
 	--debian-installer live \
         --linux-packages "linux-image linux-headers" \
 	--win32-loader false \
 	--iso-volume "MathLibre" \
-        --distribution "bookworm" \
+        --distribution "trixie" \
 #       --parent-mirror-binary-backports "http://ftp.debian.org/debian/" \
 #	--binary-images hdd \
 
