@@ -20,7 +20,8 @@ firmware-linux-nonfree
 firmware-misc-nonfree
 firmware-myricom
 firmware-netxen
-firmware-qcom-soc
+# for snapdragon
+# firmware-qcom-soc
 firmware-qlogic
 # firmware-ralink
 firmware-realtek
