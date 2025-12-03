@@ -10,20 +10,24 @@ firmware-atheros
 firmware-bnx2
 firmware-bnx2x
 firmware-brcm80211
-firmware-intelwimax
+#firmware-intelwimax
 firmware-ipw2x00
 firmware-ivtv
 firmware-iwlwifi
 firmware-libertas
 firmware-linux
 firmware-linux-nonfree
+firmware-misc-nonfree
 firmware-myricom
 firmware-netxen
+# for snapdragon
+# firmware-qcom-soc
 firmware-qlogic
-firmware-ralink
+# firmware-ralink
 firmware-realtek
 intel-microcode
-zd1211-firmware
+# zd1211-firmware
+firmware-zd1211
 xserver-xorg-video-nvidia
 #endif
 #
