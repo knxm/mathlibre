@@ -232,7 +232,6 @@ firmware-netxen	20250410-2
 firmware-nvidia-graphics	20250410-2
 firmware-nvidia-gsp	550.163.01-2
 firmware-nvidia-tesla-535-gsp	535.274.02-1~deb13u1
-firmware-qcom-soc	20250410-2
 firmware-qlogic	20250410-2
 firmware-realtek	20250410-2
 firmware-siano	20250410-2
@@ -306,8 +305,6 @@ fonts-unifont	1:15.1.01-1
 fonts-urw-base35	20200910-8
 fonts-vlgothic	20220612-1
 fraqtive	0.4.8.1-1+b1
-freefem++	4.15+dfsg-1
-freefem++-doc	4.15+dfsg-1
 fuse3	3.17.2-3
 fxload	0.0.20081013-3
 fzf	0.60.3-1+b2
@@ -459,7 +456,6 @@ html2text	2.2.3-3
 hunspell-en-us	1:2020.12.07-4
 hyphen-en-us	2.8.8-7
 i965-va-driver:amd64	2.4.1+dfsg1-2
-ibverbs-providers:amd64	56.1-1
 icu-devtools	76.1-4
 ifupdown	0.8.44
 iio-sensor-proxy	3.7-3
@@ -534,9 +530,7 @@ libalgorithm-c3-perl	0.11-2
 libalgorithm-diff-perl	1.201-1
 libalgorithm-diff-xs-perl	0.04-9
 libalgorithm-merge-perl	0.08-5
-libamd-comgr2:amd64	6.0+git20231212.4510c28+dfsg-3+b2
 libamd3:amd64	1:7.10.1+dfsg-1
-libamdhip64-5:amd64	5.7.1-6+deb13u1
 libann0	1.1.2+doc-9+b1
 libanthy1t64:amd64	1:0.4-3+b1
 libanthyinput0t64:amd64	1:0.4-3+b1
@@ -838,7 +832,6 @@ libexttextcat-2.0-0:amd64	3.4.7-1+b1
 libexttextcat-data	3.4.7-1
 libextutils-depends-perl	0.8002-1
 libfaad2:amd64	2.11.2-1
-libfabric1:amd64	2.1.0-1.1
 libfakeroot:amd64	1.37.1.1-1
 libfastjson4:amd64	1.2304.0-2
 libfcitx-config4:amd64	1:4.2.9.9-2+b1
@@ -948,7 +941,6 @@ libglib2.0-data	2.84.4-3~deb13u1
 libglibmm-2.4-1t64:amd64	2.66.8-1
 libglpk40:amd64	5.0-1+b2
 libglu1-mesa:amd64	9.0.2-1.1+b3
-libglut3.12:amd64	3.4.0-4
 libglvnd0:amd64	1.7.0-1+b2
 libglx-mesa0:amd64	25.0.7-2
 libglx-nvidia0:amd64	550.163.01-2
@@ -1036,8 +1028,6 @@ libheif-plugin-x265:amd64	1.19.8-1
 libheif1:amd64	1.19.8-1
 libhidapi-hidraw0:amd64	0.14.0-1+b2
 libhogweed6t64:amd64	3.10.1-1
-libhsa-runtime64-1:amd64	6.1.2-3
-libhsakmt1:amd64	6.2.4+ds-1
 libhtml-form-perl	6.12-1
 libhtml-format-perl	2.16-2
 libhtml-parser-perl:amd64	3.83-1+b2
@@ -1056,9 +1046,6 @@ libhwloc-plugins:amd64	2.12.0-4
 libhwloc15:amd64	2.12.0-4
 libhwy1t64:amd64	1.2.0-2+b2
 libhyphen0:amd64	2.8.8-7+b2
-libibmad5:amd64	56.1-1
-libibumad3:amd64	56.1-1
-libibverbs1:amd64	56.1-1
 libice-dev:amd64	2:1.1.1-1
 libice6:amd64	2:1.1.1-1
 libicu-dev:amd64	76.1-4
@@ -1166,7 +1153,6 @@ liblightcouch-java	0.2.0-1
 liblightdm-gobject-1-0:amd64	1.32.0-6+b2
 liblilv-0-0:amd64	0.24.26-1
 liblirc-client0t64:amd64	0.10.2-0.10
-libllvm17t64:amd64	1:17.0.6-22+b2
 libllvm18:amd64	1:18.1.8-18+b1
 libllvm19:amd64	1:19.1.7-3+b1
 liblmdb0:amd64	0.9.31-1+b2
@@ -1259,7 +1245,6 @@ libmtp-common	1.1.22-1
 libmtp-runtime	1.1.22-1
 libmtp9t64:amd64	1.1.22-1
 libmujs3:amd64	1.3.6-1
-libmunge2:amd64	0.5.16-1
 libmupdf25.1	1.25.1+ds1-6
 libmwaw-0.3-3:amd64	0.3.22-1+b2
 libmysofa1:amd64	1.3.3+dfsg-1
@@ -1359,7 +1344,6 @@ libopenexr-3-1-30:amd64	3.1.13-2
 libopengl0:amd64	1.7.0-1+b2
 libopenh264-8:amd64	2.6.0+dfsg-2
 libopenjp2-7:amd64	2.5.3-2.1~deb13u1
-libopenmpi40:amd64	5.0.7-1
 libopenmpt0t64:amd64	0.7.13-1+b1
 libopenni2-0:amd64	2.2.0.33+dfsg-18+b2
 libopus0:amd64	1.5.2-2
@@ -1429,7 +1413,6 @@ libplacebo349:amd64	7.349.0-3
 libplist-2.0-4:amd64	2.6.0-2+b1
 libplot2c2:amd64	2.6-14+b3
 libplymouth5:amd64	24.004.60-5
-libpmix2t64:amd64	5.0.7-1
 libpng-dev:amd64	1.6.48-1
 libpng-tools	1.6.48-1
 libpng16-16t64:amd64	1.6.48-1
@@ -1456,7 +1439,6 @@ libproj25:amd64	9.6.0-1
 libprotobuf32t64:amd64	3.21.12-11
 libproxy1v5:amd64	0.5.9-1
 libpsl5t64:amd64	0.21.2-1.1+b1
-libpsm2-2	11.2.185-2.1
 libpstoedit0t64:amd64	4.02-1+b1
 libptexenc1:amd64	2024.20240313.70630+ds-6
 libpthreadpool0:amd64	0.0~git20240616.560c60d-1
@@ -1538,7 +1520,6 @@ librav1e0.7:amd64	0.7.1-9+b2
 libraw1394-11:amd64	2.1.2-2+b2
 libraw23t64:amd64	0.21.4-2
 librdf0t64:amd64	1.0.17-4+b1
-librdmacm1t64:amd64	56.1-1
 libre2-11:amd64	20240702-3+b1
 libreadline-dev:amd64	8.2-6
 libreadline8t64:amd64	8.2-6
@@ -1590,7 +1571,6 @@ libsasl2-modules-db:amd64	2.1.28+dfsg1-9
 libsass1:amd64	3.6.5+20231221-3+b1
 libsbc1:amd64	2.1-1
 libsbig4t64	4.9.9-7
-libscalapack-openmpi2.2:amd64	2.2.2-1
 libsdl-net1.2:amd64	1.2.8-6+b2
 libsdl-sound1.2:amd64	1.0.3-9+b5
 libsdl1.2debian:amd64	1.2.68-3
@@ -1740,7 +1720,6 @@ libtype-tiny-xs-perl:amd64	0.025-2+b1
 libtypes-serialiser-perl	1.01-1
 libubsan1:amd64	14.2.0-19
 libuchardet0:amd64	0.0.8-1+b2
-libucx0:amd64	1.18.1+ds-2+b1
 libudev1:amd64	257.9-1~deb13u1
 libudfread0:amd64	1.1.2-1+b2
 libudisks2-0:amd64	2.10.1-12.1+deb13u1
@@ -2059,7 +2038,6 @@ mousepad	0.6.3-1
 mozc-data	2.29.5160.102+dfsg-1.4
 mozc-server	2.29.5160.102+dfsg-1.4
 mozc-utils-gui	2.29.5160.102+dfsg-1.4
-mpi-default-bin	1.18
 mplayer	2:1.5+svn38674-2
 mplayer-gui	2:1.5+svn38674-2
 mplayer-skin-blue	1.13-2
@@ -2125,8 +2103,6 @@ openbox	3.6.1-12+b2
 openbox-lxde-session	0.99.3-1
 openjdk-21-jre:amd64	21.0.9+10-1~deb13u1
 openjdk-21-jre-headless:amd64	21.0.9+10-1~deb13u1
-openmpi-bin	5.0.7-1
-openmpi-common	5.0.7-1
 openssh-client	1:10.0p1-7
 openssl	3.5.4-1~deb13u1
 openssl-provider-legacy	3.5.4-1~deb13u1
